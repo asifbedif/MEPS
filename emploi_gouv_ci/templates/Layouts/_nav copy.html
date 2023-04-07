@@ -1,0 +1,60 @@
+<nav class="main-menu">
+    <div class="navbar-header">
+        <!-- Toggle Button -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div class="navbar-collapse collapse">
+        <ul class="navigation clearfix">
+            <li class=""><a href="{% url 'index' %}">ACCUEIL</a></li>
+            <li class="dropdown"><a href="#">MEPS</a>
+                <ul class="dropdown-menu">
+                    <li><a href="{% url 'MEPS:ministere' %} ">Le Ministère</a></li>
+                    <li class=""><a href="{% url 'MEPS:le-cabinet' %} ">Le Cabinet</a> </li>
+                    <li class=""><a href="{% url 'MEPS:organigramme' %} ">Organigramme</a></li>
+                    <li><a href="{% url 'MEPS:directions-et-services-rattaches' %} ">Directions & Services Rattachées</a></li>
+                    <li><a href="{% url 'MEPS:structures-sous-tutelles' %} ">Structures Sous Tutelles</a></li>
+                    <!-- <li><a href="{% url 'MEPS:inspection-generale' %} ">Inspection Générale</a></li> -->
+                    <li><a href="{% url 'MEPS:ecoles-specialisees' %} ">Écoles Spécialisées</a></li>
+                    <li><a href="{% url 'MEPS:decret-d-organisation' %} ">Décret d'Organisation</a></li>
+                    <li><a href="{% url 'MEPS:missions-et-objectifs' %} ">Missions & Objectifs</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#">DIRECTIONS GÉNÉRALES</a>
+                <ul class="dropdown-menu">
+                    <li class=""><a href="{% url 'DIRECTIONS_GENERALES:DGE' %}">De l'Emploi [DGE]</a></li>
+                    <li class=""><a href="{% url 'DIRECTIONS_GENERALES:DGT' %}">Du Travail [DGT]</a></li>
+                    <li class=""><a href="{% url 'DIRECTIONS_GENERALES:DGPS' %}">De la Protection Sociale [DGPS]</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#">RÉGIMES</a>
+                <ul class="dropdown-menu">
+                    <li><a href="{% url 'PRODUITS:cmu' %}">CMU</a></li>
+                    <li><a href="{% url 'PRODUITS:rsti' %}">RSTI</a> </li>
+                    <li><a href="{% url 'PRODUITS:complementaire' %}">COMPLEMENTAIRE</a></li>         
+                </ul>
+            </li>
+            <li class=""><a href="{% url 'DOCUMENTS:documents' %} ">DOCUMENTS</a>               
+            </li>
+            <li class="dropdown"><a href="{% url 'PUBLICATIONS:publications' %} ">PUBLICATIONS</a>
+                <ul class="dropdown-menu">
+                    <li><a href="{% url 'PUBLICATIONS:actualites' %} ">Actualités</a></li>
+                    <li><a href="{% url 'PUBLICATIONS:communiques' %} ">Communiqués</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown"><a href='#'>NOUS JOINDRE</a>
+                <ul class="dropdown-menu">
+                    <li><a href="{% url 'NOUS_JOINDRE:nos-contacts' %} ">Contacts</a></li>
+                    <li><a href="{% url 'NOUS_JOINDRE:faq' %} ">Faq</a></li>
+                   
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,942 @@
+[
+    {
+        "app_label": "admin",
+        "id": 1,
+        "model": "logentry"
+    },
+    {
+        "app_label": "auth",
+        "id": 2,
+        "model": "permission"
+    },
+    {
+        "app_label": "auth",
+        "id": 3,
+        "model": "group"
+    },
+    {
+        "app_label": "auth",
+        "id": 4,
+        "model": "user"
+    },
+    {
+        "app_label": "contenttypes",
+        "id": 5,
+        "model": "contenttype"
+    },
+    {
+        "app_label": "sessions",
+        "id": 6,
+        "model": "session"
+    },
+    {
+        "app_label": "MEPS",
+        "id": 7,
+        "model": "mepspage"
+    },
+    {
+        "app_label": "organigramme",
+        "id": 8,
+        "model": "organigramme"
+    },
+    {
+        "app_label": "ministère",
+        "id": 9,
+        "model": "cta"
+    },
+    {
+        "app_label": "ministère",
+        "id": 10,
+        "model": "directioncard"
+    },
+    {
+        "app_label": "ministère",
+        "id": 11,
+        "model": "ministerslist"
+    },
+    {
+        "app_label": "ministère",
+        "id": 12,
+        "model": "ministrepage"
+    },
+    {
+        "app_label": "ministère",
+        "id": 13,
+        "model": "leministere"
+    },
+    {
+        "app_label": "ministre",
+        "id": 14,
+        "model": "custummodel"
+    },
+    {
+        "app_label": "ministre",
+        "id": 15,
+        "model": "distinction"
+    },
+    {
+        "app_label": "ministre",
+        "id": 16,
+        "model": "expérienceadministrative"
+    },
+    {
+        "app_label": "ministre",
+        "id": 17,
+        "model": "infopersonnelle"
+    },
+    {
+        "app_label": "ministre",
+        "id": 18,
+        "model": "leministre"
+    },
+    {
+        "app_label": "ministre",
+        "id": 19,
+        "model": "parcoursprofessionnel"
+    },
+    {
+        "app_label": "cabinet",
+        "id": 20,
+        "model": "article"
+    },
+    {
+        "app_label": "cabinet",
+        "id": 21,
+        "model": "cabinet"
+    },
+    {
+        "app_label": "cabinet",
+        "id": 22,
+        "model": "cabinetdecretarticle"
+    },
+    {
+        "app_label": "cabinet",
+        "id": 23,
+        "model": "cabinetsidebar"
+    },
+    {
+        "app_label": "cabinet",
+        "id": 24,
+        "model": "chapter"
+    },
+    {
+        "app_label": "cabinet",
+        "id": 25,
+        "model": "decretlist"
+    },
+    {
+        "app_label": "cabinet",
+        "id": 26,
+        "model": "cabinetdecretchapter"
+    },
+    {
+        "app_label": "cabinet",
+        "id": 27,
+        "model": "decretcabinet"
+    },
+    {
+        "app_label": "cabinet",
+        "id": 28,
+        "model": "articlelist"
+    },
+    {
+        "app_label": "Directions_Services_Rattachés",
+        "id": 29,
+        "model": "directionsservicesrattachés"
+    },
+    {
+        "app_label": "ÉcolesSpécialisées",
+        "id": 30,
+        "model": "ecolespecialisee"
+    },
+    {
+        "app_label": "Missions_Objectifs",
+        "id": 31,
+        "model": "missioncategory"
+    },
+    {
+        "app_label": "Missions_Objectifs",
+        "id": 32,
+        "model": "missionsobjectif"
+    },
+    {
+        "app_label": "Missions_Objectifs",
+        "id": 33,
+        "model": "missionslist"
+    },
+    {
+        "app_label": "StructuresSousTutelles",
+        "id": 34,
+        "model": "structuressoustutelle"
+    },
+    {
+        "app_label": "Décret_Organisation",
+        "id": 35,
+        "model": "decretorganisation"
+    },
+    {
+        "app_label": "MEPS_ADMIN",
+        "id": 36,
+        "model": "category"
+    },
+    {
+        "app_label": "MEPS_ADMIN",
+        "id": 37,
+        "model": "contact"
+    },
+    {
+        "app_label": "MEPS_ADMIN",
+        "id": 38,
+        "model": "contactaddress"
+    },
+    {
+        "app_label": "MEPS_ADMIN",
+        "id": 39,
+        "model": "contactemail"
+    },
+    {
+        "app_label": "MEPS_ADMIN",
+        "id": 40,
+        "model": "contacthoraire"
+    },
+    {
+        "app_label": "MEPS_ADMIN",
+        "id": 41,
+        "model": "contacttel"
+    },
+    {
+        "app_label": "MEPS_ADMIN",
+        "id": 42,
+        "model": "direction"
+    },
+    {
+        "app_label": "MEPS_ADMIN",
+        "id": 43,
+        "model": "directiondetail"
+    },
+    {
+        "app_label": "MEPS_ADMIN",
+        "id": 44,
+        "model": "directionsidebar"
+    },
+    {
+        "app_label": "MEPS_ADMIN",
+        "id": 45,
+        "model": "mission"
+    },
+    {
+        "app_label": "MEPS_ADMIN",
+        "id": 46,
+        "model": "objectif"
+    },
+    {
+        "app_label": "MEPS_ADMIN",
+        "id": 47,
+        "model": "pdfdocument"
+    },
+    {
+        "app_label": "MEPS_ADMIN",
+        "id": 48,
+        "model": "pdftype"
+    },
+    {
+        "app_label": "MEPS_ADMIN",
+        "id": 49,
+        "model": "project"
+    },
+    {
+        "app_label": "MEPS_ADMIN",
+        "id": 50,
+        "model": "slider"
+    },
+    {
+        "app_label": "MEPS_ADMIN",
+        "id": 51,
+        "model": "sousdirection"
+    },
+    {
+        "app_label": "MEPS_ADMIN",
+        "id": 52,
+        "model": "post"
+    },
+    {
+        "app_label": "MEPS_ADMIN",
+        "id": 53,
+        "model": "comment"
+    },
+    {
+        "app_label": "Users",
+        "id": 54,
+        "model": "service"
+    },
+    {
+        "app_label": "Users",
+        "id": 55,
+        "model": "servicedirection"
+    },
+    {
+        "app_label": "Users",
+        "id": 56,
+        "model": "userrole"
+    },
+    {
+        "app_label": "Users",
+        "id": 57,
+        "model": "userprofile"
+    },
+    {
+        "app_label": "DIRECTIONS_GENERALES",
+        "id": 58,
+        "model": "emploi"
+    },
+    {
+        "app_label": "DIRECTIONS_GENERALES",
+        "id": 59,
+        "model": "protectionsociale"
+    },
+    {
+        "app_label": "DIRECTIONS_GENERALES",
+        "id": 60,
+        "model": "travail"
+    },
+    {
+        "app_label": "DGE",
+        "id": 61,
+        "model": "dge"
+    },
+    {
+        "app_label": "dspe",
+        "id": 62,
+        "model": "dspe"
+    },
+    {
+        "app_label": "dspe",
+        "id": 63,
+        "model": "dspesousdirection"
+    },
+    {
+        "app_label": "dspe",
+        "id": 64,
+        "model": "dspeproject"
+    },
+    {
+        "app_label": "dspe",
+        "id": 65,
+        "model": "dspeobjectif"
+    },
+    {
+        "app_label": "dspe",
+        "id": 66,
+        "model": "dspemission"
+    },
+    {
+        "app_label": "dspe",
+        "id": 67,
+        "model": "dspecontacttel"
+    },
+    {
+        "app_label": "dspe",
+        "id": 68,
+        "model": "dspecontacthoraire"
+    },
+    {
+        "app_label": "dspe",
+        "id": 69,
+        "model": "dspecontactemail"
+    },
+    {
+        "app_label": "dspe",
+        "id": 70,
+        "model": "dspecontactaddress"
+    },
+    {
+        "app_label": "dspe",
+        "id": 71,
+        "model": "dspecontact"
+    },
+    {
+        "app_label": "dsepe",
+        "id": 72,
+        "model": "dsepe"
+    },
+    {
+        "app_label": "dsepe",
+        "id": 73,
+        "model": "dsepesousdirection"
+    },
+    {
+        "app_label": "dsepe",
+        "id": 74,
+        "model": "dsepeproject"
+    },
+    {
+        "app_label": "dsepe",
+        "id": 75,
+        "model": "dsepeobjectif"
+    },
+    {
+        "app_label": "dsepe",
+        "id": 76,
+        "model": "dsepemission"
+    },
+    {
+        "app_label": "dsepe",
+        "id": 77,
+        "model": "dsepecontacttel"
+    },
+    {
+        "app_label": "dsepe",
+        "id": 78,
+        "model": "dsepecontacthoraire"
+    },
+    {
+        "app_label": "dsepe",
+        "id": 79,
+        "model": "dsepecontactemail"
+    },
+    {
+        "app_label": "dsepe",
+        "id": 80,
+        "model": "dsepecontactaddress"
+    },
+    {
+        "app_label": "dsepe",
+        "id": 81,
+        "model": "dsepecontact"
+    },
+    {
+        "app_label": "doem",
+        "id": 82,
+        "model": "doem"
+    },
+    {
+        "app_label": "doem",
+        "id": 83,
+        "model": "doemsousdirection"
+    },
+    {
+        "app_label": "doem",
+        "id": 84,
+        "model": "doemproject"
+    },
+    {
+        "app_label": "doem",
+        "id": 85,
+        "model": "doemobjectif"
+    },
+    {
+        "app_label": "doem",
+        "id": 86,
+        "model": "doemmission"
+    },
+    {
+        "app_label": "doem",
+        "id": 87,
+        "model": "doemcontacttel"
+    },
+    {
+        "app_label": "doem",
+        "id": 88,
+        "model": "doemcontacthoraire"
+    },
+    {
+        "app_label": "doem",
+        "id": 89,
+        "model": "doemcontactemail"
+    },
+    {
+        "app_label": "doem",
+        "id": 90,
+        "model": "doemcontactaddress"
+    },
+    {
+        "app_label": "doem",
+        "id": 91,
+        "model": "doemcontact"
+    },
+    {
+        "app_label": "DGPS",
+        "id": 92,
+        "model": "dgps"
+    },
+    {
+        "app_label": "das",
+        "id": 93,
+        "model": "das"
+    },
+    {
+        "app_label": "das",
+        "id": 94,
+        "model": "dassousdirection"
+    },
+    {
+        "app_label": "das",
+        "id": 95,
+        "model": "dasproject"
+    },
+    {
+        "app_label": "das",
+        "id": 96,
+        "model": "dasobjectif"
+    },
+    {
+        "app_label": "das",
+        "id": 97,
+        "model": "dasmission"
+    },
+    {
+        "app_label": "das",
+        "id": 98,
+        "model": "dascontacttel"
+    },
+    {
+        "app_label": "das",
+        "id": 99,
+        "model": "dascontacthoraire"
+    },
+    {
+        "app_label": "das",
+        "id": 100,
+        "model": "dascontactemail"
+    },
+    {
+        "app_label": "das",
+        "id": 101,
+        "model": "dascontactaddress"
+    },
+    {
+        "app_label": "das",
+        "id": 102,
+        "model": "dascontact"
+    },
+    {
+        "app_label": "dpph",
+        "id": 103,
+        "model": "dpph"
+    },
+    {
+        "app_label": "dpph",
+        "id": 104,
+        "model": "dpphsousdirection"
+    },
+    {
+        "app_label": "dpph",
+        "id": 105,
+        "model": "dpphproject"
+    },
+    {
+        "app_label": "dpph",
+        "id": 106,
+        "model": "dpphobjectif"
+    },
+    {
+        "app_label": "dpph",
+        "id": 107,
+        "model": "dpphmission"
+    },
+    {
+        "app_label": "dpph",
+        "id": 108,
+        "model": "dpphcontacttel"
+    },
+    {
+        "app_label": "dpph",
+        "id": 109,
+        "model": "dpphcontacthoraire"
+    },
+    {
+        "app_label": "dpph",
+        "id": 110,
+        "model": "dpphcontactemail"
+    },
+    {
+        "app_label": "dpph",
+        "id": 111,
+        "model": "dpphcontactaddress"
+    },
+    {
+        "app_label": "dpph",
+        "id": 112,
+        "model": "dpphcontact"
+    },
+    {
+        "app_label": "dssm",
+        "id": 113,
+        "model": "dssm"
+    },
+    {
+        "app_label": "dssm",
+        "id": 114,
+        "model": "dssmsousdirection"
+    },
+    {
+        "app_label": "dssm",
+        "id": 115,
+        "model": "dssmproject"
+    },
+    {
+        "app_label": "dssm",
+        "id": 116,
+        "model": "dssmobjectif"
+    },
+    {
+        "app_label": "dssm",
+        "id": 117,
+        "model": "dssmmission"
+    },
+    {
+        "app_label": "dssm",
+        "id": 118,
+        "model": "dssmcontacttel"
+    },
+    {
+        "app_label": "dssm",
+        "id": 119,
+        "model": "dssmcontacthoraire"
+    },
+    {
+        "app_label": "dssm",
+        "id": 120,
+        "model": "dssmcontactemail"
+    },
+    {
+        "app_label": "dssm",
+        "id": 121,
+        "model": "dssmcontactaddress"
+    },
+    {
+        "app_label": "dssm",
+        "id": 122,
+        "model": "dssmcontact"
+    },
+    {
+        "app_label": "DGT",
+        "id": 123,
+        "model": "dgt"
+    },
+    {
+        "app_label": "dit",
+        "id": 124,
+        "model": "dit"
+    },
+    {
+        "app_label": "dit",
+        "id": 125,
+        "model": "ditsousdirection"
+    },
+    {
+        "app_label": "dit",
+        "id": 126,
+        "model": "ditproject"
+    },
+    {
+        "app_label": "dit",
+        "id": 127,
+        "model": "ditobjectif"
+    },
+    {
+        "app_label": "dit",
+        "id": 128,
+        "model": "ditmission"
+    },
+    {
+        "app_label": "dit",
+        "id": 129,
+        "model": "ditcontacttel"
+    },
+    {
+        "app_label": "dit",
+        "id": 130,
+        "model": "ditcontacthoraire"
+    },
+    {
+        "app_label": "dit",
+        "id": 131,
+        "model": "ditcontactemail"
+    },
+    {
+        "app_label": "dit",
+        "id": 132,
+        "model": "ditcontactaddress"
+    },
+    {
+        "app_label": "dit",
+        "id": 133,
+        "model": "ditcontact"
+    },
+    {
+        "app_label": "dlte",
+        "id": 134,
+        "model": "dlte"
+    },
+    {
+        "app_label": "dlte",
+        "id": 135,
+        "model": "dltesousdirection"
+    },
+    {
+        "app_label": "dlte",
+        "id": 136,
+        "model": "dlteproject"
+    },
+    {
+        "app_label": "dlte",
+        "id": 137,
+        "model": "dlteobjectif"
+    },
+    {
+        "app_label": "dlte",
+        "id": 138,
+        "model": "dltemission"
+    },
+    {
+        "app_label": "dlte",
+        "id": 139,
+        "model": "dltecontacttel"
+    },
+    {
+        "app_label": "dlte",
+        "id": 140,
+        "model": "dltecontacthoraire"
+    },
+    {
+        "app_label": "dlte",
+        "id": 141,
+        "model": "dltecontactemail"
+    },
+    {
+        "app_label": "dlte",
+        "id": 142,
+        "model": "dltecontactaddress"
+    },
+    {
+        "app_label": "dlte",
+        "id": 143,
+        "model": "dltecontact"
+    },
+    {
+        "app_label": "drt",
+        "id": 144,
+        "model": "drt"
+    },
+    {
+        "app_label": "drt",
+        "id": 145,
+        "model": "drtsousdirection"
+    },
+    {
+        "app_label": "drt",
+        "id": 146,
+        "model": "drtproject"
+    },
+    {
+        "app_label": "drt",
+        "id": 147,
+        "model": "drtobjectif"
+    },
+    {
+        "app_label": "drt",
+        "id": 148,
+        "model": "drtmission"
+    },
+    {
+        "app_label": "drt",
+        "id": 149,
+        "model": "drtcontacttel"
+    },
+    {
+        "app_label": "drt",
+        "id": 150,
+        "model": "drtcontacthoraire"
+    },
+    {
+        "app_label": "drt",
+        "id": 151,
+        "model": "drtcontactemail"
+    },
+    {
+        "app_label": "drt",
+        "id": 152,
+        "model": "drtcontactaddress"
+    },
+    {
+        "app_label": "drt",
+        "id": 153,
+        "model": "drtcontact"
+    },
+    {
+        "app_label": "dsst",
+        "id": 154,
+        "model": "dsst"
+    },
+    {
+        "app_label": "dsst",
+        "id": 155,
+        "model": "dsstsousdirection"
+    },
+    {
+        "app_label": "dsst",
+        "id": 156,
+        "model": "dsstproject"
+    },
+    {
+        "app_label": "dsst",
+        "id": 157,
+        "model": "dsstobjectif"
+    },
+    {
+        "app_label": "dsst",
+        "id": 158,
+        "model": "dsstmission"
+    },
+    {
+        "app_label": "dsst",
+        "id": 159,
+        "model": "dsstcontacttel"
+    },
+    {
+        "app_label": "dsst",
+        "id": 160,
+        "model": "dsstcontacthoraire"
+    },
+    {
+        "app_label": "dsst",
+        "id": 161,
+        "model": "dsstcontactemail"
+    },
+    {
+        "app_label": "dsst",
+        "id": 162,
+        "model": "dsstcontactaddress"
+    },
+    {
+        "app_label": "dsst",
+        "id": 163,
+        "model": "dsstcontact"
+    },
+    {
+        "app_label": "DOCUMENTS",
+        "id": 164,
+        "model": "documentcategory"
+    },
+    {
+        "app_label": "DOCUMENTS",
+        "id": 165,
+        "model": "documentsouscategory"
+    },
+    {
+        "app_label": "DOCUMENTS",
+        "id": 166,
+        "model": "document"
+    },
+    {
+        "app_label": "PRODUITS",
+        "id": 167,
+        "model": "product"
+    },
+    {
+        "app_label": "PRODUITS",
+        "id": 168,
+        "model": "productcategory"
+    },
+    {
+        "app_label": "PRODUITS",
+        "id": 169,
+        "model": "productsidebar"
+    },
+    {
+        "app_label": "PRODUITS",
+        "id": 170,
+        "model": "postproduct"
+    },
+    {
+        "app_label": "PRODUITS",
+        "id": 171,
+        "model": "productrsti"
+    },
+    {
+        "app_label": "PRODUITS",
+        "id": 172,
+        "model": "productcomplementaire"
+    },
+    {
+        "app_label": "PRODUITS",
+        "id": 173,
+        "model": "productcmu"
+    },
+    {
+        "app_label": "PUBLICATIONS",
+        "id": 174,
+        "model": "publicationcategory"
+    },
+    {
+        "app_label": "PUBLICATIONS",
+        "id": 175,
+        "model": "publicationsouscategory"
+    },
+    {
+        "app_label": "PUBLICATIONS",
+        "id": 176,
+        "model": "postcommunique"
+    },
+    {
+        "app_label": "PUBLICATIONS",
+        "id": 177,
+        "model": "postactualite"
+    },
+    {
+        "app_label": "NOUS_JOINDRE",
+        "id": 178,
+        "model": "directioncustommodel"
+    },
+    {
+        "app_label": "NOUS_JOINDRE",
+        "id": 179,
+        "model": "faq"
+    },
+    {
+        "app_label": "NOUS_JOINDRE",
+        "id": 180,
+        "model": "noscontactscustommodel"
+    },
+    {
+        "app_label": "NOUS_JOINDRE",
+        "id": 181,
+        "model": "contactscabinet"
+    },
+    {
+        "app_label": "NOUS_JOINDRE",
+        "id": 182,
+        "model": "contactsdge"
+    },
+    {
+        "app_label": "NOUS_JOINDRE",
+        "id": 183,
+        "model": "contactsdgps"
+    },
+    {
+        "app_label": "NOUS_JOINDRE",
+        "id": 184,
+        "model": "contactsdgt"
+    },
+    {
+        "app_label": "NOUS_JOINDRE",
+        "id": 185,
+        "model": "dgt_directions_contacts"
+    },
+    {
+        "app_label": "NOUS_JOINDRE",
+        "id": 186,
+        "model": "dgps_directions_contacts"
+    },
+    {
+        "app_label": "NOUS_JOINDRE",
+        "id": 187,
+        "model": "dge_directions_contacts"
+    },
+    {
+        "app_label": "NOUS_JOINDRE",
+        "id": 188,
+        "model": "cabinet_directions_contacts"
+    }
+]

@@ -1,0 +1,64 @@
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+{% block TITLE %}DDCA{% endblock TITLE %}
+    
+    <!--Page Title-->
+    {% block PAGETITLE %}Direction de la Documentation, de la Communication et des Archives{% endblock %}
+    
+    <!--Page Info-->
+
+    {% block CONTENT %}
+    <!--Page Info-->
+    
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+            <div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{% url 'index' %}">Accueil</a></li>
+                        <li><a href="{% url 'directions-et-services-rattaches' %}">Directions Ratachees</a></li>
+                        <li>DDCA</li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="share-icon"><a href="https://www.facebook.com"><span class="icon fa fa-share-alt"></span> Partager</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+    
+    <!--Sidebar Page Container-->
+    <div class="sidebar-page-container">
+        <div class="auto-container">
+            <div class="row clearfix">
+                
+                <!--Content Side / Blog Single-->
+                <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                    <div class="blog-single">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="images/resource/news-single.jpg" alt="" />
+                            </div>
+                            <div class="lower-content">
+                                <h3>Are High-Multiple Tech Stocks Winners or Losers?</h3>
+                                <div class="text">
+                                    <p>Installations are becoming a more importants, but if currents trends continue we sed should be looking to others solutions Complete, comprehensive prefabrication of components is complicated because it is a difficult to integrate water, electricity ut and heating systems in prefabricated Installations are becoming more important pursue pleasure rationally encounter consequences that are extremely painful the master-builder of human happiness. </p>
+                                    <p>Who loves or pursues or desires to obtain pain of itself, because it is painbecause occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it right to find fault.</p>
+                                    
+                                </div>           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+   
+            </div>
+        </div>
+    </div>
+    <!--End Blog Grid Section-->
+    {% endblock %}

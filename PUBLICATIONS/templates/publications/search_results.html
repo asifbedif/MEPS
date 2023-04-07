@@ -1,0 +1,150 @@
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+{% block TITLE %}
+    Articles
+{% endblock %}
+
+{% block PAGETITLE %}
+    {{ single_post.post_title }} 
+{% endblock PAGETITLE %}
+
+
+{% block EXTRA_CSS %}
+<style>
+    span.icon.fa.fa-search {
+        font-size: 3rem;
+        margin: 0.6rem;
+    }
+
+    input[type="search"]{
+        width:50%;
+        height: 50%;
+        line-height:50%;
+        padding:2%; 
+        border:1px solid whitesmoke;
+        font-size: 2rem;
+
+    }
+
+    button[type='submit'] {
+        vertical-align: center;
+        background: whitesmoke;
+        padding: 15px;
+    }
+
+    .news-block-six .inner-box .lower-content .post-info li {
+        color: #878686b3!important;
+    }
+
+</style>
+    
+{% endblock EXTRA_CSS %}
+    
+
+{% block CONTENT %}
+
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="{% url 'actualites' %}">Actualités</a></li>
+                        <li>Résultats</li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="share-icon"><a href="#"><span class="icon fa fa-share-alt"></span> Share</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+    
+    <!--Sidebar Page Container-->
+    <div class="sidebar-page-container">
+    	<div class="auto-container">
+            <div class="row clearfix mt-5">
+                <div class="col-lg-6">
+                    {% if to_be_found %}
+                        <h2> 
+                            <span style='color: #008000'>{{ obj_found_list.count }} Résultat{{ obj_found_list.count|pluralize }} trouvé{{ obj_found_list.count|pluralize }} pour </span> <strong style='color: #F5690A'><em>{{ to_be_found }}</em></strong>                      
+                        </h2>
+                    {% endif %}
+                </div>
+                <div class="col-lg-6">
+                    <!-- Search Form -->
+                    <div class="search-box text-center">
+                        
+                        {% include 'Layouts/_search-form.html' %}
+
+                    </div>
+                </div>
+                <br><br>
+            </div>
+            <hr width='10'>
+            <div class="row clearfix">            	
+                <!--Content Side / Blog Single-->
+                <div class="col-lg-12">  
+                     
+                    {% if to_be_found %}
+                        {% comment %} <h2> 
+                            <span style='color: #008000'>{{ obj_found_list.count }} Résultat{{ obj_found_list.count|pluralize }} trouvé{{ obj_found_list.count|pluralize }} pour </span> <strong style='color: #F5690A'><em>{{ to_be_found }}</em></strong>                      
+                        </h2> {% endcomment %}
+
+                        {% for result in obj_found_list %}  
+                                            
+                            <!--News Block Six-->
+                            <div class="news-block-six  mt-5">
+                                <div class="inner-box">
+                                    <div class='row'>
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                            <div class="image">
+                                                <a href="{{result.get_absolute_url}}"><img src="{{ result.post_image.url }}" alt=""  /></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                            <div class="lower-content">
+                                                <ul class="post-info">
+                                                    <li>{{result.post_published_on|date:"d M Y"}} à {{result.post_published_on|time:"H:i"}}</li>
+                                                    <li>Posted by: {{ result.post_author }}</li>
+                                                    <li>Category: {{ result.post_category }}</li>
+                                                </ul>
+                                                <h3><a href="{{result.get_absolute_url}}">{{ result.post_title }}</a></h3>
+                                                <div class="text">{{ result.post_content|truncatewords:25|linebreaks }}</div>
+                                                <a href="{{result.get_absolute_url}}" class="theme-btn btn-style-three">Lire plus</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!--End News Block Six-->                      
+
+                        {% empty %}
+                            Aucun résultat trouvé !!!
+                        {% endfor %}
+
+                        <!-- Pagination Block -->
+                        {% include "Layouts/pagination.html" with page=all_actualites %}
+
+                    {% endif %}
+                </div>
+            
+               
+            
+            </div>
+        </div>
+    </div>
+    <!--End Blog Grid Section-->
+  
+    
+    <br><br><br>
+    
+{% endblock %}

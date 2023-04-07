@@ -1,0 +1,46 @@
+<aside class="sidebar">
+        
+        <!-- Search Form -->
+        <div class="sidebar-widget search-box">
+            <form method="get" action="{% url 'search-results' %}">
+                {% csrf_token %}
+                <div class="form-group">
+                    <input type="search" name="to_search" value="" placeholder="Rechercher.." required>
+                    <button type="submit"><span class="icon fa fa-search"></span></button>
+                </div>
+            </form>
+        </div>
+        
+        <!--Blog Category Widget-->
+        {% comment %} <div class="sidebar-widget sidebar-blog-category">
+            <div class="sidebar-title">
+                <h2>Liens utiles</h2>
+            </div>
+            <ul class="blog-cat">
+                <li><a href="#">Business Plan</a></li>
+                <li><a href="#">Consulting</a></li>
+                <li><a href="#">Finance & Accounting</a></li>
+                <li><a href="#">Management</a></li>
+                <li><a href="#">Competitive Research</a></li>
+            </ul>
+        </div> {% endcomment %}
+
+        <!-- Popular Posts -->
+        {% include 'Layouts/inc/recent-posts.html' %}
+        
+        <!-- Popular Tags -->
+        {% include 'Layouts/inc/tags.html' %}
+
+         <!--Facebook plugins Box-->
+         {% include 'Layouts/inc/FB_Likes.html' %}
+        {% include 'Layouts/inc/FB_page.html' %}
+
+        <br><br>
+        <h4>TWITTER</h4>
+
+        <a class="twitter-timeline" href="https://twitter.com/mepsCI?ref_src=twsrc%5Etfw" data-tweet-limit="2" >
+            Tweets by mepsCI
+        </a> 
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        
+    </aside>

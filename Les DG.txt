@@ -1,0 +1,84 @@
+Blandit habitant nibh aliquet faucibus velit diam. 
+Dis aptent vehicula neque lacinia habitant leo fringilla condimentum mauris consectetur pulvinar. 
+Auctor bibendum etiam mattis penatibus at est. Curae tempor commodo pharetra inceptos felis torquent. 
+Laoreet feugiat nisl vehicula eros justo tincidunt torquent blandit vulputate magna himenaeos.
+
+#=========  DGE =================================#
+Direction Générale de l'Emploi
+
+D.S.E.P.E
+Direction du Suivi et Evaluation de la Politique de l’Emploi.
+
+D.S.P.E
+Direction des Stratégies et Programmes d'Emploi.
+
+D.O.E.M
+Direction de l'Observatoire de l'Emploi et des Metiers.
+
+
+
+#=========  DGT =================================#
+D.R.T
+Direction de la Règlementation du Travail.Plateau, Immeuble Sebroko
+
+
+D.I.T
+Direction de l'Inspection du Travail.
+
+D.S.S.T
+Direction de la Santé et de la Sécurité au Travail. Plateau Sebroco
+
+D.L.T.E
+Direction de la Lutte Contre le Travail des Enfants. Cocody Angré 7ème Tranche, terminus 81/82
+
+
+
+#=========  DGPS =================================#
+Direction Générale de la Protection Sociale
+
+D.A.S
+Direction de l'Action Sociale
+
+
+D.P.P.H
+Direction de la Promotion des Personnes Handicapées
+
+
+D.S.S.M
+Direction de la Sécurité Sociale et de la Mutualité
+
+
+#=========  DIT =================================#
+<div class="upper-text">Missions</div>
+
+
+ <ul class="list-style-three">
+      <li>Veiller au contrôle de l'application de la législation et de la réglementation du travail;</li>
+      <li>Assurer le respect de la réglementation du travail;</li>
+      <li>Assurer le conseil en milieu professionnel;</li>
+     <li>Abriter les litiges individuels et les conflits collectifs de travail;</li>
+      <li>Assurer la promotion du dialogue social.</li>
+      Elle supervise également les activités des huit (08) Inspections du Travail couvrant la ville d'Abidjan.
+      </ul>
+</div>
+ <div class="upper-text">Sous-directions</div>
+ 	 <ul class="list-style-three">
+         <li>La Sous-Direction des Relations Professionnelles et Sociales;</li>
+         <li>La Sous-Direction du Contrôle de l'Application de la Législation;</li>
+         <li>La Sous-Direction des Accidents de Travail, des Maladies Professionnelles et des Relations Extérieures.</li>
+     </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

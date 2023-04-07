@@ -1,0 +1,17 @@
+{% comment %} <form method="post" action="{% url 'search-results' %}">
+    {% csrf_token %}
+    <div class="form-group">
+        <input type="search" name="searchInput" value="" placeholder="Je recherche..." required="">
+        <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+    </div>
+</form> {% endcomment %}
+
+
+<form method="get" action="{% url 'search-results' %}">
+    <div class="form-group">
+        <input type="search" name="to_search" value="" placeholder="Entrer un mot clé.." maxlength='100' required>
+        <button type="submit"> Rechercher
+            {% comment %} <span class="icon fa fa-search"></span> {% endcomment %}
+        </button>
+    </div>
+</form>

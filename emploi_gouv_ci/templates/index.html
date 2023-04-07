@@ -1,0 +1,665 @@
+{% extends 'Layouts/baseHome.html' %}
+    
+{% load static %}
+    
+{% block CONTENT %}
+
+    <!--Main Slider-->
+    <div class="row equal-cols" style="margin-right:5wh;">
+        <div class="col-lg-9 col-md-8 col-sm-8" >
+            <section class="main-slider">
+
+                <div class="rev_slider_wrapper fullwidthbanner-container"  id="rev_slider_one_wrapper" data-source="gallery">
+                    <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1" style="height: 100%!important; max-height: 100%; margin-top: 0px; margin-bottom: 0px;">
+                        <ul> 
+                            {% if products %}         
+
+                                {% for product in products %}
+                               
+                                <li data-description="Slide Description" 
+                                    data-easein="default" data-easeout="default" 
+                                    data-fsmasterspeed="500" data-fsslotamount="7" 
+                                    data-fstransition="fade" data-hideafterloop="0" 
+                                    data-hideslideonmobile="off" data-index="rs-{{1683|add:forloop.counter}}" 
+                                    data-masterspeed="default" data-param1="" data-param10="" 
+                                    data-param2="" data-param3="" data-param4="" data-param5="" 
+                                    data-param6="" data-param7="" data-param8="" data-param9="" 
+                                    data-rotate="0" data-saveperformance="off" data-slotamount="default" 
+                                    data-thumb="" 
+                                    data-title="Slide Title" data-transition="parallaxvertical">
+
+                                    <img alt="" class="img-responsive rev-slidebg" data-bgfit="cover" data-bgparallax="10" 
+                                                                    data-bgposition="left center" data-bgrepeat="no-repeat" 
+                                                                    data-no-retina="" src="{{product.slide_image.url}}">
+
+                                    <div class="tp-caption"
+                                    data-paddingbottom="[0,0,0,0]"
+                                    data-paddingleft="[0,0,0,0]"
+                                    data-paddingright="[0,0,0,0]"
+                                    data-paddingtop="[0,0,0,0]"
+                                    data-responsive_offset="on"
+                                    data-type="text"
+                                    data-height="none"
+                                    data-width="['600','600','400','290']"
+                                    data-whitespace="normal"
+                                    data-hoffset="['15','15','15','15']"
+                                    data-voffset="['-140','-120','-100','-110']"
+                                    data-x="['right','right','right','right']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-textalign="['top','top','top','top']"
+                                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+
+                                        <h2>{{product.slide_title}}</h2>
+
+                                    </div>
+
+                                    <div class="tp-caption"
+                                    data-paddingbottom="[0,0,0,0]"
+                                    data-paddingleft="[0,0,0,0]"
+                                    data-paddingright="[0,0,0,0]"
+                                    data-paddingtop="[0,0,0,0]"
+                                    data-responsive_offset="on"
+                                    data-type="text"
+                                    data-height="none"
+                                    data-whitespace="normal"
+                                    data-width="['600','600','400','290']"
+                                    data-hoffset="['15','15','15','15']"
+                                    data-voffset="['-10','0','10','-30']"
+                                    data-x="['right','right','right','right']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-textalign="['top','top','top','top']"
+                                    data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                                        <div class="text">{{product.slide_subtitle}}</div>
+                                    </div>
+
+                                    <div class="tp-caption tp-resizeme"
+                                    data-paddingbottom="[0,0,0,0]"
+                                    data-paddingleft="[0,0,0,0]"
+                                    data-paddingright="[0,0,0,0]"
+                                    data-paddingtop="[0,0,0,0]"
+                                    data-responsive_offset="on"
+                                    data-type="text"
+                                    data-height="none"
+                                    data-width="['600','600','400','290']"
+                                    data-whitespace="normal"
+                                    data-hoffset="['15','15','15','15']"
+                                    data-voffset="['90','90','120','80']"
+                                    data-x="['right','right','right','right']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-textalign="['top','top','top','top']"
+                                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                                       
+                                    
+                                    {% if product.slide_link %}
+                                        <a href="{% url 'product-details' LINK=product.slide_link %}" class="theme-btn btn-style-five">
+                                        Lire plus
+                                        </a>
+                                    {% endif %}
+
+                                        <a href="{% url 'nos-contacts' %}" class="theme-btn btn-style-two">
+                                            contactez-nous
+                                        </a>
+                                        
+                                    </div>
+
+                                </li>
+                            
+                            {% endfor %}
+
+                            {% else %}
+
+                                <li data-description="Slide Description" data-easein="default" 
+                                    data-easeout="default" data-fsmasterspeed="1500" 
+                                    data-fsslotamount="7" data-fstransition="fade" 
+                                    data-hideafterloop="0" data-hideslideonmobile="off" 
+                                    data-index="rs-1685" data-masterspeed="default" 
+                                    data-param1="" data-param10="" data-param2="" 
+                                    data-param3="" data-param4="" data-param5="" 
+                                    data-param6="" data-param7="" data-param8="" 
+                                    data-param9="" data-rotate="0" data-saveperformance="off" 
+                                    data-slotamount="default" data-thumb="{% static 'Media/images/main-slider/slide-complementaire.jpg' %}" 
+                                    data-title="Slide Title" data-transition="parallaxvertical">
+
+                                    <img alt="" class="img-responsive rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="left center" 
+                                                                    data-bgrepeat="no-repeat" data-no-retina="" 
+                                                                    src="{% static 'Media/images/main-slider/slide-complementaire.jpg' %}"
+                                    >
+
+                                    <div class="tp-caption"
+                                    data-paddingbottom="[0,0,0,0]"
+                                    data-paddingleft="[0,0,0,0]"
+                                    data-paddingright="[0,0,0,0]"
+                                    data-paddingtop="[0,0,0,0]"
+                                    data-responsive_offset="on"
+                                    data-type="text"
+                                    data-height="none"
+                                    data-width="['600','600','400','290']"
+                                    data-whitespace="normal"
+                                    data-hoffset="['15','15','15','15']"
+                                    data-voffset="['-140','-120','-100','-110']"
+                                    data-x="['right','right','right','right']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-textalign="['top','top','top','top']"
+                                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                                        <h2>La complémentaire</h2>
+                                    </div>
+
+                                    <div class="tp-caption"
+                                    data-paddingbottom="[0,0,0,0]"
+                                    data-paddingleft="[0,0,0,0]"
+                                    data-paddingright="[0,0,0,0]"
+                                    data-paddingtop="[0,0,0,0]"
+                                    data-responsive_offset="on"
+                                    data-type="text"
+                                    data-height="none"
+                                    data-whitespace="normal"
+                                    data-width="['600','600','400','290']"
+                                    data-hoffset="['15','15','15','15']"
+                                    data-voffset="['-10','0','10','-30']"
+                                    data-x="['right','right','right','right']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-textalign="['top','top','top','top']"
+                                    data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                                        <div class="text">Je souscris aujourd'hui pour bénéficier d'une retraite paisible demain.</div>
+                                    </div>
+
+                                    <div class="tp-caption tp-resizeme"
+                                    data-paddingbottom="[0,0,0,0]"
+                                    data-paddingleft="[0,0,0,0]"
+                                    data-paddingright="[0,0,0,0]"
+                                    data-paddingtop="[0,0,0,0]"
+                                    data-responsive_offset="on"
+                                    data-type="text"
+                                    data-height="none"
+                                    data-width="['600','600','400','290']"
+                                    data-whitespace="normal"
+                                    data-hoffset="['15','15','15','15']"
+                                    data-voffset="['90','90','120','80']"
+                                    data-x="['right','right','right','right']"
+                                    data-y="['middle','middle','middle','middle']"
+                                    data-textalign="['top','top','top','top']"
+                                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                                    style="z-index: 7; white-space: nowrap;text-transform:left;">
+                                        {% comment %} <a href="" class="theme-btn btn-style-one">Lire plus</a>&ensp; &nbsp; {% endcomment %}
+                                        <a href="{% url 'nos-contacts' %}" class="theme-btn btn-style-two">Contactez-nous</a>
+                                    </div>
+
+                                </li>
+
+                            {% endif %}
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4">
+            <div class="card-ministre">
+                <img class="img-responsive" src="{% static 'Media/images/ministres/Maitre-Adama-Kamara.png' %}" alt="Photo du Ministre Adama KAMARA"/>
+                <div class="row card-ministre-links">
+                    <div class="card-ministre-infos col-lg-12">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6 ">
+                                <a class="card-ministre-link" href="{% url 'le-ministre' %}">
+                                    <i class="fa fa-pencil-square-o card-ministre-icon"></i> 
+                                    Biographie
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6 col6-2">
+                                <a class="card-ministre-link" href="">
+                                    <i class="fa fa-file-text card-ministre-icon"></i> 
+                                    Déclaration
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <a class="card-ministre-link" href=""><i class="fa fa-microphone card-ministre-icon"></i> 
+                                    Biographie</a>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6 col6-2">
+                                <a class="card-ministre-link" href="mailto:info@emploi.gouv.ci">
+                                    <i class="fa fa-envelope card-ministre-icon"></i> 
+                                    Écrire au Ministre
+                                </a>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <a href="{% url 'le-ministre' %}" >
+                                    <h4 class="card-ministre-link">
+                                        {{ministre.name}} 
+                                    </h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+   
+
+    <!--Featured Section ONE-->
+    <section class="featured-section">
+        <div class="auto-container">
+            <div class="services-outer">
+                <div class="clearfix">
+                    <!--Services Block-->
+                    <div class="services-block col-sm-4 col-xs-12">
+                        <div class="inner-box">
+                            <div class="icon-box">
+                                {% comment %} <span class="icon flaticon-teacher"></span> {% endcomment %}
+                            </div>
+                            <h3>
+                                <a class="" href="{% url 'ministere' %}">LE MINISTÈRE </a>
+                            </h3>
+                            {% comment %} <div class="text">Our professionals are top experts with extensive, practical experience, we build strategies and systems.</div> {% endcomment %}
+                            {% comment %} <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-teacher"></span>
+                                    </div>
+                                    <div class="text">Our professionals are top experts with extensive, practical experience, we build strategies and systems.</div>
+                                    <a class="read-more" href="{% url 'ministere' %}">Lire plus</a>
+                                </div>
+                            </div> {% endcomment %}
+                        </div>
+                    </div>
+
+                    <!--Services Block-->
+                    <div class="services-block col-sm-4 col-xs-12">
+                        <div class="inner-box">
+                            <div class="icon-box">
+                                {% comment %} <span class="icon flaticon-phone-call-1"></span> {% endcomment %}
+                            </div>
+                            <h3>
+                                <a class="read-more" href="{% url 'le-cabinet' %}">LE CABINET </a>
+                            </h3>
+                            {% comment %} <div class="text">Our professionals are top experts with extensive, practical experience, we build strategies and systems.</div> {% endcomment %}
+                            {% comment %} <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-phone-call-1"></span>
+                                    </div>
+                                    <div class="text">Our professionals are top experts with extensive, practical experience, we build strategies and systems.</div>
+                                    <a class="read-more" href="{% url 'le-cabinet' %}">Lire plus</a>
+                                </div>
+                            </div> {% endcomment %}
+                        </div>
+                    </div>
+
+                    <!--Services Block-->
+                    <div class="services-block col-sm-4 col-xs-12">
+                        <div class="inner-box">
+                            <div class="icon-box">
+                                {% comment %} <span class="icon flaticon-honeycomb"></span> {% endcomment %}
+                            </div>
+                            <h3>
+                                <a class="read-more" href="{% url 'directions-generales' %}"> DIRECTIONS GÉNÉRALES</a>                               
+                            </h3>
+                            {% comment %} <div class="text">Our professionals are top experts with extensive, practical experience, we build strategies and systems.</div> {% endcomment %}
+                            {% comment %} <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-honeycomb"></span>
+                                    </div>
+                                    <div class="text">Our professionals are top experts with extensive, practical experience, we build strategies and systems.</div>
+                                    <a class="read-more" href="{% url 'directions-generales' %}">Lire plus</a>
+                                </div> {% endcomment %}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Featured Section ONE-->
+
+    <!--About Section-->
+    <section class="about-section">
+        <div class="auto-container">
+
+            
+            {% if ministere or missions_objectifs %}                
+
+                <div class="row clearfix">
+                    <!--Column-->
+                    {% if ministere %}
+                        <div class="title-column col-md-5 col-sm-12 col-xs-12">
+                            <h2>{{ ministere.title | truncatechars:100 }}:</h2>
+                            <div class="text">
+                                <p>{{ ministere.content | truncatechars:500 }}</p>
+                            </div>
+                            <a href="{% url 'ministere' %}" class="theme-btn btn-style-three">Lire plus</a>
+                        </div>
+                    {% endif %}
+                        
+                    <!--Content Column-->
+                    <div class="content-column col-md-7 col-sm-12 col-xs-12">
+                        <div class="inner-box">
+                            
+                            {% if missions_objectifs %}
+                                <div class="row clearfix">
+                                    <!--Image Column-->
+                                    <div class="image-column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="image">
+                                            <img src="{% static 'Media/images/Ministres/Maitre-Adama-Kamara.jpg' %}" alt="" />
+                                            <div class="image-content">
+                                                <div class="content">
+                                                    <div class="text">
+                                                        {{ ministere.title}}
+                                                        <br><br>
+                                                        <p><a href="{% url 'le-ministre' %}" class="theme-btn btn-style-two" >Lire plus</a></p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Section Content-->
+                                    <div class="section-content col-md-6 col-sm-6 col-xs-12">
+                                        <div class="inner">
+                                            <h2>{{ missions_objectifs.post_title }} </h2>
+                                            <div class="text">
+                                                <p>{{ missions_objectifs.post_content | safe | truncatechars:250 }} </p>
+                                            </div>
+                                            <ul class="list-style-one">
+                                                <li><a href="{% url 'DGE' %}"> Direction Générale de l'Emploi [DGE]</a></li>
+                                                <li><a href="{% url 'DGT' %}"> Direction Générale du travail [DGT]</a></li>
+                                                <li><a href="{% url 'DGPS' %}"> Direction Générale de la Protection Sociale [DGPS].</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>&nbsp;&nbsp;</div>
+                                        <div class="text">
+                                            <p><a href="{% url 'missions-et-objectifs' %}" class="theme-btn btn-style-three">Lire plus</a></p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            {% endif %}
+                            
+                        </div>
+                    </div>
+                </div>
+ 
+            {% endif %}
+
+        </div>
+    </section>
+    <!--End About Section-->
+
+    <!--Featured Section Two-->
+    <section class="featured-section-two">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+                <!--Featured Block Two-->
+                <div class="featured-block-two col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <span class="icon flaticon-business-2"></span>
+                        </div>
+                        <h3><a href="{% url 'le-cabinet' %}">Le Cabinet</a></h3>
+                        {% comment %} <div class="text">We help financial institutions, from banking and insurance to wealth management and securities.</div> {% endcomment %}
+                    </div>
+                </div>
+
+                <!--Featured Block Two-->
+                <div class="featured-block-two col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <span class="icon flaticon-factory"></span>
+                        </div>
+                        <h3><a href="{% url 'decret-d-organisation' %}">Décret d'Organisation</a></h3>
+                        {% comment %} <div class="text">Focused on helping our industrial clients, across all sectors to deliver sustainable results.</div> {% endcomment %}
+                    </div>
+                </div>
+
+                <!--Featured Block Two-->
+                <div class="featured-block-two col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <span class="icon flaticon-air-transport"></span>
+                        </div>
+                        <h3><a href="{% url 'epn' %}">Écoles Publiques Nationales</a></h3>
+                        {% comment %} <div class="text">We help financial institutions, from banking and insurance to wealth management and securities </div> {% endcomment %}
+                    </div>
+                </div>
+
+                <!--Featured Block Two-->
+                <div class="featured-block-two col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <span class="icon flaticon-gas-pump"></span>
+                        </div>
+                        <h3><a href="{% url 'directions-generales' %}">Directions Générales</a></h3>
+                        {% comment %} <div class="text">Statistic supports oil and gas companies' critical decisions across a broad operational functions.</div> {% endcomment %}
+                    </div>
+                </div>
+
+                <!--Featured Block Two-->
+                <div class="featured-block-two col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <span class="icon flaticon-cardiogram"></span>
+                        </div>
+                        <h3><a href="{% url 'documents' %}">Documents Publics</a></h3>
+                        {% comment %} <div class="text">Healthcare companies must identify patients, fuel innovation and reduce the cost and complexity.</div> {% endcomment %}
+                    </div>
+                </div>
+
+                <!--Featured Block Two-->
+                <div class="featured-block-two col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <span class="icon flaticon-global-networking"></span>
+                        </div>
+                        <h3><a href="{% url 'ecoles-specialisees' %}">Écoles Spécialisées</a></h3>
+                        {% comment %} <div class="text">The challenge telecommunications companies is choosing where and how to participate in the markets.</div> {% endcomment %}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Featured Section Two-->
+
+
+    <br><br>
+
+
+    <!--Counter Section-->
+    <section class="counter-section" style="background-image:url({% static '/Media/images/background/2.jpg' %});">
+        <div class="auto-container">
+            <!--Sec Title-->
+            <div class="sec-title light centered">
+                <h2>Le MEPS en Chiffre</h2>
+            </div>
+
+            <div class="row clearfix">
+                <!--Column-->
+                <div class="column count-box col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="inner">
+                        <div class="content">
+                            <div class="icon-box"><span class="icon flaticon-business-3"></span></div>
+                            <div class="count-outer">
+                                <span>+ </span><span class="count-text" data-speed="2500" data-stop="3000">0</span>
+                            </div>
+                            <div class="counter-title">Agents</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Column-->
+                <div class="column count-box col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="inner">
+                        <div class="content">
+                            <div class="icon-box"><span class="icon flaticon-graph-line-screen"></span></div>
+                            <div class="count-outer">
+                                <span>0</span><span class="count-text" data-speed="2000" data-stop="3">0</span>
+                            </div>
+                            <div class="counter-title">Directions Générales</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Column-->
+                <div class="column count-box col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="inner">
+                        <div class="content">
+                            <div class="icon-box"><span class="icon flaticon-prize-badge-with-star-and-ribbon"></span></div>
+                            <div class="count-outer">
+                                <span>0</span><span class="count-text" data-speed="2500" data-stop="9">0</span>
+                            </div>
+                            <div class="counter-title">Directions Centrales</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Column-->
+                <div class="column count-box col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="inner">
+                        <div class="content">
+                            <div class="icon-box"><span class="icon flaticon-smiling-emoticon-square-face"></span></div>
+                            <div class="count-outer">
+                                <span class="count-text" data-speed="3000" data-stop="10">0</span>
+                            </div>
+                            <div class="counter-title">Directions Régionales</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--End Counter Section-->
+    
+    <!-- RECENTS POSTS -->
+    <div class="row">
+        <!--Sec Title 3/4 -->
+        <div class="col-lg-12 col-md-12 sec-title clearfix">
+            <section class="news-section">
+                <div class="auto-container">
+                    <div class="row row-spaced equal-cols">
+                        <div class="col-md-12">
+                            <div>
+                                <h2 class="pull-left">Posts Récents</h2>
+                                <div class="pull-right">
+                                    <a href="{% url 'publications' %}" class="theme-btn btn-style-four">Voir Plus</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        {% if recent_4_posts.count > 0 %}
+        
+                            {% for post_recent in recent_4_posts %}
+
+                                <div class="news-block col-md-3 col-sm-6 col-xs-12" >
+                                    <div class="inner-box  news-style-1">
+                                        <div class="image">
+                                            <a href="{{ post_recent.get_absolute_url }}">
+                                                <img src="{{ post_recent.post_image.url }}" alt="" />
+                                            </a>
+                                        </div>
+                                        <div class="lower-content">
+                                            <div class="post-date text-grey" >{{post_recent.post_published_on|date:"d M Y"}}</div>
+                                            <h3><a href="{{ post_recent.get_absolute_url }}">{{post_recent.post_title|truncatewords:10}}</a></h3>
+                                            {% comment %} <div class="text">{{post_recent.post_content|truncatewords:15}}</div> {% endcomment %}
+                                            <a href="{{ post_recent.get_absolute_url }}" class="theme-btn btn-style-four">Lire plus</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% comment %} <div class="news-block col-md-3 col-sm-6 col-xs-12">
+                                    <div class="inner-box  news-style-1">
+                                        <div class="image">
+                                            <a href="#"><img src="{% static 'images/resource/news-2.jpg' %}" alt="" /></a>
+                                        </div>
+                                        <div class="lower-content">
+                                            <div class="post-date">January 19, 2017</div>
+                                            <h3><a href="#">Supplier Companies are more Solutions Practice to Integrity Challenges</a></h3>
+                                            <div class="text">A supplier's commitment to ethics and compliance should be a key consideration when assembling a supply chain</div>
+                                            <a href="{% url 'publications' %}" class="theme-btn btn-style-four">Lire plus</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-block col-md-3 col-sm-6 col-xs-12">
+                                    <div class="inner-box news-style-1">
+                                        <div class="image">
+                                            <a href="#"><img src="{% static 'images/resource/news-3.jpg' %}" alt="" /></a>
+                                        </div>
+                                        <div class="lower-content">
+                                            <div class="post-date">January 19, 2017</div>
+                                            <h3><a href="#">Supplier Companies are more Solutions Practice to Integrity Challenges</a></h3>
+                                            <div class="text">A supplier's commitment to ethics and compliance should be a key consideration when assembling a supply chain</div>
+                                            <a href="{% url 'publications' %}" class="theme-btn btn-style-four">Lire plus</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-block col-md-3 col-sm-6 col-xs-12">
+                                    <div class="inner-box news-style-1">
+                                        <div class="image">
+                                            <a href="#"><img src="{% static 'images/resource/news-3.jpg' %}" alt="" /></a>
+                                        </div>
+                                        <div class="lower-content">
+                                            <div class="post-date">January 19, 2017</div>
+                                            <h3><a href="#">Supplier Companies are more Solutions Practice to Integrity Challenges</a></h3>
+                                            <div class="text">A supplier's commitment to ethics and compliance should be a key consideration when assembling a supply chain</div>
+                                            <a href="{% url 'publications' %}" class="theme-btn btn-style-four">Lire plus</a>
+                                        </div>
+                                    </div>
+                                </div> {% endcomment %}
+
+                            {% endfor %}
+
+                        {% endif %}
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+    </div>
+    
+    <!--Clients Section-->    
+    <section class="clients-section style-two">
+    	<div class="auto-container">
+        	<!--Sponsors Carousel-->
+            <ul class="sponsors-carousel owl-carousel owl-theme">
+                <li class="slide-item"><figure class="image-box"><a href="https://www.cnps.ci"><img src="{% static 'Media/images/structure-sous-tutelles/logo_cnps.png' %} " alt="logo_cnps"></a></figure></li>
+                <li class="slide-item"><figure class="image-box"><a href="https://www.airms-ci.com"><img src="{% static 'Media/images/structure-sous-tutelles/logo_airms.png' %} " alt="logo_airms"></a></figure></li>
+                <li class="slide-item"><figure class="image-box"><a href="https://macgrae.ci"><img src="{% static 'Media/images/structure-sous-tutelles/logo_cgrae.png' %} " alt="logo_cgrae"></a></figure></li>
+                <li class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'Media/images/structure-sous-tutelles/logo_cnam.png' %} " alt="logo_cnam"></a></figure></li>
+                <li class="slide-item"><figure class="image-box"><a href="https://plateforme-spci.com"><img src="{% static 'Media/images/structure-sous-tutelles/logo_fps-ci.png' %} " alt="logo_fps-ci"></a></figure></li>
+                <li class="slide-item"><figure class="image-box"><a href="https://www.mugef-ci.com"><img src="{% static 'Media/images/structure-sous-tutelles/logo_mugefci.png' %} " alt="logo_mugefci"></a></figure></li>
+                <!-- <li class="slide-item"><figure class="image-box"><a href="#"><img src="Media/images/clients/3.png" alt=""></a></figure></li>
+                <li class="slide-item"><figure class="image-box"><a href="#"><img src="Media/images/clients/4.png" alt=""></a></figure></li> -->
+            </ul>
+        </div>
+    </section>
+    <!--End Clients Section-->
+
+    <!-- FashInfo -->
+    <script type="text/javascript">
+
+        setInterval(function () {
+            document.getElementById('flashInfoTitle').style.opacity =(document.getElementById('flashInfoTitle').style.opacity == 0 ? 1 : 0);
+            },
+            500);
+    </script>
+
+{% endblock %}

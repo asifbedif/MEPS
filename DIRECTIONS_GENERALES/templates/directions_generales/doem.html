@@ -1,0 +1,328 @@
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+{% block TITLE %} {{ doem.short_form_name }} {% endblock TITLE %}
+
+{% block PAGETITLE %} {{ doem.full_form_name }} {% endblock PAGETITLE %}    
+
+
+{% block CONTENT %} 
+    
+    <!--Page Title-->
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{% url 'index' %}">Accueil</a></li>
+                        <li><a href="{% url 'directions-generales' %}">DIRECTIONS GENERALES</a></li>
+                        <li><a href="{% url 'DGE' %}">DGE</a></li>
+                        <li> {{ doem.short_form_name }} </li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="share-icon"><a href="#"><span class="icon fa fa-share-alt"></span> Partager</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+    
+    <!--Sidebar Page Container-->
+    <div class="sidebar-page-container">
+    	<div class="auto-container">
+        	<div class="tabbable row clearfix">
+
+                <!--Sidebar-->
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <aside class="sidebar">                    
+                        <!--Services Category-->
+                        <div class="sidebar-widget services-category">
+                        	<ul class="services-list nav md-pills pills-secondary d-flex flex-column">
+                                {% for k in doem_infos.keys %}
+                                    {% if forloop.first %}
+                            	        <li class="active"><a href="#{{k}}" data-toggle="tab" role="tab"><span class="icon"></span>{{ k }}</a></li>
+                                    {% else %}
+                                        <li class=""><a href="#{{k}}"  data-toggle="tab" role="tab"><span class="icon"></span>{{ k }}</a></li>
+                                    {% endif %}
+                                {% endfor %}     
+                            </ul>
+                        </div>                     
+					</aside>
+                </div>
+            	
+                <!--Content Side / Services Single-->
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                	<div class="services-single">
+                    	<div class="inner-box tab-content content-side">
+                        	
+                            <!-- MISSIONS  Upper Box-->
+                            <div class=" tab-pane fade upper-box in active" id="missions"  role="tabpanel">
+                                <div class="row clearfix">
+                                    <div class="column col-lg-12">
+                                        <div class="upper-text">Missions</div>
+
+                                            {% for mission in doem_infos.missions %}
+
+                                            <ul class="list-style-three">
+                                                <li> {{ mission.title }} </li>
+                                                
+                                                {% empty %}
+
+                                                {% include 'Layouts/_emptyDataMessage.html' %}
+                                            
+                                            {% endfor %}
+                                            
+                                            </ul>
+                                        </div>
+                                    <!-- <div class="column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="image">
+                                            <img src="{% static 'images/resource/services-7.jpg' %}" alt="" />
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!--Upper Box-->
+
+                            <!-- PROJECTS Upper Box-->
+                            <div class="tab-pane fade upper-box" id="projects"  role="tabpanel">
+                                <div class="row clearfix">
+                                    <div class="column col-lg-12">
+                                        <div class="upper-text">Projets</div>
+                                        {% for p in doem_infos.projects %}
+
+                                        <ul class="list-style-three">
+                                            <li> {{ p.project }} </li>
+                                            
+                                            {% empty %}
+
+                                            {% include 'Layouts/_emptyDataMessage.html' %}
+                                        
+                                        {% endfor %}
+                                            
+                                        </ul>
+                                    </div>
+                                    <!-- <div class="column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="image">
+                                            <img src="{% static 'images/resource/services-7.jpg' %}" alt="" />
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!--Upper Box-->
+
+                            <!-- OBJECTIFS Upper Box-->
+                            <div class="tab-pane fade upper-box" id="objectifs"  role="tabpanel">
+                                <div class="row clearfix">
+                                    <div class="column col-lg-12">
+                                        <div class="upper-text">Objectifs</div>
+                                        {% for o in doem_infos.objectifs %}
+
+                                        <ul class="list-style-three">
+                                            <li> {{ o.objectif }} </li>
+                                            
+                                            {% empty %}
+
+                                            {% include 'Layouts/_emptyDataMessage.html' %}
+                                        
+                                        {% endfor %}
+                                            
+                                        </ul>
+                                    </div>
+                                    <!-- <div class="column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="image">
+                                            <img src="{% static 'images/resource/services-7.jpg' %}" alt="" />
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!--Upper Box-->
+
+                            <!-- SOUS-DIRECTIONS Upper Box-->
+                            <div class="tab-pane fade upper-box" id="sousdirections"  role="tabpanel">
+                                <div class="row clearfix">
+                                    <div class="column col-lg-12">
+                                        <div class="upper-text">Sous-directions</div>                                        
+                                        <ul class="list-style-three">
+                                            {% for sd in doem_infos.sousdirections %}
+                                                <li> {{ sd.sous_direction }} </li>
+                                            
+                                            {% empty %}
+
+                                                {% include 'Layouts/_emptyDataMessage.html' %}
+                                        
+                                            {% endfor %}
+                                            
+                                        </ul>
+                                    </div>
+                                    <!-- <div class="column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="image">
+                                            <img src="{% static 'images/resource/services-7.jpg' %}" alt="" />
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!--Upper Box-->
+
+                            <!-- CONTACTS Upper Box-->
+                            <div class="tab-pane fade upper-box" id="contacts"  role="tabpanel">
+                                <div class="row clearfix">
+                                    <div class="column col-lg-12">
+                                        <div class="upper-text">Contactez-nous </div>
+                                        <ul class="accordion-box style-four">
+                                            
+                                            <!--Block-->
+                                            <li class="accordion block active-block">
+                                                <div class="acc-btn active">
+                                                    <div class="icon-outer">
+                                                        <span class="icon icon-plus fa fa-angle-right"></span> 
+                                                    </div>
+                                                <h5>Adresse:</h5>
+                                                </div>
+                                                <div class="acc-content current">
+                                                    <div class="content">                                                        
+                                                        <ul class="info-list">
+                                                            {% for addr in doem_infos.contacts.contactAddress %}
+                                                            <li>
+                                                                <span class="icon flaticon-placeholder-3"></span>
+                                                                {{addr.address}}
+                                                            </li>                                       
+                                                            {% endfor %}
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            
+                                            <!--Block-->
+                                            <li class="accordion block">
+                                                <div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus fa fa-angle-right"></span> </div><h5>Téléphone:</h5></div>
+                                                <div class="acc-content">
+                                                    <div class="content">
+                                                        <ul class="info-list">
+                                                            {% for t in doem_infos.contacts.contactTels %}
+                                                            <li>
+                                                                <span class="icon flaticon-telephone"></span>
+                                                                <small>{{ t.tel }}</small>                                                                
+                                                            </li>                                     
+                                                            {% endfor %}                                                           
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <!--Block-->
+                                            <li class="accordion block">
+                                                <div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus fa fa-angle-right"></span> </div><h5>Courier :</h5></div>
+                                                <div class="acc-content">
+                                                    <div class="content">
+                                                        <ul class="info-list">
+                                                            {% for e in doem_infos.contacts.contactEmails %}
+                                                            <li><span class="icon flaticon-e-mail-envelope"></span>
+                                                                {{ e.email }}
+                                                            </li>                                      
+                                                            {% endfor %}   
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <!--Block-->
+                                            <li class="accordion block">
+                                                <div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus fa fa-angle-right"></span> </div><h5> Horaire :</h5></div>
+                                                <div class="acc-content">
+                                                    <div class="content">
+                                                        <ul class="info-list">
+                                                            {% for h in doem_infos.contacts.contactHoraires %}
+                                                            <li><span class="icon fa fa-clock-o"></span>&nbsp; 
+                                                                {{ h.horaire }}
+                                                            </li>
+                                                            {% endfor %}  
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <!-- <div class="column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="image">
+                                            <img src="{% static 'images/resource/services-7.jpg' %}" alt="" />
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!--Upper Box-->
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="image">
+                        <img src="{{ doem.image.url }}" alt="" width="100%"/>
+                    </div>
+                </div>
+            </div>
+
+            <!--Services Block Seven-->
+            <div class="col-md-4 fullWidth-25 sec-title clearfix">
+                <section class="row clients-section top-border">
+                    <div class="auto-container col-lg-12">
+                        <div class="pull-left">   
+                            <h2>Découvrir aussi</h2>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        <div class="row clearfix">
+
+            <div class="col-lg-12">
+                
+                <div class="row">            
+                    <!--Services Block Seven-->
+                    <div class="services-block-seven col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <div class="inner">
+                            <div class="icon-box"><span class="icon flaticon-honeycomb"></span></div>
+                            <h3><a href="{% url 'dspe' %}">D.S.P.E</a></h3>
+                            <div class="text">
+                            Directions de l'Observatoire et des Métiers
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <!--Services Block Seven-->
+                    <div class="services-block-seven col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <div class="inner">
+                            <div class="icon-box"><span class="icon flaticon-international-search-symbol"></span></div>
+                            <h3><a href="{% url 'dsepe' %}">D.S.E.P.E</a></h3>
+                            <div class="text">
+                            Direction du Suivi et Evaluation de la Politique de l’Emploi(DSEPE).
+                        </div>
+                        </div>
+                    </div>
+                     <!--Services Block Seven-->
+                    <!-- <div class="services-block-seven col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <div class="inner">
+                            <div class="icon-box"><span class="icon flaticon-honeycomb"></span></div>
+                            <h3><a href="{% url 'cnps' %}">C.N.P.S</a></h3>
+                            <div class="text">
+                            Caisse Nationale de Prevoyance Sociale
+                        </div>
+                        </div>
+                    </div> -->
+                </div>
+
+                
+            </div>
+            
+        </div>                     
+        <br><br>
+                    
+    </div>
+</div>
+    <!--End Blog Grid Section-->
+    
+{% endblock %}

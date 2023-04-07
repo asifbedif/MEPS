@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "image": "Ministers/dge_logo_K631GbV.jpg",
+        "parent": "DIRECTIONS_GENERALES",
+        "sigle": "DGE",
+        "slug": "dge",
+        "title": "Direction Générale de l'Emploi"
+    },
+    {
+        "id": 2,
+        "image": "Ministers/dgps_logo_BfLO9DQ.jpg",
+        "parent": "DIRECTIONS_GENERALES",
+        "sigle": "DGPS",
+        "slug": "dgps",
+        "title": "Direction Générale de laProtection Sociale"
+    },
+    {
+        "id": 3,
+        "image": "Ministers/dgt_logo_TaXUlSg.jpg",
+        "parent": "DIRECTIONS_GENERALES",
+        "sigle": "DGT",
+        "slug": "dgt",
+        "title": "Direction Générale du Travil"
+    },
+    {
+        "id": 4,
+        "image": "Ministers/images_adam.jpg",
+        "parent": "MEPS",
+        "sigle": "le-ministre",
+        "slug": "le-ministre",
+        "title": "Le Ministre"
+    }
+]

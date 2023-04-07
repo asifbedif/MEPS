@@ -1,0 +1,200 @@
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+{% block TITLE %}Communiqués{% endblock %}
+
+{% block PAGETITLE %}Communiqués{% endblock PAGETITLE %}
+
+{% block CONTENT %} 
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url(images/background/6.jpg);">
+        <div class="auto-container">
+            <h1>Liste des Communiqués du MEPS</h1>
+        </div>
+    </section>
+    
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{% url 'index' %}">Accueil</a></li>
+                        <li>Communiqués</li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="Partager-icon"><a href="#"><span class="icon fa fa-Partager-alt"></span> Partager</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+    
+    <!--Case Section-->
+    <section class="case-section">
+    	<div class="auto-container">
+        
+        	<div class="row clearfix">
+            	
+                <!--Case Block-->
+                <div class="case-block col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img src="{% static 'Communiques/Du_01-juin-2022_N_1053.jpg' %}" alt="" height="300" width="30" />
+                        </div>
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                
+                                <a href="{% static 'Communiques/Du_01-juin-2022_N_1053.jpg' %}" class="search-box lightbox-image"  data-fancybox-group="case-gallery"><span class="icon fa fa-search-plus"></span></a>
+                                <a href="{% static 'doc_site/DSST/ANNEXE II_RAP 2020 DSST.pdf' %}" class="case-link"><span class="icon flaticon-pdf"></span>&nbsp;&nbsp;Télécharger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Case Block-->
+                <div class="case-block col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img src="{% static 'Communiques/Fête National 2021 - Jour Fériers.jpeg' %}" alt="" height="300" width="30" />
+                        </div>
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <a href="{% static 'Communiques/Fête National 2021 - Jour Fériers.jpeg' %}" class="search-box lightbox-image"  data-fancybox-group="case-gallery"><span class="icon fa fa-search-plus"></span>Aperçu</a>
+                                <a href="{% static 'Communiques/Fête National 2021 - Jour Fériers.jpeg' %}" class="case-link"><span class="icon flaticon-pdf"></span>&nbsp;&nbsp;Télécharger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Case Block-->
+                <div class="case-block col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img src="{% static 'Communiques/Activités Commémoratives De La Fête Du Travail.jpeg' %}" alt="" height="300" width="30" />
+                        </div>
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <a href="{% static 'Communiques/Activités Commémoratives De La Fête Du Travail.jpeg' %}" class="search-box lightbox-image"  data-fancybox-group="case-gallery"><span class="icon fa fa-search-plus"></span>Aperçu</a>
+                                <a href="{% static 'Communiques/Activités Commémoratives De La Fête Du Travail.jpeg' %}" class="case-link">&nbsp;&nbsp;Télécharger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Case Block-->
+                <div class="case-block col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img src="{% static 'Communiques/La Commémoration Du Maouloud 2021.jpeg' %}" alt="" height="300" width="30" />
+                        </div>
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <a href="{% static 'Communiques/La Commémoration Du Maouloud 2021.jpeg' %}" class="search-box lightbox-image"  data-fancybox-group="case-gallery"><span class="icon fa fa-search-plus"></span>Aperçu</a>
+                                <a href="{% static 'Communiques/La Commémoration Du Maouloud 2021.jpeg' %}" class="case-link">&nbsp;&nbsp;Télécharger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Case Block-->
+                <div class="case-block col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img src="{% static 'Communiques/Journée Nationale De La Paix 2022.jpeg' %}" alt="" height="300" width="30" />
+                        </div>
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <a href="{% static 'Communiques/Journée Nationale De La Paix 2022.jpeg' %}" class="search-box lightbox-image"  data-fancybox-group="case-gallery"><span class="icon fa fa-search-plus"></span>Aperçu</a>
+                                <a href="{% static 'Communiques/Journée Nationale De La Paix 2022.jpeg' %}" class="case-link">&nbsp;&nbsp;Télécharger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Case Block-->
+                <div class="case-block col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img src="{% static 'Communiques/Nuit du Destin 2022.jpeg' %}" alt="" height="300" width="30" />
+                        </div>
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <a href="{% static 'Communiques/Nuit du Destin 2022.jpeg' %}" class="search-box lightbox-image"  data-fancybox-group="case-gallery"><span class="icon fa fa-search-plus"></span>Aperçu</a>
+                                <a href="{% static 'Communiques/Nuit du Destin 2022.jpeg' %}" class="case-link">&nbsp;&nbsp;Télécharger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Case Block-->
+                <div class="case-block col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img src="{% static 'Communiques/N°00898__du__27-05-2020.jpeg' %}" alt="" height="300" width="30" />
+                        </div>
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <a href="{% static 'Communiques/N°00898__du__27-05-2020.jpeg' %}" class="search-box lightbox-image"  data-fancybox-group="case-gallery"><span class="icon fa fa-search-plus"></span>Aperçu</a>
+                                <a href="{% static 'Communiques/N°00898__du__27-05-2020.jpeg' %}" class="case-link">&nbsp;&nbsp;Télécharger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Case Block-->
+                <div class="case-block col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img src="{% static 'Communiques/N°00910__du__29-05-2020.jpeg' %}" alt="" height="300" width="30" />
+                        </div>
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <a href="{% static 'Communiques/N°00910__du__29-05-2020.jpeg' %}" class="search-box lightbox-image"  data-fancybox-group="case-gallery"><span class="icon fa fa-search-plus"></span>Aperçu</a>
+                                <a href="{% static 'Communiques/N°00910__du__29-05-2020.jpeg' %}" class="case-link">&nbsp;&nbsp;Télécharger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Case Block-->
+                <div class="case-block col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img src="{% static 'Communiques/N°1227.jpeg' %}" alt="" height="300" width="30" />
+                        </div>
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <a href="{% static 'Communiques/N°1227.jpeg' %}" class="search-box lightbox-image"  data-fancybox-group="case-gallery"><span class="icon fa fa-search-plus"></span>Aperçu</a>
+                                <a href="{% static 'Communiques/N°1227.jpeg' %}" class="case-link">&nbsp;&nbsp;Télécharger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="text-center">
+            	
+                <!-- Styled Pagination -->
+                <div class="styled-pagination">
+                    <ul class="clearfix">
+                        <li><a class="prev" href="#"><span class="fa fa-caret-left"></span></a></li>
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a class="next" href="#"><span class="fa fa-caret-right"></span></a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+    <!--End Case Section-->
+    
+    {% endblock %}

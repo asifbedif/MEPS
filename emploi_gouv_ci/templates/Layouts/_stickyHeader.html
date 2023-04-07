@@ -1,0 +1,21 @@
+{% load static %}
+
+<div class="sticky-header">
+    <div class="auto-container clearfix">
+        <!--Logo-->
+        <div class="logo pull-left">
+            <a href="{% url 'index' %}" title="meps">
+                {% comment %} <img src="{% static 'Media/images/logo/Logo-MEPS-180x50-stickyMenu.png' %}" alt="Logo du MEPS" title="meps"> {% endcomment %}
+                <img class="img-responsive" src="{% static 'Media/images/logo/logo-meps-223x208.png' %}" width='50' alt="Logo du MEPS" title="meps">
+                
+            </a>
+        </div>
+
+        <!--Right Col-->
+        <div class="">
+            <!-- Main Menu -->
+            {% include 'Layouts/_nav.html' %}
+            <!-- End Main Menu -->
+        </div>
+    </div>
+</div>

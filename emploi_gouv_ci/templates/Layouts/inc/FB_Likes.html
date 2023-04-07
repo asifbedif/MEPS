@@ -1,0 +1,10 @@
+
+<!-- Facebook like button code -->
+
+<br>
+
+<hr>
+<div class="text">Cet article vous a-t-il été utile ?</div>
+
+<div class="fb-like" data-href="http://{{ request.META.HTTP_HOST }}{% url 'actualite_details' YEAR=single_post.post_published_on|date:'Y' MONTH=single_post.post_published_on|date:'m' DAY=single_post.post_published_on|date:'d' SLUG=single_post.post_slug %}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-colorscheme="dark" data-share="true">
+</div>

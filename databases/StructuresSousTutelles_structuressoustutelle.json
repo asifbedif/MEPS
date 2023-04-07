@@ -1,0 +1,38 @@
+[
+    {
+        "address": "Plateau, Immeuble Les Arcades Avenue Franchet d'Esperey, non loin de l'immeuble La Pyramide",
+        "bp": "01 BP 317 Abidjan 01",
+        "email": null,
+        "fax": "",
+        "full_form_name": "Mutuelle générale des fonctionnaires et agents de l'État",
+        "id": 1,
+        "logo": "directions/logo_mugefci.png",
+        "phone": "20 25 74 11",
+        "post_created_on": "2023-02-27 16:38:55.667528",
+        "post_modified_on": "2023-02-27 16:39:28.774387",
+        "post_published_on": "2023-02-27 16:34:55",
+        "post_status": "published",
+        "short_form_name": "MUGEF-CI",
+        "slug": "mugefci",
+        "tel": "20 25 74 00",
+        "website": "https://www.mugef-ci.com/"
+    },
+    {
+        "address": "Avenue Lamblin, Immeuble l'Equateur",
+        "bp": "04 BP 2930 Abidjan 04",
+        "email": "infos@pfs-yopougon.net",
+        "fax": "",
+        "full_form_name": "Institution de prévoyance sociale- caisse Nationale d'assurance Maladie.",
+        "id": 2,
+        "logo": "directions/logo_cnam.png",
+        "phone": "",
+        "post_created_on": "2023-02-27 16:42:49.463343",
+        "post_modified_on": "2023-02-27 16:42:49.463343",
+        "post_published_on": "2023-02-27 16:40:04",
+        "post_status": "published",
+        "short_form_name": "IPS-CNAM",
+        "slug": "ips-cnam",
+        "tel": "27 20 22 55 00",
+        "website": "https://www.annuaireci.com/cote-divoire/fr-FR/ips--cnam-institution-de-prevoyance-sociale"
+    }
+]

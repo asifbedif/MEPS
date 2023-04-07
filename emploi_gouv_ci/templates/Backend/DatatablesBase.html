@@ -1,0 +1,149 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.urbanui.com/melody/template/pages/tables/data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Sep 2018 06:08:40 GMT -->
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>MEPS | Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="{% static 'backend/vendors/iconfonts/font-awesome/css/all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'backend/vendors/css/vendors.bundle.base.css' %}">
+  <link rel="stylesheet" href="{% static 'backend/vendors/css/vendors.bundle.addons.css' %}">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{% static 'backend/css/style.css' %}">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="{% static 'backend/images/favicon.png' %}" />
+</head>
+
+<body>
+  <div class="container-scroller">
+
+    <!-- partial:partials/_navbar.html -->
+    {% include 'Backend/Partials/_navbar.html' %}
+    <!-- partial -->
+
+     <div class="container-fluid page-body-wrapper">
+
+   <!-- partial:partials/_settings-panel.html -->      
+        {% include 'Backend/Partials/_settings-panel.html' %}        
+        <!-- partial -->
+      
+        <!-- partial:partials/_sidebar.html -->
+      {% include 'Backend/Partials/_sidebar.html' %}
+      <!-- partial -->
+      
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="page-header">
+            <h3 class="page-title">
+              
+              {% block PAGE_TITLE %} {% endblock PAGE_TITLE %}
+                
+            </h3>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#">                  
+                    {% block breadcrumb_parent %} {% endblock breadcrumb_parent %}
+                  </a>
+                </li>
+                
+                <li class="breadcrumb-item active" aria-current="page">
+
+                    {% block breadcrumb %} {% endblock breadcrumb %}
+
+                </li>
+
+              </ol>
+            </nav>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div  class="row card-title">
+                <ul class="col-12" style="list-style:none">
+                  <li  class="float-left">
+                    <h4> 
+                      {% block tbale_name %} {% endblock tbale_name %}
+                     </h4>
+                  </li>
+                  <li class=" float-right">
+                     <a class="nav-link" href=" {% block btn_add_url %}{% endblock btn_add_url %} ">
+                        <span class="btn btn-primary">
+                          <i class=" 
+                          {% block btn_add_icon %}{% endblock btn_add_icon %}
+                             mx-2"></i>
+                          
+                          {% block btn_add_text %}
+                            
+                          {% endblock btn_add_text %}
+                            
+                        </span>
+                      </a> 
+                  </li>
+                </ul>              
+                
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="table-responsive">
+                    <table id="order-listing" class="table">
+                      <thead>
+                        <tr class="bg-primary text-white">
+                            
+                            {% block thead %}{% endblock thead %}
+                              
+                        </tr>
+                      </thead>
+                      <tbody>
+                        
+                        {% block TABLE_BODY %}
+                            
+                        {% endblock TABLE_BODY %}
+                            
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        
+        <!-- partial:partials/_sidebar.html -->
+        {% include 'Backend/Partials/_footer.html' %}
+        <!-- partial -->
+
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="{% static 'backend/vendorss/js/vendors.bundle.base.js' %}"></script>
+  <script src="{% static 'backend/vendorss/js/vendors.bundle.addons.js' %}"></script>
+  <!-- endinject -->
+  <!-- inject:js -->
+  <script src="{% static 'backend/js/off-canvas.js' %}"></script>
+  <script src="{% static 'backend/js/hoverable-collapse.js' %}"></script>
+  <script src="{% static 'backend/js/misc.js' %}"></script>
+  <script src="{% static 'backend/js/settings.js' %}"></script>
+  <script src="{% static 'backend/js/todolist.js' %}"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="{% static 'backend/js/data-table.js' %}"></script>
+  <!-- End custom js for this page-->
+</body>
+
+
+<!-- Mirrored from www.urbanui.com/melody/template/pages/tables/data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Sep 2018 06:08:41 GMT -->
+</html>

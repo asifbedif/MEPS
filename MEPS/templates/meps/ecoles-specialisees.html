@@ -1,0 +1,317 @@
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+{% block TITLE %}Écoles Spécialisées{% endblock TITLE %}
+
+{% block PAGETITLE %}Écoles Spécialisées{% endblock %}
+
+{% block CONTENT %}
+
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="/">Accueil</a></li>
+                        <li>Écoles Spécialisées</li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="share-icon"><a href="#"><span class="icon fa fa-share-alt"></span> Partager</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+    
+    <!--Blog Grid Section-->
+    <section class="blog-grid-section">
+        <div class="auto-container">            
+            <div class="row clearfix equal-cols">               
+                <!--News Block-->
+
+                {% for ecole in ecoles %}
+
+                     <!--Welcome Block-->
+                    <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="icon-box">
+                                {% comment %} <span class="icon flaticon-teacher"></span> {% endcomment %}
+                                <img src="{{ ecole.logo.url }}" width="50">
+                            </div>
+                            <h3>{{ ecole.short_form_name }}</h3>
+                            <div class="text">{{ ecole.full_form_name }}</div>
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        {% comment %} <span class="icon flaticon-teacher"></span> {% endcomment %}
+                                        <img src="{{ ecole.logo.url }}" width="50">
+                                    </div>
+                                    <div class="text">
+                                        {% if ecole.address %}
+                                            {{ ecole.address|title }} <br>
+                                        {% endif %}
+                                
+                                        {% if ecole.bp %}
+                                            {{ ecole.bp|title }}<br>
+                                        {% endif %}
+
+                                        {% if ecole.tel %}
+                                            <strong>Tel:&nbsp;</strong>{{ ecole.tel }}<br>
+                                        {% endif %}
+
+                                        {% if ecole.phone %}
+                                            <strong>Phone:&nbsp;</strong>&nbsp;{{ ecole.phone }}<br>
+                                        {% endif %}
+
+                                        {% if ecole.email %}
+                                            <strong>Email:&nbsp;</strong>&nbsp;{{ ecole.email }}<br>
+                                        {% endif %}
+                                        
+                                        {% if ecole.fax %}
+                                            <strong>Fax:&nbsp;</strong>{{ ecole.fax }}<br>
+                                        {% endif %}
+
+                                    </div>
+
+                                    {% if ecole.website|lower %}
+                                        <a class="read-more" target="_blank" href="{{ ecole.website }}">Lire plus</a><br>
+                                    {% endif %}
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                {% empty %}
+                    {% include 'Layouts/_emptyDataMessage.html' %}
+                {% endfor %}
+    
+                <!-- End Welcome Block -->
+                
+
+                <!--Welcome Block-->
+                {% comment %} <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                                    <span class="icon flaticon-teacher"></span>
+                                </div>
+                                <h3>INIPA</h3>
+                                <div class="text">Institut national Ivoirien pour la Promotion des Aveugles </div>
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="icon-box">
+                                            <span class="icon flaticon-teacher"></span>
+                                        </div>
+                                        <div class="text">Abidjan, Yopougon, entre le carrefour sable et le feu tricolore de Bel Air</div>
+                                        <a class="read-more" target="_blank" href="https://inipa.webs.com">Lire plus</a>
+                                    </div>
+                                </div>
+                        </div>
+                </div> {% endcomment %}
+                <!-- End Welcome Block -->
+                
+                <!--Welcome Block-->
+                {% comment %} <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                    <div class="icon-box">
+                                <span class="icon flaticon-teacher"></span>
+                            </div>
+                            <h3>ECIS</h3>
+                            <div class="text">Ecole Ivoirienne Pour Les Sourds</div>
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-teacher"></span>
+                                    </div>
+                                    <div class="text">Abidjan, Yopougon Sable,Gare Gabriel. 03 BP 806 Abidjan 03.<br>Tèl: 20 01 20 12</div>
+                                    <!-- <a class="read-more" href="le-ministere.html">Lire plus</a> -->
+                                </div>
+                            </div>
+                    </div>
+                </div> {% endcomment %}
+                <!-- End Welcome Block -->
+                
+                <!--Welcome Block-->
+                {% comment %} <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                    <div class="icon-box">
+                                <span class="icon flaticon-teacher"></span>
+                            </div>
+                            <h3>CEFIAT</h3>
+                            <div class="text">Centre d'Educations Spécialiséée Et d'Insertion des Aveugles de TOUMODI</div>
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-teacher"></span>
+                                    </div>
+                                    <div class="text">Face à la Résidence du Préfet, dans le Prolongement du centre Sociale.<br>Tèl: 07 78 79 48 49</div>
+                                    <!-- <a class="read-more" href="le-ministere.html">Lire plus</a> -->
+                                </div>
+                            </div>
+                    </div>
+                </div> {% endcomment %}
+                <!-- End Welcome Block -->
+            
+            </div>
+            
+        </div>
+    </section> 
+    <!--End Blog Grid Section-->
+    
+    <!--Info Section-->
+    {% comment %} <section class="blog-grid-section">
+        <div class="auto-container">            
+            <div class="row clearfix">               
+                <!--News Block-->
+
+                <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                                    <span class="icon flaticon-teacher"></span>
+                                </div>
+                                <h3>CESREF</h3>
+                                <div class="text">Centre d'Educations Spécialiséée Et de Réeducation Fonctionnelle</div>
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="icon-box">
+                                            <span class="icon flaticon-teacher"></span>
+                                        </div>
+                                        <div class="text">Non loin du groupe Scolaire Catholique Leguier.<br> Tèl: 22 49 02 71</div>
+                                        <!-- <a class="read-more" href="le-ministere.html">Lire plus</a> -->
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+                <!-- End Welcome Block -->
+                
+                <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                    <div class="icon-box">
+                                <span class="icon flaticon-teacher"></span>
+                            </div>
+                            <h3>IRFAM</h3>
+                            <div class="text">Institut de Réhabilitation et de Formation Des Aveugles de Mont Carmel </div>
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-teacher"></span>
+                                    </div>
+                                    <div class="text">Tèl: 87 96 97 76</div>
+                                    <!-- <a class="read-more" href="le-ministere.html">Lire plus</a> -->
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- End Welcome Block -->
+                
+                <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                    <div class="icon-box">
+                                <span class="icon flaticon-teacher"></span>
+                            </div>
+                            <h3>BICE</h3>
+                            <div class="text">Bureau International Catholique Pour l'Enfance.</div>
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-teacher"></span>
+                                    </div>
+                                    <div class="text">Abidjan Plateau 01 BP 1721 Abidjan<br>Tèl: 57 70 70 70</div>
+                                    <!-- <a class="read-more" href="le-ministere.html">Lire plus</a> -->
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- End Welcome Block -->
+            
+            </div>
+                
+            <!--Pagination Box-->
+            
+            <!--End Pagination Box-->
+            
+        </div>
+    </section> {% endcomment %}
+    <!--End Info Section-->
+    <!--Info Section-->
+    {% comment %} <section class="blog-grid-section">
+        <div class="auto-container">            
+            <div class="row clearfix">               
+                <!--News Block-->
+
+                <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                                    <span class="icon flaticon-teacher"></span>
+                                </div>
+                                <h3>CRSM</h3>
+                                <div class="text">Centre de Rééducation Santé Magdeleine</div>
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="icon-box">
+                                            <span class="icon flaticon-teacher"></span>
+                                        </div>
+                                        <div class="text">Cocody. Tèl: 20 37 43 55</div>
+                                        <!-- <a class="read-more" href="le-ministere.html">Lire plus</a> -->
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+                <!-- End Welcome Block -->
+                
+                <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                    <div class="icon-box">
+                                <span class="icon flaticon-teacher"></span>
+                            </div>
+                            <h3>Fraiches Rosées</h3>
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-teacher"></span>
+                                    </div>
+                                    <div class="text">Cocody Résidence Karl, Rue Macelin Yacé. 08 BP 130 Abidjan 08. <br>Tèl: 22 48 77 48 / 44 81 44 81</div>
+                                    <!-- <a class="read-more" href="le-ministere.html">Lire plus</a> -->
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- End Welcome Block -->
+                
+                <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                    <div class="icon-box">
+                                <span class="icon flaticon-teacher"></span>
+                            </div>
+                            <h3>Institut Frères de la Charité de Yamoussoukro</h3>
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-teacher"></span>
+                                    </div>
+                                    <div class="text">BP 2473 Yamoussoukro. Tèl : 0767 46 02<br>Email : ngendahimana@gmail.com</div>
+                                    <!-- <a class="read-more" href="le-ministere.html">Lire plus</a> -->
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- End Welcome Block -->
+            
+            </div>
+            
+        </div>
+    </section> {% endcomment %}
+    <!--End Info Section-->
+    
+{% endblock CONTENT %}

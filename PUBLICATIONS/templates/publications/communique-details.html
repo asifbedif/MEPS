@@ -1,0 +1,196 @@
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+{% load humanize %}
+
+{% block TITLE %}
+    {{ communique.post_title }}
+{% endblock %}
+
+{% block PAGETITLE %}
+    {{ communique.post_title|lower|title }} 
+{% endblock PAGETITLE %}
+
+
+{% block EXTRA_CSS %}
+<style>
+
+    .sidebar .popular-posts .post{
+        margin-bottom: 0;
+    }
+
+    .iframe-container{
+        position:relative;
+        width:100%;
+        overflow: hidden;
+        padding-top: 75%;
+    }
+
+    .iframe-responsiveness{
+       position: absolute;
+       top: 0;
+       left: 0;
+       bottom: 0;
+       right: 0;
+       width: 100%;
+       height: 100%;
+       border: 2px solid grey; 
+    }
+
+    .news-block-two .inner-box .lower-content .content .text {
+        min-height: 0px;
+    }
+    
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 767px){
+
+    .iframe-container{
+		display: none;
+	}
+
+
+</style>        
+{% endblock EXTRA_CSS %}
+
+
+{% block CONTENT %} 
+    
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="{% url 'communiques' %}">Communiqués</a></li>
+                        <li>{{ communique.post_title|lower|title|truncatewords:5 }}</li>
+                    </ul>
+                </div>               
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+    
+    <!--Sidebar Page Container-->
+    <div class="sidebar-page-container">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Content Side / Blog Single-->
+                <div class="content-side col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                	<div class="blog-single">
+                    	<div class="inner-box">
+                            <div class="lower-content mb-5">
+                                <h2 style="color:#008000;">{{ communique.post_title|upper }}</h2>
+                            </div>                        	
+                            <ul class="post-info">
+                            	{% comment %} <li>Publié {{communique.post_published_on|date:"d M Y"}} à {{communique.post_published_on|time:"H:i"}}</li> {% endcomment %}
+                            	<li class="text"><span style="color:grey;">Publié {{communique.post_published_on|naturalday}} à {{communique.post_published_on|naturaltime}}</span></li>
+                                <li>Catégorie: <span style="color:grey;">{{ communique.com_category }}</span></li>
+                                <li>Sous-Catégorie:  <span style="color:grey;">{{ communique.com_sous_category }}</span></li>
+                            </ul>
+                            
+                            <div class="iframe-container">
+								<iframe class="iframe-responsiveness" src="{{ communique.post_pdf.url }}"></iframe>                               
+                        	</div>
+                            <div>
+                                <a href="{{communique.post_pdf.url }}" class="read-more" target=""> Télécharger</a>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Sidebar-->
+                <div class="sidebar-side col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <aside class="sidebar">
+						
+                        <!-- Search Form -->
+                        {% comment %} <div class="sidebar-widget search-box">
+                        	<form method="get" action="{% url 'search-results' %}">
+                                {% csrf_token %}
+                                <div class="form-group">
+                                    <input type="search" name="to_search" value="" placeholder="Rechercher.." required>
+                                    <button type="submit"><span class="icon fa fa-search"></span></button>
+                                </div>
+                            </form>
+                        </div>
+                         {% endcomment %}
+                        <!--Blog Category Widget-->
+                        {% comment %} <div class="sidebar-widget sidebar-blog-category">
+                            <div class="sidebar-title">
+                                <h2>Liens utiles</h2>
+                            </div>
+                            <ul class="blog-cat">
+                                <li><a href="#">Business Plan</a></li>
+                                <li><a href="#">Consulting</a></li>
+                                <li><a href="#">Finance & Accounting</a></li>
+                                <li><a href="#">Management</a></li>
+                                <li><a href="#">Competitive Research</a></li>
+                            </ul>
+                        </div> {% endcomment %}
+
+                        <!-- Popular Posts -->
+                        <div class="sidebar-widget popular-posts">
+                            <div class="sidebar-title"><h2>Communiqués récents</h2></div>
+                            
+                            {% if recent_communiques.count > 0 %}
+                                
+                                {% for communique_recent in recent_communiques %}
+                                    <article class="post">
+                                        <figure class="post-thumb">
+                                        <a href="{% url 'communique_details' ID=communique_recent.id YEAR=communique_recent.post_published_on|date:'Y' MONTH=communique_recent.post_published_on|date:'m' DAY=communique_recent.post_published_on|date:'d' SLUG=communique_recent.post_slug %}" class="read-more" target="_blank">
+                                            <div class="icon-box" style="">
+                                                <span class="icon flaticon-pdf " style="font-size:50px; color:red; width:150px; height:50px;"></span>
+                                            </div>
+                                        </a></figure>
+                                        {% comment %} <div class="text"><a href="{{ post_recent.get_absolute_url }}">{{communique_recent.post_title|truncatewords:10}}</a></div> {% endcomment %}
+                                        <a href="{% url 'communique_details' ID=communique_recent.id YEAR=communique_recent.post_published_on|date:'Y' MONTH=communique_recent.post_published_on|date:'m' DAY=communique_recent.post_published_on|date:'d' SLUG=communique_recent.post_slug %}" class="read-more" target="">
+                                            <h4> {{communique_recent.post_title|truncatewords:5|lower|capfirst}} </h4>
+                                        </a>
+                                        <div class="text">{{communique_recent.post_published_on|date:"d M Y"}}</div>
+                                    </article>
+
+                                {% endfor %}
+
+                            {% endif %}                            
+                            
+                            
+                        </div>
+                        
+                        <!-- Gallery Widget-->
+                        {% comment %} <div class="sidebar-widget gallery-widget">
+                            <div class="sidebar-title">
+                            	<h2>Instagram</h2>
+                            </div>
+                            <div class="clearfix">
+                            	<figure class="image"><a href="{% static '/gallery/gallery-1.jpg' %}" class="lightbox-image"><img src="{% static 'images/resource/sidebar-gallery-1.jpg' %}" alt=""></a></figure>
+                                <figure class="image"><a href="{% static '/gallery/gallery-2.jpg' %}" class="lightbox-image"><img src="{% static 'images/resource/sidebar-gallery-2.jpg' %}" alt=""></a></figure>
+                                <figure class="image"><a href="{% static '/gallery/gallery-3.jpg' %}" class="lightbox-image"><img src="{% static 'images/resource/sidebar-gallery-3.jpg' %}" alt=""></a></figure>
+                                <figure class="image"><a href="{% static '/gallery/gallery-4.jpg' %}" class="lightbox-image"><img src="{% static 'images/resource/sidebar-gallery-4.jpg' %}" alt=""></a></figure>
+                                <figure class="image"><a href="{% static '/gallery/gallery-5.jpg' %}" class="lightbox-image"><img src="{% static 'images/resource/sidebar-gallery-5.jpg' %}" alt=""></a></figure>
+                                <figure class="image"><a href="{% static '/gallery/gallery-6.jpg' %}" class="lightbox-image"><img src="{% static 'images/resource/sidebar-gallery-6.jpg' %}" alt=""></a></figure>
+                            </div>
+                        </div> {% endcomment %}
+                        
+                        <!-- Popular Tags -->
+                        <div class="sidebar-widget popular-tags">
+                            <div class="sidebar-title"><h2>Tags</h2></div>
+                            <a href="#">Jours fériés</a>
+                            <a href="#">Cérémonies</a>
+                            <a href="#">Inaugurations</a>
+                            <a href="#">Récompenses</a>
+                            <a href="#">Médaille d'honneur</a>
+                        </div>
+                        
+					</aside>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--End Blog Grid Section-->
+    
+{% endblock %}

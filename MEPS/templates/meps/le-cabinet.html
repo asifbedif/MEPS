@@ -1,0 +1,410 @@
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+{% load roman_tags %}
+
+{% block TITLE %} Cabinet {% endblock %}
+
+{% block PAGETITLE %} {{ cabinet.post_title }} {% endblock PAGETITLE %}
+
+{% block CONTENT %}
+
+  <!--Page Info-->
+  <section class="page-info">
+    <div class="auto-container">
+      <div class="inner-container clearfix">
+        <div class="pull-left">
+          <ul class="bread-crumb clearfix">
+            <li><a href="{% url 'index' %}">Accueil</a></li>
+            <li> {{ cabinet.post_title }} </li>
+          </ul>
+        </div>
+        <div class="pull-right">
+          <div class="share-icon">
+            <a href="https://www.facebook.com"><span class="icon fa fa-share-alt"></span> Partager</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Page Info-->
+
+  <!--Sidebar Page Container-->
+  <div class="sidebar-page-container">
+    <div class="auto-container">
+      <div class="row clearfix">
+        <!--Content Side / Blog Single-->
+        <div class="content-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
+          {% if cabinet.post_content %}
+
+          {{ cabinet.fait_le }}
+
+                  <div class="image" style='width:100%'>
+                    <img src="{{ cabinet.post_content }}" alt="" />
+                </div>
+                {% endif %} 
+
+          <div class="blog-single">
+            <div class="inner-box">               
+
+              {% if cabinet.post_image %}
+                <div class="image">
+                  <img src="{{ cabinet.post_image.url }}" alt="" style="width:100%" />
+              </div>
+              {% endif %}                  
+                
+              <ul class="post-info">
+                <li> {{ cabinet.post_published_on }} </li>
+                <li>Posté par: {{ cabinet.post_author }} </li>
+                <li>Categorie: {{ cabinet.category }} </li>
+              </ul>
+              <div class="lower-content">
+                <h3> {{ cabinet.post_title }} </h3>
+                <div class="text">
+                  <h4>
+                    {{ cabinet.post_content }} <br><br>                    
+                  </h4>
+
+                  
+                  {% if decret_list %}
+
+                    <ul class="decret">
+
+                      {% for decret in decret_list  %}
+
+                        <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                           {{ decret.sentence }};
+                        </li>
+                      {% endfor %}
+                      
+                    </ul>
+
+                  {% endif %}
+                    
+
+                  {% comment %} <ul class="decret">
+                    <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                      Vu la loi n0 92-570 du 11 septembre 1992 portant
+                      Statut General de la Fonction Publique ;
+                    </li>
+
+                    <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                      Vu le décret n0 93-607 du 02 juillet 1993 portant
+                      modalités communes d’application du Statut Général de
+                      la Fonction Publique ;
+                    </li>
+
+                    <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                      Vu le décret n0 93-608 du 02 juillet 1993 portant
+                      classification des grades et emploi dans
+                      l’Administration de l’Etat et dans les Etablissements
+                      Publics Nationaux ;
+                    </li>
+
+                    <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                      Vu le décret n0 93-609 du 02 juillet 1993 portant
+                      modalités particulières d’application du Statut
+                      Général de la Fonction Publique ;
+                    </li>
+
+                    <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                      Vu le décret n0 2012-1118 du 21 novembre 2012 portant
+                      nomination du Premier Ministre, Chef du Gouvernement ;
+                    </li>
+
+                    <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                      Vu le décret n0 2011-119 du 22 juin 2011 portant
+                      création d’un Comité chargé de l’examen des projets de
+                      nominations et des projets d’organigrammes des
+                      départements ministériels dénommé « Comité restreint »
+                    </li>
+
+                    <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                      Vu le décret n0 2012-1119 du 22 novembre 2012 portant
+                      nomination des Membres du Gouvern5555ement, tel que
+                      modifié par les décrets n0 2013-505 du 25 juillet
+                      2013, n0 2013-784, n02013-785, n0 2013-786 du 19
+                      novembre 2013 et le décret n0 2014-89 du 12 mars 2014
+                      ;
+                    </li>
+
+                    <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                      Vu le décret n0 2013-506 du 25 juillet 2013 portant
+                      attributions des Membres du Gouvernement, tel que
+                      modifié par décret n0 2013-802 du 21 novembre 2013 ;
+                    </li>
+                  </ul> {% endcomment %}
+                </div>
+              </div>
+              <div class="row clearfix">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-9 fullWidth-75">
+              <!--DECRET Section-->
+                <!--Sidebar Page Container-->
+                <div class="sidebar-page-container">
+                  <div class="auto-container">
+                    <div class="tabbable row clearfix">
+
+                      <!--Sidebar-->
+                      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <aside class="sidebar">
+                          <!--Services Category-->
+                          <div class="sidebar-widget services-category">
+                            <ul class="services-list nav md-pills pills-secondary d-flex flex-column">
+                              {% for ch in chapters %}
+                                <li class="chapter"><a href="#CHAPITRE_{{ ch.number}}" data-toggle="tab" role="tab">CHAPITRE - {{ ch.number|roman }}<span class="icon icon-at-right"></span></a></li>
+                                {% endfor %}
+                                
+               {% comment %}    <li class="chapter"><a href="#CHAPITRE_II" data-toggle="tab" role="tab">CHAPITRE - II<span class="icon icon-at-right"></span></a></li>
+                                <li class="chapter"><a href="#CHAPITRE_III" data-toggle="tab" role="tab">CHAPITRE - III<span class="icon icon-at-right"></span></a></li>
+                                <li class="chapter"><a href="#CHAPITRE_IV" data-toggle="tab" role="tab">CHAPITRE - IV<span class="icon icon-at-right"></span></a></li>                                  
+               {% endcomment %}    
+                            </ul>
+                          </div>                     
+                        </aside>
+                      </div>
+
+                      <!--Content Side / Services Single-->
+                      <div class=" col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <div class="services-single">
+                          <div class="inner-box tab-content content-side">
+
+                            <!--Upper Box | CHAPITRE_I -->
+                            {% for ch in chapters %}
+                                {% if ch.number|stringformat:"s" == '0' %}
+
+                                  <div class=" tab-pane fade upper-box in active" id="CHAPITRE_{{ ch.number}}" role="tabpanel">
+
+                                    {% else %}
+
+                                    <div class=" tab-pane fade upper-box" id="CHAPITRE_{{ ch.number}}" role="tabpanel">
+
+                                    {% endif %}
+                              <div class="row clearfix">
+                                <div class="column col-lg-12">
+                                  <div class="upper-text">                                    
+                                    <strong class="decret-chapter" style="text-align:center">{{ ch.title }}</strong>
+                                  </div>
+                                  <!--Faq Section-->
+                                  <section class="faq-section faq-decret style-one">
+                                    <div class="auto-container">
+                                      <ul class="accordion-box style-six ">
+                                        <!--Block-->
+                                        
+                                        {% for ar in articles %} 
+
+                                        {% if ar.chapter|stringformat:"s" == ch.number|stringformat:"s"|add:": "|add:ch.title %}
+
+                                              <li class="accordion block">
+                                                <div class="acc-btn">
+                                                  <div class="icon-outer">
+                                                    <span class="icon icon-plus flaticon-plus "></span>
+                                                    <span class="icon flaticon-minus flaticon-line"></span>
+                                                  </div>
+                                                    Article {{ ar.number }} : {{ ar.title }} 
+                                                </div>
+                                                    
+                                                <div class="acc-content " style="padding-bottom:25px;">
+                                                    <div class="content">
+                                                      <div class="row text">
+                                                        <div class="col-lg-12">
+                                                          <ul class="decret">
+  
+                                                            {% for item in articles_list %}
+                                                
+                                                              {% if item.article|stringformat:"s" == ar.number|stringformat:"s"|add:": "|add:ar.title %}
+  
+                                                                <li><span class="glyphicon glyphicon-arrow-right"></span>
+                                                                  {{ item.sentence }}
+                                                                </li>
+                                                              {% endif %}
+                                                            {% endfor %}
+  
+                                                          </ul>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>                                                      
+                                              </li>
+
+                                        {% endif %}
+                                            
+                                        {% endfor %}
+                                      </ul>
+                                    </div>
+                                  </section>
+                                  <!--End Decret 1 Section-->
+                                </div>
+                              </div>
+                            </div>
+                            <!--End Upper Box | CHAPITRE_I -->
+
+                            
+
+                        {% empty %}  
+                          {% include 'Layouts/_emptyDataMessage.html' %}
+                        {% endfor %}
+                          
+                        
+                        {% if cabinet.fait_le and cabinet.fait_a %}
+
+                          <br><br>
+                          <div class="pull-right decret-date" style="color: #696969;">Fait à {{ cabinet.fait_a }}, le {{ cabinet.fait_le }} </div>
+                        
+                        {% endif %}
+                          
+                            
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                      <!--Services Block Seven-->                    
+                   <!--  <br><br> -->
+                  </div>
+                </div>
+              <!--End DECRET Section-->                  
+              </div>
+              
+            </div>               
+            </div>
+          </div>
+        </div>
+      <!-- </div>
+      </div> -->
+
+      <!--Sidebar-->
+      <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12">
+        <aside class="sidebar">
+          <!-- Search Form -->
+          <div class="sidebar-widget search-box">
+            <form method="post" action="contact' %}">
+              <div class="form-group">
+                <input type="search" name="search-field" value="" placeholder="Rechercher.." required />
+                <button type="submit">
+                  <span class="icon fa fa-search"></span>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!--Blog Category Widget-->
+          <div class="sidebar-widget">
+            <div class="sidebar-title">
+              <h2>Liens Utiles</h2>
+            </div>
+            <div class="services-category">
+              <ul class="services-list">
+                <li class="active">
+                  <a href="{% url 'equipe-du-cabinet' %}"><span class="icon flaticon-startup"></span>L'Équipe du Ministre</a>
+                </li>
+                <li>
+                  <a href="{% url 'inspection-generale' %}"><span class="icon flaticon-startup"></span>Inspection Générale</a>
+                </li>
+                <li>
+                  <a href="{% url 'directions-et-services-rattaches' %}"><span class="icon flaticon-structure"></span>Directions & Services</a>
+                </li>
+                <!-- <li>
+                  <a href="{% url 'directions-et-services-rattaches' %}"><span class="icon flaticon-donation"></span>Services
+                    Rattachés</a>
+                </li> -->
+                <!-- <li><a href="#"><span class="icon flaticon-note-2"></span>Visites d'Affaire</a></li>
+            <li><a href="#"><span class="icon flaticon-business-3"></span>Séminaire</a></li> -->
+              </ul>
+            </div>
+          </div>
+
+          <!-- Popular Posts -->
+          <!-- <div class="sidebar-widget popular-posts">
+            <div class="sidebar-title">
+              <h2>Popular Post</h2>
+            </div>
+
+            <article class="post">
+              <figure class="post-thumb">
+                <a href="#"><img src="{% static 'images/resource/post-thumb-1.jpg'  %}" alt="" /></a>
+              </figure>
+              <div class="text">
+                <a href="#">Finance & legal throughout project.</a>
+              </div>
+              <div class="post-info">January 19, 2017</div>
+            </article>
+
+            <article class="post">
+              <figure class="post-thumb">
+                <a href="#"><img src="{% static 'images/resource/post-thumb-2.jpg'  %}" alt="" /></a>
+              </figure>
+              <div class="text">
+                <a href="#">What makes us best in the world?</a>
+              </div>
+              <div class="post-info">December 05, 2016</div>
+            </article>
+
+            <article class="post">
+              <figure class="post-thumb">
+                <a href="#"><img src="{% static 'images/resource/post-thumb-3.jpg'  %}" alt="" /></a>
+              </figure>
+              <div class="text">
+                <a href="#">Why People go with Consulthub.</a>
+              </div>
+              <div class="post-info">August 21, 2016</div>
+            </article>
+          </div> -->
+
+          <!-- Gallery Widget-->
+          <!-- <div class="sidebar-widget gallery-widget">
+            <div class="sidebar-title">
+              <h2>Instagram</h2>
+            </div>
+            <div class="clearfix">
+              <figure class="image">
+                <a href="images/gallery/gallery-1.jpg'  %}" class="lightbox-image"><img
+                    src="images/resource/sidebar-gallery-1.jpg'  %}" alt="" /></a>
+              </figure>
+              <figure class="image">
+                <a href="images/gallery/gallery-2.jpg'  %}" class="lightbox-image"><img
+                    src="images/resource/sidebar-gallery-2.jpg'  %}" alt="" /></a>
+              </figure>
+              <figure class="image">
+                <a href="images/gallery/gallery-3.jpg'  %}" class="lightbox-image"><img
+                    src="images/resource/sidebar-gallery-3.jpg'  %}" alt="" /></a>
+              </figure>
+              <figure class="image">
+                <a href="images/gallery/gallery-4.jpg'  %}" class="lightbox-image"><img
+                    src="images/resource/sidebar-gallery-4.jpg'  %}" alt="" /></a>
+              </figure>
+              <figure class="image">
+                <a href="images/gallery/gallery-5.jpg'  %}" class="lightbox-image"><img
+                    src="images/resource/sidebar-gallery-5.jpg'  %}" alt="" /></a>
+              </figure>
+              <figure class="image">
+                <a href="images/gallery/gallery-6.jpg'  %}" class="lightbox-image"><img
+                    src="images/resource/sidebar-gallery-6.jpg'  %}" alt="" /></a>
+              </figure>
+            </div>
+          </div> -->
+
+          <!-- Popular Tags -->
+          <!-- <div class="sidebar-widget popular-tags">
+            <div class="sidebar-title">
+              <h2>Tag Cloud</h2>
+            </div>
+            <a href="#">Book</a>
+            <a href="#">Company</a>
+            <a href="#">Ideas</a>
+            <a href="#">Energy</a>
+            <a href="#">Engines</a>
+            <a href="#">Chemical</a>
+            <a href="#">Industry</a>
+            <a href="#">Research</a> -->
+          </div>
+        <div class="col-lg-1"></div>
+        </aside>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--End Blog Grid Section-->
+
+{% endblock CONTENT %}

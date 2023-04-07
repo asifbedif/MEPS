@@ -1,0 +1,46 @@
+[
+    {
+        "post_category_id": 2,
+        "post_ptr_id": 2
+    },
+    {
+        "post_category_id": 5,
+        "post_ptr_id": 4
+    },
+    {
+        "post_category_id": null,
+        "post_ptr_id": 5
+    },
+    {
+        "post_category_id": 5,
+        "post_ptr_id": 6
+    },
+    {
+        "post_category_id": null,
+        "post_ptr_id": 7
+    },
+    {
+        "post_category_id": 5,
+        "post_ptr_id": 8
+    },
+    {
+        "post_category_id": 5,
+        "post_ptr_id": 9
+    },
+    {
+        "post_category_id": 5,
+        "post_ptr_id": 10
+    },
+    {
+        "post_category_id": 5,
+        "post_ptr_id": 11
+    },
+    {
+        "post_category_id": 5,
+        "post_ptr_id": 12
+    },
+    {
+        "post_category_id": 5,
+        "post_ptr_id": 13
+    }
+]

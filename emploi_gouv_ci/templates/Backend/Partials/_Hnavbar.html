@@ -1,0 +1,193 @@
+{% load static %}
+
+<nav class="navbar horizontal-layout-navbar fixed-top navbar-expand-lg">
+  <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+    <a class="navbar-brand brand-logo" href="{% url 'meps-admin' %}"><img src="{% static 'images/logo/Logo-MEPS-1080x300-stickyMenu.jpg' %}" alt="logo"/></a>
+    <a class="navbar-brand brand-logo-mini" href="{% url 'meps-admin' %}"><img src="{% static 'images/logo/logo-meps-758x758.png' %}" alt="logo"/></a>                    
+  </div>
+  <div class="navbar-menu-wrapper d-flex flex-grow">
+    <ul class="navbar-nav navbar-nav-left collapse navbar-collapse" id="horizontal-top-example">
+      <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">ACCUEIL</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle active" href="#" id="projects-dropdown" data-toggle="dropdown" aria-expanded="false">
+          MEPS
+        </a>
+        <div class="dropdown-menu navbar-dropdown" aria-labelledby="projects-dropdown">
+          <a class="dropdown-item" href="#">
+            <i class="mdi mdi-laptop-mac mr-2 text-primary"></i>
+            Le Ministère
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">
+            <i class="mdi mdi-database mr-2 text-primary"></i>
+            Le Cabinet
+          </a>
+          <div class="dropdown-divider"></div>                
+          <a class="dropdown-item" href="#">
+            <i class="mdi mdi-cellphone-android mr-2 text-primary"></i>
+            Directions & Services Rattachées
+          </a>
+        <div class="dropdown-divider"></div>                
+          <a class="dropdown-item" href="#">
+            <i class="mdi mdi-cellphone-android mr-2 text-primary"></i>
+            Inspection Générale
+          </a>
+        <div class="dropdown-divider"></div>                
+          <a class="dropdown-item" href="#">
+            <i class="mdi mdi-cellphone-android mr-2 text-primary"></i>
+            Structures Sous Tutelles
+          </a>
+        <div class="dropdown-divider"></div>                
+          <a class="dropdown-item" href="#">
+            <i class="mdi mdi-cellphone-android mr-2 text-primary"></i>
+            Écoles Spécialisées
+          </a>
+        <div class="dropdown-divider"></div>                
+          <a class="dropdown-item" href="#">
+            <i class="mdi mdi-cellphone-android mr-2 text-primary"></i>
+            Décret d'Organisation
+          </a>
+        <div class="dropdown-divider"></div>                
+          <a class="dropdown-item" href="#">
+            <i class="mdi mdi-cellphone-android mr-2 text-primary"></i>
+            Missions & Objectifs
+          </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="employees-dropdown" data-toggle="dropdown" aria-expanded="false">
+          DIRECTIONS GÉNÉRALES
+        </a>
+        <div class="dropdown-menu navbar-dropdown" aria-labelledby="employees-dropdown">
+          <a class="dropdown-item" href="#">
+            <i class="mdi mdi-monitor-multiple mr-2 text-primary"></i>
+            De l'Emploi [DGE]
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">
+            <i class="mdi mdi-scale-balance mr-2 text-primary"></i>
+            Du Travail [DGT]
+          </a>
+          <div class="dropdown-divider"></div>                
+          <a class="dropdown-item" href="#">
+            <i class="fa fa-user mr-2 text-primary"></i>
+            De la Protection Sociale [DGPS]
+          </a>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">RÉGIMES</a></li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">DOCUMENTS</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="actions-dropdown" data-toggle="dropdown" aria-expanded="false">
+          PUBLICATIONS
+        </a>
+        <div class="dropdown-menu navbar-dropdown" aria-labelledby="actions-dropdown">
+          <a class="dropdown-item" href="#">
+            <i class="mdi mdi-launch mr-2 text-primary"></i>
+            Actualités
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">
+            <i class="fa fa-user-multiple-outline mr-2 text-primary"></i>
+            Communiqués
+          </a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="actions-dropdown" data-toggle="dropdown" aria-expanded="false">
+          NOUS JOINDRE
+        </a>
+        <div class="dropdown-menu navbar-dropdown" aria-labelledby="actions-dropdown">
+          <a class="dropdown-item" href="#">
+            <i class="mdi mdi-launch mr-2 text-primary"></i>
+            Contacts
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">
+            <i class="fa fa-user-multiple-outline mr-2 text-primary"></i>
+            Faq
+          </a>
+        </div>
+      </li>
+      
+    </ul>
+    <ul class="navbar-nav navbar-nav-right">
+      <li class="nav-item nav-search">
+        <div class="nav-link">
+          <div class="search-field d-none d-md-block">
+            <form class="d-flex align-items-stretch h-100" action="#" method=''>
+              {% csrf_token %}
+              <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fas fa-search"></i>                                          
+                    </span>
+                </div>
+                <input type="text" class="form-control" placeholder="Recherche ...">
+              </div>
+            </form>
+          </div>
+        </div>
+      </li>
+
+      {% if user.is_authenticated %}
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="actions-dropdown" data-toggle="dropdown" aria-expanded="false">
+          <div class="nav-link nav-profile-text">
+            {{ user.username }}            
+          </div>  
+          <div class="nav-profile-img " >            
+            <img src="{% static 'backend/images/faces/face5.jpg' %}" alt="image" class="img-xs rounded-circle ml-3">
+            <span class="availability-status online"></span>                    
+        </div>
+        </a>
+        <div class="dropdown-menu navbar-dropdown" aria-labelledby="actions-dropdown">
+          <a class="dropdown-item" href="{% url 'admin-profile' %}">
+            <i class="fa fa-user mr-2 text-primary"></i>
+            Profile
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{% url 'admin-reset-password' %}"> 
+            <i class="fa fa-edit mr-2 text-primary"></i>          
+            Changer Mot de Passe
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{% url 'admin-lock-screen' %}">
+            <i class="fa fa-lock text-primary font-weight-bold icon-sm"></i>
+            Vérouiller
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{% url 'admin-logout' %}">
+            <i class="fas fa-power-off font-weight-bold icon-sm"></i>
+            Déconnexion
+          </a>
+        </div>
+      </li>
+
+      {% if user.is_superuser %}
+      <li class="nav-item">
+        <a class="nav-link" href="dsi/">
+          <i class="fas fa-th-large font-weight-bold icon-sm mr-1"></i>
+          Dashboard
+        </a>
+      </li>
+      {% elif user.is_staff %}
+      <li class="nav-item">
+        <a class="nav-link" href="meps/">
+          <i class="fas fa-th-large font-weight-bold icon-sm"></i>
+          Dashboard
+        </a>
+      </li>
+      {% else%}
+      <li></li>
+      {% endif %}        
+      
+      {% endif %}     
+
+    </ul>
+    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center ml-auto" type="button" data-toggle="collapse" data-target="#horizontal-top-example">
+      <span class="fa fa-bars"></span>
+    </button>
+  </div>
+</nav>
+

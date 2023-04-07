@@ -1,0 +1,55 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEPS|{% block TITLE %}{% endblock TITLE %}</title>
+
+    {% include 'Layouts/_styleSheet.html' %}
+<body>
+    <div class="page-wrapper">
+         
+        <!-- Preloader -->
+        <!-- <div class="preloader"></div> -->
+
+        {% include 'Layouts/_navbar.html' %}
+
+          <!--Page Title-->
+        <!-- <section class="page-title" style="background-image:url({% static 'images/background/6.jpg' %});"> -->
+        <section class="page-title">
+            <div class="auto-container">
+                <h1>{% block PAGETITLE %}{% endblock %}</h1>
+            </div>
+        </section>
+
+            <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{% url 'index' %}">Accueil</a></li>
+                        {% block BREADCUMBS %} {% endblock %}
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="share-icon"><a href="#"><span class="icon fa fa-share-alt"></span> Partager</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+        
+        {% block CONTENT %} {% endblock %}
+
+        {% include 'Layouts/_footer0.html' %}
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+{% block TITLE %}Articles{% endblock %}
+
+{% block PAGETITLE %}Inspection Générales{% endblock PAGETITLE %}
+
+{% block CONTENT %} 
+    
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li>Inspection Générales</li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="share-icon"><a href="https://www.facebook.com"><span class="icon fa fa-share-alt"></span>Partager</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+    
+    <!--Sidebar Page Container-->
+    <div class="sidebar-page-container">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Content Side / Blog Single-->
+                <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                	<div class="blog-single">
+                    	<div class="inner-box">
+                        	<div class="image">
+								<img src="{% static 'images/CAFE-CACAO.png' %}" alt="" />
+                        	</div>
+                            <!-- <ul class="post-info">
+                            	<li>12 Juillet 2022</li>
+                                <li>Lieu: Abidjan</li>
+                                <li>Trêve sociale</li>
+                            </ul> -->
+                            <div class="lower-content">
+                            	<h3>Inspection Générales</h3>
+                                <div class="text">
+                                	<p>Débutée hier lundi, Maître Adama KAMARA, Ministre de l’Emploi et de la Protection Sociale, a pris part, ce mardi 12 juillet 2022, à la 2ème journée des consultations relatives à la trêve sociale qui se déroule à l’Amphithéâtre Houphouët BOIGNY de l’Ecole Nationale de l’Administration ( ENA) de Cocody-Abidjan.
+
+                                        Ces assises organisées par le Gouvernement visent à faciliter l’organisation des discussions sur les revendications des organisations syndicales des différents corps de métiers avec le Gouvernement  afin d’aboutir à une trêve sociale en Côte d’Ivoire. </p>
+                                    <p>Politique qui permettra au Gouvernement d’avancer et engager des projets d’intérêt national pour le bien-être de l’ensemble  des travailleurs.
+
+                                        A l’instar des autres Ministres, Maître Adama KAMARA s’est réjoui de cette rencontre  qui permettra de trouver des solutions aux problèmes des travailleurs. Il a également salué cette initiative qui vise à pérenniser le Dialogue Sociale engagé par le Chef de l’Etat.</p>
+                                    {% comment %} <div class="row clearfix">
+                                        <!--Image Column-->
+                                        <div class="image-column col-md-5 col-sm-5 col-xs-12">
+                                            <div class="image">
+                                                <img src="{% static 'images/resource/quote-image.jpg' %}" alt="" />
+                                            </div>
+                                        </div>
+                                        <!--Quote Column-->
+                                        <div class="quote-column col-md-7 col-sm-7 col-xs-12">
+                                        	<blockquote>
+                                            	<div class="quote-icon"><span class="icon fa fa-quote-left"></span></div>
+                                                <div class="text">They have got my project time with all competition seds our with a highly skilled, well -organized and denouncing pleaure experienced team of professional ever undertakes.</div>
+                                                <h3>Astely Fletcher</h3>
+                                                <div class="designation">Manager</div>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <p>Le Ministre de l’Emploi et de la Protection Sociale a invité  l’ensemble des parties à être des forces de propositions et   à privilégier le dialogue social  en vue d’apporter des solutions immédiates et lointaines aux problèmes des travailleurs ainsi que leurs conditions de travail.</p>
+                                {% endcomment %}
+                                </div>
+                                
+                                <!--post-share-options-->
+                                {% comment %} <div class="post-share-options clearfix">
+                                    <div class="pull-left tags"><span>Tags: </span><a href="#">Consulting</a>, <a href="#">Business</a>, <a href="#">Seminar</a></div>
+                                    <ul class="pull-right social-icon-three clearfix">
+                                        <li class="share"><span class="fa fa-share-alt"></span>&nbsp; Partager :</li>
+                                        <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                    </ul>
+                                </div> {% endcomment %}
+                                
+                                <!--Author Box-->
+                                {% include 'Layouts/inc/post-authors.html' %}
+                                
+                                <!--Comments Area-->
+                                {% include 'Layouts/inc/post-comments.html' %}
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Sidebar-->
+                <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                    <aside class="sidebar">
+						
+                        <!-- Search Form -->
+                        <div class="sidebar-widget search-box">
+                        	<form method="post" action="{% url 'nos-contacts' %}">
+                                <div class="form-group">
+                                    <input type="search" name="search-field" value="" placeholder="Search.." required>
+                                    <button type="submit"><span class="icon fa fa-search"></span></button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <!--Blog Category Widget-->
+                        {% comment %} <div class="sidebar-widget sidebar-blog-category">
+                            <div class="sidebar-title">
+                                <h2>Liens utiles</h2>
+                            </div>
+                            <ul class="blog-cat">
+                                <li><a href="#">Business Plan</a></li>
+                                <li><a href="#">Consulting</a></li>
+                                <li><a href="#">Finance & Accounting</a></li>
+                                <li><a href="#">Management</a></li>
+                                <li><a href="#">Competitive Research</a></li>
+                            </ul>
+                        </div> {% endcomment %}
+
+                        <!-- Popular Posts -->
+                        {% include 'Layouts/inc/recent-posts.html' %}
+                        
+                        <!-- Popular Tags -->                        
+                       {% include 'Layouts/inc/popular-tags.html' %}
+
+					</aside>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--End Blog Grid Section-->
+    
+{% endblock %}

@@ -1,0 +1,152 @@
+{% extends 'Layouts/base.html' %}
+    
+{% load static %}
+
+{% block TITLE %}FAQ{% endblock TITLE %}
+
+{% block PAGETITLE %}Questions Fréquemment Posées{% endblock %}
+    
+{% block CONTENT %}
+        
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="share-icon"><a href="#"><span class="icon fa fa-share-alt"></span> Partager</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+    
+    <!--Faq Section-->
+    <section class="faq-section style-two">
+    	<div class="auto-container">
+            <h2>Foire aux question</h2>
+            
+            <ul class="accordion-box style-five">
+
+                {% for faq in faqs %}
+                <!--Block-->
+                    {% if forloop.first %}
+                    <li class="accordion block">
+                        <div class="acc-btn active">
+                            <div class="icon-outer">
+                                <span class="icon icon-plus flaticon-plus"></span> 
+                                <span class="icon flaticon-minus flaticon-line"></span>
+                            </div>
+                            {{ faq.question }}
+                        </div>
+                        <div class="acc-content current">
+                            <div class="content">
+                                <div class="text">
+                                    <p> {{ faq.response }} </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    {% else %}
+                    <li class="accordion block">
+                        <div class="acc-btn">
+                            <div class="icon-outer">
+                                <span class="icon icon-plus flaticon-plus"></span> 
+                                <span class="icon flaticon-minus flaticon-line"></span>
+                            </div>
+                            {{ faq.question }}
+                        </div>
+                        <div class="acc-content">
+                            <div class="content">
+                                <div class="text">
+                                    <p>{{ faq.response }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    {% endif %} 
+                    
+                    {% empty %}
+
+                        {% include 'Layouts/_emptyDataMessage.html' %}
+
+                    {% endfor %}
+{% comment %}
+                <!--Block-->
+                <li class="accordion block">
+                    <div class="acc-btn"><div class="icon-outer">
+                        <span class="icon icon-plus flaticon-plus"></span> 
+                        <span class="icon flaticon-minus flaticon-line"></span>
+                    </div>We bring together the best people to the world</div>
+                    <div class="acc-content current">
+                        <div class="content">
+                            <div class="text">
+                                <p>Over 20 years of experience we’ll ensure you always get the best guidance. We serve a clients at every level of their organization we can be most useful, whether as a trusted advisor to top trusted our management coach for fronts line employees.We offers a comprehensive suite of services to assist clients across the business cycle from risk management to the ability to respond rapidly to unexpected.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!--Block-->
+                <li class="accordion block">
+                    <div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus flaticon-plus"></span> <span class="icon flaticon-minus flaticon-line"></span></div>Submit your sponsorship request easy way</div>
+                    <div class="acc-content">
+                        <div class="content">
+                            <div class="text">
+                                <p>Over 20 years of experience we’ll ensure you always get the best guidance. We serve a clients at every level of their organization we can be most useful, whether as a trusted advisor to top trusted our management coach for fronts line employees.We offers a comprehensive suite of services to assist clients across the business cycle from risk management to the ability to respond rapidly to unexpected.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <!--Block-->
+                <li class="accordion block">
+                    <div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus flaticon-plus"></span> <span class="icon flaticon-minus flaticon-line"></span></div>Revenue and margin improvement strategies</div>
+                    <div class="acc-content">
+                        <div class="content">
+                            <div class="text">
+                                <p>Over 20 years of experience we’ll ensure you always get the best guidance. We serve a clients at every level of their organization we can be most useful, whether as a trusted advisor to top trusted our management coach for fronts line employees.We offers a comprehensive suite of services to assist clients across the business cycle from risk management to the ability to respond rapidly to unexpected.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <!--Block-->
+                <li class="accordion block">
+                    <div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus flaticon-plus"></span> <span class="icon flaticon-minus flaticon-line"></span></div>I would like to have some information about your Consulthub solutions.</div>
+                    <div class="acc-content">
+                        <div class="content">
+                            <div class="text">
+                                <p>Over 20 years of experience we’ll ensure you always get the best guidance. We serve a clients at every level of their organization we can be most useful, whether as a trusted advisor to top trusted our management coach for fronts line employees.We offers a comprehensive suite of services to assist clients across the business cycle from risk management to the ability to respond rapidly to unexpected.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <!--Block-->
+                <li class="accordion block">
+                    <div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus flaticon-plus"></span> <span class="icon flaticon-minus flaticon-line"></span></div>We are working on a specific type of WAP service. How can we work together?</div>
+                    <div class="acc-content">
+                        <div class="content">
+                            <div class="text">
+                                <p>Over 20 years of experience we’ll ensure you always get the best guidance. We serve a clients at every level of their organization we can be most useful, whether as a trusted advisor to top trusted our management coach for fronts line employees.We offers a comprehensive suite of services to assist clients across the business cycle from risk management to the ability to respond rapidly to unexpected.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+{% endcomment %}                
+            </ul>
+            
+        </div>
+    </section>
+    <!--End Faq Section-->
+    
+{% endblock CONTENT %}
+            

@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.urbanui.com/melody/template/pages/samples/register-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Sep 2018 06:08:54 GMT -->
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title> Admin| {% block PAGE_TITLE %} {% endblock PAGE_TITLE %} </title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="{% static 'backend/vendors/iconfonts/font-awesome/css/all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'backend/vendors/css/vendor.bundle.base.css' %}">
+  <link rel="stylesheet" href="{% static 'backend/vendors/css/vendor.bundle.addons.css' %}">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{% static 'backend/css/style.css' %}">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="{% static 'backend/images/favicon.png' %}" />
+  
+</head>
+
+<body>
+
+  
+  {% block EXTRA_CSS %}
+    
+  {% endblock EXTRA_CSS %}
+    
+
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+      <div class="content-wrapper d-flex align-items-stretch auth auth-img-bg">
+        <div class="row flex-grow">
+          <div class="col-lg-6 d-flex align-items-center justify-content-center">
+            <div class="auth-form-transparent text-left p-3">
+              <div class="brand-logo">
+                <img src="{% static 'Media/images/logo/logo-MEPS.png' %}" alt="logo">
+              </div>
+
+              {% block MESSAGES %}
+          
+              {% endblock MESSAGES %}
+
+              <h4> {% block TITLE %} {% endblock TITLE %}  </h4>
+              <h6 class="font-weight-light"> {% block SUB_TITLE %} {% endblock SUB_TITLE %}  </h6>
+
+              {% block FORM %}
+                      
+              {% endblock FORM %}
+
+      </div>
+    </div>
+    <div class="col-lg-6 register-half-bg d-flex flex-row">
+      <p class="text-white font-weight-medium text-center flex-grow align-self-end">Copyright &copy; 2022  Tous les droits sont réservés au MEPS.</p>
+    </div>
+  </div>
+</div>
+<!-- content-wrapper ends -->
+</div>
+<!-- page-body-wrapper ends -->
+</div>
+<!-- container-scroller -->
+<!-- plugins:js -->
+<script src="{% static 'backend/vendors/js/vendor.bundle.base.js' %}"></script>
+<script src="{% static 'backend/vendors/js/vendor.bundle.addons.js' %}"></script>
+<!-- endinject -->
+<!-- inject:js -->
+<script src="{% static 'backend/js/off-canvas.js' %}"></script>
+<script src="{% static 'backend/js/hoverable-collapse.js' %}"></script>
+<script src="{% static 'backend/js/misc.js' %}"></script>
+<script src="{% static 'backend/js/settings.js' %}"></script>
+<script src="{% static 'backend/js/todolist.js' %}"></script>
+<!-- endinject -->
+</body>

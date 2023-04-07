@@ -1,0 +1,324 @@
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+{% block TITLE %} {{page.post_title}} {% endblock TITLE %}
+
+{% block PAGETITLE %} {{page.post_title}} {% endblock %}
+
+{% block CONTENT %}
+
+  <!--Page Info-->
+  <section class="page-info">
+    <div class="auto-container">
+      <div class="inner-container clearfix">
+        <div class="pull-left">
+          <ul class="bread-crumb clearfix">
+            <li><a href="{% url 'index' %}">Accueil</a></li>
+            <li> {{page.post_title}} </li>
+          </ul>
+        </div>
+        <div class="pull-right">
+          <div class="share-icon">
+            <a href="#"><span class="icon fa fa-share-alt"></span> Partager</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Page Info-->
+
+  <!--Sidebar Page Container-->
+  <div class="sidebar-page-container">
+    <div class="auto-container">
+     
+      <div class="row clearfix">
+        <!--Content Side / Blog Single-->
+        <div class="content-side col-lg-11 col-md-11 col-sm-12 col-xs-12">
+          <div class="blog-single">
+            <div class="inner-box">
+              <div class="image">
+                <img src="{{ page.post_image.url }}" alt="" width=100% />
+              </div>
+              
+              {% if page %}
+
+                <ul class="post-info">
+                  <li> {{page.post_published_on}} </li>
+                  <li>Posté par: {{page.post_author}} </li>
+                  <li>Lieu: {{ page.post_place }} </li>
+                  <li>Categorie: {{ page.category }} </li>
+                </ul>
+
+              {% endif %}
+              
+              <div class="lower-content">
+                <p class="text" style="font-size: 20px;"> {{ page.post_content }} </p> <br>
+
+                <ul class="accordion-box style-five">
+
+                  {% for missions_category in missions_categories %}
+                    <!--Block-->
+
+                    {% if forloop.first %}
+
+                      <li class="accordion block">
+                        <div class="acc-btn active">
+                          <div class="icon-outer">
+                              <span class="icon icon-plus flaticon-plus"></span> 
+                              <span class="icon flaticon-minus flaticon-line"></span>
+                          </div>
+
+                          {{missions_category.title}}
+
+                        </div>
+
+                        <div class="acc-content current">
+                          <div class="content">
+                            <div class="text">
+                              
+                              <ul class="decret">
+
+                                {% for mission in missions_list %}
+                                  
+                                  {% if mission.category|lower == missions_category.title|lower %}
+
+                                    <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                                      {{mission.sentence}}
+                                    </li>
+                                    
+                                  {% endif %}
+
+                                {% empty %}
+                                  <p>Aucune mission n'a été publié ...</p>
+                                {% endfor %}
+                              </ul>
+                                
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                    {% else %}
+
+                    <li class="accordion block">
+                      <div class="acc-btn">
+                        <div class="icon-outer">
+                            <span class="icon icon-plus flaticon-plus"></span> 
+                            <span class="icon flaticon-minus flaticon-line"></span>
+                        </div>
+
+                        {{missions_category.title}}
+
+                      </div>
+
+                      <div class="acc-content">
+                        <div class="content">
+                          <div class="text">
+                            
+                            <ul class="decret">
+
+                              {% for mission in missions_list %}
+                                
+                                {% if mission.category|lower == missions_category.title|lower %}
+
+                                  <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                                    {{mission.sentence}}
+                                  </li>
+                                  
+                                {% endif %}
+
+                              {% empty %}
+                                <p>Aucune mission n'a été publié ...</p>
+                              {% endfor %}
+                            </ul>
+                              
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    {% endif %}
+                    {% comment %} <li class="accordion block">
+                        <div class="acc-btn">
+                            <div class="icon-outer">
+                                <span class="icon icon-plus flaticon-plus"></span> 
+                                <span class="icon flaticon-minus flaticon-line"></span>
+                            </div>
+                            {{missions_category.title}}
+                        </div>
+                        <div class="acc-content">
+                            <div class="content">
+                                <div class="text">
+                                  <ul class="decret">
+
+                                    {% for mission in missions_list %}
+
+                                    {{mission.category|lower}} == {{missions_category.title|lower }}
+                                      
+                                      {% if mission.category|lower == missions_category.title|lower %}
+
+                                        <li> {{forloop.counter}}-<span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                                          {{mission.sentence}}
+                                        </li>
+                                        
+                                      {% endif %}
+                                    {% empty %}
+                                      <p>Aucune mission n'a été publié ...</p>
+                                    {% endfor %}
+                                  </ul> 
+                                </div>
+                            </div>
+                        </div>
+                    </li> {% endcomment %}
+                  
+                  {% empty %}
+
+                      {% include 'Layouts/_emptyDataMessage.html' %}
+
+                  {% endfor %}
+                        
+                        
+
+                          {% comment %} <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                            application, contrôle et évaluation de la politique nationale en matière d'emploi ;
+                          </li>
+
+                          <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                            élaboration de projets de loi et de regléments en matière d'emploi;
+                          </li>
+
+                          <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                            identification des mesures la creation d'emplois,en particulier pour les populations défavorisés, notamment les femmes, les handicapés et les personnes de plus de 40 ans, en liaison avec le ministre chargé de l'emploi des jeunes;
+                          </li>
+
+                          <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                            elaboration de strategies et programmes en faveur de l'emploi des populations defavorisées ;
+                          </li>
+
+                          <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                            developpement du plaidoyer pour l'emploi des populations defavorisées;
+                          </li>
+
+                          <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                            tenue de statistiques sur l'emploi
+                            ;
+                          </li>
+
+                          <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                          formulation d'actions de mise en adequation de la formation et de l'emploi ;
+                          </li>
+
+                          <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                          assistance aux chomeurs et handicapés du travail ;
+                          </li>
+
+                          <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                          controle de l'application des normes , lois et reglements en matière de travail des enfants, en liaison avec les ministres concernés  ;
+                          </li>
+
+                          <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                          coordination, identification et mise en oeuvre des mesures dans le domaine de la lutte contre le travail des enfants ;
+                          </li>
+
+                          <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                          renforcement de la protection des travailleurs, notamment de ceux atteints de l'infection à VIH/SIDA, en liaison avec le ministre chargé de la santé ;
+                          </li>
+
+                          <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                          élaboration, suivi et controle de la reglementation de la securité et de la santé au travail, en liaison avec le ministre chargé de la santé ;
+                          </li>
+
+                          <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                          renforcement de la securité et de la santé au travail, en liaison avec le ministre chargé de la santé ;
+                          </li>
+
+                          <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                          promotion du dialogue social ;
+                          </li> {% endcomment %}
+                </ul>
+              </div>
+                
+                  {% comment %} <h3>En matière de protection sociale</h3>
+                  <div class="text">                 
+                    <ul class="decret">
+                      <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                        Promotion, mise en oeuvre et suivi de la politique de securité sociale;
+                      </li>
+
+                      <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                        renforcement et harmonisation du cadre institutionnel et de la prevoyance sociale;
+                      </li>
+
+                      <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                        Participation à la promotion des actions d'assistance et de soutien aux orphelins, en particulier à ceux du SIDA;
+                      </li>
+
+                      <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                        Participation à la prise en charge sociale des populations vulnerables ;
+                      </li>
+
+                      <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                        coordination et supervision de la politique des affaires sociales;
+                      </li>
+
+                      <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                      formation professionnelle des travailleurs sociaux;
+                      </li>
+
+                      <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                      mise en oeuvre d'une politique coherente d'encadrement et de formation des handicapés ainsi que de leur insertion dans le tissu social, notamment dans le monde du travail ;
+                      </li>
+
+                      <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                      mise en oeuvre et renforcement du plaidoyer en faveur de la prevention des handicaps resultant des accidents de travail et de la voie publique, auprès des populations et des institutions ;
+                      </li>
+                      
+                      <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                      gestion du regime de la Couverture Maladie Universelle, en liaison avec le ministre chargé de la santé: 
+                      </li>
+
+                      <li><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+                      formulation d'actions de mise en adequation de la formation et de l'emploi ;
+                      </li>
+                      
+                      <li><span class="glyphicon glyphicon-minus" aria-hidden="true" style="margin-left: 100px;"></span>
+                      sensibilisation de la population ;
+                      </li>
+
+                      <li><span class="glyphicon glyphicon-minus" aria-hidden="true" style="margin-left: 100px;"></span>
+                      acceleration du processus de mise en oeuvre de l'enrôlement ;
+                      </li>
+
+                      <li><span class="glyphicon glyphicon-minus" aria-hidden="true" style="margin-left: 100px;"></span>
+                      recouvrement des cotisations ;
+                      </li>
+
+                      <li><span class="glyphicon glyphicon-minus" aria-hidden="true" style="margin-left: 100px;"></span>
+                      gestion des fonds collectés ;
+                      </li>
+
+                      <li><span class="glyphicon glyphicon-minus" aria-hidden="true" style="margin-left: 100px;"></span>
+                      definition des services de prestations afferentes aux differents regimes ;
+                      </li>
+
+                      <li><span class="glyphicon glyphicon-minus" aria-hidden="true" style="margin-left: 100px;"></span>
+                      gestion des personnes économiquement faibles ou démunies  ;
+                      </li>
+
+                      <li><span class="glyphicon glyphicon-minus" aria-hidden="true" style="margin-left: 100px;"></span>
+                      maintien de l'equilibre du regime ;
+                      </li>
+                    </ul>
+                  </div> {% endcomment %}
+            </div>
+          </div>
+        </div>
+        <div class="content-side col-lg-1 col-md-1"></div>
+      </div>
+    </div>
+    
+  </div>
+  <!--End Blog Grid Section-->
+
+{% endblock %}

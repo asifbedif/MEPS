@@ -1,0 +1,20 @@
+
+
+
+{% comment %} 
+
+   DEMO: data-href="https://developers.facebook.com/docs/plugins/comments#configurator" 
+   MEPS LOCAL:  data-href="http://{{ request.META.HTTP_HOST }}{% url 'actualite_details' YEAR=single_post.post_published_on|date:'Y' MONTH=single_post.post_published_on|date:'m' DAY=single_post.post_published_on|date:'d' SLUG=single_post.post_slug %}" 
+
+{% endcomment %}  
+
+<hr><br>
+
+<h2 class="">Commentaires via Facebook</h2><hr>
+
+<div class="fb-comments" 
+     data-href="http://{{ request.META.HTTP_HOST }}{{ request.get_full_path|slice:'-1' }}" 
+     data-order-by="reverse_time" 
+     data-numposts="5">
+</div>
+

@@ -1,0 +1,144 @@
+
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+{% block TITLE %}Organisation{% endblock TITLE %}
+    
+    <!--Page Title-->
+    {% block PAGETITLE %}Organisation du MEPS{% endblock %}
+    
+    <!--Page Info-->
+    <!-- {% block BREADCUMBS %} 
+        <li>Décret d'Organisation</li>
+    {% endblock %} -->
+
+    {% block CONTENT %}
+    <!--Page Info-->
+    <!-- <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{% url 'index' %}">Accueil</a></li>
+                        <li>Décret d'Organisation</li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="share-icon"><a href="#"><span class="icon fa fa-share-alt"></span> Partager</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </section> -->
+    <!--End Page Info-->
+    
+    <!--Sidebar Page Container-->
+    <div class="sidebar-page-container">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Content Side / Blog Single-->
+                <div class="content-side col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                	<div class="blog-single">
+                    	<div class="inner-box">
+                            
+                            {% if decret is not None  %}
+                            <iframe src="{{decret.pdf.url}}" height="850px" width="100%"></iframe> 
+                            {% endif %}                               
+                        	
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Sidebar-->
+                <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                    <aside class="sidebar">
+						
+                        <!-- Search Form -->
+                        <!-- <div class="sidebar-widget search-box">
+                        	<form method="post" action="contact.html">
+                                <div class="form-group">
+                                    <input type="search" name="search-field" value="" placeholder="Search.." required>
+                                    <button type="submit"><span class="icon fa fa-search"></span></button>
+                                </div>
+                            </form>
+                        </div> -->
+                        
+                        <!--Blog Category Widget-->
+                        <!-- <div class="sidebar-widget sidebar-blog-category">
+                            <div class="sidebar-title">
+                                <h2>Useful Links</h2>
+                            </div>
+                            <ul class="blog-cat">
+                                <li><a href="#">Business Plan</a></li>
+                                <li><a href="#">Consulting</a></li>
+                                <li><a href="#">Finance & Accounting</a></li>
+                                <li><a href="#">Management</a></li>
+                                <li><a href="#">Competitive Research</a></li>
+                            </ul>
+                        </div> -->
+
+                        <!-- Popular Posts -->
+                        <!-- <div class="sidebar-widget popular-posts">
+                            <div class="sidebar-title"><h2>Popular Post</h2></div>
+
+                            <article class="post">
+                            	<figure class="post-thumb"><a href="blog-single.html"><img src="images/resource/post-thumb-1.jpg" alt=""></a></figure>
+                                <div class="text"><a href="blog-single.html">Finance & legal throughout project.</a></div>
+                                <div class="post-info">January 19, 2017</div>
+                            </article>
+                            
+                            <article class="post">
+                            	<figure class="post-thumb"><a href="blog-single.html"><img src="images/resource/post-thumb-2.jpg" alt=""></a></figure>
+                                <div class="text"><a href="blog-single.html">What makes us best in the world?</a></div>
+                                <div class="post-info">December 05, 2016</div>
+                            </article>
+                            
+                            <article class="post">
+                            	<figure class="post-thumb"><a href="blog-single.html"><img src="images/resource/post-thumb-3.jpg" alt=""></a></figure>
+                                <div class="text"><a href="blog-single.html">Why People go with Consulthub.</a></div>
+                                <div class="post-info">August 21, 2016</div>
+                            </article>
+                            
+						</div> -->
+                        
+                        <!-- Gallery Widget-->
+                        <!-- <div class="sidebar-widget gallery-widget">
+                            <div class="sidebar-title">
+                            	<h2>Instagram</h2>
+                            </div>
+                            <div class="clearfix">
+                            	<figure class="image"><a href="images/gallery/gallery-1.jpg" class="lightbox-image"><img src="images/resource/sidebar-gallery-1.jpg" alt=""></a></figure>
+                                <figure class="image"><a href="images/gallery/gallery-2.jpg" class="lightbox-image"><img src="images/resource/sidebar-gallery-2.jpg" alt=""></a></figure>
+                                <figure class="image"><a href="images/gallery/gallery-3.jpg" class="lightbox-image"><img src="images/resource/sidebar-gallery-3.jpg" alt=""></a></figure>
+                                <figure class="image"><a href="images/gallery/gallery-4.jpg" class="lightbox-image"><img src="images/resource/sidebar-gallery-4.jpg" alt=""></a></figure>
+                                <figure class="image"><a href="images/gallery/gallery-5.jpg" class="lightbox-image"><img src="images/resource/sidebar-gallery-5.jpg" alt=""></a></figure>
+                                <figure class="image"><a href="images/gallery/gallery-6.jpg" class="lightbox-image"><img src="images/resource/sidebar-gallery-6.jpg" alt=""></a></figure>
+                            </div>
+                        </div> -->
+                        
+                        <!-- Popular Tags -->
+                       <!-- <div class="sidebar-widget popular-tags">
+                            <div class="sidebar-title"><h2>Tag Cloud</h2></div>
+                            <a href="#">Book</a>
+                            <a href="#">Company</a>
+                            <a href="#">Ideas</a>
+                            <a href="#">Energy</a>
+                            <a href="#">Engines</a>
+                            <a href="#">Chemical</a>
+                            <a href="#">Industry</a>
+                            <a href="#">Research</a>
+                        </div> -->
+                        
+					</aside>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--End Blog Grid Section-->
+    
+    
+    {% endblock %}

@@ -1,0 +1,259 @@
+{% load static %}
+
+<style>
+
+    .group-title{
+        text-transform: capitalize;
+    }
+
+    .reply-textarea{
+        width: 100%;
+    }
+    .sidebar-page-container .comments-area .comment .comment-inner {
+        border-left: 10px solid #f4f4f4;
+      }
+
+      .sidebar-page-container .comments-area .comment-box .author-thumb img {
+        width: 50px;
+      }
+
+    .comment-form .form-group textarea{
+        border: 1px solid #f4f4f4;
+      }
+    
+
+    .comment-info strong{
+        color: #FF4500;
+        font-family: cursive;
+        font-size: 1.7rem;
+    }
+
+    .block-comment-reply{
+        display: none;
+    }
+      
+    code {
+        color: inherit;
+        opacity: 0.6;
+        font-family: 'fangsong', emoji,'Flaticon', serif;
+    }
+
+</style>
+
+<script  defer>
+
+    function replyToComment(ID) {
+        var comment_ID = 'block-comment-'+ ID;
+        var btn_reply_to_comment = 'reply-to-comment-'+ ID;
+        var replyBtn = document.getElementById(btn_reply_to_comment);
+
+        console.log('comment_ID: ', comment_ID);
+        console.log('reply_to_comment: ', btn_reply_to_comment);
+        console.log('replyBtn: ', replyBtn);
+        
+        var replyForm = document.getElementById(comment_ID);
+        
+        // get the current value of the block-comment-reply's display property
+        var displaySetting = replyForm.style.display;
+
+        console.log('FORM displaySetting: ', displaySetting);        
+        console.log('FORM: ', replyForm);
+        
+
+        if (displaySetting == 'block') {
+            //this SHOWS the form
+            replyForm.style.display = 'none';
+        } else {
+            //this HIDES the form
+            replyForm.style.display = 'block';
+        }
+    };
+
+</script>
+
+{% comment %} <br><br>
+
+<h2 class="">Commentaires sur Facebook</h2> {% endcomment %}
+
+<br>
+
+{% comment %} <div style="border: 2px solid #e2e2e2;" class="fb-comments" data-href="http://{{ request.META.HTTP_HOST }}{{ request.get_full_path|slice:'-1' }}" data-width="500px" data-numposts="5"></div> {% endcomment %}
+{% comment %} <div style="border: 2px solid #e2e2e2;" class="fb-comments" data-href="{% url 'actualite_details' YEAR=single_post.post_published_on|date:'Y' MONTH=single_post.post_published_on|date:'m' DAY=single_post.post_published_on|date:'d' SLUG=single_post.post_slug %}" data-width="500px" data-numposts="5"></div> {% endcomment %}
+
+<br><br>
+<div class="comments-area mt-5">
+    <!-- Comment Form -->
+    <div class="comment-form">	
+        <div class="group-title"><h2>Écrire un commentaire</h2></div>
+        <br><br>
+        {% comment %} {% if user.is_authenticated %} {% endcomment %}
+        
+            <form method="post" action="{% url 'actualite_details' YEAR=single_post.post_published_on|date:'Y' MONTH=single_post.post_published_on|date:'m' DAY=single_post.post_published_on|date:'d' SLUG=single_post.post_slug %}" >
+                {% csrf_token %}
+                <div class="row clearfix">                    
+                     
+                        <div class="col-md-4 col-sm-6 col-xs-12 form-group">
+                            {{comment_form.comment_author_name}}                      
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 col-xs-12 form-group">
+                            {{comment_form.comment_author_phone}}
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                            {{comment_form.comment_author_email}}
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                            {{comment_form.comment_content}}
+                            {% comment %} <textarea name="message" placeholder="Ecrire votre commentaire..."></textarea> {% endcomment %}
+                        </div>
+
+                        <input type="hidden" value="{{comment_author_name}}" name="comment_author">
+
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                            <button class="theme-btn btn-style-three" type="submit" name="submit-form">Envoyer</button>
+                        </div>
+                        
+                </div>
+            </form>
+
+        {% comment %} {% else %}
+            <h2 class="text">Vous devez vous connecter pour écrire un commentaire.<a href="{% url 'admin-login' %}">Me connecter</a></h2> 
+        {% endif %}    {% endcomment %}
+            
+    </div>
+
+    <br><br>
+
+    <div class="group-title">
+
+        {% with comments.count as total_comments %}
+            <h2><span style="color:#FF4500;">{{ total_comments }}</span> commentaire{{ total_comments|pluralize }} </h2>
+        {% endwith %}
+        
+    </div>
+
+    <!--Comment Box-->
+    <div class="comment-box">
+
+        {% for comment in comments %}
+
+            <div class="comment">
+            
+                {% if comment.is_parent %}
+                    <div class="author-thumb">
+                        <img  src="{% static 'Media/images/resource/default_user_black.png' %}"  height="50" width="50" alt="Avatar">
+                    </div>
+                    <div class="comment-inner">                      
+                        <hr>
+                        <div class="comment-info clearfix">
+                            <strong>
+                                <span class='text'>Commenté par </span>
+                                {{comment.comment_author_name}} 
+                            </strong> – 
+                            <span  style="color:#008000; font-family:math;">
+                                Il y a {{comment.comment_posted_on|timesince}}
+                                
+                                
+                                {% if comment.children.count > 0  %}
+
+                                &nbsp; | {{comment.children.count}} Réponse{% if comment.children.count > 1  %}s{% endif %}
+                                    
+                                {% endif %}
+                                    
+
+                                &nbsp; | <em><a class="btn btn-comment-reply" id="reply-to-comment-{{comment.id}}"onclick="replyToComment({{comment.id}})" >Répondre</a></em>
+                            </span>                             
+                            <div class='text'><code><em>{{comment.comment_author_email}}</em></code></div>
+                           
+                            <div class="text">
+                                {{comment.comment_content}}
+                            </div>
+
+                        </div>
+                    </div>    
+                        
+                    &nbsp; &nbsp;
+                    
+                    <div class="block-comment-reply" id="block-comment-{{comment.id}}">
+                    
+                        {% for replies in comment.children %}
+                
+                            <!--Comment Reply Box-->
+                            <div class="comment-box reply-comment">
+                                <div class="comment">
+                                    <div class="author-thumb">
+                                        <img class="img-circle" src="{% static 'Media/images/resource/default_user_grey.png' %}" height="50" width="50" alt="Avatar">
+                                    </div>
+                                    <div class="comment-inner">
+                                        <div class="comment-info clearfix"> Répondu par  
+                                            <strong style="color:#008000;">{{replies.comment_author_name}}</strong>
+                                            – <span  style="color:#008000; font-family:math;">
+                                                Il y a {{replies.comment_posted_on|timesince}} </span>                             
+                                            <div class='text'><code><em>{{replies.comment_author_email}}</em></code></div>
+                                        </div>
+                                        <div class="text"> {{replies.comment_content}} </div>
+                                            
+                                    </div>
+                                </div>
+                            </div>                
+                        {% endfor %}
+
+                        <br><br>
+                        &nbsp; &nbsp; &nbsp;
+                        <div class="row clearfix reply-comment-form">
+                            <h4>Répondre à ce commentaire</h4> 
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                {{comment.error_messages}}
+
+                                &nbsp; &nbsp; &nbsp;   <br>
+
+                                <!-- Comment Form -->                            
+                                <div class="comment-form">  
+                                                
+                                    <form method="post" action="." >
+                                        {% csrf_token %}
+                                        <div class="row clearfix">
+                                            <div class="col-md-4 col-sm-6 col-xs-12 form-group">
+                                                {{comment_form.comment_author_name}}                      
+                                            </div>
+                                            
+                                            <div class="col-md-4 col-sm-6 col-xs-12 form-group">
+                                                {{comment_form.comment_author_phone}}
+                                            </div>
+
+                                            <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                                                {{comment_form.comment_author_email}}
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                {{comment_form.comment_content}}
+                                            </div>
+
+                                            <input type="hidden" value="{{comment.id}}" name="rep_comment_parent">
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                <input type="submit" class="theme-btn btn-style-two" type="submit" name="submit-form" value="Répondre" />
+                                            </div>
+                                                
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>   
+
+                {% endif %}
+        
+            </div>
+        
+        {% empty %}
+            <div class='text'> Cet article n'a pas été commenté encore</div>
+        {% endfor %}
+
+    </div>
+    
+    
+</div>
+
+

@@ -1,0 +1,1009 @@
+{% extends 'Layouts/base.html' %}
+
+<!-- {% load static %} -->
+
+{% block TITLE %}Contacts{% endblock %}
+
+<!--Page Title-->
+{% block PAGETITLE %}Nos Contacts{% endblock PAGETITLE %}
+
+{% block CONTENT %} 
+    
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{% url 'index' %}">Accueil</a></li>
+                        <li>Nos Contacts</li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="share-icon"><a href="#"><span class="icon fa fa-share-alt"></span> Partager</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+
+    <!--Contact Section-->
+    <section class="contact-section">
+    	<div class="auto-container">
+        
+        	<!--Contact Info Tabs-->
+            <div class="contact-info-tabs">
+                <!--Product Tabs-->
+                <div class="contact-tabs c-tabs-box">
+                
+                    <!--Tab Btns-->
+                    <ul class="tab-btns tab-buttons clearfix">
+                        <li data-tab="#contact-tab-cabinet" class="tab-btn active-btn">LE CABINET</li>
+                        <li data-tab="#contact-tab-dgps" class="tab-btn">DGPS</li>
+                        <li data-tab="#contact-tab-dge" class="tab-btn">DGE</li>
+                        <li data-tab="#contact-tab-dgt" class="tab-btn">DGT</li>
+                        <li data-tab="#contact-tab-dit" class="tab-btn">DIT</li>
+                        <li data-tab="#contact-tab-drt" class="tab-btn ">DRT</li>
+                        <li data-tab="#contact-tab-cnds" class="tab-btn">CNDS</li>
+                        <li data-tab="#contact-tab-dsepe" class="tab-btn">DSEPE</li>
+                        <li data-tab="#contact-tab-dspe" class="tab-btn">DSPE</li>
+                        <li data-tab="#contact-tab-dlte" class="tab-btn">DLTE</li>
+                        <li data-tab="#contact-tab-dpph" class="tab-btn">DPPH</li>
+                        <li data-tab="#contact-tab-dssm" class="tab-btn">DSSM</li>
+                        <li data-tab="#contact-tab-das" class="tab-btn">DAS</li>
+                    </ul>
+                    
+                    <!--Tabs Container-->
+                    <div class="tabs-content">
+                        <!--Tab / Active Tab-->
+                        <div class="tab  " id="contact-tab-cabinet">
+                            <div class="text">Veuillez trouver ci-dessous les coordonnées de toutes nos directions et services ratachées.</div>
+                            <div class="row clearfix">
+                                <!--Accordian Column-->
+                                <div class="accordian-column col-md-4 col-sm-12 col-xs-12">
+                                    <div class="column-inner">
+                                        <!--Accordion Box-->
+                                        <ul class="accordion-box style-four">
+                                            
+                                            <!--Block-->
+                                            <li class="accordion block active-block">
+                                                <div class="acc-btn active">Le Cabinet </div>
+                                                <div class="acc-content current">
+                                                    <div class="content">
+                                                        <ul class="info-list">
+                                                            <li><span class="icon flaticon-placeholder-3"></span><strong>Address:</strong>  Abidjan - Plateau,Tour A, cité administrative, Abidjan ,12e Etage.</li>
+                                                            <li><span class="icon flaticon-telephone"></span><strong>Appelez-nous:</strong><br> +225 27 20 23 92 80</li>
+                                                            <li><span class="icon flaticon-e-mail-envelope"></span><strong> Nous Ecrire :</strong><br> info@emploi.gouv.ci</li>
+                                                            <li><span class="icon fa fa-clock-o"></span><strong>Horaire d'ouverture:</strong><br> Lundi - Vendredi: 07h30-16h30 </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                 
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!--Form Column-->
+                                <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                                    <!-- Contact Form -->
+                                    <div class="contact-form ">
+                                        <h2>Formulaire de renseignements</h2>
+                                        <!--Comment Form-->
+                                        <form method="post" action="sendemail.php" class="contact-page-form-1">
+                                            <div class="row clearfix">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="username" placeholder="Your Name*" required>
+                                                </div>
+                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="email" name="email" placeholder="Email Address*" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="phone" placeholder="Phone Num" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="subject" placeholder="Subject" required>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <textarea name="message" placeholder="Your Message..."></textarea>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form">Envoyer</button>
+                                                </div>
+                
+                                            </div>
+                                        </form>
+                
+                                    </div>
+                                    <!--End Comment Form -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>   
+                       
+                        <!--Tab / Active Tab-->
+                        <div class="tab" id="contact-tab-dgps">
+        					<div class="text">Veuillez trouver ci-dessous les coordonnées de toutes nos directions et services ratachées.</div>
+                            <div class="row clearfix">
+                                <!--Accordian Column-->
+                                <div class="accordian-column col-md-4 col-sm-12 col-xs-12">
+                                    <div class="column-inner">
+                                        <!--Accordion Box-->
+                                        <ul class="accordion-box style-four">
+                                            
+                                            <!--Block-->
+                                            <li class="accordion block  ">
+                                                <div class=" acc-btn">DGPS (Direction Générale de la Protection Sociale)</div>
+                                                <div class="acc-content ">
+                                                    <div class="content">
+                                                        <ul class="info-list">
+                                                            <li><span class="icon flaticon-placeholder-3"></span><strong>Address:</strong>  Abidjan –Plateau....</li>
+                                                            <li><span class="icon flaticon-telephone"></span><strong>Appelez-nous:</strong><br> +225 27 20 32 11 32</li>
+                                                            <li><span class="icon flaticon-e-mail-envelope"></span><strong> Nous Ecrire :</strong><br> info@emploi.gouv.ci</li>
+                                                            <li><span class="icon fa fa-clock-o"></span><strong>Horaire d'ouverture:</strong><br> Lundi - Vendredi: 07h30-16h30 </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                 
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!--Form Column-->
+                                <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                                    <!-- Contact Form -->
+                                    <div class="contact-form ">
+                                        <h2>Formulaire de renseignements</h2>
+                                        <!--Comment Form-->
+                                        <form method="post" action="sendemail.php" class="contact-page-form-1">
+                                            <div class="row clearfix">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="username" placeholder="Your Name*" required>
+                                                </div>
+                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="email" name="email" placeholder="Email Address*" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="phone" placeholder="Phone Num" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="subject" placeholder="Subject" required>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <textarea name="message" placeholder="Your Message..."></textarea>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form">Envoyer</button>
+                                                </div>
+                
+                                            </div>
+                                        </form>
+                
+                                    </div>
+                                    <!--End Comment Form -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <!--Tab / Active Tab-->
+                        <div class="tab" id="contact-tab-dge">
+                            
+                            <div class="text">Veuillez trouver ci-dessous les coordonnées de toutes nos directions et services ratachées.</div>
+                            <div class="row clearfix">
+                                <!--Accordian Column-->
+                                <div class="accordian-column col-md-4 col-sm-12 col-xs-12">
+                                    <div class="column-inner">
+                                        <!--Accordion Box-->
+                                        <ul class="accordion-box style-four">
+                                            
+                                            <!--Block-->
+                                            <li class="accordion block ">
+                                                <div class=" acc-btn">(DGE) Direction Générale de l’Emploi</div>
+                                                <div class="acc-content ">
+                                                    <div class="content">
+                                                        <ul class="info-list">
+                                                            <li><span class="icon flaticon-placeholder-3"></span><strong>Address:</strong>  Abidjan –Plateau....</li>
+                                                            <li><span class="icon flaticon-telephone"></span><strong>Appelez-nous:</strong><br> +225 27 20 22 58 48 / 27 20 22 58 49</li>
+                                                            <li><span class="icon flaticon-e-mail-envelope"></span><strong> Nous Ecrire :</strong><br> info@direction_emploi.gouv.ci</li>
+                                                            <li><span class="icon fa fa-clock-o"></span><strong>Horaire d'ouverture:</strong><br> Lundi - Vendredi: 07h30-16h30 </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            
+                                            <!--Block-->
+                    
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!--Form Column-->
+                                 <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                                    <!-- Contact Form -->
+                                    <div class="contact-form ">
+                                        <h2>Formulaire de renseignements</h2>
+                                        <!--Comment Form-->
+                                        <form method="post" action="sendemail.php" class="contact-page-form-1">
+                                            <div class="row clearfix">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="username" placeholder="Your Name*" required>
+                                                </div>
+                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="email" name="email" placeholder="Email Address*" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="phone" placeholder="Phone Num" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="subject" placeholder="Subject" required>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <textarea name="message" placeholder="Your Message..."></textarea>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form">Envoyer</button>
+                                                </div>
+                
+                                            </div>
+                                        </form>
+                
+                                    </div>
+                                    <!--End Comment Form -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <!--Tab / Active Tab-->
+                        <div class="tab" id="contact-tab-dgt">
+                            
+                            <div class="text">Veuillez trouver ci-dessous les coordonnées de toutes nos directions et services ratachées. </div>
+                            <div class="row clearfix">
+                                <!--Accordian Column-->
+                                <div class="accordian-column col-md-4 col-sm-12 col-xs-12">
+                                    <div class="column-inner">
+                                        <!--Accordion Box-->
+                                        <ul class="accordion-box style-four">
+                                            
+                                            <!--Block-->
+                                            <li class="accordion block ">
+                                                <div class=" acc-btn">DGT (Direction Générale du Travail)</div>
+                                                <div class="acc-content ">
+                                                    <div class="content">
+                                                        <ul class="info-list">
+                                                            <li><span class="icon flaticon-placeholder-3"></span><strong>Address:</strong> Abidjan, plateau...</li>
+                                                            <li><span class="icon flaticon-telephone"></span><strong>Appelez-nous:</strong><br> +225 27 20 23 92 77</li>
+                                                            <li><span class="icon flaticon-e-mail-envelope"></span><strong>Nous Ecrire:</strong><br> info@direction_travail.gouv.ci</li>
+                                                            <li><span class="icon fa fa-clock-o"></span><strong>Horaire d'ouverture:</strong><br> Lundi - Vendredi: 07h30-16h30 </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                              
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--Form Column-->
+                                <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                                    <!-- Contact Form -->
+                                     <div class="contact-form ">
+                                        <h2>Formulaire de renseignements</h2>
+                                        <!--Comment Form-->
+                                        <form method="post" action="sendemail.php" class="contact-page-form-1">
+                                            <div class="row clearfix">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="username" placeholder="Your Name*" required>
+                                                </div>
+                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="email" name="email" placeholder="Email Address*" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="phone" placeholder="Phone Num" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="subject" placeholder="Subject" required>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <textarea name="message" placeholder="Your Message..."></textarea>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form">Envoyer</button>
+                                                </div>
+                
+                                            </div>
+                                        </form>
+                
+                                    </div>
+                                    <!--End Comment Form -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <!--Tab / Active Tab-->
+                        <div class="tab" id="contact-tab-dit">
+                            
+                            <div class="text">Veuillez trouver ci-dessous les coordonnées de toutes nos directions et services ratachées. </div>
+                            <div class="row clearfix">
+                                <!--Accordian Column-->
+                                <div class="accordian-column col-md-4 col-sm-12 col-xs-12">
+                                    <div class="column-inner">
+                                        <!--Accordion Box-->
+                                        <ul class="accordion-box style-four">
+                                            
+                                            <!--Block-->
+                                            <li class="accordion block ">
+                                                <div class=" acc-btn">DIT (Direction  de l’Inspection du Travail) </div>
+                                                <div class="acc-content ">
+                                                    <div class="content">
+                                                        <ul class="info-list">
+                                                            <li><span class="icon flaticon-placeholder-3"></span><strong>Address:</strong> Abidjan, plateau...</li>
+                                                            <li><span class="icon flaticon-telephone"></span><strong>Appelez-nous:</strong><br> +225 27 20 35 54 70 / 27 20 21 08 87</li>
+                                                            <li><span class="icon flaticon-e-mail-envelope"></span><strong>Nous Ecrire:</strong><br> info@inspection_travail.gouv.ci</li>
+                                                            <li><span class="icon fa fa-clock-o"></span><strong>Horaire d'ouverture:</strong><br> Lundi - Vendredi: 07h30-16h30 </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                              
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--Form Column-->
+                                <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                                    <!-- Contact Form -->
+                                     <div class="contact-form ">
+                                        <h2>Formulaire de renseignements</h2>
+                                        <!--Comment Form-->
+                                        <form method="post" action="sendemail.php" class="contact-page-form-1">
+                                            <div class="row clearfix">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="username" placeholder="Your Name*" required>
+                                                </div>
+                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="email" name="email" placeholder="Email Address*" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="phone" placeholder="Phone Num" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="subject" placeholder="Subject" required>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <textarea name="message" placeholder="Your Message..."></textarea>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form">Envoyer</button>
+                                                </div>
+                
+                                            </div>
+                                        </form>
+                
+                                    </div>
+                                    <!--End Comment Form -->
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <!--Tab / Active Tab-->
+                        <div class="tab  " id="contact-tab-drt">
+                            <div class="text">Veuillez trouver ci-dessous les coordonnées de toutes nos directions et services ratachées. </div>
+                            <div class="row clearfix">
+                                <!--Accordian Column-->
+                                <div class="accordian-column col-md-4 col-sm-12 col-xs-12">
+                                    <div class="column-inner">
+                                        <!--Accordion Box-->
+                                        <ul class="accordion-box style-four">
+                                            
+                                            <!--Block-->
+                                            <li class="accordion block ">
+                                                <div class=" acc-btn">DRT (Direction de la Règlementation du Travail)</div>
+                                                <div class="acc-content ">
+                                                    <div class="content">
+                                                        <ul class="info-list">
+                                                            <li><span class="icon flaticon-placeholder-3"></span><strong>Address:</strong> Abidjan...</li>
+                                                            <li><span class="icon flaticon-telephone"></span><strong>Appelez-nous:</strong><br> +225 27 20 21 37 34</li>
+                                                            <li><span class="icon flaticon-e-mail-envelope"></span><strong>Nous Ecrire:</strong><br> info@Réglementation_travail.gouv.ci</li>
+                                                            <li><span class="icon fa fa-clock-o"></span><strong>Horaire d'ouverture:</strong><br> Lundi - Vendredi: 07h30-16h30 </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                              
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--Form Column-->
+                                <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                                    <!-- Contact Form -->
+                                     <div class="contact-form ">
+                                        <h2>Formulaire de renseignements</h2>
+                                        <!--Comment Form-->
+                                        <form method="post" action="sendemail.php" class="contact-page-form-1">
+                                            <div class="row clearfix">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="username" placeholder="Your Name*" required>
+                                                </div>
+                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="email" name="email" placeholder="Email Address*" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="phone" placeholder="Phone Num" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="subject" placeholder="Subject" required>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <textarea name="message" placeholder="Your Message..."></textarea>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form">Envoyer</button>
+                                                </div>
+                
+                                            </div>
+                                        </form>
+                
+                                    </div>
+                                    <!--End Comment Form -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <!--Tab / Active Tab-->
+                        <div class="tab" id="contact-tab-cnds">
+                            <div class="text">Veuillez trouver ci-dessous les coordonnées de toutes nos directions et services ratachées. </div>
+                            <div class="row clearfix">
+                                <!--Accordian Column-->
+                                <div class="accordian-column col-md-4 col-sm-12 col-xs-12">
+                                    <div class="column-inner">
+                                        <!--Accordion Box-->
+                                        <ul class="accordion-box style-four">
+                                            
+                                            <!--Block-->
+                                            <li class="accordion block ">
+                                                <div class=" acc-btn">CNDS (Conseil Nationale du Dialogue Sociale) </div>
+                                                <div class="acc-content ">
+                                                    <div class="content">
+                                                        <ul class="info-list">
+                                                            <li><span class="icon flaticon-placeholder-3"></span><strong>Address:</strong> Abidjan...</li>
+                                                            <li><span class="icon flaticon-telephone"></span><strong>Appelez-nous:</strong><br> +225 27 22 41 51 38</li>
+                                                            <li><span class="icon flaticon-e-mail-envelope"></span><strong>Nous Ecrire:</strong><br> info@cnds.gouv.ci</li>
+                                                            <li><span class="icon fa fa-clock-o"></span><strong>Horaire d'ouverture:</strong><br> Lundi - Vendredi: 07h30-16h30 </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                              
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--Form Column-->
+                                <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                                    <!-- Contact Form -->
+                                     <div class="contact-form ">
+                                        <h2>Formulaire de renseignements</h2>
+                                        <!--Comment Form-->
+                                        <form method="post" action="sendemail.php" class="contact-page-form-1">
+                                            <div class="row clearfix">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="username" placeholder="Your Name*" required>
+                                                </div>
+                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="email" name="email" placeholder="Email Address*" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="phone" placeholder="Phone Num" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="subject" placeholder="Subject" required>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <textarea name="message" placeholder="Your Message..."></textarea>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form">Envoyer</button>
+                                                </div>
+                
+                                            </div>
+                                        </form>
+                
+                                    </div>
+                                    <!--End Comment Form -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <!--Tab / Active Tab-->
+                        <div class="tab" id="contact-tab-dsepe">
+                            <div class="text">Veuillez trouver ci-dessous les coordonnées de toutes nos directions et services ratachées. </div>
+                            <div class="row clearfix">
+                                <!--Accordian Column-->
+                                <div class="accordian-column col-md-4 col-sm-12 col-xs-12">
+                                    <div class="column-inner">
+                                        <!--Accordion Box-->
+                                        <ul class="accordion-box style-four">
+                                            
+                                            <!--Block-->
+                                            <li class="accordion block ">
+                                                <div class=" acc-btn">Direction du Suivi et de l’Evaluation de la politique de l’Emploi (DSEPE)</div>
+                                                <div class="acc-content ">
+                                                    <div class="content">
+                                                        <ul class="info-list">
+                                                            <li><span class="icon flaticon-placeholder-3"></span><strong>Address:</strong> Abidjan...</li>
+                                                            <li><span class="icon flaticon-telephone"></span><strong>Appelez-nous:</strong><br> 27 20 22 58 54 / 27 20 22 58 53</li>
+                                                            <li><span class="icon flaticon-e-mail-envelope"></span><strong>Nous Ecrire:</strong><br> info@dsepe.gouv.ci</li>
+                                                            <li><span class="icon fa fa-clock-o"></span><strong>Horaire d'ouverture:</strong><br> Lundi - Vendredi: 07h30-16h30 </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                              
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--Form Column-->
+                                <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                                    <!-- Contact Form -->
+                                     <div class="contact-form ">
+                                        <h2>Formulaire de renseignements</h2>
+                                        <!--Comment Form-->
+                                        <form method="post" action="sendemail.php" class="contact-page-form-1">
+                                            <div class="row clearfix">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="username" placeholder="Your Name*" required>
+                                                </div>
+                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="email" name="email" placeholder="Email Address*" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="phone" placeholder="Phone Num" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="subject" placeholder="Subject" required>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <textarea name="message" placeholder="Your Message..."></textarea>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form">Envoyer</button>
+                                                </div>
+                
+                                            </div>
+                                        </form>
+                
+                                    </div>
+                                    <!--End Comment Form -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <!--Tab / Active Tab-->
+                        <div class="tab" id="contact-tab-dspe">
+                           <div class="text">Veuillez trouver ci-dessous les coordonnées de toutes nos directions et services ratachées. </div>
+                            <div class="row clearfix">
+                                <!--Accordian Column-->
+                                <div class="accordian-column col-md-4 col-sm-12 col-xs-12">
+                                    <div class="column-inner">
+                                        <!--Accordion Box-->
+                                        <ul class="accordion-box style-four">
+                                            
+                                            <!--Block-->
+                                            <li class="accordion block ">
+                                                <div class=" acc-btn">Direction des Stratégies et des Programmes d’Emploi(DSPE)</div>
+                                                <div class="acc-content ">
+                                                    <div class="content">
+                                                        <ul class="info-list">
+                                                            <li><span class="icon flaticon-placeholder-3"></span><strong>Address:</strong> Abidjan...</li>
+                                                            <li><span class="icon flaticon-telephone"></span><strong>Appelez-nous:</strong><br> 27 20 22 58 52 / 27 20 22 58 51</li>
+                                                            <li><span class="icon flaticon-e-mail-envelope"></span><strong>Nous Ecrire:</strong><br> info@dspe.gouv.ci</li>
+                                                            <li><span class="icon fa fa-clock-o"></span><strong>Horaire d'ouverture:</strong><br> Lundi - Vendredi: 07h30-16h30 </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                              
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--Form Column-->
+                                <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                                    <!-- Contact Form -->
+                                     <div class="contact-form ">
+                                        <h2>Formulaire de renseignements</h2>
+                                        <!--Comment Form-->
+                                        <form method="post" action="sendemail.php" class="contact-page-form-1">
+                                            <div class="row clearfix">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="username" placeholder="Your Name*" required>
+                                                </div>
+                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="email" name="email" placeholder="Email Address*" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="phone" placeholder="Phone Num" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="subject" placeholder="Subject" required>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <textarea name="message" placeholder="Your Message..."></textarea>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form">Envoyer</button>
+                                                </div>
+                
+                                            </div>
+                                        </form>
+                
+                                    </div>
+                                    <!--End Comment Form -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                         <!--Tab / Active Tab-->
+                        <div class="tab  " id="contact-tab-dlte">
+                         <div class="text">Veuillez trouver ci-dessous les coordonnées de toutes nos directions et services ratachées. </div>
+                            <div class="row clearfix">
+                                <!--Accordian Column-->
+                                <div class="accordian-column col-md-4 col-sm-12 col-xs-12">
+                                    <div class="column-inner">
+                                        <!--Accordion Box-->
+                                        <ul class="accordion-box style-four">
+                                            
+                                            <!--Block-->
+                                            <li class="accordion block ">
+                                                <div class=" acc-btn"> DLTE (Direction de la Lutte contre le Travail des Enfants)</div>
+                                                <div class="acc-content ">
+                                                    <div class="content">
+                                                        <ul class="info-list">
+                                                            <li><span class="icon flaticon-placeholder-3"></span><strong>Address:</strong> Abidjan...</li>
+                                                            <li><span class="icon flaticon-telephone"></span><strong>Appelez-nous:</strong><br>+225 27 22 52 33 82 / 27 22 52 33 83</li>
+                                                            <li><span class="icon flaticon-e-mail-envelope"></span><strong>Nous Ecrire:</strong><br> info@dlte.gouv.ci</li>
+                                                            <li><span class="icon fa fa-clock-o"></span><strong>Horaire d'ouverture:</strong><br> Lundi - Vendredi: 07h30-16h30 </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                              
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--Form Column-->
+                                <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                                    <!-- Contact Form -->
+                                     <div class="contact-form ">
+                                        <h2>Formulaire de renseignements</h2>
+                                        <!--Comment Form-->
+                                        <form method="post" action="sendemail.php" class="contact-page-form-1">
+                                            <div class="row clearfix">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="username" placeholder="Your Name*" required>
+                                                </div>
+                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="email" name="email" placeholder="Email Address*" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="phone" placeholder="Phone Num" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="subject" placeholder="Subject" required>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <textarea name="message" placeholder="Your Message..."></textarea>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form">Envoyer</button>
+                                                </div>
+                
+                                            </div>
+                                        </form>
+                
+                                    </div>
+                                    <!--End Comment Form -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <!--Tab / Active Tab-->
+                        <div class="tab" id="contact-tab-dpph">
+                           <div class="text">Veuillez trouver ci-dessous les coordonnées de toutes nos directions et services ratachées. </div>
+                            <div class="row clearfix">
+                                <!--Accordian Column-->
+                                <div class="accordian-column col-md-4 col-sm-12 col-xs-12">
+                                    <div class="column-inner">
+                                        <!--Accordion Box-->
+                                        <ul class="accordion-box style-four">
+                                            
+                                            <!--Block-->
+                                            <li class="accordion block ">
+                                                <div class="acc-btn  "> DPPH (Direction de la Promotion des Personnes Handicapées)</div>
+                                                <div class="acc-content ">
+                                                    <div class="content">
+                                                        <ul class="info-list">
+                                                            <li><span class="icon flaticon-placeholder-3"></span><strong>Address:</strong> Abidjan...</li>
+                                                            <li><span class="icon flaticon-telephone"></span><strong>Appelez-nous:</strong><br>+225 27 20 32 57 33</li>
+                                                            <li><span class="icon flaticon-e-mail-envelope"></span><strong>Nous Ecrire:</strong><br> info@dpph.gouv.ci</li>
+                                                            <li><span class="icon fa fa-clock-o"></span><strong>Horaire d'ouverture:</strong><br> Lundi - Vendredi: 07h30-16h30 </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                              
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--Form Column-->
+                                <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                                    <!-- Contact Form -->
+                                     <div class="contact-form ">
+                                        <h2>Formulaire de renseignements</h2>
+                                        <!--Comment Form-->
+                                        <form method="post" action="sendemail.php" class="contact-page-form-1">
+                                            <div class="row clearfix">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="username" placeholder="Your Name*" required>
+                                                </div>
+                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="email" name="email" placeholder="Email Address*" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="phone" placeholder="Phone Num" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="subject" placeholder="Subject" required>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <textarea name="message" placeholder="Your Message..."></textarea>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form">Envoyer</button>
+                                                </div>
+                
+                                            </div>
+                                        </form>
+                
+                                    </div>
+                                    <!--End Comment Form -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <!--Tab / Active Tab-->
+                        <div class="tab" id="contact-tab-dssm">
+                            <div class="text">Veuillez trouver ci-dessous les coordonnées de toutes nos directions et services ratachées. </div>
+                            <div class="row clearfix">
+                                <!--Accordian Column-->
+                                <div class="accordian-column col-md-4 col-sm-12 col-xs-12">
+                                    <div class="column-inner">
+                                        <!--Accordion Box-->
+                                        <ul class="accordion-box style-four">
+                                            
+                                            <!--Block-->
+                                            <li class="accordion block ">
+                                                <div class="acc-btn ">DSSM (Direction de la Sécurité Sociale et de la Mutualité)</div>
+                                                <div class="acc-content ">
+                                                    <div class="content">
+                                                        <ul class="info-list">
+                                                            <li><span class="icon flaticon-placeholder-3"></span><strong>Address:</strong> Abidjan...</li>
+                                                            <li><span class="icon flaticon-telephone"></span><strong>Appelez-nous:</strong><br>+225 27 20 32 11 32</li>
+                                                            <li><span class="icon flaticon-e-mail-envelope"></span><strong>Nous Ecrire:</strong><br> info@dssm.gouv.ci</li>
+                                                            <li><span class="icon fa fa-clock-o"></span><strong>Horaire d'ouverture:</strong><br> Lundi - Vendredi: 07h30-16h30 </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                              
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--Form Column-->
+                                <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                                    <!-- Contact Form -->
+                                     <div class="contact-form ">
+                                        <h2>Formulaire de renseignements</h2>
+                                        <!--Comment Form-->
+                                        <form method="post" action="sendemail.php" class="contact-page-form-1">
+                                            <div class="row clearfix">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="username" placeholder="Your Name*" required>
+                                                </div>
+                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="email" name="email" placeholder="Email Address*" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="phone" placeholder="Phone Num" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="subject" placeholder="Subject" required>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <textarea name="message" placeholder="Your Message..."></textarea>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form">Envoyer</button>
+                                                </div>
+                
+                                            </div>
+                                        </form>
+                
+                                    </div>
+                                    <!--End Comment Form -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <!--Tab / Active Tab-->
+                        <div class="tab" id="contact-tab-das">
+                            <div class="row clearfix">
+                                <!--Accordian Column-->
+                                <div class="accordian-column col-md-4 col-sm-12 col-xs-12">
+                                    <div class="column-inner">
+                                        <!--Accordion Box-->
+                                        <ul class="accordion-box style-four">
+                                            
+                                            <!--Block-->
+                                            <li class="accordion block ">
+                                                <div class="acc-btn ">DAS (Direction de l’Action Sociale)</div>
+                                                <div class="acc-content ">
+                                                    <div class="content">
+                                                        <ul class="info-list">
+                                                            <li><span class="icon flaticon-placeholder-3"></span><strong>Address:</strong> Abidjan...</li>
+                                                            <li><span class="icon flaticon-telephone"></span><strong>Appelez-nous:</strong><br>+225 27 20 32 14 13</li>
+                                                            <li><span class="icon flaticon-e-mail-envelope"></span><strong>Nous Ecrire:</strong><br> info@actionsociale.gouv.ci</li>
+                                                            <li><span class="icon fa fa-clock-o"></span><strong>Horaire d'ouverture:</strong><br> Lundi - Vendredi: 07h30-16h30 </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                              
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--Form Column-->
+                                <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                                    <!-- Contact Form -->
+                                     <div class="contact-form ">
+                                        <h2>Formulaire de renseignements</h2>
+                                        <!--Comment Form-->
+                                        <form method="post" action="sendemail.php" class="contact-page-form-1">
+                                            <div class="row clearfix">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="username" placeholder="Your Name*" required>
+                                                </div>
+                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="email" name="email" placeholder="Email Address*" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="phone" placeholder="Phone Num" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="subject" placeholder="Subject" required>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <textarea name="message" placeholder="Your Message..."></textarea>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form">Envoyer</button>
+                                                </div>
+                
+                                            </div>
+                                        </form>
+                
+                                    </div>
+                                    <!--End Comment Form -->
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        
+        	
+        </div>
+    </section>
+    <!--End Contact Section-->
+
+    <!--Map Section-->
+    <section class="map-section">
+    	<!--Map Outer-->
+        <div class="map-outer">
+            <div class="google-map" 
+                id="contact-google-map" 
+                data-map-lat="44.529688" 
+                data-map-lng="-72.933009" 
+                data-icon-path="static/images/icons/map-marker.png" 
+                data-map-title="Brooklyn, New York, United Kingdom" 
+                data-map-zoom="14" 
+                data-markers='{
+                    "marker-1": [44.529688, -72.933009, "<h4>Head Office</h4><p>44/108 Brooklyn, UK</p>"],
+                    "marker-2": [44.231172, -76.485954, "<h4>Branch Office</h4><p>4/99 Alabama, USA</p>"],
+                    "marker-3": [44.999684, -69.070334, "<h4>Branch Office</h4><p>4/99 Maine, USA</p>"],
+                    "marker-4": [40.880550, -77.393705, "<h4>Branch Office</h4><p>4/99 Pennsylvania, USA</p>"]
+                }'>
+
+    		</div>
+
+        </div>
+    </section>
+	<!--End Map Section-->
+{% endblock %}

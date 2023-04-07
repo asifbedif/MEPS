@@ -1,0 +1,118 @@
+[
+    {
+        "name": "django_migrations",
+        "seq": 64
+    },
+    {
+        "name": "PRODUITS_product",
+        "seq": 4
+    },
+    {
+        "name": "Users_userprofile",
+        "seq": 4
+    },
+    {
+        "name": "django_admin_log",
+        "seq": 149
+    },
+    {
+        "name": "django_content_type",
+        "seq": 188
+    },
+    {
+        "name": "auth_permission",
+        "seq": 752
+    },
+    {
+        "name": "auth_group",
+        "seq": 0
+    },
+    {
+        "name": "auth_user",
+        "seq": 4
+    },
+    {
+        "name": "PUBLICATIONS_publicationcategory",
+        "seq": 5
+    },
+    {
+        "name": "MEPS_ADMIN_post",
+        "seq": 13
+    },
+    {
+        "name": "cabinet_decretlist",
+        "seq": 5
+    },
+    {
+        "name": "NOUS_JOINDRE_faq",
+        "seq": 2
+    },
+    {
+        "name": "MEPS_ADMIN_pdftype",
+        "seq": 3
+    },
+    {
+        "name": "MEPS_ADMIN_pdfdocument",
+        "seq": 1
+    },
+    {
+        "name": "organigramme_organigramme",
+        "seq": 1
+    },
+    {
+        "name": "ministère_leministere",
+        "seq": 1
+    },
+    {
+        "name": "ministère_ministerslist",
+        "seq": 4
+    },
+    {
+        "name": "ministère_directioncard",
+        "seq": 4
+    },
+    {
+        "name": "Décret_Organisation_decretorganisation",
+        "seq": 3
+    },
+    {
+        "name": "Directions_Services_Rattachés_directionsservicesrattachés",
+        "seq": 2
+    },
+    {
+        "name": "StructuresSousTutelles_structuressoustutelle",
+        "seq": 2
+    },
+    {
+        "name": "ÉcolesSpécialisées_ecolespecialisee",
+        "seq": 1
+    },
+    {
+        "name": "NOUS_JOINDRE_noscontactscustommodel",
+        "seq": 1
+    },
+    {
+        "name": "NOUS_JOINDRE_directioncustommodel",
+        "seq": 1
+    },
+    {
+        "name": "MEPS_ADMIN_direction",
+        "seq": 3
+    },
+    {
+        "name": "MEPS_ADMIN_directiondetail",
+        "seq": 7
+    },
+    {
+        "name": "PRODUITS_productcategory",
+        "seq": 3
+    },
+    {
+        "name": "MEPS_ADMIN_slider",
+        "seq": 4
+    },
+    {
+        "name": "PUBLICATIONS_publicationsouscategory",
+        "seq": 1
+    }
+]

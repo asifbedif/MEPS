@@ -1,0 +1,194 @@
+{% extends 'Layouts/base.html' %}
+    
+{% load static %}
+{% load humanize %}
+
+{% block CONTENT %}
+       
+    
+    {% block pageTitle %}
+        Nos Publications
+    {% endblock %}
+        
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{% url 'index' %}">Accueil</a></li>
+                        <li>Publications</li>
+                    </ul>
+                </div>
+                {% comment %} <div class="pull-right">
+                    <div class="share-icon"><a href="#"><span class="icon fa fa-share-alt"></span> Partager</a></div>
+                </div> {% endcomment %}
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+            
+    <!-- ACTUALITES Section-->
+     <!--Blog Grid Section-->
+     <section class="welcome-section">
+    	<div class="auto-container">
+        	<!--Sec Title-->
+            <div class="row equal-cols">
+                <div class="col-md-12">
+                    <div>
+                        <div class="sec-title  pull-left">
+                            <h2>ACTUALITÉS:</h2>
+                        </div>
+                        <div class="pull-right">
+                            <a href="{% url 'communiques' %}" class="theme-btn btn-style-four">Voir Plus</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>           
+                      
+            {% for post in posts %}
+            
+            {% if posts|length|divisibleby:3 or posts|length|divisibleby:5 %}
+
+                <!--News Block-->             
+                <div class="row clearfix">
+                    <div class="welcome-block m-0 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            {% else %}
+                <div class="welcome-block m-0 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            {% endif %}              
+               
+                <!--Welcome Block-->
+                {% comment %} <div class="welcome-block m-0 col-lg-4 col-md-6 col-sm-6 col-xs-12"> {% endcomment %}
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img class='actualite-card-img' src="{{ post.post_image.url }}" alt="" />
+                            <div class="overlay-box">
+                                <div class="post-published-date">{{post.post_published_on}}</div>
+                            	<div class="content">
+                                	<div class="content-inner">                                        
+                                        <div class="icon-box">
+                                            <span class="icon flaticon-analytics-1"></span>
+                                        </div>
+                                        <h3><a href="{{ post.get_absolute_url }}">{{post.post_title|truncatewords:5}}</a></h3>
+                                        <div class="text">{{post.post_category}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Lower Box-->
+                        <div class="lower-box">
+                        	<div class="text">
+
+                                {{ post.post_content|truncatewords:25|linebreaks }}
+                                
+                            </div>
+                            <a href="{{ post.get_absolute_url }}" class="theme-btn btn-style-three">Lire plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                {% if forloop.counter|add:'-3'|divisibleby:3 %}
+                    </div>                         
+                {% endif %} 
+
+            {% empty %}
+
+                {% include 'Layouts/_emptyDataMessage.html' %}
+
+                <!-- End Welcome Block -->
+            {% endfor %}
+                <br>
+            <!-- Pagination Block -->
+            {% comment %} {% include "Layouts/pagination.html" with page=posts %} {% endcomment %}
+            
+        </div>
+    <br>
+    <!--End ACTUALITES Section-->
+
+    <!--COMMUNIQUÉS Section-->
+    	<div class="auto-container">
+            <div class="row equal-cols">
+                <div class="col-md-12">
+                <div style="background-color:#efefef; height: 1.5vh; " ><br><br></div>
+                    
+                    <div style="margin-top:5vh;" >
+                        <div class="sec-title  pull-left" >
+                            <h2>COMMUNIQUÉS:</h2>
+                        </div>
+                        <div class="pull-right">
+                            <a href="{% url 'communiques' %}" class="theme-btn btn-style-four">Voir Plus</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="row">
+                {% for communique in communiques %}
+                
+                {% if communiques|length|divisibleby:3 or communiques|length|divisibleby:5 %}
+
+                    <!--News Block-->             
+                    <div class="row clearfix">                 
+                        <div class="news-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        
+                {% else %}
+                    <div class="news-block-two col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                {% endif %}      
+
+                <!--News Block Two-->            
+                    <div class="inner-box">
+                        <div class="lower-content">
+                            <div class="content communique">
+                                <em><a href="#" class="read-more" target="self"><h6>{{communique.com_category}} | {{communique.com_sous_category}}</h6></a></em>
+
+                                <div class="icon-box" style="background-color: var(--green-main); padding-top: 7%; padding-bottom: 7%; height: auto;">
+                                    {% if communique.post_pdf.name|slice:"-4:"|cut:"."|lower == "pdf" %}
+                                        <span class="icon flaticon-pdf " style="color: white;"></span>
+                                    {% else %}
+                                        <span class="icon flaticon-file " style="color: white;"></span>
+                                    {% endif %}
+                                </div>
+                                <h5><strong>Publié 
+                                    {% comment %} {{ communique.post_published_on | naturalday }},  {% endcomment %}
+                                    {{ communique.post_published_on |naturaltime }}</strong>
+                                </h5>
+                                <p class="text">{{ communique.post_title |upper|truncatewords:5 }}</p>
+                                <h6><em>Communiqué du {{ communique.post_published_on | date:"d M Y" }} à {{ communique.post_published_on |time:"H:i" }}</em></h6><br/>
+                                {% comment %} <a href="{% url 'communique_details' ID=communique.id YEAR=communique.post_published_on|date:'Y' MONTH=communique.post_published_on|date:'m' DAY=communique.post_published_on|date:'d' SLUG=communique.post_slug %}" class="read-more" target=""> {% endcomment %}
+                                <a href="{% url 'communique_details' ID=communique.id YEAR=communique.post_published_on|date:'Y' MONTH=communique.post_published_on|date:'m' DAY=communique.post_published_on|date:'d' SLUG=communique.post_slug %}" class="read-more" target="">
+                                    
+                                    <strong>Voir Détails</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {% if forloop.counter|add:'-3'|divisibleby:3 %}
+                    </div>                         
+                {% endif %} 
+
+                {% empty %}
+
+                    {% include 'Layouts/_emptyDataMessage.html' %}
+
+                
+                {% endfor %}
+            </div>
+
+            <!-- Pagination Block -->
+
+            {% comment %} {% include "Layouts/pagination.html" with page=communiques %} {% endcomment %}
+        </div>
+        <br/><br/><br/>    
+
+    </section>
+    <!--End Communiques Section-->
+
+
+{% endblock CONTENT %}

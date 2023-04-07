@@ -1,0 +1,108 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>MEPS | Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="{% static 'backend/vendors/iconfonts/font-awesome/css/all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'backend/vendors/css/vendor.bundle.base.css' %}">
+  <link rel="stylesheet" href="{% static 'backend/vendors/css/vendor.bundle.addons.css' %}">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{% static 'backend/css/style.css' %}">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="/" />
+</head>
+<body class="horizontal-menu">
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    {% include 'Backend/Partials/_Hnavbar.html' %}
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      {% comment %} {% include 'Backend/Partials/_settings-panel.html' %}  {% endcomment %}
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      {% comment %} {% include 'Backend/Partials/_sidebar.html' %} {% endcomment %}
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="page-header">            
+            <h3 class="page-title">
+              
+              {% block PAGE_TITLE %} {% endblock PAGE_TITLE %}
+                
+            </h3>
+            <div class="nav-item d-none d-lg-flex pull-right">
+              <a class="nav-link" href="{% url 'index' %}" target='_blank'>
+                <span class="btn btn-primary">Voir le siteweb</span>
+              </a>
+            </div>
+            <div class="mt-2 text-center">
+          
+              {% block MESSAGES %} {% endblock MESSAGES %}
+                
+            </div>
+          </div>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#">                  
+                  {% block breadcrumb_parent %} {% endblock breadcrumb_parent %}
+                </a>
+              </li>
+                
+              <li class="breadcrumb-item active" aria-current="page">
+
+                {% block breadcrumb %} {% endblock breadcrumb %}
+
+              </li>
+
+            </ol>
+          </nav>
+
+          {% block ADMIN_BODY %}
+            
+          {% endblock ADMIN_BODY %}
+            
+          
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        {% include 'Backend/Partials/_footer.html' %}
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="{% static 'backend/vendors/js/vendor.bundle.base.js' %}"></script>
+  <script src="{% static 'backend/vendors/js/vendor.bundle.addons.js' %}"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="{% static 'backend/js/off-canvas.js' %}"></script>
+  <script src="{% static 'backend/js/hoverable-collapse.js' %}"></script>
+  <script src="{% static 'backend/js/misc.js' %}"></script>
+  <script src="{% static 'backend/js/settings.js' %}"></script>
+  <script src="{% static 'backend/js/todolist.js' %}"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="{% static 'backend/js/dashboard.js' %}"></script>
+  <!-- End custom js for this page-->
+</body>
+
+
+</html>

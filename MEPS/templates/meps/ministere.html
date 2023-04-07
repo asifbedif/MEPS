@@ -1,0 +1,234 @@
+
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+{% block PAGETITLE %} {{LeMinistere.title}} {% endblock %}
+
+{% block CONTENT %}
+
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{% url 'index' %}">Accueil</a></li>
+                        <li> {{ LeMinistere.title }} </li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="share-icon"><a href="{% url  '#"><span class="icon fa fa-share-alt"></span> Partager</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+    
+    <!--About Section Two-->
+    <section class="about-section-two">
+    	<div class="auto-container">
+        	<div class="inner-container">
+            	<div class="row clearfix">
+                	<!--Column-->
+                    
+                    <div class="content-column col-md-6 col-sm-12 col-xs-12">
+                    	<div class="inner-content">
+                        	<div class="dark-text">{{ LeMinistere.title }}</div>
+                            <div class="text">
+                            	<p>
+                                    {{ LeMinistere.content }}
+
+                                </p>                                
+                                <!-- <ul class="list-style-three">
+                                	<li></li>
+                                    <li>  En matiere d'emploi et de travail.</li>
+                                    <li>En matiere de protection sociale.</li>
+                                </ul> -->
+                                
+                            </div>
+
+                        </div>
+                        
+                        {% if CTA_btn %}
+
+                            <a href="../{{ CTA_btn.link }}">
+                                <button class="btn-style-four" style="margin-top:35px;">{{ CTA_btn.text }}</button>
+                            </a>
+                            
+                        {% endif %}
+
+                    </div>
+                    <!--Column-->
+                    <div class="image-column col-md-6 col-sm-12 col-xs-12">
+                    	<div class="image">
+                        	<img src="{{ LeMinistere.image.url }}" alt=""  height="auto" />
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--End About Section-->
+    
+    <!--Featured Services-->
+    <section class="featured-services">
+    	<div class="auto-container">
+            <!--Sec Title-->
+        	<div class="sec-title centered">
+            	<h2>Différentes Directions Générales du MEPS</h2>
+            </div>
+        	<div class="row equal-cols clearfix">
+
+                {% for card in DirectionCard %}
+
+                <!--Feature Block-->
+                <div class="feature-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	    <a href="../../{{ card.parent|upper }}/{{ card.slug }}" >
+                                    <img src="{{card.image.url}}" alt="" />
+                                </a>
+                        </div>
+                        <div class="lower-content">
+                        	<h3><a href="../../{{ card.parent|upper }}/{{ card.slug }}" >{{card.sigle}}</a></h3>
+                          
+                            <div class="text"><h6>{{ card.title }}</h6></div>
+                        </div>
+                    </div>
+                </div>   
+                {% empty %}
+
+                {% include 'Layouts/_emptyDataMessage.html' %}          
+
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!--End Featured Services-->
+    
+    <!--Approach Section-->
+    <section class="approach-section grey-bg">
+    	<div class="auto-container">
+        	<!--Sec Title-->
+        	<div class="sec-title centered">
+            	<h2>Historique</h2>
+            </div>
+            <div class="four-item-carousel owl-carousel owl-theme">
+            	
+                
+                {% for ministre in MinistersList %}                    
+                    
+                    <!--Featured Block Three-->
+                    <div class="featured-block-three">
+                        <div class="inner-box">
+                            <!--<div class="icon-box">
+                                <span class="icon flaticon-donation"></span>
+                            </div>-->
+                            <div class="image">
+                                <a href="#"><img src="{{ ministre.photo.url }}" alt="photo du ministre {{ ministre.name }}" /></a>
+                            </div>
+                            <h3><a href="{{ ministre.wikipedia }}">{{ministre.name}}</a></h3>
+                            <div class="title">De {{ministre.start_month }} {{ministre.start_year}} à {{ministre.end_month }} {{ministre.end_year}}</div>
+                            <div class="overlay-box">
+                                <div class="large-icon">
+                                    {% comment %} <span class="icon flaticon-donation">read</span> {% endcomment %}
+                                </div>
+                                <h3><a href="#">{{ministre.name}}</a></h3>
+                                <div class="overlay-title">{{ ministre.in_function }}</div>
+                                <div class="text"><h5>{{ ministre.content }}</h5></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                {% empty %}
+
+                    {% include 'Layouts/_emptyDataMessage.html' %}
+
+                {% endfor %}
+
+                {% comment %}
+                <!--Featured Block Three-->
+            	<div class="featured-block-three">
+                	<div class="inner-box">
+                    	<!--<div class="icon-box">
+                        	<span class="icon flaticon-factory"></span>
+                        </div>-->
+                        <div class="image">
+                        	<a href="#"><img src="{% static 'images/resource/photo-officiel-abina.jpg' %}" alt="" /></a>
+                        </div>
+                        <h3><a href="#">ABINAN K. Pascal</a></h3>
+                        <div class="title">Juil 2018 - Avr 2021</div>
+                        <div class="overlay-box">
+                        	<div class="large-icon">
+                            	<!--<span class="icon flaticon-factory"></span>-->
+                            </div>
+                        	<h3><a href="#">ABINAN K. Pascal</a></h3>
+                            <div class="overlay-title">Ancien Ministre</div>
+                            <div class="text"><h5>Nommé le 10 juillet 2018, Ministre de l’emploi et de protection sociale 2018. Monsieur Abinan Pascal KOUAKOU est haut cadre de l’administration publique ivoirienne.
+                                Sa Fonction au sein de ce ministère a pris fin le 06 avril 2021.</h5></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Featured Block Three-->
+            	<div class="featured-block-three">
+                	<div class="inner-box">
+                    	<!--<div class="icon-box">
+                        	<span class="icon flaticon-medical-kit-bag"></span>
+                        </div>-->
+                        <div class="image">
+                        	<a href="#"><img src="{% static 'images/resource/photo-officiel-JK.jpg' %}" alt="" /></a>
+                        </div>
+                        <h3><a href="#">Jean-Claude KOUASSI</a></h3>
+                        <div class="title">Janv 2017 - Juil 2018.</div>
+                        <div class="overlay-box">
+                        	<div class="large-icon">
+                            	<!--<span class="icon flaticon-medical-kit-bag"></span>-->
+                            </div>
+                        	<h3><a href="#">Jean-Claude KOUASSI</a></h3>
+                            <div class="overlay-title">Ancien Ministre</div>
+                            <div class="text"><h5>Monsieur Jean-Claude KOUASSI nommé Ministre de l’emploi et de la protection sociale du 11 janvier 2017 au 10 juillet 2018.</h5></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Featured Block Three-->
+            	<div class="featured-block-three">
+                	<div class="inner-box">
+                    	<!--<div class="icon-box">
+                        	<span class="icon flaticon-school-bus"></span>
+                        </div>-->
+                        <div class="image">
+                        	<a href="#"><img src="{% static 'images/resource/2088_dosso.jpg' %}" alt="" /></a>
+                        </div>
+                        <h3><a href="#">Moussa DOSSO</a></h3>
+                        <div class="title">Janv 2016 - Janv 2017</div>
+                        <div class="overlay-box">
+                        	<div class="large-icon">
+                            	<!--<span class="icon flaticon-school-bus"></span>-->
+                            </div>
+                        	<h3><a href="#">Moussa DOSSO</a></h3>
+                            <div class="overlay-title">Ancien Ministre</div>
+                            <div class="text"><h5>Monsieur Moussa DOSSO nommé Ministre de l’emploi et de la protection sociale
+                                de 13/01/2016 au 11/01/2017.</h5></div>
+                        </div>
+                    </div>
+                </div>
+                {% endcomment %}
+            </div><br><br>
+        </div>
+    </section>
+    <!--End Approach Section-->
+    
+
+    
+    
+    <!--End Press Section-->
+    
+{% endblock %}

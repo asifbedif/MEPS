@@ -1,0 +1,37 @@
+[
+    {
+        "article_id": 2,
+        "number": 1,
+        "sentence": "D’un Directeur de Cabinet"
+    },
+    {
+        "article_id": 2,
+        "number": 2,
+        "sentence": "D’un ou plusieurs Directeur(s) de Cabinet Adjoint(s), si nécessaire"
+    },
+    {
+        "article_id": 2,
+        "number": 3,
+        "sentence": "D’un Chef de Cabinet"
+    },
+    {
+        "article_id": 2,
+        "number": 4,
+        "sentence": "De Conseillers Techniques"
+    },
+    {
+        "article_id": 2,
+        "number": 5,
+        "sentence": "De Chargés d’Etudes"
+    },
+    {
+        "article_id": 2,
+        "number": 6,
+        "sentence": "D’un Chargé de Missions"
+    },
+    {
+        "article_id": 2,
+        "number": 7,
+        "sentence": "D’un Chef de Secrétariat Particulier."
+    }
+]

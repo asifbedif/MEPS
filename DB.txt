@@ -1,0 +1,660 @@
+
+INSERT INTO "PUBLICATIONS_publicationsouscategory" ("name","category_id","slug") VALUES ('MUGEF-CI',2,'mugef-ci');
+
+
+INSERT INTO "PUBLICATIONS_publicationcategory" ("name","slug") VALUES ('Actualité','actualite'),
+ ('Communiqués','communiques');
+INSERT INTO "PUBLICATIONS_postactualite" ("post_ptr_id","post_category_id") VALUES (1,1),(2,1),(3,1),(4,1),(5,1),(6,1),(7,1),(8,1),(9,1),(10,1);
+
+INSERT INTO "Users_userprofile" ("photo","first_name","last_name","biography","status","phone","email","role_id","service_id","current_user_id") VALUES ('','','','','inactive',0,'example@emploi.gouv.ci',NULL,NULL,1),
+ ('','','','','inactive',0,'example@emploi.gouv.ci',NULL,NULL,2);
+
+
+INSERT INTO "MEPS_ADMIN_post" ("post_published_on","post_created_on","post_modified_on","post_status","post_image","post_title","post_slug","post_content","post_place","comment_status","comment_count","post_author_id") VALUES ('2023-03-05 23:37:34','2023-03-05 23:38:40.475885','2023-03-05 23:38:40.475885','published','images/2023/03/05/CAFE-CACAO.png','30ème anniversaire de l''STC couplet des Journées Scientifique ou journée du communicateur, édition 2022','30eme-anniversaire-de-lstc-couplet-des-journees-scientifique-ou-journee-du-communicateur-edition-2022','Sem senectus conubia pharetra pellentesque magna eros inceptos condimentum justo. Malesuada elit mus viverra ornare tellus convallis eros inceptos ut vestibulum. Tincidunt maecenas mauris massa neque ultricies urna condimentum ullamcorper. Efficitur metus taciti aptent erat interdum. Curabitur tincidunt hendrerit eleifend tortor vivamus urna justo pretium mauris. Nulla senectus taciti efficitur donec dapibus sollicitudin fusce consequat ante. Lacus urna mus efficitur natoque nostra.
+Fames lacinia himenaeos eget sagittis aliquam. Justo consectetuer magnis erat hendrerit netus. Ut urna ornare erat dictumst inceptos odio vehicula posuere. Laoreet euismod praesent tempor lobortis ac ullamcorper commodo. At adipiscing facilisi aptent elit aenean cursus a tincidunt. Nascetur finibus interdum ipsum ultrices nulla mattis vel. Et eleifend dictumst curae lacinia mauris bibendum blandit aliquet. Magnis mollis nascetur purus litora morbi.
+Molestie volutpat odio erat senectus hac penatibus fusce egestas turpis. Ultricies dapibus suspendisse vel tempus dolor cubilia semper viverra. Sed phasellus habitant neque fermentum montes id tellus. Primis tristique lacus euismod malesuada purus laoreet morbi ut cubilia. Vitae ligula taciti tincidunt suscipit nostra consectetuer. Libero tristique semper natoque nibh lacinia fames class.
+Per class fusce suspendisse a nec odio arcu facilisis. Curae pharetra enim scelerisque erat lacus laoreet turpis tellus sagittis lobortis. Tellus gravida dapibus sit mollis pharetra egestas ac himenaeos ipsum. Sapien mollis congue cursus facilisi velit platea vivamus. Et cubilia at suspendisse montes litora himenaeos. Ac faucibus fusce dignissim malesuada adipiscing per nam at consectetur. Eu eget id sit nascetur morbi fringilla.
+Velit vulputate ac integer litora nam vehicula primis id per himenaeos. Sit senectus torquent tempor dictum litora rhoncus fringilla. Hendrerit ultrices nostra ultricies feugiat sollicitudin euismod aliquam blandit ligula vestibulum litora. Nibh praesent ridiculus quisque dictum in dis eu leo vestibulum sagittis. Erat cras euismod vel magna auctor netus fringilla inceptos cursus fames diam. Nisl euismod letius consectetur ante dictumst pulvinar. Eros scelerisque dapibus hendrerit dignissim nostra convallis urna pretium.','Abidjan','opened',0,1),
+ ('2023-03-06 00:16:32','2023-03-06 00:20:01.210830','2023-03-06 01:30:18.772721','published','images/2023/03/06/dit.jpg','Trêve Sociale Consultations des syndicats de travailleurs des corps de métiers de Côte d''Ivoire','treve-sociale-consultations-des-syndicats-de-travailleurs-des-corps-de-metiers-de-cote-divoire','Ante aliquet scelerisque tincidunt potenti himenaeos. Commodo pellentesque eros interdum per pulvinar placerat tempor pretium euismod feugiat. A quisque scelerisque rhoncus fames nunc ut ultricies nascetur potenti dictumst. Porta non libero facilisi etiam tortor. Pretium parturient hendrerit nam etiam lacinia torquent nullam sit.
+Maximus orci fames taciti mus cursus elementum libero. Nisl metus ultricies sociosqu pharetra tincidunt a leo dui ante mus orci. Nec sem nunc ipsum facilisis ornare velit sit pede egestas eros. Nostra interdum senectus mus hac elit curabitur tempus tortor nunc odio tellus. Tempor laoreet tellus nibh viverra consectetur proin malesuada arcu nisl nulla.
+Euismod eros adipiscing est lacus urna convallis tortor per quisque. Ante curabitur quisque nisi risus letius ornare. Fermentum senectus aptent nisi at donec consequat. Libero aliquet fermentum montes eget aptent odio sit aenean. Conubia curae suscipit lacinia facilisi habitasse eget.
+Adipiscing lobortis quisque fringilla duis sit phasellus. Faucibus augue mus letius eros imperdiet dolor parturient. Nullam aliquam eu interdum conubia mus quisque letius parturient purus. Feugiat semper ex dictum inceptos iaculis cursus tortor sed pretium at pede. Est sit vestibulum suspendisse scelerisque tempor odio suscipit eu. Suscipit maecenas ut interdum cubilia auctor sed inceptos sodales finibus magna. Senectus efficitur mus consequat nibh felis enim vitae.
+Lacus adipiscing finibus penatibus nam tristique. Vestibulum libero ultrices hendrerit fames consectetur malesuada a sociosqu sed odio. Enim sed cras vivamus si et libero finibus. Curabitur ut porttitor lorem penatibus erat condimentum fringilla primis interdum purus. Ullamcorper litora tellus ac massa dis lorem mauris scelerisque mus imperdiet.','Abidjan','opened',0,1),
+ ('2023-03-06 01:31:10','2023-03-06 01:32:50.487556','2023-03-06 01:32:50.487556','published','images/2023/03/06/dsst1.jpg','Reconnaissance du mérite : 15 travailleurs d’Abidjan Terminal ont été décorés ce mercredi 14 juin 2022 dans les catégories « Argent » et « vermeil »','reconnaissance-du-merite-15-travailleurs-dabidjan-terminal-ont-ete-decores-ce-mercredi-14-juin-2022-dans-les-categories-argent-et-vermeil','Elementum lacinia aenean dolor odio class cursus lectus est at ut nisl. Proin lobortis sollicitudin litora penatibus odio sit ultricies per nibh habitant eleifend. Morbi accumsan scelerisque pulvinar pede volutpat maximus taciti tellus. Ultricies blandit placerat semper tempor feugiat. Phasellus et congue dictumst felis fusce. Turpis fames cursus urna conubia arcu nunc efficitur finibus ante lacinia per.
+Justo porttitor habitant viverra posuere si quisque suscipit eget quam eu magnis. Efficitur maecenas congue risus gravida accumsan curae id dictum magnis. Dapibus sollicitudin himenaeos penatibus cubilia urna at. Tellus in nulla efficitur quam odio. Netus velit purus hendrerit mi venenatis sed lacus.
+Leo sociosqu dictum donec montes morbi dapibus. Magna rhoncus nisi posuere dapibus pede accumsan curae. Nulla curabitur scelerisque aptent quisque eu nam phasellus dapibus fermentum. Ut habitasse nec semper ullamcorper ipsum.
+Est cras leo laoreet morbi bibendum diam torquent. Diam hac nec ac massa cursus porta pede ornare fusce. Hendrerit montes ridiculus conubia suspendisse malesuada ad elementum pretium dictumst ornare. Suspendisse natoque nam conubia suscipit ex aptent. Eros cras ultricies sem cubilia mollis nibh placerat suscipit massa augue. Mi tempus aenean rutrum nisi curabitur nec etiam risus ornare tortor ullamcorper.
+Odio auctor diam mi litora turpis hendrerit leo primis facilisi. Posuere fusce libero nullam aenean consectetuer ac facilisis convallis curae. Massa amet vehicula ac porttitor curae inceptos sed feugiat. Quam pulvinar vivamus eleifend magnis porta ullamcorper curabitur libero arcu. Pulvinar auctor porttitor facilisi vel ut adipiscing cras luctus montes sagittis. Penatibus nisl vehicula facilisis duis dui finibus elementum turpis. Pulvinar accumsan nullam scelerisque mi nulla metus sem hac dis non. Magnis condimentum faucibus malesuada leo natoque nisl arcu senectus.','Abidjan','opened',0,1),
+ ('2023-03-06 01:32:50','2023-03-06 01:33:44.001707','2023-03-06 01:33:44.001707','published','images/2023/03/06/drt.jpg','Coopération Côte d’Ivoire/Gabon Protection Sociale : le Gabon veut s’imprégner du modèle ivoirien','cooperation-cote-divoiregabon-protection-sociale-le-gabon-veut-simpregner-du-modele-ivoirien','Elementum lacinia aenean dolor odio class cursus lectus est at ut nisl. Proin lobortis sollicitudin litora penatibus odio sit ultricies per nibh habitant eleifend. Morbi accumsan scelerisque pulvinar pede volutpat maximus taciti tellus. Ultricies blandit placerat semper tempor feugiat. Phasellus et congue dictumst felis fusce. Turpis fames cursus urna conubia arcu nunc efficitur finibus ante lacinia per.
+Justo porttitor habitant viverra posuere si quisque suscipit eget quam eu magnis. Efficitur maecenas congue risus gravida accumsan curae id dictum magnis. Dapibus sollicitudin himenaeos penatibus cubilia urna at. Tellus in nulla efficitur quam odio. Netus velit purus hendrerit mi venenatis sed lacus.
+Leo sociosqu dictum donec montes morbi dapibus. Magna rhoncus nisi posuere dapibus pede accumsan curae. Nulla curabitur scelerisque aptent quisque eu nam phasellus dapibus fermentum. Ut habitasse nec semper ullamcorper ipsum.
+Est cras leo laoreet morbi bibendum diam torquent. Diam hac nec ac massa cursus porta pede ornare fusce. Hendrerit montes ridiculus conubia suspendisse malesuada ad elementum pretium dictumst ornare. Suspendisse natoque nam conubia suscipit ex aptent. Eros cras ultricies sem cubilia mollis nibh placerat suscipit massa augue. Mi tempus aenean rutrum nisi curabitur nec etiam risus ornare tortor ullamcorper.
+Odio auctor diam mi litora turpis hendrerit leo primis facilisi. Posuere fusce libero nullam aenean consectetuer ac facilisis convallis curae. Massa amet vehicula ac porttitor curae inceptos sed feugiat. Quam pulvinar vivamus eleifend magnis porta ullamcorper curabitur libero arcu. Pulvinar auctor porttitor facilisi vel ut adipiscing cras luctus montes sagittis. Penatibus nisl vehicula facilisis duis dui finibus elementum turpis. Pulvinar accumsan nullam scelerisque mi nulla metus sem hac dis non. Magnis condimentum faucibus malesuada leo natoque nisl arcu senectus.','Abidjan','opened',0,1),
+ ('2023-03-06 01:33:44','2023-03-06 01:34:38.111782','2023-03-06 10:21:55.292827','published','images/2023/03/06/CAFE-CACAO.png','Panel MEPS / MTN-CI Télétravail en Côte d’Ivoire : Maître Adama KAMARA invite MTN-CI à promouvoir ce nouveau concept','panel-meps-mtn-ci-teletravail-en-cote-divoire-maitre-adama-kamara-invite-mtn-ci-a-promouvoir-ce-nouveau-concept','Elementum lacinia aenean dolor odio class cursus lectus est at ut nisl. Proin lobortis sollicitudin litora penatibus odio sit ultricies per nibh habitant eleifend. Morbi accumsan scelerisque pulvinar pede volutpat maximus taciti tellus. Ultricies blandit placerat semper tempor feugiat. Phasellus et congue dictumst felis fusce. Turpis fames cursus urna conubia arcu nunc efficitur finibus ante lacinia per.
+Justo porttitor habitant viverra posuere si quisque suscipit eget quam eu magnis. Efficitur maecenas congue risus gravida accumsan curae id dictum magnis. Dapibus sollicitudin himenaeos penatibus cubilia urna at. Tellus in nulla efficitur quam odio. Netus velit purus hendrerit mi venenatis sed lacus.
+Leo sociosqu dictum donec montes morbi dapibus. Magna rhoncus nisi posuere dapibus pede accumsan curae. Nulla curabitur scelerisque aptent quisque eu nam phasellus dapibus fermentum. Ut habitasse nec semper ullamcorper ipsum.
+Est cras leo laoreet morbi bibendum diam torquent. Diam hac nec ac massa cursus porta pede ornare fusce. Hendrerit montes ridiculus conubia suspendisse malesuada ad elementum pretium dictumst ornare. Suspendisse natoque nam conubia suscipit ex aptent. Eros cras ultricies sem cubilia mollis nibh placerat suscipit massa augue. Mi tempus aenean rutrum nisi curabitur nec etiam risus ornare tortor ullamcorper.
+Odio auctor diam mi litora turpis hendrerit leo primis facilisi. Posuere fusce libero nullam aenean consectetuer ac facilisis convallis curae. Massa amet vehicula ac porttitor curae inceptos sed feugiat. Quam pulvinar vivamus eleifend magnis porta ullamcorper curabitur libero arcu. Pulvinar auctor porttitor facilisi vel ut adipiscing cras luctus montes sagittis. Penatibus nisl vehicula facilisis duis dui finibus elementum turpis. Pulvinar accumsan nullam scelerisque mi nulla metus sem hac dis non. Magnis condimentum faucibus malesuada leo natoque nisl arcu senectus.','Abidjan','opened',0,1),
+ ('2023-03-06 01:35:19','2023-03-06 01:38:18.578240','2023-03-06 01:57:20.396344','published','images/2023/03/06/dsst1_8zjYazL.jpg','Dans le cadre des activités de la 110ème session de la Conférence Internationale du Travail, Monsieur Franck DOGOH, Directeur Général de l’Emploi','dans-le-cadre-des-activites-de-la-110eme-session-de-la-conference-internationale-du-travail-monsieur-franck-dogoh-directeur-general-de-lemploi','Elementum lacinia aenean dolor odio class cursus lectus est at ut nisl. Proin lobortis sollicitudin litora penatibus odio sit ultricies per nibh habitant eleifend. Morbi accumsan scelerisque pulvinar pede volutpat maximus taciti tellus. Ultricies blandit placerat semper tempor feugiat. Phasellus et congue dictumst felis fusce. Turpis fames cursus urna conubia arcu nunc efficitur finibus ante lacinia per.
+Justo porttitor habitant viverra posuere si quisque suscipit eget quam eu magnis. Efficitur maecenas congue risus gravida accumsan curae id dictum magnis. Dapibus sollicitudin himenaeos penatibus cubilia urna at. Tellus in nulla efficitur quam odio. Netus velit purus hendrerit mi venenatis sed lacus.
+Leo sociosqu dictum donec montes morbi dapibus. Magna rhoncus nisi posuere dapibus pede accumsan curae. Nulla curabitur scelerisque aptent quisque eu nam phasellus dapibus fermentum. Ut habitasse nec semper ullamcorper ipsum.
+Est cras leo laoreet morbi bibendum diam torquent. Diam hac nec ac massa cursus porta pede ornare fusce. Hendrerit montes ridiculus conubia suspendisse malesuada ad elementum pretium dictumst ornare. Suspendisse natoque nam conubia suscipit ex aptent. Eros cras ultricies sem cubilia mollis nibh placerat suscipit massa augue. Mi tempus aenean rutrum nisi curabitur nec etiam risus ornare tortor ullamcorper.
+Odio auctor diam mi litora turpis hendrerit leo primis facilisi. Posuere fusce libero nullam aenean consectetuer ac facilisis convallis curae. Massa amet vehicula ac porttitor curae inceptos sed feugiat. Quam pulvinar vivamus eleifend magnis porta ullamcorper curabitur libero arcu. Pulvinar auctor porttitor facilisi vel ut adipiscing cras luctus montes sagittis. Penatibus nisl vehicula facilisis duis dui finibus elementum turpis. Pulvinar accumsan nullam scelerisque mi nulla metus sem hac dis non. Magnis condimentum faucibus malesuada leo natoque nisl arcu senectus.','Abidjan','opened',0,1),
+ ('2023-03-06 01:48:58','2023-03-06 01:55:15.964103','2023-03-06 01:58:07.820113','published','images/2023/03/06/dlte.jpg','Monsieur le Ministre de l’Emploi et de la Protection Sociale, Maître Adama KAMARA, a rencontré cet après-midi, Monsieur Guy RYDER','monsieur-le-ministre-de-lemploi-et-de-la-protection-sociale-maitre-adama-kamara-a-rencontre-cet-apres-midi-monsieur-guy-ryder','Elementum lacinia aenean dolor odio class cursus lectus est at ut nisl. Proin lobortis sollicitudin litora penatibus odio sit ultricies per nibh habitant eleifend. Morbi accumsan scelerisque pulvinar pede volutpat maximus taciti tellus. Ultricies blandit placerat semper tempor feugiat. Phasellus et congue dictumst felis fusce. Turpis fames cursus urna conubia arcu nunc efficitur finibus ante lacinia per.
+Justo porttitor habitant viverra posuere si quisque suscipit eget quam eu magnis. Efficitur maecenas congue risus gravida accumsan curae id dictum magnis. Dapibus sollicitudin himenaeos penatibus cubilia urna at. Tellus in nulla efficitur quam odio. Netus velit purus hendrerit mi venenatis sed lacus.
+Leo sociosqu dictum donec montes morbi dapibus. Magna rhoncus nisi posuere dapibus pede accumsan curae. Nulla curabitur scelerisque aptent quisque eu nam phasellus dapibus fermentum. Ut habitasse nec semper ullamcorper ipsum.
+Est cras leo laoreet morbi bibendum diam torquent. Diam hac nec ac massa cursus porta pede ornare fusce. Hendrerit montes ridiculus conubia suspendisse malesuada ad elementum pretium dictumst ornare. Suspendisse natoque nam conubia suscipit ex aptent. Eros cras ultricies sem cubilia mollis nibh placerat suscipit massa augue. Mi tempus aenean rutrum nisi curabitur nec etiam risus ornare tortor ullamcorper.
+Odio auctor diam mi litora turpis hendrerit leo primis facilisi. Posuere fusce libero nullam aenean consectetuer ac facilisis convallis curae. Massa amet vehicula ac porttitor curae inceptos sed feugiat. Quam pulvinar vivamus eleifend magnis porta ullamcorper curabitur libero arcu. Pulvinar auctor porttitor facilisi vel ut adipiscing cras luctus montes sagittis. Penatibus nisl vehicula facilisis duis dui finibus elementum turpis. Pulvinar accumsan nullam scelerisque mi nulla metus sem hac dis non. Magnis condimentum faucibus malesuada leo natoque nisl arcu senectus.','Abidjan','opened',0,1),
+ ('2023-03-06 01:55:16','2023-03-06 01:56:38.727305','2023-03-06 12:53:48.456734','published','images/2023/03/06/dit_g170eLq.jpg','Monsieur le Ministre de l’Emploi et de la Protection Sociale Me Adama KAMARA était devant ses paires du monde du travail, ce lundi 6 juin 2022','monsieur-le-ministre-de-lemploi-et-de-la-protection-sociale-me-adama-kamara-etait-devant-ses-paires-du-monde-du-travail-ce-lundi-6-juin-2022','Lorem ipsum dolor sit amet id nibh condimentum metus lacinia bibendum fusce. Mus neque imperdiet sapien fusce pellentesque massa ridiculus habitant volutpat posuere eleifend. Vel facilisi placerat porta venenatis dolor molestie vitae a eget leo sociosqu. Suscipit feugiat vehicula gravida nulla habitasse rutrum cursus placerat. Euismod massa posuere tincidunt sed tristique risus nunc venenatis platea. Posuere fusce dapibus venenatis nisi pellentesque ad. Tellus conubia posuere taciti at maecenas facilisis nisl magna risus.
+Letius aptent dis netus metus condimentum gravida feugiat velit. Justo maximus nisl si phasellus mi ipsum purus. Potenti fringilla finibus sit leo ultricies enim neque aptent aliquet. Dis nullam per ligula tempor dui. Ipsum erat nunc natoque habitasse non odio aptent etiam letius. Ante class tellus elementum eget ac condimentum ipsum mi.
+Himenaeos sed conubia porttitor ipsum leo cursus dignissim. Platea porttitor sodales efficitur sed gravida a penatibus condimentum quam. Tempor pharetra blandit nibh purus justo. Suspendisse parturient auctor platea praesent elit blandit. Suspendisse tortor conubia vulputate mollis ac lacinia. At imperdiet consectetuer cursus nunc dui nisi nec vehicula feugiat placerat porta. Lacus luctus nullam pharetra eget litora.
+Ac turpis nullam odio duis platea primis curabitur. Duis porttitor ridiculus lorem mi lectus diam maximus auctor turpis dis senectus. Justo tempus nullam taciti vivamus consectetur. Curae posuere duis nostra adipiscing nisl. Lacinia congue mauris integer fermentum dictumst senectus eleifend malesuada. Natoque vel sem habitant posuere aliquam nibh nam purus rutrum quis. Rhoncus urna morbi nam lectus a consectetuer risus letius himenaeos.
+Bibendum tincidunt dictumst conubia nisl massa erat diam maximus lacinia. Habitant viverra quam lacus ut vivamus augue molestie dis gravida maximus. Feugiat arcu vehicula magnis facilisis nullam cursus. Ultrices mollis pellentesque habitant leo arcu. Egestas per ultrices gravida est ullamcorper turpis purus dignissim nisl. Amet sapien parturient curabitur himenaeos velit nisl faucibus.','Yamoussoukro','opened',0,2),
+ ('2023-03-06 12:18:26','2023-03-06 12:19:11.187237','2023-03-06 12:19:11.187237','published','images/2023/03/06/image-4-a.jpg','110 ème session CIT','110-eme-session-cit','Lorem ipsum dolor sit amet tristique ullamcorper. Porttitor inceptos a malesuada interdum eu suscipit metus venenatis vel euismod dapibus. Diam hac consectetuer ridiculus sed ac. Commodo felis id nam tortor semper quam. Mattis penatibus himenaeos non quam maximus ultricies vitae tellus lobortis quis ultrices. Ornare nam feugiat ante dis suspendisse ultrices aliquet. Quisque auctor rhoncus lacus mattis faucibus.
+Morbi cursus velit volutpat habitant adipiscing hendrerit. Ut ante non gravida placerat urna magna dapibus imperdiet tristique in tempor. Eros at morbi elit orci felis. Mus suspendisse facilisis pretium ex sollicitudin lorem fusce convallis.
+Facilisis tempor pulvinar in nibh netus eros parturient consequat suscipit nascetur. Facilisi a fringilla scelerisque blandit posuere fermentum nullam. Tempor nisi ut elit justo vivamus congue etiam. Quisque dolor in vestibulum litora accumsan. Fringilla sagittis ultrices nascetur quisque augue tortor nunc laoreet mi class. Erat eget odio integer scelerisque dui blandit massa placerat dictum. Donec risus sodales urna curabitur est. Sit consectetuer ante tellus netus mus viverra condimentum convallis congue nulla.
+Elementum venenatis auctor feugiat porttitor leo laoreet facilisis pretium amet taciti dignissim. Sagittis eros donec justo platea nisi hendrerit ad consectetuer accumsan fames vel. Maecenas conubia arcu elementum quis potenti velit curabitur. Aliquet ultrices ornare interdum enim vivamus vel sociosqu maecenas convallis elementum sed. Aptent aliquam mi lacus pede efficitur nam parturient sit letius eleifend montes. Natoque cras a urna penatibus cursus nascetur. Quisque mattis fames nisl purus iaculis nunc.
+Parturient phasellus sit mi nec cubilia velit placerat penatibus hac letius. Sit sagittis tempor justo ornare aliquet. Congue sodales nisi tortor donec sem faucibus semper. Molestie cras eleifend porta morbi quisque integer nam nullam. Ipsum nascetur imperdiet elementum interdum blandit justo vestibulum dui parturient porta fames. Et donec feugiat facilisis sem aliquet enim cras hendrerit. Mus tristique etiam donec dignissim semper eget. Potenti primis nam ad pede curae placerat rhoncus lacinia quis etiam.','Abidjan','opened',0,1),
+ ('2023-03-06 12:19:11','2023-03-06 12:45:20.230391','2023-03-06 12:48:23.199819','published','images/2023/03/06/image-2-b.jpg','Fête des mères','fete-des-meres','Célébration de la Fête des mères 2022 au MEPS/Me Adama KAMARA magnifie les femmes de son ministère.
+Lorem ipsum dolor sit amet iaculis aliquam convallis faucibus hendrerit. Laoreet nascetur condimentum et aptent vestibulum sagittis elit imperdiet eros hendrerit ullamcorper. Augue lorem mauris vitae et luctus fames. Ac condimentum si ad auctor torquent etiam iaculis. Donec maecenas integer senectus si sit blandit aliquam augue. Eu bibendum interdum natoque magna lorem dolor sollicitudin aliquet porttitor feugiat quis.
+Morbi neque vel consectetur cubilia risus nostra sagittis netus scelerisque ut metus. Nullam himenaeos integer tristique volutpat nec finibus etiam iaculis si. Himenaeos potenti netus dui facilisi ultrices mus blandit diam faucibus eleifend condimentum. Suscipit aptent sodales consectetur condimentum a suspendisse.
+Netus vehicula egestas iaculis cras nibh condimentum dolor turpis ullamcorper bibendum consequat. Sem facilisi netus porta tincidunt urna lectus hendrerit. Lectus torquent sociosqu dis venenatis nibh eros consectetuer. Quam eget laoreet aptent consequat nam vel potenti cursus dignissim ante.
+Ligula facilisi morbi netus praesent sollicitudin pretium condimentum curabitur. Nisl elit montes nisi auctor curae nostra letius. Massa elit iaculis euismod vehicula non vivamus quam parturient metus sagittis nec. Nec parturient neque vestibulum magnis vel. Pellentesque quisque inceptos eu suspendisse habitant leo finibus lectus scelerisque per. Si pharetra augue enim faucibus himenaeos phasellus.
+Duis in curae congue himenaeos quis dolor sapien. Aenean dis vivamus lacinia vitae letius. Torquent molestie sapien diam mi magnis velit rhoncus maecenas neque nec ut. Pharetra turpis egestas duis risus fames maecenas inceptos.','Abidjan','opened',0,2);
+
+
+
+INSERT INTO "MEPS_ADMIN_contactaddress" ("address") VALUES ('Abidjan - Plateau'),
+ ('Situé à Abidjan-plateau, Cité Administrative TOUR A 12ème Etage.'),
+ ('Situé à Abidjan-plateau, Cité Administrative TOUR A 12ème Etage.'),
+ ('Situé à Abidjan-plateau, Cité Administrative TOUR A 12ème Etage.'),
+ ('Abidjan - Plateau Immeuble Sebroko'),
+ ('Abidjan - Plateau Immeuble Sebroko'),
+ ('Abidjan - Cocody Angré, 7ème Tranche, terminus 81/82 à Proximité du carrefour Bluetooth.'),
+ ('Abidjan - Plateau,'),
+ ('Rue du Commerce,'),
+ ('Immeuble (Le Général), 3ème Étage'),
+ ('Abidjan - Plateau, Rue du Commerce, Immeuble (Le Général), 3ème Étage.'),
+ ('Abidjan - Plateau, Rue du Commerce, Immeuble (Le Général), 3ème Étage.'),
+ ('Abidjan - Plateau, Rue du Commerce, Immeuble (Le Général), 3ème Étage.'),
+ ('Abidjan - Plateau, Rue du Commerce, Immeuble (Le Général), 3ème Étage');
+
+
+INSERT INTO "MEPS_ADMIN_contactemail" ("email") VALUES ('direction_inspectiondutravail@hotmail.fr'),
+ ('info@emploi.gouv.ci'),
+ ('info@emploi.gouv.ci'),
+ ('info@emploi.gouv.ci'),
+ ('info@doem.gouv.ci'),
+ ('Support@doem.gouv.ci'),
+ ('Support@doem.gouv.ci'),
+ ('Support@doem.gouv.ci'),
+ ('Support@doem.gouv.ci'),
+ ('Support@doem.gouv.ci'),
+ ('info@doem.gouv.ci'),
+ ('Support@doem.gouv.ci'),
+ ('info@doem.gouv.ci');
+
+
+INSERT INTO "MEPS_ADMIN_contacthoraire" ("horaire") VALUES ('Lundi - Vendredi :  De 07h30 à 16h30'),
+ ('07H30 à 12H30 - 13H30 à 16H30'),
+ ('07H30 à 12H30 - 13H30 à 16H30'),
+ ('Lund - Vend. | 07H30 à 12H30 - 13H30 à 16H30'),
+ ('Lundi - Vendredi :  De 07h30 à 16h30'),
+ ('Lundi - Vendredi :  De 07h30 à 16h30'),
+ ('Lundi - Vendredi :  De 07h30 à 16h30'),
+ ('Lundi - Vendredi :  De 07h30 à 16h30'),
+ ('Lundi - Vendredi :  De 07h30 à 16h30'),
+ ('Lundi - Vendredi :  De 07h30 à 16h30'),
+ ('Lundi - Vendredi :  De 07h30 à 16h30'),
+ ('Lundi - Vendredi :  De 07h30 à 16h30');
+
+
+INSERT INTO "MEPS_ADMIN_contacttel" ("tel") VALUES ('+225 20 21 08 87'),
+ ('20 23 92 78'),
+ ('(+225) 27 20 32 11 33'),
+ ('(+225) 27 20 32 14 13'),
+ ('(+225) 27 20 32 57 33'),
+ ('+225 20 21 15 64'),
+ ('+225  20 35 54 70'),
+ ('+225 20 21 36 61'),
+ ('+225 20 21 36 76'),
+ ('+225 22 52 33 87'),
+ ('+225 20 22 58 52'),
+ ('+225 20 22 58 52'),
+ ('+225 20 22 58 52'),
+ ('+225 20 22 58 52'),
+ ('+225 27 20 22 58 51'),
+ ('+225 20 22 58 52');
+
+
+INSERT INTO "MEPS_ADMIN_mission" ("title") VALUES ('Veiller au contrôle de l''application de la législation et de la réglementation du travail'),
+ ('Assurer le respect de la réglementation du travail'),
+ ('Assurer le conseil en milieu professionnel'),
+ ('De mettre en oeuvre la politique de sécurité sociale et de mutualité.'),
+ ('De promouvoir la réglementation en matière de sécurité sociale et de mutualité'),
+ ('De coordonner, de contrôler et d''évaluer le système national de la sécurité sociale'),
+ ('De renforcer et d''harmoniser le cadre institutionnel de la prévoyance sociale'),
+ ('De participer à la coordination des interventions en matière de réduction de l''exclusion sociale et'),
+ ('De concevoir et mettre en oeuvre la politique de l''action sociale, en liaison avec les autres minist'),
+ ('De faciliter l''accès des populations vulnérables aux structures d''action sociale'),
+ ('D''identifier et de veiller à la prise en charge des populations en situation d''inadaption sociale'),
+ ('De coordonner et de superviser les activités des structures d''actions sociales'),
+ ('D''assurer l''encadrement des activités des services sociaux spécialisés, des institutions publiques e'),
+ ('De promouvoir l''animation communautaire et le développement social.'),
+ ('De concevoir et mettre en oeuvre les programmes de promotions de réinsertions socio-économique et pr'),
+ ('De veiller à la prise en charge des personnes défavorisées et indigentes par l''octroi de secours soc'),
+ ('De contribuer à la l''élaboration et à l''application des lois et réglements relatifs aux personnes vu'),
+ ('De concevoir et de mettre en oeuvre les politiques nationales visant la promotion et la protection d'),
+ ('De mettre en oeuvre une politique cohérente d''encadrement, de formation et d''insertion des personnes'),
+ ('D''initier et de conduire les actions visant l''intégration sociale des personnes handicapées dans le'),
+ ('D''assurer la protection et la promotion des droits des personnes handicapées.'),
+ ('De contrôler les activités des institutions spécialisées de personnes handicapées.'),
+ ('De dévolopper les actions visant la réadaptions fonctionnelle des personnes handicapées.'),
+ ('De participer à l’élaboration de la réglementation du travail'),
+ ('De suivre les relations internationales du travail'),
+ ('D’assurer le suivi et l’application des normes internationales du Travail'),
+ ('D’assurer la diffusion de la règlementation du travai'),
+ ('Définir les normes d''hygiène de Santé et de sécurité au sein de l''entreprise et sur les lieux de tra'),
+ ('Veiller à l''application et à l''actualisation de la législation et de la réglementation sur la santé'),
+ ('Veiller à la prévention des accidents du travail et des maladies professionnelles'),
+ ('Identifier et d''évaluer les risques professionnels inhérents aux différentes entreprises et d''en inf'),
+ ('Participer à l''examen et au reclassement professionnel des personnes handicapées, ainsi qu''aux séanc'),
+ ('Elaborer, suivre et contrôler l''application des normes, des lois et règlements en matière de travail'),
+ ('Identifier de coordonner et mettre en œuvre des mesures dans le domaine de la lutte contre les pires'),
+ ('Assurer la prévention et la protection contre les pires formes du travail des enfants'),
+ ('Missions 1'),
+ ('Missions 2'),
+ ('Missions 3'),
+ ('Mission 1'),
+ ('Mission 2'),
+ ('Mission 1'),
+ ('Mission 1'),
+ ('Missions 1'),
+ ('Missions 2'),
+ ('Missions 5'),
+ ('suivre et évaluer les programmes de l’emploi'),
+ ('veiller à la prise en compte de la dimension emploi dans les actions de développement en liaison ave'),
+ ('assurer la promotion de la recherche et de l’expertise en rapport avec le marché de l’emploi'),
+ ('coordonner les activités et projets sectoriels des ministères techniques ayant un impact sur l’emplo'),
+ ('produire et diffuser des informations relatives aux indicateurs statistiques fiables pour le suivi d');
+
+
+INSERT INTO "MEPS_ADMIN_objectif" ("objectif") VALUES ('Objectif - 1'),
+ ('Objectif 1'),
+ ('Objectif 2'),
+ ('Objectif 3'),
+ ('Objectif 1'),
+ ('Objectif 2'),
+ ('Objectif 3'),
+ ('Objectif 1'),
+ ('Objectif 2'),
+ ('Objectif 3'),
+ ('Objectifs 1'),
+ ('Objectifs 2'),
+ ('Objectifs 3'),
+ ('Objectifs 1'),
+ ('Objectifs 2'),
+ ('Objectifs 3'),
+ ('Objectifs 1'),
+ ('Objectifs 2'),
+ ('Objectifs 1'),
+ ('Objectifs 2'),
+ ('Objectifs 3'),
+ ('Objectif 1'),
+ ('Objectif 2'),
+ ('Objectif 3'),
+ ('Objectif 1'),
+ ('Objectif 2'),
+ ('Objectif 1'),
+ ('Objectif 2'),
+ ('Objectifs 1'),
+ ('Objectifs 2'),
+ ('Objectifs 3');
+
+
+INSERT INTO "MEPS_ADMIN_project" ("project") VALUES ('1er Projet'),
+ ('Projet 1'),
+ ('Projet'),
+ ('Projet 1'),
+ ('Projet 2'),
+ ('Projet 3'),
+ ('Projet 1'),
+ ('Projet 2'),
+ ('Projet 3'),
+ ('Projets 1'),
+ ('Projets 2'),
+ ('Projets 1'),
+ ('Projets 2'),
+ ('Projets 3'),
+ ('Projets 1'),
+ ('Projets 2'),
+ ('Projets 1'),
+ ('Projets 2'),
+ ('Project  1'),
+ ('Project  2'),
+ ('Project 1'),
+ ('Project 2'),
+ ('Project 1'),
+ ('Project 2'),
+ ('Project 3'),
+ ('Project 4'),
+ ('Projets 1'),
+ ('Projets 2');
+
+
+INSERT INTO "MEPS_ADMIN_sousdirection" ("sous_direction") VALUES ('La Sous-Direction des Relations Professionnelles et Sociales'),
+ ('La Sous-Direction du Contrôle de l''Application de la Législation'),
+ ('La Sous-Direction des Accidents de Travail, des Maladies Professionnelles et des Relations Extérieur'),
+ ('Sous-Direction des Etudes et du Développement de la Sécurité Sociale'),
+ ('Sous-Direction de la Réglementation et de la Mutualité'),
+ ('Sous-Direction de l''Assistance Sociale et des Secours Sociaux'),
+ ('Sous-Direction de la Protection et de la Promotion des Personnes âgées'),
+ ('Sous-Direction de l''Accompagnement Social et de l''Insertion Socio-Economique'),
+ ('Sous-Direction des institutions d''Aide Technique'),
+ ('Sous-Direction de la Promotion des Droits des Personnes Handicapées'),
+ ('La Sous-Direction de la Réglementation et de l’Application des normes du Travail'),
+ ('La Sous-Direction de la Documentation, des Statistiques et des Etudes'),
+ ('La Sous-Direction de la Santé au travail'),
+ ('La Sous-Direction de la Sécurité au travail'),
+ ('La Sous-Direction de la Toxicologie Industrielle.'),
+ ('La Sous-Direction du suivi et de l''Evaluation des Programmes et Projets'),
+ ('La Sous-Direction de la Prévention et de la protection contre le Travail des Enfants'),
+ ('La Sous-Direction du Suivi et du Contrôle de l''Application de la Réglementation'),
+ ('Sous-directions 1'),
+ ('Sous-directions 2'),
+ ('Sous direction 1'),
+ ('Sous direction 2'),
+ ('Sous direction 1'),
+ ('Sous direction 2'),
+ ('Sous direction 1'),
+ ('Sous direction 2'),
+ ('La Sous-Direction des Statiques et du Suivi des Indicateurs de l’Emploi et des Revenus'),
+ ('La Sous-Direction du Suivi et de l’Evaluation des Politiques de l’Emploi et des Revenus');
+
+
+
+INSERT INTO "MEPS_ADMIN_postactualité" ("post_image","post_title","post_slug","post_content","post_place","post_published_on","post_created_on","post_modified_on","post_status","comment_status","comment_count","post_author_id") VALUES (1,'images/2023/01/30/case-1.jpg','Le Ministere','le-ministere','Semper ante gravida quam potenti sit vivamus magna sociosqu. Luctus malesuada ultrices taciti accumsan condimentum leo. Montes phasellus vulputate neque litora vitae parturient lectus. Aptent netus condimentum massa blandit purus lobortis id ipsum arcu. Venenatis eget si neque magna sed ac. Ullamcorper orci hendrerit penatibus molestie hac. Potenti vehicula proin leo platea felis condimentum faucibus vitae.','Abidjan','2023-01-30 20:10:12','2023-01-30 20:17:42.078445','2023-01-30 20:17:42.078445','published','opened',0,2),
+ ('images/2023/01/30/case-8.jpg','Trêve Sociale Consultations des syndicats de travailleurs des corps de métiers de Côte d''Ivoire','treve-sociale-consultations-des-syndicats-de-travailleurs-des-corps-de-metiers-de-cote-divoire','Débutée hier lundi, Maître Adama KAMARA, Ministre de l’Emploi et de la Protection Sociale, a pris part, ce mardi 12 juillet 2022, à la 2ème journée des consultations relatives à la trêve sociale qui se déroule à l’Amphithéâtre Houphouët BOIGNY de l’Ecole Nationale de l’Administration ( ENA) de Cocody-Abidjan. Ces assises organisées par le Gouvernement visent à faciliter l’organisation des discussions sur les revendications des organisations syndicales des différents corps de métiers avec le Gouvernement afin d’aboutir à une trêve sociale en Côte d’Ivoire.
+Politique qui permettra au Gouvernement d’avancer et engager des projets d’intérêt national pour le bien-être de l’ensemble des travailleurs. A l’instar des autres Ministres, Maître Adama KAMARA s’est réjoui de cette rencontre qui permettra de trouver des solutions aux problèmes des travailleurs. Il a également salué cette initiative qui vise à pérenniser le Dialogue Sociale engagé par le Chef de l’Etat.
+Le Ministre de l’Emploi et de la Protection Sociale a invité l’ensemble des parties à être des forces de propositions et à privilégier le dialogue social en vue d’apporter des solutions immédiates et lointaines aux problèmes des travailleurs ainsi que leurs conditions de travail.','Abidjan','2023-01-30 20:17:42','2023-01-30 20:18:12.169884','2023-01-30 20:58:05.608697','published','opened',0,2),
+ ('images/2023/01/30/case-9.jpg','Hello','hello','Semper ante gravida quam potenti sit vivamus magna sociosqu. Luctus malesuada ultrices taciti accumsan condimentum leo. Montes phasellus vulputate neque litora vitae parturient lectus. Aptent netus condimentum massa blandit purus lobortis id ipsum arcu. Venenatis eget si neque magna sed ac. Ullamcorper orci hendrerit penatibus molestie hac. Potenti vehicula proin leo platea felis condimentum faucibus vitae.','Abidjan','2023-01-30 20:18:12','2023-01-30 20:19:05.519226','2023-01-30 20:19:05.519226','published','opened',0,1),
+ ('images/2023/01/30/gallery-2.jpg','Actualité 1','actualite-1','Semper ante gravida quam potenti sit vivamus magna sociosqu. Luctus malesuada ultrices taciti accumsan condimentum leo. Montes phasellus vulputate neque litora vitae parturient lectus. Aptent netus condimentum massa blandit purus lobortis id ipsum arcu. Venenatis eget si neque magna sed ac. Ullamcorper orci hendrerit penatibus molestie hac. Potenti vehicula proin leo platea felis condimentum faucibus vitae.
+Semper ante gravida quam potenti sit vivamus magna sociosqu. Luctus malesuada ultrices taciti accumsan condimentum leo. Montes phasellus vulputate neque litora vitae parturient lectus. Aptent netus condimentum massa blandit purus lobortis id ipsum arcu. Venenatis eget si neque magna sed ac. Ullamcorper orci hendrerit penatibus molestie hac. Potenti vehicula proin leo platea felis condimentum faucibus vitae.','Abidjan','2023-01-30 20:19:53','2023-01-30 20:21:49.548005','2023-01-30 21:02:36.567532','published','opened',0,1),
+ ('images/2023/01/30/case-5.jpg','Hello World','hello-world','Semper ante gravida quam potenti sit vivamus magna sociosqu. Luctus malesuada ultrices taciti accumsan condimentum leo. Montes phasellus vulputate neque litora vitae parturient lectus. Aptent netus condimentum massa blandit purus lobortis id ipsum arcu. Venenatis eget si neque magna sed ac. Ullamcorper orci hendrerit penatibus molestie hac. Potenti vehicula proin leo platea felis condimentum faucibus vitae.','Abidjan','2023-01-30 20:21:49','2023-01-30 20:22:42.116762','2023-01-30 20:22:42.116762','published','opened',0,1),
+ ('images/2023/01/30/BG-rsti.jpg','30ème Anniversaire De L’ISTC','30eme-anniversaire-de-listc','Semper ante gravida quam potenti sit vivamus magna sociosqu. Luctus malesuada ultrices taciti accumsan condimentum leo. Montes phasellus vulputate neque litora vitae parturient lectus. Aptent netus condimentum massa blandit purus lobortis id ipsum arcu. Venenatis eget si neque magna sed ac. Ullamcorper orci hendrerit penatibus molestie hac. Potenti vehicula proin leo platea felis condimentum faucibus vitae.','Abidjan','2023-01-30 20:58:05','2023-01-30 20:59:48.798083','2023-01-30 21:05:40.327240','published','opened',0,2),
+ ('images/2023/01/30/gallery-3_Mn7Tjd9.jpg','71 Travailleurs De La BICICI','71-travailleurs-de-la-bicici','Semper ante gravida quam potenti sit vivamus magna sociosqu. Luctus malesuada ultrices taciti accumsan condimentum leo. Montes phasellus vulputate neque litora vitae parturient lectus. Aptent netus condimentum massa blandit purus lobortis id ipsum arcu. Venenatis eget si neque magna sed ac. Ullamcorper orci hendrerit penatibus molestie hac. Potenti vehicula proin leo platea felis condimentum faucibus vitae.','Abidjan','2023-01-30 20:59:48','2023-01-30 21:00:31.615727','2023-01-30 21:00:31.615727','published','opened',0,2);
+
+INSERT INTO "DIRECTIONS_GENERALES_emploi" ("direction_ptr_id","direction_generale") VALUES (3,'EMPLOI');
+INSERT INTO "DIRECTIONS_GENERALES_protectionsociale" ("direction_ptr_id","direction_generale") VALUES (2,'PROTECTION SOCIALE');
+INSERT INTO "DIRECTIONS_GENERALES_travail" ("direction_ptr_id","direction_generale") VALUES (1,'TRAVAIL');
+
+
+INSERT INTO "PUBLICATIONS_postcommunique" ("pdf","title","post_status","published_on","created_on","com_category_id","com_sous_category_id") VALUES ('pdfs/2023/01/30/03-08-2021_Renouvellement_des_agents_de_la_MUGEF-CI.jpeg','Renouvellement des agents de la MUGEF-CI','published','2023-01-30 20:23:04','2023-01-30 20:23:04',3,1),
+ ('pdfs/2023/01/30/06-05-2020__N째00783.jpeg','Le Ministre Abinan K.','published','2023-01-30 20:24:43','2023-01-30 20:24:43',3,2),
+ ('pdfs/2023/01/30/Fête_National_2021_-_Jour_Fériers.jpeg','Fête National de l''Indépendance - 2021','published','2023-01-30 20:27:41','2023-01-30 20:27:41',3,3),
+ ('pdfs/2023/01/30/Activités_Commémoratives_De_La_Fête_Du_Travail.jpeg','Activités Commémoratives De La Fête Du Travail - 2021','published','2023-01-30 20:33:00','2023-01-30 20:33:00',3,3),
+ ('pdfs/2023/01/30/Nuit_du_Destin_2022.jpeg','Nuit du Destin 2022','published','2023-01-30 20:35:01','2023-01-30 20:35:01',3,5),
+ ('pdfs/2023/01/30/Journée_Nationale_De_La_Paix_2022.jpeg','Journée Nationale De La Paix 2022','published','2023-01-30 20:45:41','2023-01-30 20:45:41',3,6),
+ ('pdfs/2023/01/30/19-05-2020__N째00837.jpeg','Fête de Ramadan 2022','published','2023-01-30 20:47:04','2023-01-30 20:47:04',3,4),
+ ('pdfs/2023/01/30/N째00910__du__29-05-2020.jpeg','Pentécôte 2020','published','2023-01-30 20:49:47','2023-01-30 20:49:47',3,4);
+
+INSERT INTO "PUBLICATIONS_postactualite" ("post_ptr_id","post_category_id") VALUES (1,4),(2,2),(3,2),(4,2),(5,2),(6,2),(7,2);
+
+
+INSERT INTO "cabinet_chapter" ("title") VALUES ('LE CONSEIL DES MINISTRES ENTENDU'),
+ ('LE CABINET'),
+ ('Les Directions et Services rattachés sont'),
+ ('DIRECTIONS ET SERVICES RATTACHES AU CABINET'),
+ ('DISPOSITIONS FINALES'),
+ ('SERVICES EXTERIEURS');
+
+INSERT INTO "cabinet_articlelist" ("sentence","article_id") VALUES ('Pour l''exercice de ses attributions, le Ministre de l''Emploi et de la Protection Sociale dispose, outre le Cabinet, de Directions et Services Rattachés au Cabinet, de Directions Générales, de Directions Centrales et de Services Extérieurs qu''il est chargé d''organiser par arrêté.',1),
+ ('un Directeur de Cabinet',2),
+ ('Un Directeur de Cabinet Adjoint; un Chef de Cabinet',2),
+ ('Cinq Conseillers Techniques; cinq Chargés d''Etudes',2),
+ ('Un Chargé de Missions',2),
+ ('Un Chef de Secrétariat particulier',2),
+ ('L''Inspection Générale',3),
+ ('La Direction des Ressources Humaines',3),
+ ('La Direction des Affaires Financières et du Matériel',2);
+
+
+INSERT INTO "cabinet_article" ("title","chapter_id") VALUES ('DECRETE',0),
+ ('Le Cabinet comprend',1),
+ ('Les Directions et Services rattachés sont',2),
+ ('La Direction des Ressources Humaines est chargée',2),
+ ('L''Inspection Générale des Services de l''Emploi, de la Protection Sociale et du Travail est chargée',2),
+ ('La Direction des Affaires Financières et du Matériel est chargée',2),
+ ('La Direction de la Planification, de la Coordination, du Suivi des Projets et des Statistiques est chargée',2),
+ ('La Direction des Affaires Juridiques est chargée',2),
+ ('La Direction des Systèmes d''Information est chargée',2),
+ ('La Direction de la Documentation, de la Communication et des Archives est chargée',2),
+ ('Le Secrétariat de la Médaille d''Honneur du Travail est chargé',2),
+ ('La Cellule de Passation des Marchés',2),
+ ('Le Service de gestion du Patrimoine est chargé',2),
+ ('Les Directions Générales sont',3),
+ ('La Direction Générale de l''Emploi est chargée',3),
+ ('La Direction des Stratégies et des Programmes d''Emploi est chargée',3),
+ ('La Direction du Suivi et de l''Evaluation de la Politique de l''Emploi est chargée',3);
+
+
+INSERT INTO "auth_user" ("password","last_login","is_superuser","username","last_name","email","is_staff","is_active","date_joined","first_name") VALUES ('pbkdf2_sha256$390000$8zsPNfwkypQjY3rYVkKIH3$/VVly6JFrxcHvmgx0NjdKIoFQoxx22y7YmgUx6JbPhE=','2023-01-31 18:02:24.747661',1,'dev','','',1,1,'2023-01-30 14:49:58.374898',''),
+ ('pbkdf2_sha256$390000$MlxjT4v6rpzVudKOczWCg8$e0VClNU9cZrTyIHdWDUhxCPeF3aV74zon1u+emCP1/E=',NULL,1,'Admin','','',1,1,'2023-01-30 20:15:32.426742','');
+
+INSERT INTO "das_das" ("directiondetail_ptr_id") VALUES (3);
+INSERT INTO "das_dassousdirection" ("sousdirection_ptr_id","das_Sous_direction_id") VALUES (6,3),(7,3),(8,3);
+INSERT INTO "das_dasproject" ("project_ptr_id","das_Project_id") VALUES (4,3),(5,3),(6,3);
+INSERT INTO "das_dasobjectif" ("objectif_ptr_id","das_Objectif_id") VALUES (5,3),(6,3),(7,3);
+INSERT INTO "das_dasmission" ("mission_ptr_id","das_Mission_id") VALUES (8,3),(9,3),(10,3),(11,3),(12,3),(13,3),(14,3),(15,3),(16,3),(17,3);
+INSERT INTO "das_dascontacttel" ("contacttel_ptr_id","das_ContactTel_id") VALUES (4,3);
+INSERT INTO "das_dascontacthoraire" ("contacthoraire_ptr_id","das_ContactHoraire_id") VALUES (3,3);
+INSERT INTO "das_dascontactemail" ("contactemail_ptr_id","das_ContactEmail_id") VALUES (3,3);
+INSERT INTO "das_dascontactaddress" ("contactaddress_ptr_id","das_ContactAddress_id") VALUES (3,3);
+INSERT INTO "dit_dit" ("directiondetail_ptr_id") VALUES (1);
+INSERT INTO "dit_ditsousdirection" ("sousdirection_ptr_id","dit_Sous_direction_id") VALUES (1,1),(2,1),(3,1);
+INSERT INTO "dit_ditproject" ("project_ptr_id","dit_Project_id") VALUES (1,1);
+INSERT INTO "dit_ditobjectif" ("objectif_ptr_id","dit_Objectif_id") VALUES (1,1);
+INSERT INTO "dit_ditmission" ("mission_ptr_id","dit_Mission_id") VALUES (1,1),(2,1),(3,1);
+INSERT INTO "dit_ditcontacttel" ("contacttel_ptr_id","dit_ContactTel_id") VALUES (1,1),(2,1);
+INSERT INTO "dit_ditcontacthoraire" ("contacthoraire_ptr_id","dit_ContactHoraire_id") VALUES (1,1);
+INSERT INTO "dit_ditcontactemail" ("contactemail_ptr_id","dit_ContactEmail_id") VALUES (1,1);
+INSERT INTO "dit_ditcontactaddress" ("contactaddress_ptr_id","dit_ContactAddress_id") VALUES (1,1);
+INSERT INTO "dlte_dlte" ("directiondetail_ptr_id") VALUES (7);
+INSERT INTO "dlte_dltesousdirection" ("sousdirection_ptr_id","dlte_Sous_direction_id") VALUES (16,7),(17,7),(18,7);
+INSERT INTO "dlte_dlteproject" ("project_ptr_id","dlte_Project_id") VALUES (15,7),(16,7);
+INSERT INTO "dlte_dlteobjectif" ("objectif_ptr_id","dlte_Objectif_id") VALUES (17,7),(18,7);
+INSERT INTO "dlte_dltemission" ("mission_ptr_id","dlte_Mission_id") VALUES (33,7),(34,7),(35,7);
+INSERT INTO "dlte_dltecontacttel" ("contacttel_ptr_id","dlte_ContactTel_id") VALUES (10,7);
+INSERT INTO "dlte_dltecontacthoraire" ("contacthoraire_ptr_id","dlte_ContactHoraire_id") VALUES (7,7);
+INSERT INTO "dlte_dltecontactaddress" ("contactaddress_ptr_id","dlte_ContactAddress_id") VALUES (7,7);
+INSERT INTO "doem_doem" ("directiondetail_ptr_id") VALUES (8);
+INSERT INTO "doem_doemsousdirection" ("sousdirection_ptr_id","doem_Sous_direction_id") VALUES (23,8),(24,8);
+INSERT INTO "doem_doemproject" ("project_ptr_id","doem_Project_id") VALUES (21,8),(22,8);
+INSERT INTO "doem_doemobjectif" ("objectif_ptr_id","doem_Objectif_id") VALUES (25,8),(26,8);
+INSERT INTO "doem_doemmission" ("mission_ptr_id","doem_Mission_id") VALUES (41,8),(42,8);
+INSERT INTO "doem_doemcontacttel" ("contacttel_ptr_id","doem_ContactTel_id") VALUES (13,8);
+INSERT INTO "doem_doemcontacthoraire" ("contacthoraire_ptr_id","doem_ContactHoraire_id") VALUES (10,8);
+INSERT INTO "doem_doemcontactemail" ("contactemail_ptr_id","doem_ContactEmail_id") VALUES (8,8),(9,8);
+INSERT INTO "doem_doemcontactaddress" ("contactaddress_ptr_id","doem_ContactAddress_id") VALUES (13,8);
+INSERT INTO "dpph_dpph" ("directiondetail_ptr_id") VALUES (4);
+INSERT INTO "dpph_dpphsousdirection" ("sousdirection_ptr_id","dpph_Sous_direction_id") VALUES (9,4),(10,4);
+INSERT INTO "dpph_dpphproject" ("project_ptr_id","dpph_Project_id") VALUES (7,4),(8,4),(9,4);
+INSERT INTO "dpph_dpphobjectif" ("objectif_ptr_id","dpph_Objectif_id") VALUES (8,4),(9,4),(10,4);
+INSERT INTO "dpph_dpphmission" ("mission_ptr_id","dpph_Mission_id") VALUES (18,4),(19,4),(20,4),(21,4),(22,4),(23,4);
+INSERT INTO "dpph_dpphcontacttel" ("contacttel_ptr_id","dpph_ContactTel_id") VALUES (5,4);
+INSERT INTO "dpph_dpphcontacthoraire" ("contacthoraire_ptr_id","dpph_ContactHoraire_id") VALUES (4,4);
+INSERT INTO "dpph_dpphcontactemail" ("contactemail_ptr_id","dpph_ContactEmail_id") VALUES (4,4);
+INSERT INTO "dpph_dpphcontactaddress" ("contactaddress_ptr_id","dpph_ContactAddress_id") VALUES (4,4);
+INSERT INTO "drt_drt" ("directiondetail_ptr_id") VALUES (5);
+INSERT INTO "drt_drtsousdirection" ("sousdirection_ptr_id","drt_Sous_direction_id") VALUES (11,5),(12,5);
+INSERT INTO "drt_drtproject" ("project_ptr_id","drt_Project_id") VALUES (10,5),(11,5);
+INSERT INTO "drt_drtobjectif" ("objectif_ptr_id","drt_Objectif_id") VALUES (11,5),(12,5),(13,5);
+INSERT INTO "drt_drtmission" ("mission_ptr_id","drt_Mission_id") VALUES (24,5), (25,5),(26,5),(27,5);
+INSERT INTO "drt_drtcontacttel" ("contacttel_ptr_id","drt_ContactTel_id") VALUES (6,5),(7,5);
+INSERT INTO "drt_drtcontacthoraire" ("contacthoraire_ptr_id","drt_ContactHoraire_id") VALUES (5,5);
+INSERT INTO "drt_drtcontactaddress" ("contactaddress_ptr_id","drt_ContactAddress_id") VALUES (5,5);
+INSERT INTO "dsepe_dsepe" ("directiondetail_ptr_id") VALUES (10);
+INSERT INTO "dsepe_dsepesousdirection" ("sousdirection_ptr_id","dsepe_Sous_direction_id") VALUES (27,10),(28,10);
+INSERT INTO "dsepe_dsepeproject" ("project_ptr_id","dsepe_Project_id") VALUES (27,10),(28,10);
+INSERT INTO "dsepe_dsepeobjectif" ("objectif_ptr_id","dsepe_Objectif_id") VALUES (30,10),(31,10),(32,10);
+INSERT INTO "dsepe_dsepemission" ("mission_ptr_id","dsepe_Mission_id") VALUES (48,10),(49,10),(50,10),(51,10),(52,10);
+INSERT INTO "dsepe_dsepecontacttel" ("contacttel_ptr_id","dsepe_ContactTel_id") VALUES (16,10);
+INSERT INTO "dsepe_dsepecontacthoraire" ("contacthoraire_ptr_id","dsepe_ContactHoraire_id") VALUES (12,10);
+INSERT INTO "dsepe_dsepecontactemail" ("contactemail_ptr_id","dsepe_ContactEmail_id") VALUES (12,10),(13,10);
+INSERT INTO "dsepe_dsepecontactaddress" ("contactaddress_ptr_id","dsepe_ContactAddress_id") VALUES (15,10);
+INSERT INTO "dspe_dspe" ("directiondetail_ptr_id") VALUES (9);
+INSERT INTO "dspe_dspesousdirection" ("sousdirection_ptr_id","dspe_Sous_direction_id") VALUES (25,9),(26,9);
+INSERT INTO "dspe_dspeproject" ("project_ptr_id","dspe_Project_id") VALUES (23,9),(24,9),(25,9),(26,9);
+INSERT INTO "dspe_dspeobjectif" ("objectif_ptr_id","dspe_Objectif_id") VALUES (28,9),(29,9);
+INSERT INTO "dspe_dspemission" ("mission_ptr_id","dspe_Mission_id") VALUES (43,9),(44,9),(47,9);
+INSERT INTO "dspe_dspecontacttel" ("contacttel_ptr_id","dspe_ContactTel_id") VALUES (14,9),(15,9);
+INSERT INTO "dspe_dspecontacthoraire" ("contacthoraire_ptr_id","dspe_ContactHoraire_id") VALUES (11,9);
+INSERT INTO "dspe_dspecontactemail" ("contactemail_ptr_id","dspe_ContactEmail_id") VALUES (10,9),(11,9);
+INSERT INTO "dspe_dspecontactaddress" ("contactaddress_ptr_id","dspe_ContactAddress_id") VALUES (14,9);
+INSERT INTO "dssm_dssm" ("directiondetail_ptr_id") VALUES (2);
+INSERT INTO "dssm_dssmsousdirection" ("sousdirection_ptr_id","dssm_Sous_direction_id") VALUES (4,2),(5,2);
+INSERT INTO "dssm_dssmproject" ("project_ptr_id","dssm_Project_id") VALUES (2,2),(3,2);
+INSERT INTO "dssm_dssmobjectif" ("objectif_ptr_id","dssm_Objectif_id") VALUES (2,2),(3,2),(4,2);
+INSERT INTO "dssm_dssmmission" ("mission_ptr_id","dssm_Mission_id") VALUES (4,2),(5,2),(6,2),(7,2);
+INSERT INTO "dssm_dssmcontacttel" ("contacttel_ptr_id","dssm_ContactTel_id") VALUES (3,2);
+INSERT INTO "dssm_dssmcontacthoraire" ("contacthoraire_ptr_id","dssm_ContactHoraire_id") VALUES (2,2);
+INSERT INTO "dssm_dssmcontactemail" ("contactemail_ptr_id","dssm_ContactEmail_id") VALUES (2,2);
+INSERT INTO "dssm_dssmcontactaddress" ("contactaddress_ptr_id","dssm_ContactAddress_id") VALUES (2,2);
+INSERT INTO "dsst_dsst" ("directiondetail_ptr_id") VALUES (6);
+INSERT INTO "dsst_dsstsousdirection" ("sousdirection_ptr_id","dsst_Sous_direction_id") VALUES (13,6),(14,6),(15,6);
+INSERT INTO "dsst_dsstproject" ("project_ptr_id","dsst_Project_id") VALUES (12,6),(13,6),(14,6);
+INSERT INTO "dsst_dsstobjectif" ("objectif_ptr_id","dsst_Objectif_id") VALUES (14,6),(15,6),(16,6);
+INSERT INTO "dsst_dsstmission" ("mission_ptr_id","dsst_Mission_id") VALUES (28,6), (29,6), (30,6), (31,6), (32,6);
+
+INSERT INTO "dsst_dsstcontacttel" ("contacttel_ptr_id","dsst_ContactTel_id") VALUES (8,6), (9,6);
+INSERT INTO "dsst_dsstcontacthoraire" ("contacthoraire_ptr_id","dsst_ContactHoraire_id") VALUES (6,6);
+INSERT INTO "dsst_dsstcontactaddress" ("contactaddress_ptr_id","dsst_ContactAddress_id") VALUES (6,6);
+
+INSERT INTO "ministère_ministerslist" ("photo","name","civilite","content","in_function","start_month","start_year","end_month","end_year","status","wikipedia") VALUES ('Ministers/2088_dosso.jpg','Moussa DOSSO','1','Monsieur Moussa DOSSO nommé Ministre de l’emploi et de la protection sociale
+de 13/01/2016 au 11/01/2017.','Ancien ministre','Janv','2016','Janv','2017','published',''),
+ ('Ministers/photo-officiel-abina.jpg','ABINAN K. Pascal','1','Nommé le 10 juillet 2018, Ministre de l’emploi et de protection sociale 2018. Monsieur Abinan Pascal KOUAKOU est haut cadre de l’administration publique ivoirienne. Sa Fonction au sein de ce ministère a pris fin le 06 avril 2021.','Ancien ministre','Juil','2018','Avr','2021','published',''),
+ ('Ministers/photo-officiel-JK.jpg','Jean-Claude KOUASSI','1','Monsieur Jean-Claude KOUASSI nommé Ministre de l’emploi et de la protection sociale du 11 janvier 2017 au 10 juillet 2018.','Ancien ministre','Janv','2017','Juil','2018','published',''),
+ ('Ministers/photo-officiel-A.KAMARA_IFIhJXC.jpg','Me. Adama KAMARA','1','Nommé Ministre de l’emploi et de la protection sociale depuis le 6 avril 2021, monsieur Adama KAMARA est un avocat qui a occupé de hautes fonctions au sein de l’administration publique ivoirienne.','Actuel Ministre','Avr','2021','','Aujourd''hui','published','');
+
+
+
+INSERT INTO "MEPS_ADMIN_directiondetail" ("image","full_form_name","short_form_name","slug","description","status","modified_on","published_on") VALUES ('images/directions/2023/01/30/dit_TAuNqRE.jpg','Direction de l''Inspection du Travail.','DIT','dit','Consequat hac ad montes pharetra elementum mi penatibus. Aenean ipsum tempus tincidunt inceptos venenatis. Montes molestie semper lectus habitasse himenaeos rutrum purus est neque sem. Diam augue eget aenean blandit aliquam lobortis enim a ultricies netus.','published','2023-01-30 15:38:35.711524','2023-01-30 15:31:14.035358'),
+ ('images/directions/2023/01/30/dsst.jpg','Direction de la Sécurité Sociale et de la Mutualité','D.S.S.M','dssm','Dolor semper augue efficitur ultricies habitasse rutrum nascetur maecenas lacus montes. Maximus lacus auctor pulvinar hendrerit consequat. Hac habitasse letius ante elementum ligula rhoncus massa pellentesque ut. Ad senectus mattis libero vitae inceptos. Nam at molestie ridiculus lectus himenaeos.','published','2023-01-30 15:38:35.711524','2023-01-30 15:31:14.035358'),
+ ('images/directions/2023/01/30/CAFE-CACAO.png','Direction de l''Action Sociale','DAS','das','Egestas orci auctor risus consectetuer lectus velit natoque. Consectetur nisl senectus maximus justo felis semper. Vitae in proin pretium integer aptent sem velit mattis eros commodo posuere. Porta curabitur sem proin vulputate finibus nisl viverra si vivamus lacus nullam. Ipsum leo suscipit magna habitasse curae pede torquent nostra aliquet. Phasellus hac massa ligula tellus augue platea. Habitasse a consectetuer sociosqu nisl potenti. Habitant hac viverra netus hendrerit volutpat.','published','2023-01-30 15:46:05.091829','2023-01-30 15:44:36.931860'),
+ ('images/directions/2023/01/30/CAFE-CACAO_Ks8F4ye.png','Direction de la Promotion des Personnes Handicapées','D.P.P.H','dpph','Faucibus inceptos interdum malesuada pede sociosqu sit commodo suscipit ridiculus aliquam nibh. Adipiscing purus ullamcorper praesent bibendum a fames. Eget lectus odio est dolor non augue viverra feugiat. Duis nullam odio nulla commodo si tellus nisl primis. Tempus phasellus pharetra donec morbi dui rhoncus lacinia. Tincidunt mi non rhoncus commodo volutpat letius.','published','2023-01-30 15:38:35.711524','2023-01-30 15:31:14.035358'),
+ ('images/directions/2023/01/30/drt.jpg','Direction de la Réglementation du Travail.','DRT','drt','Blandit nunc sapien erat class ipsum. Et finibus convallis lorem ante luctus consequat inceptos nam libero. Non pellentesque metus arcu feugiat quisque. Libero proin ornare porttitor posuere montes elit. Enim at vitae condimentum convallis accumsan finibus taciti diam nisl. Vestibulum sem nullam nascetur ornare nulla at faucibus mus. Facilisis nam eros lacus sociosqu tellus.','published','2023-01-30 15:38:35.711524','2023-01-30 15:31:14.035358'),
+ ('images/directions/2023/01/30/dsst_NOayP5L.jpg','Direction de la Santé et de la Sécurité au Travail','D.S.S.T','dsst','Rhoncus dis at consectetur congue litora. Sit nibh lorem velit arcu vivamus purus pharetra fringilla pede morbi orci. Ante tellus iaculis erat ullamcorper egestas class maecenas platea auctor a sem. Bibendum himenaeos ridiculus tincidunt velit taciti felis dui ac libero mi euismod.','published','2023-01-30 15:38:35.711524','2023-01-30 15:31:14.035358'),
+ ('images/directions/2023/01/30/dlte.jpg','Direction de la Lutte contre le Travail des Enfants','D.L.T.E','dlte','Inceptos neque purus litora aliquet odio scelerisque malesuada vel. Iaculis leo donec netus rhoncus quam. Curae risus dignissim tempus duis netus convallis habitasse. Himenaeos magna risus vivamus ante aliquam nunc conubia. Potenti laoreet proin ante lacinia letius venenatis fusce consectetuer amet. Cubilia donec hendrerit nunc adipiscing volutpat sociosqu libero dui arcu odio.','published','2023-01-30 15:38:35.711524','2023-01-30 15:31:14.035358'),
+ ('images/directions/2023/01/30/dsst1_bBMuG4K.jpg','Direction de l''Observatoire de l''Emploi et des Metiers','DOEM','doem','Ad sociosqu mauris ridiculus efficitur convallis odio amet commodo sem. Condimentum dictumst eget aenean rutrum cubilia mus primis malesuada iaculis tellus. Condimentum libero faucibus enim ante rutrum. Viverra rhoncus torquent eget platea augue hendrerit ornare gravida nec.','published','2023-01-30 15:38:35.711524','2023-01-30 15:31:14.035358'),
+ ('images/directions/2023/01/30/dsst1_l0soDdl.jpg','Direction des Stratégies et Programmes d''Emploi','DSPE','dspe','Bibendum libero sem pellentesque justo dolor netus suscipit congue orci augue. Nullam morbi eu blandit luctus dignissim porttitor sapien cubilia leo. Dolor mauris laoreet ac eget orci. Tempus id nisi ex at torquent senectus pulvinar fringilla. Lacinia commodo nunc vulputate sit sagittis duis porttitor pede. Blandit consectetuer dictumst penatibus arcu platea mauris finibus. Per natoque dapibus morbi torquent pulvinar mi placerat gravida dui vestibulum orci. Arcu pulvinar eget netus porttitor dui','published','2023-01-30 15:38:35.711524','2023-01-30 15:31:14.035358'),
+ ('images/directions/2023/01/30/dit_sNX85SG.jpg','Direction du Suivi et Evaluation de la Politique de l''Emploi','D.S.E.P.E','dsepe','Rhoncus habitasse cubilia ullamcorper semper vehicula quis mauris. Habitasse nunc metus platea imperdiet sem sodales aliquet. Ipsum augue suspendisse morbi adipiscing viverra lorem non congue ultricies curae. Ultrices consectetuer vulputate consequat sed praesent sagittis lacinia tortor nec. Montes lectus quisque porta fusce aliquam platea hendrerit eleifend. Hendrerit platea urna facilisis pulvinar leo litora. Placerat malesuada condimentum adipiscing luctus ridiculus. Semper neque erat cursus','published','2023-01-30 17:42:43.519509','2023-01-30 15:31:14.035358');
+
+
+
+INSERT INTO "MEPS_ADMIN_direction" ("image","full_form_name","short_form_name","slug","content","status","modified_on","published_on") VALUES ('images/directions/2023/01/30/dit_HvGLNBG.jpg','Direction Générale du Travail','DGT','dgt','Semper per si eros eget dui hendrerit mattis pharetra phasellus ridiculus sagittis. Finibus consequat pulvinar mauris cras maecenas etiam amet si. Odio elementum tempus condimentum a sem nascetur donec. Sollicitudin primis in nisi himenaeos efficitur rhoncus fringilla maecenas. Dictum justo himenaeos maecenas posuere orci pellentesque ex fusce. Rhoncus est vehicula id quam leo litora cursus cubilia porta ridiculus. Penatibus magnis viverra dictumst nam consequat. Himenaeos velit ante fusce vestibulum feugiat mauris.','published','2023-01-30 18:03:32.337125','2023-01-30 17:55:58.061767'),
+ ('images/directions/2023/01/30/dsst1.jpg','Direction Générale de la Protection Sociale','DGPS','dgps','Mus cras vitae cursus nibh sit. Consectetuer curae risus in scelerisque vel lacus ultricies morbi suscipit pulvinar curabitur. Fusce fringilla dictumst arcu convallis porta nibh cras velit. Aenean quisque per pharetra bibendum dictum scelerisque.','published','2023-01-30 17:55:57.964621','2023-01-30 17:55:58.061767'),
+ ('images/directions/2023/01/30/dlte_al4whvb.jpg','Direction Générale de l''Emploi','DGE','dge','Eros scelerisque morbi euismod penatibus elit in molestie senectus integer. Libero tempor vel hac dui ac. Rhoncus consequat torquent consectetur fermentum metus class. Commodo phasellus porttitor vehicula tempor venenatis est sapien torquent tincidunt imperdiet conubia. Pharetra finibus convallis letius ante imperdiet penatibus habitasse ligula.','published','2023-01-30 17:55:57.964621','2023-01-30 17:55:58.061767'),
+ ('images/directions/2023/01/30/dsst1_aqW3sLx.jpg','Direction de l''Observatoire de l''Emploi et des Metiers','DOEM','doem','Lorem sit sagittis finibus suspendisse nibh pretium justo faucibus mattis facilisis efficitur. Tincidunt fermentum eget odio volutpat magnis aenean himenaeos sed sapien. Nascetur tortor lacus congue sagittis convallis. Neque nostra dictumst a erat rhoncus. Pharetra libero velit aliquet parturient quam curae urna vivamus.','published','2023-01-30 17:55:57.964621','2023-01-30 17:55:58.061767');
+
+
+INSERT INTO "PUBLICATIONS_publicationcategory" ("slug","name") VALUES (2,'actualite','Actualité'),
+ ('comminique','Comminiqué'),
+ ('ministere','Ministère'),
+ ('covid-19','COVID-19');
+
+
+INSERT INTO "PUBLICATIONS_publicationsouscategory" ("slug","category_id","name") VALUES (1,'mugef-ci',3,'MUGEF-CI'),
+ ('covid-19',3,'COVID-19'),
+ ('fete-nationale',3,'Fête Nationale'),
+ ('jour-ferie-chome',3,'Jour férié, Chômé'),
+ ('jour-ferie-chome-et-paye',3,'Jour férié, Chômé et Payé'),
+ ('journee-nationale',3,'Journée Nationale'),
+ ('journee-mondiale',3,'Journée Mondiale');
+
+
+INSERT INTO "NOUS_JOINDRE_faq" ("question","response","modified_on","status","published_on") VALUES ('Question 4?','Over 20 years of experience we’ll ensure you always get the best guidance. We serve a clients at every level of their organization we can be most useful, whether as a trusted advisor to top trusted our management coach for fronts line employees.We offers a comprehensive suite of services to assist clients across the business cycle from risk management to the ability to respond rapidly to unexpected.','2023-01-31 16:00:00.165731','published','2023-01-31 14:37:46.369031'),
+ ('Question 3?','Congue finibus cubilia amet felis feugiat maximus phasellus scelerisque sapien mi nostra. Luctus lacinia risus quisque cursus curae egestas faucibus congue ac ultrices felis. Semper auctor ornare tristique dictumst eu habitasse faucibus ut phasellus lectus class.','2023-01-31 15:59:44.334145','published','2023-01-31 15:27:18.972328'),
+ ('Question 2 ?','Congue finibus cubilia amet felis feugiat maximus phasellus scelerisque sapien mi nostra. Luctus lacinia risus quisque cursus curae egestas faucibus congue ac ultrices felis. Semper auctor ornare tristique dictumst eu habitasse faucibus ut phasellus lectus class.','2023-01-31 15:59:31.072296','published','2023-01-31 15:27:47.255359'),
+ ('Question 1?','Sed dolor bibendum ipsum odio vestibulum consectetur neque viverra leo. Vehicula eu fames facilisi porttitor molestie convallis pede platea curabitur turpis nostra. Finibus fames nascetur enim nec velit odio.','2023-01-31 15:59:14.602591','published','2023-01-31 15:31:14.578177');
+
+
+
+
+INSERT INTO "PUBLICATIONS_postcommunique" ("pdf","title","post_status","published_on","created_on","com_category_id","com_sous_category_id") VALUES ('pdfs/2023/01/30/03-08-2021_Renouvellement_des_agents_de_la_MUGEF-CI.jpeg','Renouvellement des agents de la MUGEF-CI','published','2023-01-30 20:23:04','2023-01-30 20:23:04',3,1),
+ ('pdfs/2023/01/30/06-05-2020__N째00783.jpeg','Le Ministre Abinan K.','published','2023-01-30 20:24:43','2023-01-30 20:24:43',3,2),
+ ('pdfs/2023/01/30/Fête_National_2021_-_Jour_Fériers.jpeg','Fête National de l''Indépendance - 2021','published','2023-01-30 20:27:41','2023-01-30 20:27:41',3,3),
+ ('pdfs/2023/01/30/Activités_Commémoratives_De_La_Fête_Du_Travail.jpeg','Activités Commémoratives De La Fête Du Travail - 2021','published','2023-01-30 20:33:00','2023-01-30 20:33:00',3,3),
+ ('pdfs/2023/01/30/Nuit_du_Destin_2022.jpeg','Nuit du Destin 2022','published','2023-01-30 20:35:01','2023-01-30 20:35:01',3,5),
+ ('pdfs/2023/01/30/Journée_Nationale_De_La_Paix_2022.jpeg','Journée Nationale De La Paix 2022','published','2023-01-30 20:45:41','2023-01-30 20:45:41',3,6),
+ ('pdfs/2023/01/30/19-05-2020__N째00837.jpeg','Fête de Ramadan 2022','published','2023-01-30 20:47:04','2023-01-30 20:47:04',3,4),
+ ('pdfs/2023/01/30/N째00910__du__29-05-2020.jpeg','Pentécôte 2020','published','2023-01-30 20:49:47','2023-01-30 20:49:47',3,4);
+
+
+INSERT INTO "MEPS_ADMIN_contactemail" ("email") VALUES ('direction_inspectiondutravail@hotmail.fr'),
+ ('info@emploi.gouv.ci'),
+ ('info@emploi.gouv.ci'),
+ ('info@emploi.gouv.ci'),
+ ('info@doem.gouv.ci'),
+ ('Support@doem.gouv.ci'),
+ ('Support@doem.gouv.ci'),
+ ('Support@doem.gouv.ci'),
+ ('Support@doem.gouv.ci'),
+ ('Support@doem.gouv.ci'),
+ ('info@doem.gouv.ci'),
+ ('Support@doem.gouv.ci'),
+ ('info@doem.gouv.ci');
+ 
+
+INSERT INTO "MEPS_ADMIN_contacthoraire" ("horaire") VALUES ('Lundi - Vendredi :  De 07h30 à 16h30'),
+ ('07H30 à 12H30 - 13H30 à 16H30'),
+ ('07H30 à 12H30 - 13H30 à 16H30'),
+ ('Lund - Vend. | 07H30 à 12H30 - 13H30 à 16H30'),
+ ('Lundi - Vendredi :  De 07h30 à 16h30'),
+ ('Lundi - Vendredi :  De 07h30 à 16h30'),
+ ('Lundi - Vendredi :  De 07h30 à 16h30'),
+ ('Lundi - Vendredi :  De 07h30 à 16h30'),
+ ('Lundi - Vendredi :  De 07h30 à 16h30'),
+ ('Lundi - Vendredi :  De 07h30 à 16h30'),
+ ('Lundi - Vendredi :  De 07h30 à 16h30'),
+ ('Lundi - Vendredi :  De 07h30 à 16h30');
+
+
+
+
+INSERT INTO "MEPS_ADMIN_contacttel" ("tel") VALUES ('+225 20 21 08 87'),
+ ('20 23 92 78'),
+ ('(+225) 27 20 32 11 33'),
+ ('(+225) 27 20 32 14 13'),
+ ('(+225) 27 20 32 57 33'),
+ ('+225 20 21 15 64'),
+ ('+225  20 35 54 70'),
+ ('+225 20 21 36 61'),
+ ('+225 20 21 36 76'),
+ ('+225 22 52 33 87'),
+ ('+225 20 22 58 52'),
+ ('+225 20 22 58 52'),
+ ('+225 20 22 58 52'),
+ ('+225 20 22 58 52'),
+ ('+225 27 20 22 58 51'),
+ ('+225 20 22 58 52');
+
+
+INSERT INTO "MEPS_ADMIN_mission" ("title") VALUES ('Veiller au contrôle de l''application de la législation et de la réglementation du travail'),
+ ('Assurer le respect de la réglementation du travail'),
+ ('Assurer le conseil en milieu professionnel'),
+ ('De mettre en oeuvre la politique de sécurité sociale et de mutualité.'),
+ ('De promouvoir la réglementation en matière de sécurité sociale et de mutualité'),
+ ('De coordonner, de contrôler et d''évaluer le système national de la sécurité sociale'),
+ ('De renforcer et d''harmoniser le cadre institutionnel de la prévoyance sociale'),
+ ('De participer à la coordination des interventions en matière de réduction de l''exclusion sociale et'),
+ ('De concevoir et mettre en oeuvre la politique de l''action sociale, en liaison avec les autres minist'),
+ ('De faciliter l''accès des populations vulnérables aux structures d''action sociale'),
+ ('D''identifier et de veiller à la prise en charge des populations en situation d''inadaption sociale'),
+ ('De coordonner et de superviser les activités des structures d''actions sociales'),
+ ('D''assurer l''encadrement des activités des services sociaux spécialisés, des institutions publiques e'),
+ ('De promouvoir l''animation communautaire et le développement social.'),
+ ('De concevoir et mettre en oeuvre les programmes de promotions de réinsertions socio-économique et pr'),
+ ('De veiller à la prise en charge des personnes défavorisées et indigentes par l''octroi de secours soc'),
+ ('De contribuer à la l''élaboration et à l''application des lois et réglements relatifs aux personnes vu'),
+ ('De concevoir et de mettre en oeuvre les politiques nationales visant la promotion et la protection d'),
+ ('De mettre en oeuvre une politique cohérente d''encadrement, de formation et d''insertion des personnes'),
+ ('D''initier et de conduire les actions visant l''intégration sociale des personnes handicapées dans le'),
+ ('D''assurer la protection et la promotion des droits des personnes handicapées.'),
+ ('De contrôler les activités des institutions spécialisées de personnes handicapées.'),
+ ('De dévolopper les actions visant la réadaptions fonctionnelle des personnes handicapées.'),
+ ('De participer à l’élaboration de la réglementation du travail'),
+ ('De suivre les relations internationales du travail'),
+ ('D’assurer le suivi et l’application des normes internationales du Travail'),
+ ('D’assurer la diffusion de la règlementation du travai'),
+ ('Définir les normes d''hygiène de Santé et de sécurité au sein de l''entreprise et sur les lieux de tra'),
+ ('Veiller à l''application et à l''actualisation de la législation et de la réglementation sur la santé'),
+ ('Veiller à la prévention des accidents du travail et des maladies professionnelles'),
+ ('Identifier et d''évaluer les risques professionnels inhérents aux différentes entreprises et d''en inf'),
+ ('Participer à l''examen et au reclassement professionnel des personnes handicapées, ainsi qu''aux séanc'),
+ ('Elaborer, suivre et contrôler l''application des normes, des lois et règlements en matière de travail'),
+ ('Identifier de coordonner et mettre en œuvre des mesures dans le domaine de la lutte contre les pires'),
+ ('Assurer la prévention et la protection contre les pires formes du travail des enfants'),
+ ('Missions 1'),
+ ('Missions 2'),
+ ('Missions 3'),
+ ('Mission 1'),
+ ('Mission 2'),
+ ('Mission 1'),
+ ('Mission 1'),
+ ('Missions 1'),
+ ('Missions 2'),
+ ('Missions 5'),
+ ('suivre et évaluer les programmes de l’emploi'),
+ ('veiller à la prise en compte de la dimension emploi dans les actions de développement en liaison ave'),
+ ('assurer la promotion de la recherche et de l’expertise en rapport avec le marché de l’emploi'),
+ ('coordonner les activités et projets sectoriels des ministères techniques ayant un impact sur l’emplo'),
+ ('produire et diffuser des informations relatives aux indicateurs statistiques fiables pour le suivi d');
+
+
+INSERT INTO "DGE_dge" VALUES ('','','');
+
+INSERT INTO "MEPS_ADMIN_post" VALUES ('images/2023/01/23/dsst.jpg','Trêve Sociale Consultations des syndicats de travailleurs des corps de métiers de Côte d''Ivoire','treve-sociale-consultations-des-syndicats-de-travailleurs-des-corps-de-metiers-de-cote-divoire','Débutée hier lundi, Maître Adama KAMARA, Ministre de l’Emploi et de la Protection Sociale, a pris part, ce mardi 12 juillet 2022, à la 2ème journée des consultations relatives à la trêve sociale qui se déroule à l’Amphithéâtre Houphouët BOIGNY de l’Ecole Nationale de l’Administration ( ENA) de Cocody-Abidjan. Ces assises organisées par le Gouvernement visent à faciliter l’organisation des discussions sur les revendications des organisations syndicales des différents corps de métiers avec le Gouvernement afin d’aboutir à une trêve sociale en Côte d’Ivoire.
+Politique qui permettra au Gouvernement d’avancer et engager des projets d’intérêt national pour le bien-être de l’ensemble des travailleurs. A l’instar des autres Ministres, Maître Adama KAMARA s’est réjoui de cette rencontre qui permettra de trouver des solutions aux problèmes des travailleurs. Il a également salué cette initiative qui vise à pérenniser le Dialogue Sociale engagé par le Chef de l’Etat.
+Le Ministre de l’Emploi et de la Protection Sociale a invité l’ensemble des parties à être des forces de propositions et à privilégier le dialogue social en vue d’apporter des solutions immédiates et lointaines aux problèmes des travailleurs ainsi que leurs conditions de travail.','Abidjan','2023-01-23 09:46:20','2023-01-23 09:47:43.452998','2023-01-23 09:47:43.452998','published','opened',0,1);
+
+
+INSERT INTO "MEPS_ADMIN_post" VALUES ('images/2023/01/23/drt.jpg','30ème Anniversaire De L’ISTC','30eme-anniversaire-de-listc','Lorem ipsum dolor sit amet consectetur adipiscing elit interdum diam, sollicitudin cursus scelerisque donec urna suspendisse tristique congue in, fermentum nam dictum augue orci inceptos conubia commodo. Vitae nam porttitor nisi nulla interdum id etiam, sodales ante commodo augue senectus tempor maecenas, molestie urna phasellus orci tortor donec. Praesent potenti magna vehicula sed nec vivamus sodales ultricies quisque et, tempus nascetur ac odio ligula facilisi auctor platea lobortis quis, habitant vel venenatis porttitor fames posuere lacus neque aenean. Taciti ornare nascetur class sollicitudin habitant porttitor eu nulla fringilla magnis, pellentesque iaculis maecenas mollis sociis quam orci mattis dictumst libero, lacus conubia congue phasellus at laoreet platea fermentum faucibus. Feugiat nibh metus porta et purus eu cursus semper malesuada, turpis conubia magna hac magnis sollicitudin vehicula vitae nisi nunc, tellus nostra facilisis molestie facilisi risus inceptos praesent.
+Phasellus cum et eu himenaeos lobortis nisl neque, odio fusce natoque penatibus ridiculus ligula pharetra, luctus vel rhoncus tincidunt hac aliquet. Est etiam facilisis at fermentum penatibus morbi quam pulvinar, mus lobortis porttitor aliquet tortor massa congue himenaeos habitasse, id condimentum orci quisque leo vehicula mi. Hendrerit praesent venenatis auctor tellus imperdiet litora porttitor, facilisi faucibus quisque habitant sodales dictumst, tempus pharetra ornare libero montes tortor. Nisi vel fusce egestas turpis sollicitudin lacinia sapien ac, et mollis eros tincidunt ultrices eu volutpat aenean curae, condimentum risus per mauris dui penatibus aliquet. Eleifend ligula malesuada mattis mus magnis id neque leo, netus duis metus nisl tincidunt elementum aliquam nisi eget, ornare orci mollis nec ridiculus iaculis luctus.
+Laoreet ac tortor nibh mauris vestibulum cras et massa quisque faucibus magna conubia suscipit vivamus, dapibus lacus litora aliquam netus sagittis cubilia nunc tempus purus etiam aenean. Primis hac nascetur sagittis velit tellus suscipit suspendisse porta blandit nostra potenti, mus cursus aenean est curabitur urna ullamcorper tempus nullam gravida at, neque fusce cum vestibulum interdum eleifend lacinia vel duis non. Et velit tristique aptent scelerisque habitasse elementum fames luctus, semper posuere condimentum molestie habitant magnis suscipit, maecenas nibh interdum facilisis nisl felis urna. Cum vestibulum faucibus fusce vehicula primis ac turpis pretium habitasse habitant, convallis suspendisse magnis velit massa mollis vitae interdum ornare, laoreet condimentum scelerisque himenaeos hac taciti mattis rutrum fermentum. Metus dictumst primis tristique parturient rutrum fusce ac, magnis himenaeos quisque morbi sociis phasellus sagittis lacus, condimentum urna conubia fames proin lectus. Quam neque potenti sociis magna laoreet in id malesuada, duis purus penatibus nunc montes habitant convallis maecenas, pellentesque risus mi litora vel auctor orci.
+Elementum hac nulla habitasse duis molestie etiam dictumst viverra ridiculus nostra nam, fringilla vulputate faucibus ac iaculis urna potenti consequat scelerisque id, facilisis est laoreet parturient orci nullam habitant fusce interdum posuere. Tempor ultricies rutrum ridiculus himenaeos sociosqu dictumst habitasse nullam ac nulla turpis, egestas orci mollis quam mi erat nisi id quisque urna, dui ultrices taciti commodo phasellus natoque class lacus ullamcorper pulvinar. Hac etiam mattis tristique nullam ultrices dictum libero fringilla aliquam aliquet, ligula ac eleifend duis tortor magnis porta est euismod magna, turpis pulvinar nec vehicula sem auctor arcu luctus orci. Parturient per magna curabitur vitae lacus nibh dapibus aliquam conubia, vehicula interdum cras suspendisse maecenas ultricies suscipit ad, cursus vulputate urna montes ac fringilla litora dictumst. Rhoncus tellus semper suspendisse volutpat eu lectus justo ad, ut potenti fringilla dictumst sodales nascetur. Suscipit erat nibh platea sollicitudin auctor morbi, egestas sed vulputate eleifend eget sodales, sociosqu nunc turpis convallis imperdiet. Quam ut curae suspendisse hendrerit molestie tortor, justo ridiculus risus tempus mus egestas penatibus, sem neque enim commodo conubia. Lobortis phasellus torquent sed mauris ridiculus sociis lectus, facilisis neque bibendum congue convallis iaculis natoque, vulputate diam volutpat venenatis aenean scelerisque. Facilisis maecenas vivamus egestas potenti nulla cras tempor, sociosqu nam nullam etiam tellus mi, nibh dapibus cursus porta at feugiat.
+Tempor vivamus pulvinar dapibus dignissim convallis integer egestas est justo porta lectus tristique cubilia eget, hendrerit nulla primis habitasse montes lacinia cursus fusce taciti aliquet bibendum venenatis placerat. Ornare accumsan quisque mi aliquam in tellus, porttitor himenaeos tempus duis facilisi a mauris, phasellus ut arcu per felis. Purus diam nullam id praesent tellus fermentum tortor curabitur, felis taciti senectus eleifend dis proin rutrum blandit dictum, inceptos platea dictumst quisque pharetra integer sollicitudin. Venenatis eleifend cum urna aliquam non sapien litora leo, eros feugiat nullam id pretium bibendum vel, vivamus lacus euismod vulputate montes penatibus aliquet. Torquent pellentesque iaculis arcu mi elementum natoque fermentum, praesent magnis pulvinar class neque pharetra erat in, dapibus nisl risus gravida blandit parturient. Dis in duis iaculis pretium integer torquent, montes id ultricies quam faucibus magna fames, ultrices imperdiet etiam senectus sollicitudin. Rhoncus gravida proin nullam per convallis arcu quis platea ullamcorper lacinia litora rutrum, quisque eu facilisi imperdiet dictumst ultrices donec fermentum quam habitant pharetra, sed id aptent fringilla nulla penatibus condimentum congue senectus eleifend sagittis. Consequat ultricies sapien bibendum luctus aptent torquent sociis primis cras, dictumst ridiculus nunc dignissim tristique orci magnis dapibus. Dui curae praesent ad varius egestas augue massa conubia orci aliquet curabitur commodo pulvinar est vivamus, molestie parturient et neque facilisis at lobortis porta suscipit posuere lacinia auctor morbi. Ut fringilla pharetra purus consequat auctor curae praesent lacinia, mauris elementum vel venenatis dictumst nullam gravida curabitur, habitasse penatibus donec montes hac ultrices porta.','Abidjan','2023-01-23 09:47:43','2023-01-23 09:49:00.069103','2023-01-23 09:49:00.069103','published','opened',0,1);
+
+
+INSERT INTO "MEPS_ADMIN_post" VALUES ('images/2023/01/23/dit.jpg','71 Travailleurs De La BICICI','71-travailleurs-de-la-bicici','Lorem ipsum dolor sit amet consectetur adipiscing elit sociis, porttitor interdum cubilia torquent est ante sodales at, nec himenaeos natoque per tempor penatibus tristique. Scelerisque aliquam tellus volutpat accumsan leo aliquet consequat, nisl feugiat purus placerat facilisis mauris, curabitur platea dis praesent ante dictumst. Vestibulum tortor maecenas nullam condimentum libero odio consequat mattis, orci rutrum porttitor integer aenean natoque tempus donec a, egestas nisl sed sodales massa quisque morbi. Ultricies torquent pharetra vestibulum bibendum convallis eu at senectus purus hac arcu vel facilisi tortor, orci pulvinar tempus enim nec morbi imperdiet dignissim a cursus tincidunt ornare.
+Purus molestie morbi suscipit inceptos eleifend fusce tristique commodo, vestibulum augue non at cras semper rhoncus tincidunt, elementum suspendisse primis lacus rutrum enim parturient. Sociis mi cum lobortis pharetra consequat bibendum tristique ad mattis laoreet vestibulum, vulputate magna curabitur cubilia aliquet fames congue himenaeos volutpat blandit scelerisque, sociosqu senectus feugiat accumsan quis integer arcu platea nullam vitae. Primis nisl tempor nam hac aliquet vulputate rhoncus ridiculus, at euismod et vitae lacus condimentum purus, accumsan praesent lobortis placerat fames est arcu. Class condimentum nibh quisque per vestibulum massa odio maecenas feugiat, vivamus proin eros ad conubia at turpis. Facilisi sem tristique sociis tincidunt dapibus interdum semper aliquam nullam venenatis, lacus eleifend rutrum hendrerit bibendum dignissim duis augue id, proin sed fermentum senectus sapien purus arcu pellentesque habitant. Sem semper morbi primis eros nostra congue placerat parturient quisque tristique, suspendisse taciti fermentum diam phasellus et donec neque blandit cubilia, dignissim sociis litora ligula cras orci platea consequat nullam. Cum lectus libero vivamus augue mollis nec rutrum interdum habitant lobortis cubilia aenean hendrerit curae, tristique nostra hac netus id natoque inceptos semper enim orci nisl molestie. Sociosqu sollicitudin hendrerit potenti erat ultrices vitae fusce suspendisse faucibus, dictum augue risus class rhoncus fermentum consequat mattis, laoreet primis eu sociis tellus aenean felis leo.
+Vitae dignissim fusce blandit urna aliquam congue sed eu faucibus nam, viverra hendrerit purus tempus integer imperdiet porta proin cursus, placerat habitant dictum egestas condimentum class pulvinar feugiat pharetra. Massa erat facilisis nec turpis placerat bibendum at, urna purus est iaculis ad congue. Etiam egestas dis neque platea interdum nascetur diam vestibulum hac, est vitae laoreet eu nibh aliquam nunc fusce, congue vivamus hendrerit varius netus libero purus sem. Cursus arcu penatibus dis placerat tortor euismod semper vel molestie, luctus facilisi egestas nulla pretium mus ante malesuada, sociis eros suspendisse commodo sed ad proin massa. Dis litora accumsan etiam hac cum elementum himenaeos integer, mauris primis pulvinar nascetur orci est odio habitasse aptent, dictumst gravida metus sociosqu fringilla auctor nostra. Sociosqu faucibus luctus interdum suscipit ridiculus ultrices eget nam rhoncus, augue mattis netus dictum maecenas fringilla magnis himenaeos egestas, felis eleifend nibh vulputate imperdiet ante curae per. Ad inceptos erat tempor dignissim sociosqu curae suscipit, purus diam id rhoncus mollis placerat, orci libero magnis semper habitasse malesuada. Ultricies lacus donec sodales blandit consequat lacinia pharetra rhoncus dignissim rutrum duis, nec turpis aenean lectus metus pulvinar tristique vivamus nascetur montes neque, ridiculus tempor dictumst platea ultrices est torquent netus congue sapien. Pretium nec et sodales auctor ultricies blandit donec, lacinia tristique porta metus sapien eleifend hendrerit, himenaeos eget fusce ornare magnis morbi.
+Accumsan per et imperdiet cras enim consequat ultrices pulvinar vivamus placerat velit sapien, ultricies felis eget tempor cubilia est etiam proin ut suspendisse dui class, donec euismod magna hac odio taciti magnis cum curabitur purus condimentum. Class hac varius at quam ut id netus eu praesent, fermentum rutrum molestie euismod aliquet dis congue sapien. Suspendisse pellentesque tortor fringilla donec id enim sodales ultrices, odio a tincidunt eget curae condimentum nunc, taciti parturient class feugiat interdum laoreet nec. Duis ridiculus dui massa laoreet dapibus felis metus cum lacinia quis, convallis tempus integer pulvinar mi orci mattis vel praesent. Ultricies massa eget molestie nec bibendum conubia aliquam integer vehicula pharetra pulvinar id malesuada, non hac cras ad phasellus lacus quis odio magnis duis in.
+Taciti vivamus vulputate est vitae duis orci dignissim blandit cras habitasse primis, eget dis commodo curabitur curae leo donec ridiculus cubilia scelerisque. Metus eleifend auctor ligula commodo ridiculus sollicitudin neque, quam dui nostra cum ultricies scelerisque, inceptos non sem interdum penatibus pellentesque. Commodo sollicitudin massa magna aenean habitant molestie fringilla facilisis, mollis montes eleifend vel primis imperdiet accumsan, malesuada ullamcorper litora gravida conubia tempus luctus.','Abidjan','2023-01-23 09:49:15','2023-01-23 09:49:41.112402','2023-01-23 09:49:41.112402','draft','opened',0,1);
+
+
+INSERT INTO "MEPS_ADMIN_post" VALUES ('images/2023/01/23/dlte.jpg','À propos du Cabinet','a-propos-du-cabinet','Lorem ipsum dolor sit amet consectetur, adipiscing elit dapibus lectus rhoncus suspendisse, etiam fames mattis praesent. Nibh blandit convallis augue felis scelerisque tristique lacinia libero, sem inceptos facilisis sociis viverra tempus tincidunt class, gravida lobortis eu arcu aptent fusce sodales. Malesuada tincidunt penatibus lectus nostra sodales est conubia, nam nulla diam risus placerat porttitor dictumst pulvinar, luctus nisl per pretium id justo. Etiam feugiat vel velit eleifend quisque potenti, ornare varius inceptos volutpat turpis vivamus, pharetra eget parturient sociosqu phasellus. Lacinia massa sociosqu tempor dui donec feugiat mauris congue, potenti semper placerat rutrum pharetra dis himenaeos fermentum platea, nullam pellentesque natoque cum proin velit tincidunt. Nulla tincidunt nisl morbi sagittis parturient congue penatibus hac, vitae sem eget eros vivamus primis scelerisque pharetra molestie, quisque lacus dictum taciti montes fringilla habitant. Curae laoreet libero nec netus suspendisse dignissim, himenaeos tempus metus litora scelerisque, condimentum ullamcorper eros porta morbi taciti, ut nibh venenatis eu. Aliquet interdum et integer ad montes iaculis congue in rutrum, morbi habitant duis parturient scelerisque vestibulum torquent pharetra, posuere aliquam lobortis cras blandit sapien taciti fames.
+Aenean fermentum sagittis nam cum curae eleifend aptent, est montes leo congue dictumst bibendum, placerat primis condimentum sem porta mi. Tincidunt libero ligula non nullam dictumst fames, maecenas est habitasse luctus at vivamus vehicula, et penatibus mus vitae vulputate. Viverra suspendisse ultricies tempor habitant non lacus metus nostra, habitasse dictum quisque vehicula cursus dignissim nec, accumsan pretium fermentum malesuada interdum turpis lectus. Lacinia nam urna pellentesque vitae placerat dictum purus hendrerit, orci fames penatibus commodo a erat faucibus ad, cursus nibh arcu suscipit eros per volutpat. Augue torquent gravida leo interdum rhoncus massa dapibus erat id fermentum, a eget sociis vestibulum litora penatibus nec laoreet. Diam aenean nec malesuada lobortis habitant dis taciti, interdum augue fringilla libero pharetra cras, tortor tellus lacinia turpis odio rhoncus. Quam ultricies est purus dui rutrum nostra eget senectus primis, facilisis felis aptent platea parturient ultrices at auctor lacus nam, cras interdum ornare suspendisse accumsan maecenas sociosqu dis.
+Quisque inceptos potenti porttitor vivamus sed tortor tincidunt felis et curae, sagittis primis laoreet sem dis ante duis auctor at, sollicitudin in eget interdum nostra nisi euismod justo dui. Cubilia malesuada vitae arcu euismod commodo mollis convallis, lacus maecenas leo nisi suscipit mus, scelerisque cursus phasellus semper iaculis est. Taciti vivamus penatibus accumsan varius nulla nostra porttitor, odio porta mattis semper elementum sagittis ut, pulvinar enim arcu rutrum phasellus risus. Libero neque risus habitasse integer tempor hac ante curabitur nec hendrerit ultrices inceptos, varius montes cum elementum aptent sollicitudin aenean interdum commodo sapien. Nisl dictum cras habitasse morbi volutpat porttitor felis velit ultrices vivamus euismod habitant integer malesuada, sem varius natoque bibendum erat leo vel vehicula neque cum sed feugiat vestibulum.
+Orci proin dictumst torquent, hac. Cum cras fringilla augue quis per ac, blandit elementum porta sociosqu semper nibh dis, at hac tempor dignissim habitant. Quam dis tempus integer metus fames a penatibus blandit luctus, justo nascetur cum habitant vehicula mattis ornare ridiculus. Egestas phasellus netus condimentum montes lectus, semper volutpat tellus integer proin sapien, molestie litora ac porta.
+Nec tincidunt ridiculus nunc mauris sapien fames elementum, magnis augue nibh ornare purus ut sollicitudin, interdum varius cubilia eget himenaeos turpis. Dignissim lectus fermentum molestie eget massa scelerisque duis vehicula nam diam ligula quam faucibus, elementum tempor orci feugiat bibendum interdum a dictum conubia etiam in nascetur. Ligula inceptos libero proin cras class bibendum porttitor, dis netus lobortis viverra pharetra parturient felis aliquet, ridiculus iaculis posuere phasellus venenatis semper. Aptent gravida volutpat nunc hac praesent quis magnis facilisis torquent, dictumst inceptos urna nostra suscipit nisi hendrerit porttitor posuere, aenean neque vestibulum cum augue dapibus fringilla sodales. Laoreet turpis cubilia nascetur bibendum tellus feugiat eget auctor, sodales senectus phasellus id fames class at. Class vulputate curae massa purus et imperdiet est auctor suspendisse suscipit nullam, blandit urna iaculis rutrum molestie diam accumsan aptent dictum montes, curabitur a ornare commodo odio tempor tincidunt sodales vivamus porttitor. Gravida in eu fringilla per lobortis sollicitudin sagittis elementum fames volutpat, faucibus mollis natoque dictumst neque pretium libero magna feugiat, turpis ultricies aenean cum euismod consequat semper mattis quam.','Abidjan','2023-01-23 10:24:47','2023-01-23 10:25:21.536467','2023-01-23 10:25:21.536467','published','opened',0,1);
+
+
+INSERT INTO "MEPS_ADMIN_post" VALUES ('images/2023/01/23/CAFE-CACAO.png','Le Ministere','le-ministere','Lorem ipsum dolor sit amet consectetur, adipiscing elit dapibus lectus rhoncus suspendisse, etiam fames mattis praesent. Nibh blandit convallis augue felis scelerisque tristique lacinia libero, sem inceptos facilisis sociis viverra tempus tincidunt class, gravida lobortis eu arcu aptent fusce sodales. Malesuada tincidunt penatibus lectus nostra sodales est conubia, nam nulla diam risus placerat porttitor dictumst pulvinar, luctus nisl per pretium id justo. Etiam feugiat vel velit eleifend quisque potenti, ornare varius inceptos volutpat turpis vivamus, pharetra eget parturient sociosqu phasellus. Lacinia massa sociosqu tempor dui donec feugiat mauris congue, potenti semper placerat rutrum pharetra dis himenaeos fermentum platea, nullam pellentesque natoque cum proin velit tincidunt. Nulla tincidunt nisl morbi sagittis parturient congue penatibus hac, vitae sem eget eros vivamus primis scelerisque pharetra molestie, quisque lacus dictum taciti montes fringilla habitant. Curae laoreet libero nec netus suspendisse dignissim, himenaeos tempus metus litora scelerisque, condimentum ullamcorper eros porta morbi taciti, ut nibh venenatis eu. Aliquet interdum et integer ad montes iaculis congue in rutrum, morbi habitant duis parturient scelerisque vestibulum torquent pharetra, posuere aliquam lobortis cras blandit sapien taciti fames.
+Aenean fermentum sagittis nam cum curae eleifend aptent, est montes leo congue dictumst bibendum, placerat primis condimentum sem porta mi. Tincidunt libero ligula non nullam dictumst fames, maecenas est habitasse luctus at vivamus vehicula, et penatibus mus vitae vulputate. Viverra suspendisse ultricies tempor habitant non lacus metus nostra, habitasse dictum quisque vehicula cursus dignissim nec, accumsan pretium fermentum malesuada interdum turpis lectus. Lacinia nam urna pellentesque vitae placerat dictum purus hendrerit, orci fames penatibus commodo a erat faucibus ad, cursus nibh arcu suscipit eros per volutpat. Augue torquent gravida leo interdum rhoncus massa dapibus erat id fermentum, a eget sociis vestibulum litora penatibus nec laoreet. Diam aenean nec malesuada lobortis habitant dis taciti, interdum augue fringilla libero pharetra cras, tortor tellus lacinia turpis odio rhoncus. Quam ultricies est purus dui rutrum nostra eget senectus primis, facilisis felis aptent platea parturient ultrices at auctor lacus nam, cras interdum ornare suspendisse accumsan maecenas sociosqu dis.
+Quisque inceptos potenti porttitor vivamus sed tortor tincidunt felis et curae, sagittis primis laoreet sem dis ante duis auctor at, sollicitudin in eget interdum nostra nisi euismod justo dui. Cubilia malesuada vitae arcu euismod commodo mollis convallis, lacus maecenas leo nisi suscipit mus, scelerisque cursus phasellus semper iaculis est. Taciti vivamus penatibus accumsan varius nulla nostra porttitor, odio porta mattis semper elementum sagittis ut, pulvinar enim arcu rutrum phasellus risus. Libero neque risus habitasse integer tempor hac ante curabitur nec hendrerit ultrices inceptos, varius montes cum elementum aptent sollicitudin aenean interdum commodo sapien. Nisl dictum cras habitasse morbi volutpat porttitor felis velit ultrices vivamus euismod habitant integer malesuada, sem varius natoque bibendum erat leo vel vehicula neque cum sed feugiat vestibulum.
+Orci proin dictumst torquent, hac. Cum cras fringilla augue quis per ac, blandit elementum porta sociosqu semper nibh dis, at hac tempor dignissim habitant. Quam dis tempus integer metus fames a penatibus blandit luctus, justo nascetur cum habitant vehicula mattis ornare ridiculus. Egestas phasellus netus condimentum montes lectus, semper volutpat tellus integer proin sapien, molestie litora ac porta.
+Nec tincidunt ridiculus nunc mauris sapien fames elementum, magnis augue nibh ornare purus ut sollicitudin, interdum varius cubilia eget himenaeos turpis. Dignissim lectus fermentum molestie eget massa scelerisque duis vehicula nam diam ligula quam faucibus, elementum tempor orci feugiat bibendum interdum a dictum conubia etiam in nascetur. Ligula inceptos libero proin cras class bibendum porttitor, dis netus lobortis viverra pharetra parturient felis aliquet, ridiculus iaculis posuere phasellus venenatis semper. Aptent gravida volutpat nunc hac praesent quis magnis facilisis torquent, dictumst inceptos urna nostra suscipit nisi hendrerit porttitor posuere, aenean neque vestibulum cum augue dapibus fringilla sodales. Laoreet turpis cubilia nascetur bibendum tellus feugiat eget auctor, sodales senectus phasellus id fames class at. Class vulputate curae massa purus et imperdiet est auctor suspendisse suscipit nullam, blandit urna iaculis rutrum molestie diam accumsan aptent dictum montes, curabitur a ornare commodo odio tempor tincidunt sodales vivamus porttitor. Gravida in eu fringilla per lobortis sollicitudin sagittis elementum fames volutpat, faucibus mollis natoque dictumst neque pretium libero magna feugiat, turpis ultricies aenean cum euismod consequat semper mattis quam.','Abidjan','2023-01-23 10:25:21','2023-01-23 10:25:49.740404','2023-01-23 10:25:49.740404','published','opened',0,1);
+INSERT INTO "MEPS_ADMIN_post" VALUES (6,'images/2023/01/23/dsst1.jpg','Hello','hello','Lorem ipsum dolor sit amet consectetur adipiscing elit ultricies cursus, eu quam hendrerit a aliquam est ultrices odio facilisis, faucibus massa felis posuere metus eros maecenas parturient. Fringilla pretium curae tellus molestie aliquet lectus morbi facilisi himenaeos suspendisse ligula fames justo potenti, tempor platea ultricies interdum nec tempus eros vivamus malesuada consequat sed et tristique. Elementum cum a integer non imperdiet odio dignissim, vestibulum felis tristique phasellus dui nec nascetur mollis, arcu quam magnis fermentum et ornare. Nullam convallis mollis elementum vel ullamcorper montes sagittis euismod, tellus sodales purus justo neque habitant quam laoreet venenatis, est mus massa commodo ultrices cursus metus. Eget ullamcorper odio etiam sagittis eu fames conubia donec, eleifend senectus accumsan parturient urna venenatis a. Consequat volutpat imperdiet vel commodo varius suscipit bibendum sagittis, duis aenean ultrices augue odio curae sem, natoque vitae nisi tincidunt placerat dignissim fames.
+Fringilla risus quisque ultricies pharetra vulputate dapibus nunc ullamcorper, eget platea penatibus libero ultrices integer id, consequat habitasse sodales laoreet volutpat a scelerisque. Vulputate et dapibus inceptos consequat fusce semper convallis, sagittis porta viverra at rutrum varius, lacus in blandit sapien fames lobortis. Viverra porta eleifend turpis erat, et diam imperdiet, rutrum torquent duis. Tortor facilisis porta odio pretium mattis laoreet dui dignissim sodales lectus lacus urna mollis, fermentum gravida montes porttitor tincidunt bibendum vivamus augue accumsan suscipit leo ante, sed cras rhoncus quam blandit vehicula orci commodo senectus condimentum dictumst eros. Tempus nostra lobortis nibh magnis proin a blandit ac, gravida iaculis vehicula nunc ligula pellentesque class dictum sociosqu, dui urna risus molestie vulputate posuere leo. Curae volutpat porttitor suspendisse aliquet etiam parturient sodales, aenean dignissim cubilia dictum metus. Scelerisque dis sodales viverra dapibus lacus congue massa nascetur magna, sociis ac auctor tempor tincidunt libero facilisi ligula, at hac mi semper platea venenatis placerat mus. Aliquam praesent vivamus hendrerit parturient fringilla mi tempus et egestas, platea proin magnis neque non cursus molestie sagittis, vehicula eu cras porta at morbi libero vel. Integer tempus imperdiet purus himenaeos ridiculus ornare pulvinar ut mollis, vitae cras aenean semper sapien erat fusce taciti, eleifend mus ante gravida nostra et hac massa. Lobortis fusce pharetra hac odio est duis faucibus nam dignissim netus, natoque sociosqu ridiculus dictum ligula cras placerat ut massa, himenaeos laoreet condimentum diam pretium interdum primis sagittis gravida.
+Cubilia vitae class curae diam venenatis vulputate praesent fringilla eros nec lacus purus, tortor viverra lectus magna aliquet cum eget fusce arcu tellus ad neque, in mus et nibh quisque etiam ultrices habitasse senectus eu semper. Cubilia sodales iaculis sem congue convallis orci risus in lacus condimentum mi pretium, himenaeos velit montes bibendum fermentum curabitur varius penatibus cras augue at cum maecenas, hendrerit aenean vivamus massa rhoncus dui vel dapibus platea turpis nullam. Litora neque pellentesque ante velit netus congue volutpat, penatibus at habitant dictum sapien sodales, sem habitasse vehicula suscipit tellus tincidunt. Maecenas nullam primis vulputate quam faucibus penatibus eleifend proin ultricies dictumst potenti, viverra nulla nec taciti cubilia litora praesent id conubia torquent bibendum dignissim, magnis cras augue himenaeos condimentum habitant iaculis non ac pulvinar. Vulputate sagittis nulla tellus lacinia sollicitudin lectus imperdiet, ultrices duis nunc mi ornare id posuere, cum auctor varius rutrum vehicula leo. Aenean turpis tellus cras id nisi in eleifend ornare nec, erat tristique placerat habitasse at nascetur quisque euismod. Ultrices purus habitant class ornare ut fringilla venenatis est, nulla pellentesque ante elementum commodo orci dictum, odio donec vel velit nullam interdum cubilia.
+Mollis suspendisse fermentum et sociosqu venenatis nisl fames, eros risus aptent vehicula morbi semper, tempus congue condimentum vel nulla nunc. Nec blandit ut non euismod sollicitudin enim torquent venenatis duis, dis nisl etiam dapibus odio lacinia dictumst potenti, vivamus netus ornare parturient et taciti tortor vulputate. Risus lacinia donec litora mus tincidunt orci at ullamcorper, tempor ac euismod nam velit purus platea nisl, himenaeos posuere porta potenti fringilla lectus inceptos. Eros porttitor fusce proin erat hac conubia iaculis ad neque ut, sociosqu duis in natoque purus imperdiet dictum a potenti mattis aptent, nam himenaeos suspendisse justo taciti commodo et vivamus dictumst. Ad dignissim litora suspendisse sem tempus vehicula class at condimentum auctor magnis, turpis libero justo est sed morbi tristique fames pharetra imperdiet. Lacinia habitasse malesuada felis natoque fames mollis fusce id orci molestie netus, sociis nam ultricies odio himenaeos ridiculus gravida vehicula dignissim suscipit, fermentum mus posuere congue porttitor ante sodales diam dis tincidunt. Curae eget netus inceptos dis non nam fusce mollis, auctor sapien enim ultricies bibendum risus cubilia dictum suscipit, luctus varius rutrum ridiculus taciti magna neque.
+Platea natoque parturient justo ullamcorper vulputate congue, ante hac potenti vestibulum curabitur, pellentesque proin habitant augue vivamus. Scelerisque est sodales tempus libero primis sagittis conubia viverra neque congue tristique, eleifend semper himenaeos euismod suscipit molestie penatibus fusce nam. Integer curabitur aptent accumsan quis mus porta non ante, massa libero platea eu cubilia inceptos ornare ac, nascetur magna pharetra vitae tempor porttitor a. Suspendisse habitasse velit sociosqu lacinia suscipit facilisi diam, penatibus rhoncus donec vivamus viverra cubilia, aliquet pellentesque rutrum aliquam at mi. Nulla vestibulum ante pharetra proin venenatis, dignissim dictum lectus metus ornare, sollicitudin quis rutrum primis. Posuere quisque class suscipit blandit phasellus sodales, laoreet erat fringilla at gravida, ridiculus mauris porttitor mi nisl. Praesent suscipit sed interdum blandit lacinia et etiam semper, mauris penatibus curabitur fusce nibh facilisi rhoncus, cubilia fringilla risus lectus eu tristique netus. Himenaeos purus turpis neque blandit fermentum egestas accumsan, tellus luctus porttitor massa nisi ultrices, facilisis nullam dignissim a at tortor.','Abidjan','2023-01-23 10:25:53','2023-01-23 10:26:15.219941','2023-01-23 10:26:15.219941','published','opened',0,1);
+
+
+INSERT INTO "PUBLICATIONS_publicationcategory" VALUES ('Comminiqué','comminique');
+INSERT INTO "PUBLICATIONS_publicationcategory" VALUES ('Actualité','actualite');
+INSERT INTO "PUBLICATIONS_postactualite" VALUES (1,2);
+INSERT INTO "PUBLICATIONS_postactualite" VALUES (2,2);
+INSERT INTO "PUBLICATIONS_postactualite" VALUES (3,2);
+INSERT INTO "PUBLICATIONS_postactualite" VALUES (4,2);
+INSERT INTO "PUBLICATIONS_postactualite" VALUES (5,2);
+INSERT INTO "PUBLICATIONS_postactualite" VALUES (6,2);
+
+
+INSERT INTO "ministère_aproposdumeps" VALUES ('Ministres/drt.jpg','A propos du MEPS','Le ministre de l''emploi et de la protection sociale est chargé de la mise en oeuvre et du suivi de la politique du gouvernement en matiere d''emploi et de protection sociale.
+A ce titre, et en liaison avec les différents départements ministériels concernés, il a l''initiative et la responsabilité des actions
+
+- En matiere d''emploi et de travail.
+
+- En matiere de protection sociale.');
+
+INSERT INTO "PUBLICATIONS_postcommunique" VALUES ('pdfs/2023/01/22/IDENTIFICATION_DES_TRAVAILLEURS_MIS_EN_CHOMAGE_TECHNIQUE_OU_LICENCIES_C_INaC8gy.jpeg','2023-01-22 22:02:22','2023-01-22 22:02:22',1,'published','IDENTIFICATION DES TRAVAILLEURS MIS EN CHOMAGE TECHNIQUE OU LICENCIES COLLECTIVEMENT');
+INSERT INTO "PUBLICATIONS_postcommunique" VALUES ('pdfs/2023/01/22/communiquer.pdf','2023-01-22 22:14:22','2023-01-22 22:14:22',1,'published','Communiques 1');
+INSERT INTO "PUBLICATIONS_postcommunique" VALUES ('pdfs/2023/01/22/03-05-2021__N째0016.jpeg','2023-01-22 22:50:50','2023-01-22 22:50:50',1,'published','03-05-2021__N0016');
+INSERT INTO "PUBLICATIONS_postcommunique" VALUES ('pdfs/2023/01/22/03-08-2021_Renouvellement_des_agents_de_la_MUGEF-CI.jpeg','2023-01-22 23:32:12','2023-01-22 23:32:12',1,'published','03-08-2021_Renouvellement des agents de la MUGEF-CI');
+INSERT INTO "PUBLICATIONS_postcommunique" VALUES ('pdfs/2023/01/22/Nuit_du_Destin_2022.jpeg','2023-01-22 23:39:01','2023-01-22 23:39:01',1,'published','Nuit du Destin 2022');
+INSERT INTO "PUBLICATIONS_postcommunique" VALUES ('pdfs/2023/01/22/25-05-2020__N째00851.jpg','2023-01-22 23:54:45','2023-01-22 23:54:45',1,'draft','Communiqués 1');
+INSERT INTO "PUBLICATIONS_postcommunique" VALUES ('pdfs/2023/01/23/25-05-2020__N째00851.jpg','2023-01-22 23:55:51','2023-01-22 23:55:51',1,'published','25-05-2020__N째00851');
+
+
+

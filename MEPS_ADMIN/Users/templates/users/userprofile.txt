@@ -1,0 +1,15 @@
+
+1==> py manage.py shell
+
+2==> from django.contrib.auth.models import User
+
+3==> from MEPS_ADMIN.Users.models import UserProfile
+
+4==> users = User.objects.filter(userprofile=None)
+
+5==> for usr in users:
+
+6==>       UserProfile.objects.create(user=usr)
+
+
+7==> quit()

@@ -1,0 +1,278 @@
+
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+{% block TITLE %}Organigramme{% endblock %}
+
+{% block PAGETITLE %}Organigramme du MEPS{% endblock PAGETITLE %}
+
+
+{% block EXTRA_CSS %}
+
+<style>
+.iframe-box .blog-single .inner-box{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.iframe-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+@media only screen and (min-width: 480px){
+    .iframe-box{
+        display: block;
+    }
+	.iframe-box-mobile {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 479.99px){
+	.iframe-box{
+        display: none;
+    }
+	.iframe-box-mobile {
+		display: block;
+	}
+}
+
+</style>
+    
+{% endblock EXTRA_CSS %}
+    
+
+{% block EXTRA_SCRIPTS %}<script defer>
+
+const downloadBtn = document.querySelector(".download-btn");
+const fileLink = "{{ organigramme.pdf.url }}";
+
+const initTimer = () => {
+    if(downloadBtn.classList.contains("disable-timer")) {
+        return location.href = fileLink;
+    }
+    let timer = downloadBtn.dataset.timer;
+    downloadBtn.classList.add("timer");
+    downloadBtn.innerHTML = `<h3 class='text' style='word-wrap: break-word;'>
+                                Le fichier sera téléchargé automatiquement dans <b>${timer}</b> seconds
+                            </h3>`;
+    const initCounter = setInterval(() => {
+        if(timer > 0) {
+            timer--;
+            return downloadBtn.innerHTML = `<h3 class='text' style='word-wrap: break-word;'>
+                                                Le fichier sera téléchargé automatiquement dans <b>${timer}</b> seconds
+                                            </h3>`;
+        }
+        clearInterval(initCounter);
+        location.href = fileLink;
+        downloadBtn.innerText = "Téléchargement en cours...";
+        setTimeout(() => {
+            downloadBtn.classList.replace("timer", "disable-timer");
+            downloadBtn.innerHTML = `<button style="color: green" href="" disabled>
+                                        <i class="fa fa-download"></i>Téléchargement réussi!
+                                    </button>`;
+        }, 3000);
+    }, 5000);
+}
+
+downloadBtn.addEventListener("click", initTimer);
+
+    
+</script> {% endblock EXTRA_SCRIPTS %}
+    
+
+{% block CONTENT %} 
+    
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li>organigramme</li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="share-icon"><a href="#"><span class="icon fa fa-share-alt"></span> Partager</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+    
+    <!--Sidebar Page Container-->
+    <div class="sidebar-page-container">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Content Side / Blog Single-->
+                <div class="content-side col-lg-12 col-md-12 col-sm-12 col-xs-12 iframe-box">
+                	<div class="blog-single">
+                    	<div class="inner-box">
+                        	<iframe class="iframe-content" src="{{ organigramme.pdf.url }}" height="850" width="100%"></iframe> 
+                        </div>
+                    </div>
+                </div>    
+                <!--MOBILE Content Side / Blog Single-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12 iframe-box-mobile" style="margin-bottom: 10rem;">
+                    <div class="inner-box">
+                        <i class="fa fa-file-pdf-o fa-5x" style="color:red;"></i>
+                        <hr>
+                        <button class="btn text download-btn" style="color: green" data-timer="10">
+                            <i class="fa fa-download"></i>Télécharger
+                        </button>                        
+                    </div>
+                </div> 
+                
+                
+                
+                <!--Sidebar-->
+                {% comment %} <div class="sidebar-side col-lg-12">
+                    <aside class="sidebar">
+
+                        <div class="row equal-cols" style="margin-right:5wh;">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+
+                                <div class="sidebar-widget sidebar-blog-category">
+                                    <div class="sidebar-title">
+                                        <h2>Direction de l'Emploi</h2>
+                                    </div>
+                                    <ul class="blog-cat">
+                                        <li>
+                                            <a href="{% static '' %}"><strong>DGE</strong> </a>
+                                            <ul class="blog-cat">
+                                                <li><a href="{% static '' %}">DSPE</a></li>
+                                                <li><a href="{% static '' %}">DSEPE</a></li>
+                                                <li><a href="{% static '' %}">DOEM</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+
+                            </div> 
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                <div class="sidebar-widget sidebar-blog-category">
+                                    <div class="sidebar-title">
+                                        <h2>Direction du Travail</h2>
+                                    </div>
+                                    <ul class="blog-cat">
+                                       
+                                        <li>
+                                            <a href="{% static '' %}"><strong>DGT</strong></a>
+                                            <ul class="blog-cat">
+                                                <li><a href="{% static '' %}">DRT</a></li>
+                                                <li><a href="{% static '' %}">DIT</a></li>
+                                                <li><a href="{% static '' %}">DLTE</a></li>
+                                                <li><a href="{% static '' %}">DSST</a></li>
+                                            </ul>
+                                        </li>
+                                                                                
+                                    </ul>
+                                </div>
+                            </div> 
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                <div class="sidebar-widget sidebar-blog-category">
+                                    <div class="sidebar-title">
+                                        <h2>Direction de la Protection Sociale</h2>
+                                    </div>
+                                    <ul class="blog-cat">
+                                        
+                                        <li>
+                                            <a href="{% static '' %}"><strong>DGPS</strong></a>
+                                            <ul class="blog-cat">
+                                                <li><a href="{% static '' %}">DAS</a></li>
+                                                <li><a href="{% static '' %}">DPPH</a></li>
+                                                <li><a href="{% static '' %}">DSSM</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>                            
+                        </div>
+						
+                        <!-- Search Form -->
+                        <!-- <div class="sidebar-widget search-box">
+                        	<form method="post" action="contact.html">
+                                <div class="form-group">
+                                    <input type="search" name="search-field" value="" placeholder="Search.." required>
+                                    <button type="submit"><span class="icon fa fa-search"></span></button>
+                                </div>
+                            </form>
+                        </div> -->
+
+                        <!-- Popular Posts -->
+                        <!-- <div class="sidebar-widget popular-posts">
+                            <div class="sidebar-title"><h2>Popular Post</h2></div>
+
+                            <article class="post">
+                            	<figure class="post-thumb"><a href="blog-single.html"><img src="images/resource/post-thumb-1.jpg" alt=""></a></figure>
+                                <div class="text"><a href="blog-single.html">Finance & legal throughout project.</a></div>
+                                <div class="post-info">January 19, 2017</div>
+                            </article>
+                            
+                            <article class="post">
+                            	<figure class="post-thumb"><a href="blog-single.html"><img src="images/resource/post-thumb-2.jpg" alt=""></a></figure>
+                                <div class="text"><a href="blog-single.html">What makes us best in the world?</a></div>
+                                <div class="post-info">December 05, 2016</div>
+                            </article>
+                            
+                            <article class="post">
+                            	<figure class="post-thumb"><a href="blog-single.html"><img src="images/resource/post-thumb-3.jpg" alt=""></a></figure>
+                                <div class="text"><a href="blog-single.html">Why People go with Consulthub.</a></div>
+                                <div class="post-info">August 21, 2016</div>
+                            </article>
+                            
+						</div> -->
+                        
+                        <!-- Gallery Widget-->
+                        <!-- <div class="sidebar-widget gallery-widget">
+                            <div class="sidebar-title">
+                            	<h2>Instagram</h2>
+                            </div>
+                            <div class="clearfix">
+                            	<figure class="image"><a href="images/gallery/gallery-1.jpg" class="lightbox-image"><img src="images/resource/sidebar-gallery-1.jpg" alt=""></a></figure>
+                                <figure class="image"><a href="images/gallery/gallery-2.jpg" class="lightbox-image"><img src="images/resource/sidebar-gallery-2.jpg" alt=""></a></figure>
+                                <figure class="image"><a href="images/gallery/gallery-3.jpg" class="lightbox-image"><img src="images/resource/sidebar-gallery-3.jpg" alt=""></a></figure>
+                                <figure class="image"><a href="images/gallery/gallery-4.jpg" class="lightbox-image"><img src="images/resource/sidebar-gallery-4.jpg" alt=""></a></figure>
+                                <figure class="image"><a href="images/gallery/gallery-5.jpg" class="lightbox-image"><img src="images/resource/sidebar-gallery-5.jpg" alt=""></a></figure>
+                                <figure class="image"><a href="images/gallery/gallery-6.jpg" class="lightbox-image"><img src="images/resource/sidebar-gallery-6.jpg" alt=""></a></figure>
+                            </div>
+                        </div> -->
+                        
+                        <!-- Popular Tags -->
+                       <!-- <div class="sidebar-widget popular-tags">
+                            <div class="sidebar-title"><h2>Tag Cloud</h2></div>
+                            <a href="#">Book</a>
+                            <a href="#">Company</a>
+                            <a href="#">Ideas</a>
+                            <a href="#">Energy</a>
+                            <a href="#">Engines</a>
+                            <a href="#">Chemical</a>
+                            <a href="#">Industry</a>
+                            <a href="#">Research</a>
+                        </div> -->
+                        
+					</aside>
+                </div> {% endcomment %}
+            </div>
+        </div>
+    </div>
+    <!--End Blog Grid Section-->
+    {% endblock %}
+    

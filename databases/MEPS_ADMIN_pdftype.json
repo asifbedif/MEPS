@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "slug": "budget-budge",
+        "type": "Budget"
+    },
+    {
+        "id": 2,
+        "slug": "bu-bu-b",
+        "type": "bu"
+    },
+    {
+        "id": 3,
+        "slug": "marchés",
+        "type": "Marchés"
+    }
+]

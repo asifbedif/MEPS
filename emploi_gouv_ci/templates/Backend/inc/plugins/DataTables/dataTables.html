@@ -1,0 +1,108 @@
+{% load static %}
+
+<div class="card">{{ TABLE_NAME  }}
+            <div class="card-body">
+              <h4 class="card-title"></h4>
+              <div class="row">
+                <div class="col-12">
+                  <div class="table-responsive">
+                    <table id="order-listing" class="table">
+                      <thead>
+                        <tr>
+                          {% for th in table_header.split %}
+                            <th>{{th}}</th>
+                          {% endfor %}                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img class="post-image" src="{% static 'images/dit.jpg' %}"alt="post image" style="border-radius: none!important;"></td>
+                            <td>2012/08/03</td>
+                            <td>Edinburgh</td>
+                            <td>New York</td>
+                            <td>$1500</td>
+                            <td>$3200</td>
+                            <td>
+                              <label class="badge badge-info">Brouillon</label>
+                            </td>
+                            <td>12/08/2022</td>
+                            <td>14/08/2022</td>
+                            <td>
+                              <label class="badge badge-outline-info">En attente</label>
+                            </td>
+                            <td>0</td>
+                            <td>
+                              <button class="btn btn-outline-primary">Voir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img class="post-image" src="{% static 'images/dit.jpg' %}" alt="post image" style="border-radius: none!important;"/></td>
+                            <td>2015/04/01</td>
+                            <td>Doe</td>
+                            <td>Brazil</td>
+                            <td>$4500</td>
+                            <td>$7500</td>
+                            <td>
+                              <label class="badge badge-warning">Corbeille</label>
+                            </td>
+                            <td>12/08/2022</td>
+                            <td>14/08/2022</td>
+                            <td>
+                              <label class="badge badge-outline-success">Ouverts</label>
+                            </td>
+                            <td>25</td>
+                            <td>
+                              <button class="btn btn-outline-primary">Voir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img class="post-image" src="{% static 'images/dit.jpg' %}"alt="post image" style="border-radius: none!important;"></td>
+                            <td>2012/08/03</td>
+                            <td>Edinburgh</td>
+                            <td>New York</td>
+                            <td>$1500</td>
+                            <td>$3200</td>
+                            <td>
+                              <label class="badge badge-success">Publié</label>
+                            </td>
+                            <td>12/08/2022</td>
+                            <td>14/08/2022</td>
+                            <td>
+                              <label class="badge badge-outline-danger">Fermés</label>
+                            </td>
+                            <td>785</td>
+                            <td>
+                              <button class="btn btn-outline-primary">Voir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><img class="post-image" src="{% static 'images/dit.jpg' %}"alt="post image" style="border-radius: none!important;"></td>
+                            <td>2015/04/01</td>
+                            <td>Doe</td>
+                            <td>Brazil</td>
+                            <td>$4500</td>
+                            <td>$7500</td>
+                            <td>
+                              <label class="badge badge-success">Publié</label>
+                            </td>
+                            <td>12/08/2022</td>
+                            <td>14/08/2022</td>
+                            <td>
+                              <label class="badge badge-outline-success">Ouverts</label>
+                            </td>
+                            <td>105</td>
+                            <td>
+                              <button class="btn btn-outline-primary">Voir</button>
+                            </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>

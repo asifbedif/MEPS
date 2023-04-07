@@ -1,0 +1,109 @@
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+
+{% load humanize %}
+
+{% comment %} {% load threadedcomments_tags %} {% endcomment %}
+    
+
+{% block TITLE %}
+    Articles
+{% endblock %}
+
+{% block PAGETITLE %}
+    {{ single_post.post_title }} 
+{% endblock PAGETITLE %}
+
+{% block EXTRA_SCRIPTS %} 
+
+    <div id="fb-root"></div>
+    <script async defer 
+            crossorigin="anonymous" 
+            src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v16.0"
+            &autoLogAppEvents=1"
+            nonce="BEKFxmDA">
+    </script>    
+
+{% endblock EXTRA_SCRIPTS %}
+
+
+{% block CONTENT %} 
+    
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{% url 'index' %}">Accueil</a></li>
+                        <li><a href="{% url 'publications' %}">Publications</a></li>
+                        <li><a href="{% url 'actualites' %}">Actualités</a></li>
+                        <li>{{ single_post.post_title|truncatewords:10 }}</li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="share-icon"><a href="https://www.facebook.com"><span class="icon fa fa-share-alt"></span>Partager</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+    
+    <!--Sidebar Page Container-->
+    <div class="sidebar-page-container">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Content Side / Blog Single-->
+                <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12"> <!--  style="border-right: 2px solid #f7f7f7;"  -->
+                	<div class="blog-single">
+                    	<div class="inner-box">
+                        	<div class="image">
+								<img src="{{ single_post.post_image.url }}" alt="" width="85%" height="100%" />
+                        	</div>
+                            <ul class="post-info">
+                            	<li>{{single_post.post_published_on|date:"d M Y"}} à {{single_post.post_published_on|time:"H:i"}}</li>
+                                <li>Lieu: {{ single_post.post_place }}</li>
+                                <li>Catégorie: {{ single_post.post_category }}</li>
+                            </ul>
+                            <div class="lower-content">
+                            	<h3>{{ single_post.post_title }}</h3>
+                                <div class="text">
+                                	<p>{{ single_post.post_content | safe }}</p>                            
+                                </div>
+
+                                <a href='{{ single_post.post_image.url }}' download>
+								    <img src="{{ single_post.post_image.url }}" alt="" width="85%" height="100%" />
+                                    Telecharger
+                                </a>                                 
+                                <!--Author Box-->
+                                {% include 'Layouts/inc/post-author.html' %}
+
+                                <!--Facebook plugins Box-->
+                                {% comment %} {% include 'Layouts/inc/FB_Likes.html' %} 
+                                {% include 'Layouts/inc/FB_Comments.html' %} {% endcomment %}
+                                
+                                
+                                <!--Comments Area-->
+                                {% include 'Layouts/inc/post-comments.html' %}
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Sidebar-->
+                <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12" style="border-left: 5px solid #f7f7f7;">
+                    {% include 'Layouts/_sidebar.html' %}
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--End Blog Grid Section-->
+
+{% endblock %}

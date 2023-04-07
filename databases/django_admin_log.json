@@ -1,0 +1,1492 @@
+[
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 13:50:29.073068",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 174,
+        "id": 1,
+        "object_id": "1",
+        "object_repr": "Cabinet",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 13:50:31.425548",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 27,
+        "id": 2,
+        "object_id": "1",
+        "object_repr": "Le Cabinet",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 13:56:46.125161",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 25,
+        "id": 3,
+        "object_id": "1",
+        "object_repr": "1: Vu la loi n0 92-570 du 11 septembre 1992 portant Statut General de la Fonction Publique",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 13:57:15.454117",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 25,
+        "id": 4,
+        "object_id": "2",
+        "object_repr": "2: Vu le décret n0 93-607 du 02 juillet 1993 portant modalités communes d’application du Statut Général de la Fonction Publique",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 13:57:54.515087",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 25,
+        "id": 5,
+        "object_id": "3",
+        "object_repr": "3: Vu le décret n0 93-608 du 02 juillet 1993 portant classification des grades et emploi dans l’Administration de l’Etat et dans les Etablissements Publics Nationaux",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 13:58:38.202201",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 24,
+        "id": 6,
+        "object_id": "1",
+        "object_repr": "1: Le Cabinet",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-27 14:00:36.283335",
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]",
+        "content_type_id": 27,
+        "id": 7,
+        "object_id": "1",
+        "object_repr": "Le Cabinet",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:20:59.048546",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 174,
+        "id": 8,
+        "object_id": "2",
+        "object_repr": "aCTUALIT2",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:21:33.207906",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 177,
+        "id": 9,
+        "object_id": "2",
+        "object_repr": "Le Cabinet",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-27 15:21:49.913426",
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]",
+        "content_type_id": 177,
+        "id": 10,
+        "object_id": "2",
+        "object_repr": "Le Cabinet",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:23:44.255151",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 179,
+        "id": 11,
+        "object_id": "1",
+        "object_repr": "QUESTION 1",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:24:12.981653",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 179,
+        "id": 12,
+        "object_id": "2",
+        "object_repr": "QUESTION 2",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:32:16.736456",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 174,
+        "id": 13,
+        "object_id": "3",
+        "object_repr": "Communiqué",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:32:46.833136",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 175,
+        "id": 14,
+        "object_id": "1",
+        "object_repr": "Buget",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:33:08.676520",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 176,
+        "id": 15,
+        "object_id": "1",
+        "object_repr": "Renouvellement des agents de la MUGEF-CI",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:35:22.101928",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 164,
+        "id": 16,
+        "object_id": "1",
+        "object_repr": "Budget",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:35:30.688426",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 164,
+        "id": 17,
+        "object_id": "2",
+        "object_repr": "bu",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:35:37.560409",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 165,
+        "id": 18,
+        "object_id": "3",
+        "object_repr": "Marchés",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:35:39.641264",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 166,
+        "id": 19,
+        "object_id": "1",
+        "object_repr": "Renouvellement des agents de la MUGEF-CI",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-27 15:36:17.046716",
+        "change_message": "[{\"changed\": {\"fields\": [\"File\", \"Status\"]}}]",
+        "content_type_id": 166,
+        "id": 20,
+        "object_id": "1",
+        "object_repr": "Renouvellement des agents de la MUGEF-CI",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:38:07.163708",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 35,
+        "id": 21,
+        "object_id": "1",
+        "object_repr": "",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:39:27.607065",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 35,
+        "id": 22,
+        "object_id": "2",
+        "object_repr": "",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:40:40.433246",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 8,
+        "id": 23,
+        "object_id": "1",
+        "object_repr": "ORGANIGRAME",
+        "user_id": 1
+    },
+    {
+        "action_flag": 3,
+        "action_time": "2023-02-27 15:44:55.405674",
+        "change_message": "",
+        "content_type_id": 35,
+        "id": 24,
+        "object_id": "2",
+        "object_repr": "",
+        "user_id": 1
+    },
+    {
+        "action_flag": 3,
+        "action_time": "2023-02-27 15:44:55.442148",
+        "change_message": "",
+        "content_type_id": 35,
+        "id": 25,
+        "object_id": "1",
+        "object_repr": "",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:46:37.080131",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 35,
+        "id": 26,
+        "object_id": "3",
+        "object_repr": "",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-27 15:47:16.391483",
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]",
+        "content_type_id": 35,
+        "id": 27,
+        "object_id": "3",
+        "object_repr": "",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:51:31.193186",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 174,
+        "id": 28,
+        "object_id": "4",
+        "object_repr": "Ministère",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:51:38.353542",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 13,
+        "id": 29,
+        "object_id": "1",
+        "object_repr": "À Propos Du Meps",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:53:56.423841",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 11,
+        "id": 30,
+        "object_id": "1",
+        "object_repr": "Dosso Moussa",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:55:08.422436",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 11,
+        "id": 31,
+        "object_id": "2",
+        "object_repr": "Abin",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:56:33.334046",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 11,
+        "id": 32,
+        "object_id": "3",
+        "object_repr": "Jean Claude",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:57:36.117445",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 11,
+        "id": 33,
+        "object_id": "4",
+        "object_repr": "Adama  KAMARA",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:58:51.245654",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 10,
+        "id": 34,
+        "object_id": "1",
+        "object_repr": "DGE - Direction Générale de l'Emploi",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 15:59:56.317746",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 10,
+        "id": 35,
+        "object_id": "2",
+        "object_repr": "DGPS - Direction Générale de laProtection Sociale",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:00:28.975537",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 10,
+        "id": 36,
+        "object_id": "3",
+        "object_repr": "DGT - Direction Générale du Travil",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:01:27.610221",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 10,
+        "id": 37,
+        "object_id": "4",
+        "object_repr": "le-ministre - Le Ministre",
+        "user_id": 1
+    },
+    {
+        "action_flag": 3,
+        "action_time": "2023-02-27 16:03:26.470806",
+        "change_message": "",
+        "content_type_id": 27,
+        "id": 38,
+        "object_id": "1",
+        "object_repr": "Le Cabinet",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:04:48.292296",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 27,
+        "id": 39,
+        "object_id": "3",
+        "object_repr": "Le Cabinet",
+        "user_id": 1
+    },
+    {
+        "action_flag": 3,
+        "action_time": "2023-02-27 16:06:03.697295",
+        "change_message": "",
+        "content_type_id": 25,
+        "id": 40,
+        "object_id": "3",
+        "object_repr": "3: Vu le décret n0 93-608 du 02 juillet 1993 portant classification des grades et emploi dans l’Administration de l’Etat et dans les Etablissements Publics Nationaux",
+        "user_id": 1
+    },
+    {
+        "action_flag": 3,
+        "action_time": "2023-02-27 16:06:03.728726",
+        "change_message": "",
+        "content_type_id": 25,
+        "id": 41,
+        "object_id": "2",
+        "object_repr": "2: Vu le décret n0 93-607 du 02 juillet 1993 portant modalités communes d’application du Statut Général de la Fonction Publique",
+        "user_id": 1
+    },
+    {
+        "action_flag": 3,
+        "action_time": "2023-02-27 16:06:03.739727",
+        "change_message": "",
+        "content_type_id": 25,
+        "id": 42,
+        "object_id": "1",
+        "object_repr": "1: Vu la loi n0 92-570 du 11 septembre 1992 portant Statut General de la Fonction Publique",
+        "user_id": 1
+    },
+    {
+        "action_flag": 3,
+        "action_time": "2023-02-27 16:06:42.271037",
+        "change_message": "",
+        "content_type_id": 24,
+        "id": 43,
+        "object_id": "1",
+        "object_repr": "1: Le Cabinet",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:07:12.323983",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 25,
+        "id": 44,
+        "object_id": "4",
+        "object_repr": "4: Vu la loi n0 92-570 du 11 septembre 1992 portant Statut General de la Fonction Publique ;",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-27 16:07:29.856362",
+        "change_message": "[{\"changed\": {\"fields\": [\"Sentence\"]}}]",
+        "content_type_id": 25,
+        "id": 45,
+        "object_id": "4",
+        "object_repr": "4: Vu la loi n0 92-570 du 11 septembre 1992 portant Statut General de la Fonction Publique",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:08:10.619491",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 25,
+        "id": 46,
+        "object_id": "5",
+        "object_repr": "5: Vu le décret n0 93-607 du 02 juillet 1993 portant modalités communes d’application du Statut Général de la Fonction Publique",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:09:16.101906",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 24,
+        "id": 47,
+        "object_id": "2",
+        "object_repr": "2: COMPOSITION DU CABINET MINISTERIEL",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:13:36.264682",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 20,
+        "id": 48,
+        "object_id": "1",
+        "object_repr": "1: Le Cabinet Ministériel est composé",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:14:00.689738",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 20,
+        "id": 49,
+        "object_id": "2",
+        "object_repr": "2: Le poste de Directeur de Cabinet Adjoint dans un Cabinet Ministériel est créé sur autorisation du Premier Ministre.",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:15:24.233439",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 28,
+        "id": 50,
+        "object_id": "1",
+        "object_repr": "1",
+        "user_id": 1
+    },
+    {
+        "action_flag": 3,
+        "action_time": "2023-02-27 16:17:11.692797",
+        "change_message": "",
+        "content_type_id": 20,
+        "id": 51,
+        "object_id": "1",
+        "object_repr": "1: Le Cabinet Ministériel est composé",
+        "user_id": 1
+    },
+    {
+        "action_flag": 3,
+        "action_time": "2023-02-27 16:17:11.704980",
+        "change_message": "",
+        "content_type_id": 20,
+        "id": 52,
+        "object_id": "2",
+        "object_repr": "2: Le poste de Directeur de Cabinet Adjoint dans un Cabinet Ministériel est créé sur autorisation du Premier Ministre.",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:19:23.736767",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 20,
+        "id": 53,
+        "object_id": "2",
+        "object_repr": "2: Le Cabinet Ministériel est composé",
+        "user_id": 1
+    },
+    {
+        "action_flag": 3,
+        "action_time": "2023-02-27 16:20:07.187051",
+        "change_message": "",
+        "content_type_id": 24,
+        "id": 54,
+        "object_id": "2",
+        "object_repr": "2: COMPOSITION DU CABINET MINISTERIEL",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:20:14.775537",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 24,
+        "id": 55,
+        "object_id": "1",
+        "object_repr": "1: COMPOSITION DU CABINET MINISTERIEL",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:20:33.954710",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 24,
+        "id": 56,
+        "object_id": "2",
+        "object_repr": "2: MISSIONS ET ATTRIBUTIONS DES MEMBRES DU CABINET MINISTERIEL",
+        "user_id": 1
+    },
+    {
+        "action_flag": 3,
+        "action_time": "2023-02-27 16:21:12.411859",
+        "change_message": "",
+        "content_type_id": 20,
+        "id": 57,
+        "object_id": "2",
+        "object_repr": "2: Le Cabinet Ministériel est composé",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:21:46.936644",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 24,
+        "id": 58,
+        "object_id": "0",
+        "object_repr": "0: DECRETE",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:22:02.965911",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 20,
+        "id": 59,
+        "object_id": "1",
+        "object_repr": "1: Le présent décret détermine l’organisation du Cabinet Ministériel",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:22:24.593500",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 20,
+        "id": 60,
+        "object_id": "2",
+        "object_repr": "2: Le Cabinet Ministériel est composé",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:22:40.754839",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 20,
+        "id": 61,
+        "object_id": "3",
+        "object_repr": "3: Le poste de Directeur de Cabinet Adjoint dans un Cabinet Ministériel est créé sur autorisation du Premier Ministre",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:23:47.630548",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 20,
+        "id": 62,
+        "object_id": "4",
+        "object_repr": "4: Le Cabinet Ministériel est chargé, sous l’autorité du Ministre",
+        "user_id": 1
+    },
+    {
+        "action_flag": 3,
+        "action_time": "2023-02-27 16:24:31.208550",
+        "change_message": "",
+        "content_type_id": 28,
+        "id": 63,
+        "object_id": "1",
+        "object_repr": "1",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:25:14.482492",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 28,
+        "id": 64,
+        "object_id": "1",
+        "object_repr": "1",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:25:35.421668",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 28,
+        "id": 65,
+        "object_id": "2",
+        "object_repr": "2",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:25:49.777561",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 28,
+        "id": 66,
+        "object_id": "3",
+        "object_repr": "3",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:26:04.411896",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 28,
+        "id": 67,
+        "object_id": "4",
+        "object_repr": "4",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:26:21.684249",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 28,
+        "id": 68,
+        "object_id": "5",
+        "object_repr": "5",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:26:57.001539",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 28,
+        "id": 69,
+        "object_id": "6",
+        "object_repr": "6",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-27 16:27:28.476652",
+        "change_message": "[]",
+        "content_type_id": 28,
+        "id": 70,
+        "object_id": "6",
+        "object_repr": "6",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:27:55.340138",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 28,
+        "id": 71,
+        "object_id": "7",
+        "object_repr": "7",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:31:43.388343",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 29,
+        "id": 72,
+        "object_id": "1",
+        "object_repr": "Direction de la Documentation, de la Communication et des Archives",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:32:48.975109",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 29,
+        "id": 73,
+        "object_id": "2",
+        "object_repr": "Direction des Systèmes d'Information",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-27 16:33:05.708078",
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]",
+        "content_type_id": 29,
+        "id": 74,
+        "object_id": "2",
+        "object_repr": "Direction des Systèmes d'Information",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-27 16:33:22.220903",
+        "change_message": "[{\"changed\": {\"fields\": [\"Display first\"]}}]",
+        "content_type_id": 29,
+        "id": 75,
+        "object_id": "2",
+        "object_repr": "Direction des Systèmes d'Information",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:38:55.673514",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 34,
+        "id": 76,
+        "object_id": "1",
+        "object_repr": "MUGEF-CI(Mutuelle générale des fonctionnaires et agents de l'État)",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-27 16:39:28.789389",
+        "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]",
+        "content_type_id": 34,
+        "id": 77,
+        "object_id": "1",
+        "object_repr": "MUGEF-CI(Mutuelle générale des fonctionnaires et agents de l'État)",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:42:49.475157",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 34,
+        "id": 78,
+        "object_id": "2",
+        "object_repr": "IPS-CNAM(Institution de prévoyance sociale- caisse Nationale d'assurance Maladie.)",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 16:46:40.815115",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 30,
+        "id": 79,
+        "object_id": "1",
+        "object_repr": "INIPA(Institut national Ivoirien pour la Promotion des Aveugles)",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-27 16:48:11.367409",
+        "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]",
+        "content_type_id": 30,
+        "id": 80,
+        "object_id": "1",
+        "object_repr": "INIPA(Institut national Ivoirien pour la Promotion des Aveugles)",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-27 17:07:20.185872",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 181,
+        "id": 81,
+        "object_id": "1",
+        "object_repr": "Direction de la Documentation, de la Communication et des Archives",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-28 12:46:27.407913",
+        "change_message": "[{\"changed\": {\"fields\": [\"Full form name\", \"Short form name\"]}}, {\"added\": {\"name\": \"cabine t_directions_contacts\", \"object\": \"Direction de la Documentation, de la Communication et des Archives\"}}]",
+        "content_type_id": 181,
+        "id": 82,
+        "object_id": "1",
+        "object_repr": "Le Cabinet",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-28 14:42:19.593189",
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]",
+        "content_type_id": 4,
+        "id": 83,
+        "object_id": "1",
+        "object_repr": "superAdmin",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-28 14:42:40.361266",
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]",
+        "content_type_id": 4,
+        "id": 84,
+        "object_id": "1",
+        "object_repr": "superAdmin",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-28 14:43:48.769318",
+        "change_message": "[]",
+        "content_type_id": 4,
+        "id": 85,
+        "object_id": "1",
+        "object_repr": "superAdmin",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-28 15:28:24.183600",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 58,
+        "id": 86,
+        "object_id": "1",
+        "object_repr": "DGE - Direction Générale de l'Emploi",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-28 15:30:03.312511",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 62,
+        "id": 87,
+        "object_id": "1",
+        "object_repr": "DIRECTION SPE",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-28 15:44:38.642017",
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]",
+        "content_type_id": 62,
+        "id": 88,
+        "object_id": "1",
+        "object_repr": "DIRECTION SPE",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-28 15:45:21.621974",
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]",
+        "content_type_id": 62,
+        "id": 89,
+        "object_id": "1",
+        "object_repr": "DIRECTION SPE",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-28 15:46:42.388461",
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]",
+        "content_type_id": 62,
+        "id": 90,
+        "object_id": "1",
+        "object_repr": "DIRECTION SPE",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-28 16:08:46.936685",
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]",
+        "content_type_id": 58,
+        "id": 91,
+        "object_id": "1",
+        "object_repr": "DGE - Direction Générale de l'Emploi",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-28 16:17:33.892265",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 60,
+        "id": 92,
+        "object_id": "2",
+        "object_repr": "DGT - Direction Générale du Travail",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-28 16:18:49.146885",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 59,
+        "id": 93,
+        "object_id": "3",
+        "object_repr": "DGPS - Direction Générale de la Protection Sociale",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-28 16:19:21.551269",
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]",
+        "content_type_id": 58,
+        "id": 94,
+        "object_id": "1",
+        "object_repr": "DGE - Direction Générale de l'Emploi",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-28 16:23:21.884574",
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]",
+        "content_type_id": 58,
+        "id": 95,
+        "object_id": "1",
+        "object_repr": "DGE - Direction Générale de l'Emploi",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-28 16:23:36.827092",
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]",
+        "content_type_id": 59,
+        "id": 96,
+        "object_id": "3",
+        "object_repr": "DGPS - Direction Générale de la Protection Sociale",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-28 16:29:59.447129",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 82,
+        "id": 97,
+        "object_id": "2",
+        "object_repr": "Direction de l'Observatoire de l'Emploi et des Metiers",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-28 16:31:10.026621",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 72,
+        "id": 98,
+        "object_id": "3",
+        "object_repr": "Direction du Suivi et Evaluation de la Politique de l’Emploi.",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-28 16:45:58.587104",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 144,
+        "id": 99,
+        "object_id": "4",
+        "object_repr": "Direction de la Règlementation du Travail.Plateau, Immeuble Sebroko",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-28 16:47:16.373545",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 124,
+        "id": 100,
+        "object_id": "5",
+        "object_repr": "Direction de l'Inspection du Travail.",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-28 16:48:08.695760",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 134,
+        "id": 101,
+        "object_id": "6",
+        "object_repr": "Direction de la Lutte Contre le Travail des Enfants",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-02-28 16:49:21.181167",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 154,
+        "id": 102,
+        "object_id": "7",
+        "object_repr": "Direction de la Santé et de la Sécurité au Travail",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-28 16:50:20.546343",
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]",
+        "content_type_id": 60,
+        "id": 103,
+        "object_id": "2",
+        "object_repr": "DGT - Direction Générale du Travail",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-02-28 20:04:06.148804",
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\", \"Status\", \"Phone\"]}}]",
+        "content_type_id": 57,
+        "id": 104,
+        "object_id": "1",
+        "object_repr": "superAdmin",
+        "user_id": 1
+    },
+    {
+        "action_flag": 3,
+        "action_time": "2023-02-28 20:37:24.286865",
+        "change_message": "",
+        "content_type_id": 4,
+        "id": 105,
+        "object_id": "2",
+        "object_repr": "asif",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-03-01 19:00:39.491622",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 174,
+        "id": 106,
+        "object_id": "5",
+        "object_repr": "Actualité",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-03-01 19:00:44.694322",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 177,
+        "id": 107,
+        "object_id": "4",
+        "object_repr": "Morbi curae feugiat rhoncus convallis pulvinar",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-03-01 19:01:18.315032",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 177,
+        "id": 108,
+        "object_id": "5",
+        "object_repr": "Metus hac commodo duis nisl vel quam",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-03-01 19:02:10.360514",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 177,
+        "id": 109,
+        "object_id": "6",
+        "object_repr": "Dictumst felis suscipit orci morbi consequat",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-03-01 19:02:40.283524",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 177,
+        "id": 110,
+        "object_id": "7",
+        "object_repr": "Congue nullam lobortis dignissim quisque",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-03-01 19:03:18.030954",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 177,
+        "id": 111,
+        "object_id": "8",
+        "object_repr": "Primis orci cursus ad mauris dignissim donec tempus",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-03-01 19:03:55.954535",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 177,
+        "id": 112,
+        "object_id": "9",
+        "object_repr": "Fermentum sapien penatibus dolor imperdiet magna",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-03-01 19:04:35.715430",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 177,
+        "id": 113,
+        "object_id": "10",
+        "object_repr": "Duis ligula pellentesque si ex fermentum",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-03-01 19:05:18.480358",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 177,
+        "id": 114,
+        "object_id": "11",
+        "object_repr": "Congue nullam lobortis dignissim quisque litora",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-03-01 19:06:02.771797",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 177,
+        "id": 115,
+        "object_id": "12",
+        "object_repr": "Magna duis a sollicitudin accumsan interdum",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-03-01 19:06:46.548527",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 177,
+        "id": 116,
+        "object_id": "13",
+        "object_repr": "Quis ante pede massa fringilla volutpat odio",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-01 21:49:25.058968",
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]",
+        "content_type_id": 177,
+        "id": 117,
+        "object_id": "7",
+        "object_repr": "Congue nullam lobortis dignissim quisque",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-01 21:49:41.828425",
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]",
+        "content_type_id": 177,
+        "id": 118,
+        "object_id": "12",
+        "object_repr": "Magna duis a sollicitudin accumsan interdum",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-01 21:49:55.605909",
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]",
+        "content_type_id": 177,
+        "id": 119,
+        "object_id": "11",
+        "object_repr": "Congue nullam lobortis dignissim quisque litora",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-01 21:50:35.310240",
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]",
+        "content_type_id": 177,
+        "id": 120,
+        "object_id": "6",
+        "object_repr": "Dictumst felis suscipit orci morbi consequat",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-01 23:46:58.600186",
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]",
+        "content_type_id": 177,
+        "id": 121,
+        "object_id": "9",
+        "object_repr": "Fermentum sapien penatibus dolor imperdiet magna",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-03-02 10:47:24.732999",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 168,
+        "id": 122,
+        "object_id": "1",
+        "object_repr": "CMU",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-03-02 10:47:52.914853",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 170,
+        "id": 123,
+        "object_id": "1",
+        "object_repr": "Couverture Maladie Universelle",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-02 10:50:13.210050",
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Title\", \"Subtitle\", \"Visible\"]}}]",
+        "content_type_id": 170,
+        "id": 124,
+        "object_id": "1",
+        "object_repr": "Couverture Maladie Universelle",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-02 10:54:52.240668",
+        "change_message": "[{\"changed\": {\"fields\": [\"Visible\"]}}]",
+        "content_type_id": 170,
+        "id": 125,
+        "object_id": "1",
+        "object_repr": "Couverture Maladie Universelle",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-02 11:16:52.555560",
+        "change_message": "[{\"changed\": {\"fields\": [\"Visible\"]}}]",
+        "content_type_id": 170,
+        "id": 126,
+        "object_id": "1",
+        "object_repr": "Couverture Maladie Universelle",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-02 11:21:49.340955",
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]",
+        "content_type_id": 170,
+        "id": 127,
+        "object_id": "1",
+        "object_repr": "Couverture Maladie Universelle",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-02 11:22:17.318277",
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]",
+        "content_type_id": 170,
+        "id": 128,
+        "object_id": "1",
+        "object_repr": "Couverture Maladie Universelle",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-04 19:05:56.730383",
+        "change_message": "[]",
+        "content_type_id": 170,
+        "id": 129,
+        "object_id": "1",
+        "object_repr": "Couverture Maladie Universelle",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-03-04 22:46:40.945593",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 168,
+        "id": 130,
+        "object_id": "2",
+        "object_repr": "COMPLEMENTRAIRE",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-03-04 22:47:19.160248",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 170,
+        "id": 131,
+        "object_id": "2",
+        "object_repr": "COMPLEMENTAIRE",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-04 22:47:31.468337",
+        "change_message": "[]",
+        "content_type_id": 170,
+        "id": 132,
+        "object_id": "2",
+        "object_repr": "COMPLEMENTAIRE",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-04 22:48:06.879075",
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]",
+        "content_type_id": 170,
+        "id": 133,
+        "object_id": "2",
+        "object_repr": "COMPLEMENTAIRE",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-04 23:00:19.858517",
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Title\", \"Subtitle\", \"Visible\"]}}]",
+        "content_type_id": 170,
+        "id": 134,
+        "object_id": "2",
+        "object_repr": "COMPLEMENTAIRE",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-04 23:02:32.160656",
+        "change_message": "[{\"changed\": {\"fields\": [\"Visible\"]}}]",
+        "content_type_id": 170,
+        "id": 135,
+        "object_id": "2",
+        "object_repr": "COMPLEMENTAIRE",
+        "user_id": 1
+    },
+    {
+        "action_flag": 3,
+        "action_time": "2023-03-04 23:37:15.226798",
+        "change_message": "",
+        "content_type_id": 170,
+        "id": 136,
+        "object_id": "2",
+        "object_repr": "COMPLEMENTAIRE",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-03-04 23:39:25.811364",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 170,
+        "id": 137,
+        "object_id": "3",
+        "object_repr": "COMPLEMENTAIRE",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-04 23:39:43.831199",
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]",
+        "content_type_id": 170,
+        "id": 138,
+        "object_id": "3",
+        "object_repr": "COMPLEMENTAIRE",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-05 21:16:51.372830",
+        "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Slug\"]}}]",
+        "content_type_id": 177,
+        "id": 139,
+        "object_id": "2",
+        "object_repr": "Trêve Sociale Consultations des syndicats de travailleurs des corps de métiers de Côte d'Ivoire",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-05 21:17:11.868468",
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]",
+        "content_type_id": 177,
+        "id": 140,
+        "object_id": "7",
+        "object_repr": "Congue nullam lobortis dignissim quisque",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-05 21:27:58.517147",
+        "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Slug\"]}}]",
+        "content_type_id": 177,
+        "id": 141,
+        "object_id": "13",
+        "object_repr": "30ème anniversaire de l'STC couplet des Journées Scientifique ou journée du communicateur, édition 2022",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-05 21:28:35.455206",
+        "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Slug\"]}}]",
+        "content_type_id": 177,
+        "id": 142,
+        "object_id": "12",
+        "object_repr": "Passation de charges au Cabinet MEPS : Monsieur TAPÉ Aubin transfère ses compétences à madame COULIBALY Bintou ce jeudi 23 juin 2022",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-05 21:29:54.585604",
+        "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Slug\", \"Content\"]}}]",
+        "content_type_id": 177,
+        "id": 143,
+        "object_id": "10",
+        "object_repr": "Souscrire à la Complémentaire, la CMU et le RST",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-05 21:34:36.297924",
+        "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Title\", \"Subtitle\", \"Visible\"]}}]",
+        "content_type_id": 170,
+        "id": 144,
+        "object_id": "3",
+        "object_repr": "COMPLEMENTAIRE",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-05 21:35:04.199899",
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]",
+        "content_type_id": 170,
+        "id": 145,
+        "object_id": "3",
+        "object_repr": "COMPLEMENTAIRE",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-05 21:35:32.080697",
+        "change_message": "[{\"changed\": {\"fields\": [\"Subtitle\"]}}]",
+        "content_type_id": 170,
+        "id": 146,
+        "object_id": "3",
+        "object_repr": "COMPLEMENTAIRE",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-03-05 21:37:31.151721",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 168,
+        "id": 147,
+        "object_id": "3",
+        "object_repr": "RSTI",
+        "user_id": 1
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2023-03-05 21:39:33.583432",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 170,
+        "id": 148,
+        "object_id": "4",
+        "object_repr": "Régime Sociale des Travailleurs Indépendants",
+        "user_id": 1
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2023-03-05 21:40:44.447091",
+        "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]",
+        "content_type_id": 170,
+        "id": 149,
+        "object_id": "3",
+        "object_repr": "COMPLEMENTAIRE",
+        "user_id": 1
+    }
+]

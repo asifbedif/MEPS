@@ -1,0 +1,235 @@
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+{% block TITLE %}Structures Sous-tutelles{% endblock TITLE %}
+
+{% block PAGETITLE %}Structures Sous-tutelles du MEPS{% endblock %}
+
+{% block CONTENT %}
+    
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li>Structures Sous-tutelles</li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="share-icon"><a href="#"><span class="icon fa fa-share-alt"></span> Partager</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+    <section class="blog-grid-section" style="margin-bottom: 5rem">
+        <div class="auto-container">            
+            <div class="row equal-cols">               
+                <!--News Block-->
+
+                
+                {% for structure in structures %}
+
+                <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <div class="icon-box">
+                            
+                                {% if structure.logo %}
+                                        {% comment %} <span class="icon flaticon-teacher"></span> {% endcomment %}
+                                        <img src="{{ structure.logo.url }}" class="icon flaticon-teacher" width='100' height='100' alt='Logo'/>
+                                    </div>
+                                {% endif %}
+                            </div>
+
+                            <h3>{{ structure.short_form_name }}</h3>
+                            <div class="text">{{ structure.full_form_name }}</div>
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        {% if structure.logo %}
+                                                {% comment %} <span class="icon flaticon-teacher"></span> {% endcomment %}
+                                                <img src="{{ structure.logo.url }}" class="icon flaticon-teacher" width='50' height='50' alt='Logo'/>                                            
+                                        {% endif %}
+                                    </div>
+
+                                    <div class="text">
+
+                                        {% if structure.address %}
+                                            {{ structure.address|title }} <br>
+                                        {% endif %}
+                                        
+                                        {% if structure.bp %}
+                                            {{ structure.bp|title }}<br>
+                                        {% endif %}
+
+                                        {% if structure.tel %}
+                                            <strong>Tel:&nbsp;</strong>{{ structure.tel }}<br>
+                                        {% endif %}
+
+                                        {% if structure.phone %}
+                                            <strong>Phone:&nbsp;</strong>&nbsp;{{ structure.phone }}<br>
+                                        {% endif %}
+
+                                        {% if structure.email %}
+                                            <strong>Email:&nbsp;</strong>&nbsp;{{ structure.email }}<br>
+                                        {% endif %}
+                                        
+                                        {% if structure.fax %}
+                                            <strong>Fax:&nbsp;</strong>{{ structure.fax }}<br>
+                                        {% endif %}
+
+                                    </div>
+                                    {% if structure.website|lower %}
+                                        <a class="read-more" target="_blank" href="{{ structure.website }}">Lire plus</a><br>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- End Welcome Block -->
+                {% empty %}
+                    {% include 'Layouts/_emptyDataMessage.html' %}
+                {% endfor %}
+
+                {% comment %} <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                                    <span class="icon flaticon-teacher"></span>
+                                </div>
+                                <h3>MUGEFCI</h3>
+                                <div class="text">Mutuelle générale des fonctionnaires et agents de l'État</div>
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="icon-box">
+                                            <span class="icon flaticon-teacher"></span>
+                                        </div>
+                                        <div class="text">Plateau, Immeuble <strong>Les Arcades</strong> Avenue Franchet d'Esperey, non loin <br>de l'immeuble <strong>La Pyramide.</strong>  <br>Tel : 20 25 74 00 / 20 25 74 11</div>
+                                        <a class="read-more" target="_blank" href="https://www.mugef-ci.com/">Lire plus</a>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+                <!-- End Welcome Block -->
+                
+                <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                    <div class="icon-box">
+                                <span class="icon flaticon-teacher"></span>
+                            </div>
+                            <h3>IPS-CNAM</h3>
+                            <div class="text">Institution de prévoyance sociale- caisse Nationale d'assurance Maladie.</div>
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-teacher"></span>
+                                    </div>
+                                    <div class="text">Avenue Lamblin, Immeuble l'Equateur<br> 04 BP 2930 Abidjan 04.<br>Tel : 27 20 22 55 00</br>Email:infos@pfs-yopougon.net</div>
+                                    <a class="read-more" href="https://www.annuaireci.com/cote-divoire/fr-FR/ips--cnam-institution-de-prevoyance-sociale" target="_blank">Lire plus</a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- End Welcome Block -->
+                
+                <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <span class="icon flaticon-teacher"></span>
+                        </div>
+                        <h3>IPS-CGRAE</h3>
+                        <div class="text">Institution de prévoyance sociale- Caisse Générale De Retraite des agents de l'Etat</div>
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-teacher"></span>
+                                    </div>
+                                    <div class="text">Abidjan plateau, entre l'agence principale MTN et les galeries Peyrissac<br>Tel : 27 20 25 12 12<br> BP V 164 Abidjan
+                                    </div>
+                                    <a class="read-more" href="https://www.cgrae.ci" target="_blank">Lire plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="row clearfix equal-cols">
+                <!-- End Welcome Block -->
+            
+                <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <span class="icon flaticon-teacher"></span>
+                        </div>
+                        <h3>IPS-CNPS</h3>
+                                <div class="text">Institution de prévoyance sociale- Caisse Nationale De Prévoyance Sociale</div>
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="icon-box">
+                                            <span class="icon flaticon-teacher"></span>
+                                        </div>
+                                        <div class="text">Abidjan Plateau, face à la mosquée, 24, Avenue Générale de Gaulle,01 BP 317 Abidjan 01. <br>Tel : 27 20 25 20 50</div>
+                                        <a class="read-more" href="https://www.cnps.ci/" target="_blank">Lire plus</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                <!-- End Welcome Block -->
+                <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <span class="icon flaticon-teacher"></span>
+                        </div>
+                        <h3>PFS-CI</h3>
+                            <div class="text">Plate-Forme de services De Cote D'Ivoire</div>
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-teacher"></span>
+                                    </div>
+                                    <div class="text">Yopougon, quartier Banco <br>à proximité de l'allocodrome municipal<br>Tel: 27 22 41 90 91 / 27 22 41 91 91</div>
+                                    <a class="read-more" href="https://pfs-yopougon.net/" target="_blank">Lire plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- End Welcome Block -->
+
+               <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <span class="icon flaticon-teacher"></span>
+                        </div>
+                        <h3>IPS-AIRMS</h3>
+                        <div class="text">Institution de prévoyance sociale- Agence Ivoirienne de Régulation de la Mutualité Sociale</div>
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-teacher"></span>
+                                    </div>
+                                    <div class="text">01 BP 1922 Abidjan 01 RIVIERA FAYA <br> ROUTE DE BINGERVILLE IMMEUBLE ARMISI,1ER ETAGE <br>Tel: +225 27 22 46 65 02.
+                                    </div>
+                                    <a class="read-more" target="_blank" href="https://www.airms-ci.com/">Lire plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- End Welcome Block -->
+
+            </div> {% endcomment %}
+        </div>            
+    </div>
+</section> 
+    <!--End Blog Grid Section-->
+    
+{% endblock %}

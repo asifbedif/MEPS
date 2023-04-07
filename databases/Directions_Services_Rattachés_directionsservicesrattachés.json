@@ -1,0 +1,40 @@
+[
+    {
+        "address": "Abidjan Plateau, face à la mosquée, 24, Avenue Générale de Gaulle",
+        "bp": "01 BP 317 Abidjan 01",
+        "display_first": 0,
+        "email": null,
+        "fax": "",
+        "full_form_name": "Direction de la Documentation, de la Communication et des Archives",
+        "id": 1,
+        "logo": "",
+        "phone": "",
+        "post_created_on": "2023-02-27 16:31:43.380338",
+        "post_modified_on": "2023-02-27 16:31:43.380338",
+        "post_published_on": "2023-02-27 16:30:09",
+        "post_status": "published",
+        "short_form_name": "DDCA",
+        "slug": "ddca",
+        "tel": "20 25 20 50",
+        "website": ""
+    },
+    {
+        "address": "Plateau, Cité Administrative Tour A, 11ème étage",
+        "bp": "01 BP 317 Abidjan 01",
+        "display_first": 1,
+        "email": null,
+        "fax": "",
+        "full_form_name": "Direction des Systèmes d'Information",
+        "id": 2,
+        "logo": "",
+        "phone": "",
+        "post_created_on": "2023-02-27 16:32:48.966989",
+        "post_modified_on": "2023-02-27 16:33:22.194461",
+        "post_published_on": "2023-02-27 16:31:47",
+        "post_status": "published",
+        "short_form_name": "DSI",
+        "slug": "dsi",
+        "tel": "20 25 20 50",
+        "website": ""
+    }
+]

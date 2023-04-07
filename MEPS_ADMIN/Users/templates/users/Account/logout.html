@@ -1,0 +1,45 @@
+{% extends 'Backend/AdminBaseHmenu.html' %}
+
+{% load i18n %}
+
+{% block breadcrumb_parent %}
+        <h2>
+            <div class="breadcrumbs">
+                <a href="{% url 'index' %}">
+                    {% translate 'Home' %}
+                </a>
+            </div>
+        </h2>
+    {% endblock %}
+
+{% block nav-sidebar %}{% endblock %}
+
+{% block ADMIN_BODY %}
+
+<style>
+    .breadcrumbs a{
+        color: #008000;
+    }
+    .breadcrumb-item + .breadcrumb-item::before {
+        color: #F5690A;
+        content: "/";
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+    .d-lg-flex {
+        display: none !important;
+    }
+    .login-link{
+        font-size:2rem;
+        color: #F5690A;
+    }
+
+
+</style>
+
+    <div class="container">
+        <p style="font-size:2.5rem;">{% translate "Thanks for spending some quality time with the web site today." %}</p>
+
+        <p><a class="login-link" href="{% url 'admin-login' %}">{% translate 'Log in again' %}</a></p>
+    </div>
+{% endblock %}

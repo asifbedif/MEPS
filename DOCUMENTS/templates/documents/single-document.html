@@ -1,0 +1,102 @@
+{% extends 'Layouts/base.html' %}
+    
+{% load static %}
+
+{% block TITLE %}Arrete No.1{% endblock %}
+    
+    <!--Page Title-->
+    {% block PAGETITLE %}Documents Publics du MEPS{% endblock %}
+    
+    <!--Page Info-->
+
+    {% block CONTENT %}
+
+ <section class="page-info " style="background-color:whitesmoke;" >
+        <div class="auto-container" >
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{% url 'index' %}">Accueil</a></li>
+                        <li><a href="{% url 'documents'%}"> Documents Publics</a></li>
+                        <li> {{documents_category}} </li>
+
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="share-icon"><a href="#"><span class="icon fa fa-share-alt"></span> partager</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+    
+    <!--Faq Section-->
+    <section class="faq-section style-two" style="background-color:whitesmoke;" >
+    	
+        <div class="content_global page">
+        
+        <div class="content_zone">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 style="text-align: center;"><b>{{documents_subcategory}} </b></h3>
+                        <br>
+                        <br>
+                        <div class="doc" >
+                                {% for single_doc in list_of_docs %}
+                                <li>
+                                    <i class="fa fa-file-pdf-o" style= "color: red; font-size: 25px; border-bottom: grey 2px ;"></i>
+                                    <a class="doc-link" href="{{single_doc.file.url}}" >
+                                        {{single_doc.title}} 
+                                    </a>
+                                </li> <br>
+
+                                {% empty %}
+                                    {% include 'Layouts/_emptyDataMessage.html' %}
+                                {% endfor %}
+                               
+                                {% comment %} <li>
+                                <i class="fa fa-file-pdf-o" style= "color: red; font-size: 25px; border-bottom: grey 2px ;"></i>
+                                <a class="doc-link" href="{% static 'doc_site/DSST/ANNEXE II_RAP 2020 DSST.pdf' %}" >ARRETE DE NOMMINATION DES MEMBRES DU CELLULE REGIONALE DE LA LUTTE CONTRE LA TRAITE DES PERSONNES DU HAUT SASSANDRA </a>
+                                </li> <br>
+                                 <li>
+                                <i class="fa fa-file-pdf-o" style= "color: red; font-size: 25px; border-bottom: grey 2px ;"></i>
+                                <a class="doc-link" href="{% static 'doc_site/DSST/ANNEXE III_Organigramme de la DSST.pdf' %}" >ARRETE DE NOMMINATION DES MEMBRES DU CELLULE REGIONALE DE LA LUTTE CONTRE LA TRAITE DES PERSONNES DU HAUT SASSANDRA </a>
+                                </li> <br>
+                                 <li>
+                                <i class="fa fa-file-pdf-o" style= "color: red; font-size: 25px; border-bottom: grey 2px ;"></i>
+                                <a class="doc-link" href="{% static 'doc_site/DLTE/PAN 2019-2021 complet du 1er  Juillet 2019.pdf' %}" >ARRETE DE NOMMINATION DES MEMBRES DU CELLULE REGIONALE DE LA LUTTE CONTRE LA TRAITE DES PERSONNES DU HAUT SASSANDRA </a>
+                                </li> <br>
+                                 <li>
+                                <i class="fa fa-file-pdf-o" style= "color: red; font-size: 25px; border-bottom: grey 2px ;"></i>
+                                <a class="doc-link" href="{% static 'doc_site/DLTE/PAN 2019-2021 complet du 1er  Juillet 2019.pdf' %}" >ARRETE DE NOMMINATION DES MEMBRES DU CELLULE REGIONALE DE LA LUTTE CONTRE LA TRAITE DES PERSONNES DU HAUT SASSANDRA </a>
+                                </li> <br>
+                                
+                                <i class="fa fa-file-pdf-o" style= "color: red; font-size: 25px; border-bottom: grey 2px ;"></i>
+                                <a class="doc-link" href="{% static 'doc_site/DLTE/PAN 2019-2021 complet du 1er  Juillet 2019.pdf' %}" >ARRETE DE NOMMINATION DES MEMBRES DU CELLULE REGIONALE DE LA LUTTE CONTRE LA TRAITE DES PERSONNES DU HAUT SASSANDRA </a>
+                                </li> <br>
+                                </li><br> {% endcomment %}
+
+                            </ul>
+                        </div>
+
+                       
+
+
+
+                    </div>
+                    
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--End Faq Section-->
+
+{% endblock %}

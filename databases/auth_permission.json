@@ -1,0 +1,4514 @@
+[
+    {
+        "codename": "add_logentry",
+        "content_type_id": 1,
+        "id": 1,
+        "name": "Can add log entry"
+    },
+    {
+        "codename": "change_logentry",
+        "content_type_id": 1,
+        "id": 2,
+        "name": "Can change log entry"
+    },
+    {
+        "codename": "delete_logentry",
+        "content_type_id": 1,
+        "id": 3,
+        "name": "Can delete log entry"
+    },
+    {
+        "codename": "view_logentry",
+        "content_type_id": 1,
+        "id": 4,
+        "name": "Can view log entry"
+    },
+    {
+        "codename": "add_permission",
+        "content_type_id": 2,
+        "id": 5,
+        "name": "Can add permission"
+    },
+    {
+        "codename": "change_permission",
+        "content_type_id": 2,
+        "id": 6,
+        "name": "Can change permission"
+    },
+    {
+        "codename": "delete_permission",
+        "content_type_id": 2,
+        "id": 7,
+        "name": "Can delete permission"
+    },
+    {
+        "codename": "view_permission",
+        "content_type_id": 2,
+        "id": 8,
+        "name": "Can view permission"
+    },
+    {
+        "codename": "add_group",
+        "content_type_id": 3,
+        "id": 9,
+        "name": "Can add group"
+    },
+    {
+        "codename": "change_group",
+        "content_type_id": 3,
+        "id": 10,
+        "name": "Can change group"
+    },
+    {
+        "codename": "delete_group",
+        "content_type_id": 3,
+        "id": 11,
+        "name": "Can delete group"
+    },
+    {
+        "codename": "view_group",
+        "content_type_id": 3,
+        "id": 12,
+        "name": "Can view group"
+    },
+    {
+        "codename": "add_user",
+        "content_type_id": 4,
+        "id": 13,
+        "name": "Can add user"
+    },
+    {
+        "codename": "change_user",
+        "content_type_id": 4,
+        "id": 14,
+        "name": "Can change user"
+    },
+    {
+        "codename": "delete_user",
+        "content_type_id": 4,
+        "id": 15,
+        "name": "Can delete user"
+    },
+    {
+        "codename": "view_user",
+        "content_type_id": 4,
+        "id": 16,
+        "name": "Can view user"
+    },
+    {
+        "codename": "add_contenttype",
+        "content_type_id": 5,
+        "id": 17,
+        "name": "Can add content type"
+    },
+    {
+        "codename": "change_contenttype",
+        "content_type_id": 5,
+        "id": 18,
+        "name": "Can change content type"
+    },
+    {
+        "codename": "delete_contenttype",
+        "content_type_id": 5,
+        "id": 19,
+        "name": "Can delete content type"
+    },
+    {
+        "codename": "view_contenttype",
+        "content_type_id": 5,
+        "id": 20,
+        "name": "Can view content type"
+    },
+    {
+        "codename": "add_session",
+        "content_type_id": 6,
+        "id": 21,
+        "name": "Can add session"
+    },
+    {
+        "codename": "change_session",
+        "content_type_id": 6,
+        "id": 22,
+        "name": "Can change session"
+    },
+    {
+        "codename": "delete_session",
+        "content_type_id": 6,
+        "id": 23,
+        "name": "Can delete session"
+    },
+    {
+        "codename": "view_session",
+        "content_type_id": 6,
+        "id": 24,
+        "name": "Can view session"
+    },
+    {
+        "codename": "add_mepspage",
+        "content_type_id": 7,
+        "id": 25,
+        "name": "Can add meps page"
+    },
+    {
+        "codename": "change_mepspage",
+        "content_type_id": 7,
+        "id": 26,
+        "name": "Can change meps page"
+    },
+    {
+        "codename": "delete_mepspage",
+        "content_type_id": 7,
+        "id": 27,
+        "name": "Can delete meps page"
+    },
+    {
+        "codename": "view_mepspage",
+        "content_type_id": 7,
+        "id": 28,
+        "name": "Can view meps page"
+    },
+    {
+        "codename": "add_organigramme",
+        "content_type_id": 8,
+        "id": 29,
+        "name": "Can add organigramme"
+    },
+    {
+        "codename": "change_organigramme",
+        "content_type_id": 8,
+        "id": 30,
+        "name": "Can change organigramme"
+    },
+    {
+        "codename": "delete_organigramme",
+        "content_type_id": 8,
+        "id": 31,
+        "name": "Can delete organigramme"
+    },
+    {
+        "codename": "view_organigramme",
+        "content_type_id": 8,
+        "id": 32,
+        "name": "Can view organigramme"
+    },
+    {
+        "codename": "add_cta",
+        "content_type_id": 9,
+        "id": 33,
+        "name": "Can add cta"
+    },
+    {
+        "codename": "change_cta",
+        "content_type_id": 9,
+        "id": 34,
+        "name": "Can change cta"
+    },
+    {
+        "codename": "delete_cta",
+        "content_type_id": 9,
+        "id": 35,
+        "name": "Can delete cta"
+    },
+    {
+        "codename": "view_cta",
+        "content_type_id": 9,
+        "id": 36,
+        "name": "Can view cta"
+    },
+    {
+        "codename": "add_directioncard",
+        "content_type_id": 10,
+        "id": 37,
+        "name": "Can add direction card"
+    },
+    {
+        "codename": "change_directioncard",
+        "content_type_id": 10,
+        "id": 38,
+        "name": "Can change direction card"
+    },
+    {
+        "codename": "delete_directioncard",
+        "content_type_id": 10,
+        "id": 39,
+        "name": "Can delete direction card"
+    },
+    {
+        "codename": "view_directioncard",
+        "content_type_id": 10,
+        "id": 40,
+        "name": "Can view direction card"
+    },
+    {
+        "codename": "add_ministerslist",
+        "content_type_id": 11,
+        "id": 41,
+        "name": "Can add ministers list"
+    },
+    {
+        "codename": "change_ministerslist",
+        "content_type_id": 11,
+        "id": 42,
+        "name": "Can change ministers list"
+    },
+    {
+        "codename": "delete_ministerslist",
+        "content_type_id": 11,
+        "id": 43,
+        "name": "Can delete ministers list"
+    },
+    {
+        "codename": "view_ministerslist",
+        "content_type_id": 11,
+        "id": 44,
+        "name": "Can view ministers list"
+    },
+    {
+        "codename": "add_ministrepage",
+        "content_type_id": 12,
+        "id": 45,
+        "name": "Can add ministre page"
+    },
+    {
+        "codename": "change_ministrepage",
+        "content_type_id": 12,
+        "id": 46,
+        "name": "Can change ministre page"
+    },
+    {
+        "codename": "delete_ministrepage",
+        "content_type_id": 12,
+        "id": 47,
+        "name": "Can delete ministre page"
+    },
+    {
+        "codename": "view_ministrepage",
+        "content_type_id": 12,
+        "id": 48,
+        "name": "Can view ministre page"
+    },
+    {
+        "codename": "add_leministere",
+        "content_type_id": 13,
+        "id": 49,
+        "name": "Can add le ministere"
+    },
+    {
+        "codename": "change_leministere",
+        "content_type_id": 13,
+        "id": 50,
+        "name": "Can change le ministere"
+    },
+    {
+        "codename": "delete_leministere",
+        "content_type_id": 13,
+        "id": 51,
+        "name": "Can delete le ministere"
+    },
+    {
+        "codename": "view_leministere",
+        "content_type_id": 13,
+        "id": 52,
+        "name": "Can view le ministere"
+    },
+    {
+        "codename": "add_custummodel",
+        "content_type_id": 14,
+        "id": 53,
+        "name": "Can add custum model"
+    },
+    {
+        "codename": "change_custummodel",
+        "content_type_id": 14,
+        "id": 54,
+        "name": "Can change custum model"
+    },
+    {
+        "codename": "delete_custummodel",
+        "content_type_id": 14,
+        "id": 55,
+        "name": "Can delete custum model"
+    },
+    {
+        "codename": "view_custummodel",
+        "content_type_id": 14,
+        "id": 56,
+        "name": "Can view custum model"
+    },
+    {
+        "codename": "add_distinction",
+        "content_type_id": 15,
+        "id": 57,
+        "name": "Can add distinction"
+    },
+    {
+        "codename": "change_distinction",
+        "content_type_id": 15,
+        "id": 58,
+        "name": "Can change distinction"
+    },
+    {
+        "codename": "delete_distinction",
+        "content_type_id": 15,
+        "id": 59,
+        "name": "Can delete distinction"
+    },
+    {
+        "codename": "view_distinction",
+        "content_type_id": 15,
+        "id": 60,
+        "name": "Can view distinction"
+    },
+    {
+        "codename": "add_expérienceadministrative",
+        "content_type_id": 16,
+        "id": 61,
+        "name": "Can add expérience administrative"
+    },
+    {
+        "codename": "change_expérienceadministrative",
+        "content_type_id": 16,
+        "id": 62,
+        "name": "Can change expérience administrative"
+    },
+    {
+        "codename": "delete_expérienceadministrative",
+        "content_type_id": 16,
+        "id": 63,
+        "name": "Can delete expérience administrative"
+    },
+    {
+        "codename": "view_expérienceadministrative",
+        "content_type_id": 16,
+        "id": 64,
+        "name": "Can view expérience administrative"
+    },
+    {
+        "codename": "add_infopersonnelle",
+        "content_type_id": 17,
+        "id": 65,
+        "name": "Can add info personnelle"
+    },
+    {
+        "codename": "change_infopersonnelle",
+        "content_type_id": 17,
+        "id": 66,
+        "name": "Can change info personnelle"
+    },
+    {
+        "codename": "delete_infopersonnelle",
+        "content_type_id": 17,
+        "id": 67,
+        "name": "Can delete info personnelle"
+    },
+    {
+        "codename": "view_infopersonnelle",
+        "content_type_id": 17,
+        "id": 68,
+        "name": "Can view info personnelle"
+    },
+    {
+        "codename": "add_leministre",
+        "content_type_id": 18,
+        "id": 69,
+        "name": "Can add le ministre"
+    },
+    {
+        "codename": "change_leministre",
+        "content_type_id": 18,
+        "id": 70,
+        "name": "Can change le ministre"
+    },
+    {
+        "codename": "delete_leministre",
+        "content_type_id": 18,
+        "id": 71,
+        "name": "Can delete le ministre"
+    },
+    {
+        "codename": "view_leministre",
+        "content_type_id": 18,
+        "id": 72,
+        "name": "Can view le ministre"
+    },
+    {
+        "codename": "add_parcoursprofessionnel",
+        "content_type_id": 19,
+        "id": 73,
+        "name": "Can add parcours professionnel"
+    },
+    {
+        "codename": "change_parcoursprofessionnel",
+        "content_type_id": 19,
+        "id": 74,
+        "name": "Can change parcours professionnel"
+    },
+    {
+        "codename": "delete_parcoursprofessionnel",
+        "content_type_id": 19,
+        "id": 75,
+        "name": "Can delete parcours professionnel"
+    },
+    {
+        "codename": "view_parcoursprofessionnel",
+        "content_type_id": 19,
+        "id": 76,
+        "name": "Can view parcours professionnel"
+    },
+    {
+        "codename": "add_article",
+        "content_type_id": 20,
+        "id": 77,
+        "name": "Can add article"
+    },
+    {
+        "codename": "change_article",
+        "content_type_id": 20,
+        "id": 78,
+        "name": "Can change article"
+    },
+    {
+        "codename": "delete_article",
+        "content_type_id": 20,
+        "id": 79,
+        "name": "Can delete article"
+    },
+    {
+        "codename": "view_article",
+        "content_type_id": 20,
+        "id": 80,
+        "name": "Can view article"
+    },
+    {
+        "codename": "add_cabinet",
+        "content_type_id": 21,
+        "id": 81,
+        "name": "Can add cabinet"
+    },
+    {
+        "codename": "change_cabinet",
+        "content_type_id": 21,
+        "id": 82,
+        "name": "Can change cabinet"
+    },
+    {
+        "codename": "delete_cabinet",
+        "content_type_id": 21,
+        "id": 83,
+        "name": "Can delete cabinet"
+    },
+    {
+        "codename": "view_cabinet",
+        "content_type_id": 21,
+        "id": 84,
+        "name": "Can view cabinet"
+    },
+    {
+        "codename": "add_cabinetdecretarticle",
+        "content_type_id": 22,
+        "id": 85,
+        "name": "Can add cabinet decret article"
+    },
+    {
+        "codename": "change_cabinetdecretarticle",
+        "content_type_id": 22,
+        "id": 86,
+        "name": "Can change cabinet decret article"
+    },
+    {
+        "codename": "delete_cabinetdecretarticle",
+        "content_type_id": 22,
+        "id": 87,
+        "name": "Can delete cabinet decret article"
+    },
+    {
+        "codename": "view_cabinetdecretarticle",
+        "content_type_id": 22,
+        "id": 88,
+        "name": "Can view cabinet decret article"
+    },
+    {
+        "codename": "add_cabinetsidebar",
+        "content_type_id": 23,
+        "id": 89,
+        "name": "Can add cabinet sidebar"
+    },
+    {
+        "codename": "change_cabinetsidebar",
+        "content_type_id": 23,
+        "id": 90,
+        "name": "Can change cabinet sidebar"
+    },
+    {
+        "codename": "delete_cabinetsidebar",
+        "content_type_id": 23,
+        "id": 91,
+        "name": "Can delete cabinet sidebar"
+    },
+    {
+        "codename": "view_cabinetsidebar",
+        "content_type_id": 23,
+        "id": 92,
+        "name": "Can view cabinet sidebar"
+    },
+    {
+        "codename": "add_chapter",
+        "content_type_id": 24,
+        "id": 93,
+        "name": "Can add chapter"
+    },
+    {
+        "codename": "change_chapter",
+        "content_type_id": 24,
+        "id": 94,
+        "name": "Can change chapter"
+    },
+    {
+        "codename": "delete_chapter",
+        "content_type_id": 24,
+        "id": 95,
+        "name": "Can delete chapter"
+    },
+    {
+        "codename": "view_chapter",
+        "content_type_id": 24,
+        "id": 96,
+        "name": "Can view chapter"
+    },
+    {
+        "codename": "add_decretlist",
+        "content_type_id": 25,
+        "id": 97,
+        "name": "Can add decret list"
+    },
+    {
+        "codename": "change_decretlist",
+        "content_type_id": 25,
+        "id": 98,
+        "name": "Can change decret list"
+    },
+    {
+        "codename": "delete_decretlist",
+        "content_type_id": 25,
+        "id": 99,
+        "name": "Can delete decret list"
+    },
+    {
+        "codename": "view_decretlist",
+        "content_type_id": 25,
+        "id": 100,
+        "name": "Can view decret list"
+    },
+    {
+        "codename": "add_cabinetdecretchapter",
+        "content_type_id": 26,
+        "id": 101,
+        "name": "Can add cabinet decret chapter"
+    },
+    {
+        "codename": "change_cabinetdecretchapter",
+        "content_type_id": 26,
+        "id": 102,
+        "name": "Can change cabinet decret chapter"
+    },
+    {
+        "codename": "delete_cabinetdecretchapter",
+        "content_type_id": 26,
+        "id": 103,
+        "name": "Can delete cabinet decret chapter"
+    },
+    {
+        "codename": "view_cabinetdecretchapter",
+        "content_type_id": 26,
+        "id": 104,
+        "name": "Can view cabinet decret chapter"
+    },
+    {
+        "codename": "add_decretcabinet",
+        "content_type_id": 27,
+        "id": 105,
+        "name": "Can add decret cabinet"
+    },
+    {
+        "codename": "change_decretcabinet",
+        "content_type_id": 27,
+        "id": 106,
+        "name": "Can change decret cabinet"
+    },
+    {
+        "codename": "delete_decretcabinet",
+        "content_type_id": 27,
+        "id": 107,
+        "name": "Can delete decret cabinet"
+    },
+    {
+        "codename": "view_decretcabinet",
+        "content_type_id": 27,
+        "id": 108,
+        "name": "Can view decret cabinet"
+    },
+    {
+        "codename": "add_articlelist",
+        "content_type_id": 28,
+        "id": 109,
+        "name": "Can add article list"
+    },
+    {
+        "codename": "change_articlelist",
+        "content_type_id": 28,
+        "id": 110,
+        "name": "Can change article list"
+    },
+    {
+        "codename": "delete_articlelist",
+        "content_type_id": 28,
+        "id": 111,
+        "name": "Can delete article list"
+    },
+    {
+        "codename": "view_articlelist",
+        "content_type_id": 28,
+        "id": 112,
+        "name": "Can view article list"
+    },
+    {
+        "codename": "add_directionsservicesrattachés",
+        "content_type_id": 29,
+        "id": 113,
+        "name": "Can add directions services rattachés"
+    },
+    {
+        "codename": "change_directionsservicesrattachés",
+        "content_type_id": 29,
+        "id": 114,
+        "name": "Can change directions services rattachés"
+    },
+    {
+        "codename": "delete_directionsservicesrattachés",
+        "content_type_id": 29,
+        "id": 115,
+        "name": "Can delete directions services rattachés"
+    },
+    {
+        "codename": "view_directionsservicesrattachés",
+        "content_type_id": 29,
+        "id": 116,
+        "name": "Can view directions services rattachés"
+    },
+    {
+        "codename": "add_ecolespecialisee",
+        "content_type_id": 30,
+        "id": 117,
+        "name": "Can add École Spécialisée"
+    },
+    {
+        "codename": "change_ecolespecialisee",
+        "content_type_id": 30,
+        "id": 118,
+        "name": "Can change École Spécialisée"
+    },
+    {
+        "codename": "delete_ecolespecialisee",
+        "content_type_id": 30,
+        "id": 119,
+        "name": "Can delete École Spécialisée"
+    },
+    {
+        "codename": "view_ecolespecialisee",
+        "content_type_id": 30,
+        "id": 120,
+        "name": "Can view École Spécialisée"
+    },
+    {
+        "codename": "add_missioncategory",
+        "content_type_id": 31,
+        "id": 121,
+        "name": "Can add mission category"
+    },
+    {
+        "codename": "change_missioncategory",
+        "content_type_id": 31,
+        "id": 122,
+        "name": "Can change mission category"
+    },
+    {
+        "codename": "delete_missioncategory",
+        "content_type_id": 31,
+        "id": 123,
+        "name": "Can delete mission category"
+    },
+    {
+        "codename": "view_missioncategory",
+        "content_type_id": 31,
+        "id": 124,
+        "name": "Can view mission category"
+    },
+    {
+        "codename": "add_missionsobjectif",
+        "content_type_id": 32,
+        "id": 125,
+        "name": "Can add missions objectif"
+    },
+    {
+        "codename": "change_missionsobjectif",
+        "content_type_id": 32,
+        "id": 126,
+        "name": "Can change missions objectif"
+    },
+    {
+        "codename": "delete_missionsobjectif",
+        "content_type_id": 32,
+        "id": 127,
+        "name": "Can delete missions objectif"
+    },
+    {
+        "codename": "view_missionsobjectif",
+        "content_type_id": 32,
+        "id": 128,
+        "name": "Can view missions objectif"
+    },
+    {
+        "codename": "add_missionslist",
+        "content_type_id": 33,
+        "id": 129,
+        "name": "Can add missions list"
+    },
+    {
+        "codename": "change_missionslist",
+        "content_type_id": 33,
+        "id": 130,
+        "name": "Can change missions list"
+    },
+    {
+        "codename": "delete_missionslist",
+        "content_type_id": 33,
+        "id": 131,
+        "name": "Can delete missions list"
+    },
+    {
+        "codename": "view_missionslist",
+        "content_type_id": 33,
+        "id": 132,
+        "name": "Can view missions list"
+    },
+    {
+        "codename": "add_structuressoustutelle",
+        "content_type_id": 34,
+        "id": 133,
+        "name": "Can add structures sous tutelle"
+    },
+    {
+        "codename": "change_structuressoustutelle",
+        "content_type_id": 34,
+        "id": 134,
+        "name": "Can change structures sous tutelle"
+    },
+    {
+        "codename": "delete_structuressoustutelle",
+        "content_type_id": 34,
+        "id": 135,
+        "name": "Can delete structures sous tutelle"
+    },
+    {
+        "codename": "view_structuressoustutelle",
+        "content_type_id": 34,
+        "id": 136,
+        "name": "Can view structures sous tutelle"
+    },
+    {
+        "codename": "add_decretorganisation",
+        "content_type_id": 35,
+        "id": 137,
+        "name": "Can add decret organisation"
+    },
+    {
+        "codename": "change_decretorganisation",
+        "content_type_id": 35,
+        "id": 138,
+        "name": "Can change decret organisation"
+    },
+    {
+        "codename": "delete_decretorganisation",
+        "content_type_id": 35,
+        "id": 139,
+        "name": "Can delete decret organisation"
+    },
+    {
+        "codename": "view_decretorganisation",
+        "content_type_id": 35,
+        "id": 140,
+        "name": "Can view decret organisation"
+    },
+    {
+        "codename": "add_category",
+        "content_type_id": 36,
+        "id": 141,
+        "name": "Can add category"
+    },
+    {
+        "codename": "change_category",
+        "content_type_id": 36,
+        "id": 142,
+        "name": "Can change category"
+    },
+    {
+        "codename": "delete_category",
+        "content_type_id": 36,
+        "id": 143,
+        "name": "Can delete category"
+    },
+    {
+        "codename": "view_category",
+        "content_type_id": 36,
+        "id": 144,
+        "name": "Can view category"
+    },
+    {
+        "codename": "add_contact",
+        "content_type_id": 37,
+        "id": 145,
+        "name": "Can add contact"
+    },
+    {
+        "codename": "change_contact",
+        "content_type_id": 37,
+        "id": 146,
+        "name": "Can change contact"
+    },
+    {
+        "codename": "delete_contact",
+        "content_type_id": 37,
+        "id": 147,
+        "name": "Can delete contact"
+    },
+    {
+        "codename": "view_contact",
+        "content_type_id": 37,
+        "id": 148,
+        "name": "Can view contact"
+    },
+    {
+        "codename": "add_contactaddress",
+        "content_type_id": 38,
+        "id": 149,
+        "name": "Can add contact address"
+    },
+    {
+        "codename": "change_contactaddress",
+        "content_type_id": 38,
+        "id": 150,
+        "name": "Can change contact address"
+    },
+    {
+        "codename": "delete_contactaddress",
+        "content_type_id": 38,
+        "id": 151,
+        "name": "Can delete contact address"
+    },
+    {
+        "codename": "view_contactaddress",
+        "content_type_id": 38,
+        "id": 152,
+        "name": "Can view contact address"
+    },
+    {
+        "codename": "add_contactemail",
+        "content_type_id": 39,
+        "id": 153,
+        "name": "Can add contact email"
+    },
+    {
+        "codename": "change_contactemail",
+        "content_type_id": 39,
+        "id": 154,
+        "name": "Can change contact email"
+    },
+    {
+        "codename": "delete_contactemail",
+        "content_type_id": 39,
+        "id": 155,
+        "name": "Can delete contact email"
+    },
+    {
+        "codename": "view_contactemail",
+        "content_type_id": 39,
+        "id": 156,
+        "name": "Can view contact email"
+    },
+    {
+        "codename": "add_contacthoraire",
+        "content_type_id": 40,
+        "id": 157,
+        "name": "Can add contact horaire"
+    },
+    {
+        "codename": "change_contacthoraire",
+        "content_type_id": 40,
+        "id": 158,
+        "name": "Can change contact horaire"
+    },
+    {
+        "codename": "delete_contacthoraire",
+        "content_type_id": 40,
+        "id": 159,
+        "name": "Can delete contact horaire"
+    },
+    {
+        "codename": "view_contacthoraire",
+        "content_type_id": 40,
+        "id": 160,
+        "name": "Can view contact horaire"
+    },
+    {
+        "codename": "add_contacttel",
+        "content_type_id": 41,
+        "id": 161,
+        "name": "Can add contact tel"
+    },
+    {
+        "codename": "change_contacttel",
+        "content_type_id": 41,
+        "id": 162,
+        "name": "Can change contact tel"
+    },
+    {
+        "codename": "delete_contacttel",
+        "content_type_id": 41,
+        "id": 163,
+        "name": "Can delete contact tel"
+    },
+    {
+        "codename": "view_contacttel",
+        "content_type_id": 41,
+        "id": 164,
+        "name": "Can view contact tel"
+    },
+    {
+        "codename": "add_direction",
+        "content_type_id": 42,
+        "id": 165,
+        "name": "Can add direction"
+    },
+    {
+        "codename": "change_direction",
+        "content_type_id": 42,
+        "id": 166,
+        "name": "Can change direction"
+    },
+    {
+        "codename": "delete_direction",
+        "content_type_id": 42,
+        "id": 167,
+        "name": "Can delete direction"
+    },
+    {
+        "codename": "view_direction",
+        "content_type_id": 42,
+        "id": 168,
+        "name": "Can view direction"
+    },
+    {
+        "codename": "add_directiondetail",
+        "content_type_id": 43,
+        "id": 169,
+        "name": "Can add direction detail"
+    },
+    {
+        "codename": "change_directiondetail",
+        "content_type_id": 43,
+        "id": 170,
+        "name": "Can change direction detail"
+    },
+    {
+        "codename": "delete_directiondetail",
+        "content_type_id": 43,
+        "id": 171,
+        "name": "Can delete direction detail"
+    },
+    {
+        "codename": "view_directiondetail",
+        "content_type_id": 43,
+        "id": 172,
+        "name": "Can view direction detail"
+    },
+    {
+        "codename": "add_directionsidebar",
+        "content_type_id": 44,
+        "id": 173,
+        "name": "Can add direction sidebar"
+    },
+    {
+        "codename": "change_directionsidebar",
+        "content_type_id": 44,
+        "id": 174,
+        "name": "Can change direction sidebar"
+    },
+    {
+        "codename": "delete_directionsidebar",
+        "content_type_id": 44,
+        "id": 175,
+        "name": "Can delete direction sidebar"
+    },
+    {
+        "codename": "view_directionsidebar",
+        "content_type_id": 44,
+        "id": 176,
+        "name": "Can view direction sidebar"
+    },
+    {
+        "codename": "add_mission",
+        "content_type_id": 45,
+        "id": 177,
+        "name": "Can add mission"
+    },
+    {
+        "codename": "change_mission",
+        "content_type_id": 45,
+        "id": 178,
+        "name": "Can change mission"
+    },
+    {
+        "codename": "delete_mission",
+        "content_type_id": 45,
+        "id": 179,
+        "name": "Can delete mission"
+    },
+    {
+        "codename": "view_mission",
+        "content_type_id": 45,
+        "id": 180,
+        "name": "Can view mission"
+    },
+    {
+        "codename": "add_objectif",
+        "content_type_id": 46,
+        "id": 181,
+        "name": "Can add objectif"
+    },
+    {
+        "codename": "change_objectif",
+        "content_type_id": 46,
+        "id": 182,
+        "name": "Can change objectif"
+    },
+    {
+        "codename": "delete_objectif",
+        "content_type_id": 46,
+        "id": 183,
+        "name": "Can delete objectif"
+    },
+    {
+        "codename": "view_objectif",
+        "content_type_id": 46,
+        "id": 184,
+        "name": "Can view objectif"
+    },
+    {
+        "codename": "add_pdfdocument",
+        "content_type_id": 47,
+        "id": 185,
+        "name": "Can add pdf document"
+    },
+    {
+        "codename": "change_pdfdocument",
+        "content_type_id": 47,
+        "id": 186,
+        "name": "Can change pdf document"
+    },
+    {
+        "codename": "delete_pdfdocument",
+        "content_type_id": 47,
+        "id": 187,
+        "name": "Can delete pdf document"
+    },
+    {
+        "codename": "view_pdfdocument",
+        "content_type_id": 47,
+        "id": 188,
+        "name": "Can view pdf document"
+    },
+    {
+        "codename": "add_pdftype",
+        "content_type_id": 48,
+        "id": 189,
+        "name": "Can add pdf type"
+    },
+    {
+        "codename": "change_pdftype",
+        "content_type_id": 48,
+        "id": 190,
+        "name": "Can change pdf type"
+    },
+    {
+        "codename": "delete_pdftype",
+        "content_type_id": 48,
+        "id": 191,
+        "name": "Can delete pdf type"
+    },
+    {
+        "codename": "view_pdftype",
+        "content_type_id": 48,
+        "id": 192,
+        "name": "Can view pdf type"
+    },
+    {
+        "codename": "add_project",
+        "content_type_id": 49,
+        "id": 193,
+        "name": "Can add project"
+    },
+    {
+        "codename": "change_project",
+        "content_type_id": 49,
+        "id": 194,
+        "name": "Can change project"
+    },
+    {
+        "codename": "delete_project",
+        "content_type_id": 49,
+        "id": 195,
+        "name": "Can delete project"
+    },
+    {
+        "codename": "view_project",
+        "content_type_id": 49,
+        "id": 196,
+        "name": "Can view project"
+    },
+    {
+        "codename": "add_slider",
+        "content_type_id": 50,
+        "id": 197,
+        "name": "Can add Slider"
+    },
+    {
+        "codename": "change_slider",
+        "content_type_id": 50,
+        "id": 198,
+        "name": "Can change Slider"
+    },
+    {
+        "codename": "delete_slider",
+        "content_type_id": 50,
+        "id": 199,
+        "name": "Can delete Slider"
+    },
+    {
+        "codename": "view_slider",
+        "content_type_id": 50,
+        "id": 200,
+        "name": "Can view Slider"
+    },
+    {
+        "codename": "add_sousdirection",
+        "content_type_id": 51,
+        "id": 201,
+        "name": "Can add sous direction"
+    },
+    {
+        "codename": "change_sousdirection",
+        "content_type_id": 51,
+        "id": 202,
+        "name": "Can change sous direction"
+    },
+    {
+        "codename": "delete_sousdirection",
+        "content_type_id": 51,
+        "id": 203,
+        "name": "Can delete sous direction"
+    },
+    {
+        "codename": "view_sousdirection",
+        "content_type_id": 51,
+        "id": 204,
+        "name": "Can view sous direction"
+    },
+    {
+        "codename": "add_post",
+        "content_type_id": 52,
+        "id": 205,
+        "name": "Can add post"
+    },
+    {
+        "codename": "change_post",
+        "content_type_id": 52,
+        "id": 206,
+        "name": "Can change post"
+    },
+    {
+        "codename": "delete_post",
+        "content_type_id": 52,
+        "id": 207,
+        "name": "Can delete post"
+    },
+    {
+        "codename": "view_post",
+        "content_type_id": 52,
+        "id": 208,
+        "name": "Can view post"
+    },
+    {
+        "codename": "add_comment",
+        "content_type_id": 53,
+        "id": 209,
+        "name": "Can add comment"
+    },
+    {
+        "codename": "change_comment",
+        "content_type_id": 53,
+        "id": 210,
+        "name": "Can change comment"
+    },
+    {
+        "codename": "delete_comment",
+        "content_type_id": 53,
+        "id": 211,
+        "name": "Can delete comment"
+    },
+    {
+        "codename": "view_comment",
+        "content_type_id": 53,
+        "id": 212,
+        "name": "Can view comment"
+    },
+    {
+        "codename": "add_service",
+        "content_type_id": 54,
+        "id": 213,
+        "name": "Can add service"
+    },
+    {
+        "codename": "change_service",
+        "content_type_id": 54,
+        "id": 214,
+        "name": "Can change service"
+    },
+    {
+        "codename": "delete_service",
+        "content_type_id": 54,
+        "id": 215,
+        "name": "Can delete service"
+    },
+    {
+        "codename": "view_service",
+        "content_type_id": 54,
+        "id": 216,
+        "name": "Can view service"
+    },
+    {
+        "codename": "add_servicedirection",
+        "content_type_id": 55,
+        "id": 217,
+        "name": "Can add service direction"
+    },
+    {
+        "codename": "change_servicedirection",
+        "content_type_id": 55,
+        "id": 218,
+        "name": "Can change service direction"
+    },
+    {
+        "codename": "delete_servicedirection",
+        "content_type_id": 55,
+        "id": 219,
+        "name": "Can delete service direction"
+    },
+    {
+        "codename": "view_servicedirection",
+        "content_type_id": 55,
+        "id": 220,
+        "name": "Can view service direction"
+    },
+    {
+        "codename": "add_userrole",
+        "content_type_id": 56,
+        "id": 221,
+        "name": "Can add user role"
+    },
+    {
+        "codename": "change_userrole",
+        "content_type_id": 56,
+        "id": 222,
+        "name": "Can change user role"
+    },
+    {
+        "codename": "delete_userrole",
+        "content_type_id": 56,
+        "id": 223,
+        "name": "Can delete user role"
+    },
+    {
+        "codename": "view_userrole",
+        "content_type_id": 56,
+        "id": 224,
+        "name": "Can view user role"
+    },
+    {
+        "codename": "add_userprofile",
+        "content_type_id": 57,
+        "id": 225,
+        "name": "Can add user profile"
+    },
+    {
+        "codename": "change_userprofile",
+        "content_type_id": 57,
+        "id": 226,
+        "name": "Can change user profile"
+    },
+    {
+        "codename": "delete_userprofile",
+        "content_type_id": 57,
+        "id": 227,
+        "name": "Can delete user profile"
+    },
+    {
+        "codename": "view_userprofile",
+        "content_type_id": 57,
+        "id": 228,
+        "name": "Can view user profile"
+    },
+    {
+        "codename": "add_emploi",
+        "content_type_id": 58,
+        "id": 229,
+        "name": "Can add emploi"
+    },
+    {
+        "codename": "change_emploi",
+        "content_type_id": 58,
+        "id": 230,
+        "name": "Can change emploi"
+    },
+    {
+        "codename": "delete_emploi",
+        "content_type_id": 58,
+        "id": 231,
+        "name": "Can delete emploi"
+    },
+    {
+        "codename": "view_emploi",
+        "content_type_id": 58,
+        "id": 232,
+        "name": "Can view emploi"
+    },
+    {
+        "codename": "add_protectionsociale",
+        "content_type_id": 59,
+        "id": 233,
+        "name": "Can add protection sociale"
+    },
+    {
+        "codename": "change_protectionsociale",
+        "content_type_id": 59,
+        "id": 234,
+        "name": "Can change protection sociale"
+    },
+    {
+        "codename": "delete_protectionsociale",
+        "content_type_id": 59,
+        "id": 235,
+        "name": "Can delete protection sociale"
+    },
+    {
+        "codename": "view_protectionsociale",
+        "content_type_id": 59,
+        "id": 236,
+        "name": "Can view protection sociale"
+    },
+    {
+        "codename": "add_travail",
+        "content_type_id": 60,
+        "id": 237,
+        "name": "Can add travail"
+    },
+    {
+        "codename": "change_travail",
+        "content_type_id": 60,
+        "id": 238,
+        "name": "Can change travail"
+    },
+    {
+        "codename": "delete_travail",
+        "content_type_id": 60,
+        "id": 239,
+        "name": "Can delete travail"
+    },
+    {
+        "codename": "view_travail",
+        "content_type_id": 60,
+        "id": 240,
+        "name": "Can view travail"
+    },
+    {
+        "codename": "add_dge",
+        "content_type_id": 61,
+        "id": 241,
+        "name": "Can add DGE"
+    },
+    {
+        "codename": "change_dge",
+        "content_type_id": 61,
+        "id": 242,
+        "name": "Can change DGE"
+    },
+    {
+        "codename": "delete_dge",
+        "content_type_id": 61,
+        "id": 243,
+        "name": "Can delete DGE"
+    },
+    {
+        "codename": "view_dge",
+        "content_type_id": 61,
+        "id": 244,
+        "name": "Can view DGE"
+    },
+    {
+        "codename": "add_dspe",
+        "content_type_id": 62,
+        "id": 245,
+        "name": "Can add dspe"
+    },
+    {
+        "codename": "change_dspe",
+        "content_type_id": 62,
+        "id": 246,
+        "name": "Can change dspe"
+    },
+    {
+        "codename": "delete_dspe",
+        "content_type_id": 62,
+        "id": 247,
+        "name": "Can delete dspe"
+    },
+    {
+        "codename": "view_dspe",
+        "content_type_id": 62,
+        "id": 248,
+        "name": "Can view dspe"
+    },
+    {
+        "codename": "add_dspesousdirection",
+        "content_type_id": 63,
+        "id": 249,
+        "name": "Can add dspe sous direction"
+    },
+    {
+        "codename": "change_dspesousdirection",
+        "content_type_id": 63,
+        "id": 250,
+        "name": "Can change dspe sous direction"
+    },
+    {
+        "codename": "delete_dspesousdirection",
+        "content_type_id": 63,
+        "id": 251,
+        "name": "Can delete dspe sous direction"
+    },
+    {
+        "codename": "view_dspesousdirection",
+        "content_type_id": 63,
+        "id": 252,
+        "name": "Can view dspe sous direction"
+    },
+    {
+        "codename": "add_dspeproject",
+        "content_type_id": 64,
+        "id": 253,
+        "name": "Can add dspe project"
+    },
+    {
+        "codename": "change_dspeproject",
+        "content_type_id": 64,
+        "id": 254,
+        "name": "Can change dspe project"
+    },
+    {
+        "codename": "delete_dspeproject",
+        "content_type_id": 64,
+        "id": 255,
+        "name": "Can delete dspe project"
+    },
+    {
+        "codename": "view_dspeproject",
+        "content_type_id": 64,
+        "id": 256,
+        "name": "Can view dspe project"
+    },
+    {
+        "codename": "add_dspeobjectif",
+        "content_type_id": 65,
+        "id": 257,
+        "name": "Can add dspe objectif"
+    },
+    {
+        "codename": "change_dspeobjectif",
+        "content_type_id": 65,
+        "id": 258,
+        "name": "Can change dspe objectif"
+    },
+    {
+        "codename": "delete_dspeobjectif",
+        "content_type_id": 65,
+        "id": 259,
+        "name": "Can delete dspe objectif"
+    },
+    {
+        "codename": "view_dspeobjectif",
+        "content_type_id": 65,
+        "id": 260,
+        "name": "Can view dspe objectif"
+    },
+    {
+        "codename": "add_dspemission",
+        "content_type_id": 66,
+        "id": 261,
+        "name": "Can add dspe mission"
+    },
+    {
+        "codename": "change_dspemission",
+        "content_type_id": 66,
+        "id": 262,
+        "name": "Can change dspe mission"
+    },
+    {
+        "codename": "delete_dspemission",
+        "content_type_id": 66,
+        "id": 263,
+        "name": "Can delete dspe mission"
+    },
+    {
+        "codename": "view_dspemission",
+        "content_type_id": 66,
+        "id": 264,
+        "name": "Can view dspe mission"
+    },
+    {
+        "codename": "add_dspecontacttel",
+        "content_type_id": 67,
+        "id": 265,
+        "name": "Can add dspe contact tel"
+    },
+    {
+        "codename": "change_dspecontacttel",
+        "content_type_id": 67,
+        "id": 266,
+        "name": "Can change dspe contact tel"
+    },
+    {
+        "codename": "delete_dspecontacttel",
+        "content_type_id": 67,
+        "id": 267,
+        "name": "Can delete dspe contact tel"
+    },
+    {
+        "codename": "view_dspecontacttel",
+        "content_type_id": 67,
+        "id": 268,
+        "name": "Can view dspe contact tel"
+    },
+    {
+        "codename": "add_dspecontacthoraire",
+        "content_type_id": 68,
+        "id": 269,
+        "name": "Can add dspe contact horaire"
+    },
+    {
+        "codename": "change_dspecontacthoraire",
+        "content_type_id": 68,
+        "id": 270,
+        "name": "Can change dspe contact horaire"
+    },
+    {
+        "codename": "delete_dspecontacthoraire",
+        "content_type_id": 68,
+        "id": 271,
+        "name": "Can delete dspe contact horaire"
+    },
+    {
+        "codename": "view_dspecontacthoraire",
+        "content_type_id": 68,
+        "id": 272,
+        "name": "Can view dspe contact horaire"
+    },
+    {
+        "codename": "add_dspecontactemail",
+        "content_type_id": 69,
+        "id": 273,
+        "name": "Can add dspe contact email"
+    },
+    {
+        "codename": "change_dspecontactemail",
+        "content_type_id": 69,
+        "id": 274,
+        "name": "Can change dspe contact email"
+    },
+    {
+        "codename": "delete_dspecontactemail",
+        "content_type_id": 69,
+        "id": 275,
+        "name": "Can delete dspe contact email"
+    },
+    {
+        "codename": "view_dspecontactemail",
+        "content_type_id": 69,
+        "id": 276,
+        "name": "Can view dspe contact email"
+    },
+    {
+        "codename": "add_dspecontactaddress",
+        "content_type_id": 70,
+        "id": 277,
+        "name": "Can add dspe contact address"
+    },
+    {
+        "codename": "change_dspecontactaddress",
+        "content_type_id": 70,
+        "id": 278,
+        "name": "Can change dspe contact address"
+    },
+    {
+        "codename": "delete_dspecontactaddress",
+        "content_type_id": 70,
+        "id": 279,
+        "name": "Can delete dspe contact address"
+    },
+    {
+        "codename": "view_dspecontactaddress",
+        "content_type_id": 70,
+        "id": 280,
+        "name": "Can view dspe contact address"
+    },
+    {
+        "codename": "add_dspecontact",
+        "content_type_id": 71,
+        "id": 281,
+        "name": "Can add dspe contact"
+    },
+    {
+        "codename": "change_dspecontact",
+        "content_type_id": 71,
+        "id": 282,
+        "name": "Can change dspe contact"
+    },
+    {
+        "codename": "delete_dspecontact",
+        "content_type_id": 71,
+        "id": 283,
+        "name": "Can delete dspe contact"
+    },
+    {
+        "codename": "view_dspecontact",
+        "content_type_id": 71,
+        "id": 284,
+        "name": "Can view dspe contact"
+    },
+    {
+        "codename": "add_dsepe",
+        "content_type_id": 72,
+        "id": 285,
+        "name": "Can add dsepe"
+    },
+    {
+        "codename": "change_dsepe",
+        "content_type_id": 72,
+        "id": 286,
+        "name": "Can change dsepe"
+    },
+    {
+        "codename": "delete_dsepe",
+        "content_type_id": 72,
+        "id": 287,
+        "name": "Can delete dsepe"
+    },
+    {
+        "codename": "view_dsepe",
+        "content_type_id": 72,
+        "id": 288,
+        "name": "Can view dsepe"
+    },
+    {
+        "codename": "add_dsepesousdirection",
+        "content_type_id": 73,
+        "id": 289,
+        "name": "Can add dsepe sous direction"
+    },
+    {
+        "codename": "change_dsepesousdirection",
+        "content_type_id": 73,
+        "id": 290,
+        "name": "Can change dsepe sous direction"
+    },
+    {
+        "codename": "delete_dsepesousdirection",
+        "content_type_id": 73,
+        "id": 291,
+        "name": "Can delete dsepe sous direction"
+    },
+    {
+        "codename": "view_dsepesousdirection",
+        "content_type_id": 73,
+        "id": 292,
+        "name": "Can view dsepe sous direction"
+    },
+    {
+        "codename": "add_dsepeproject",
+        "content_type_id": 74,
+        "id": 293,
+        "name": "Can add dsepe project"
+    },
+    {
+        "codename": "change_dsepeproject",
+        "content_type_id": 74,
+        "id": 294,
+        "name": "Can change dsepe project"
+    },
+    {
+        "codename": "delete_dsepeproject",
+        "content_type_id": 74,
+        "id": 295,
+        "name": "Can delete dsepe project"
+    },
+    {
+        "codename": "view_dsepeproject",
+        "content_type_id": 74,
+        "id": 296,
+        "name": "Can view dsepe project"
+    },
+    {
+        "codename": "add_dsepeobjectif",
+        "content_type_id": 75,
+        "id": 297,
+        "name": "Can add dsepe objectif"
+    },
+    {
+        "codename": "change_dsepeobjectif",
+        "content_type_id": 75,
+        "id": 298,
+        "name": "Can change dsepe objectif"
+    },
+    {
+        "codename": "delete_dsepeobjectif",
+        "content_type_id": 75,
+        "id": 299,
+        "name": "Can delete dsepe objectif"
+    },
+    {
+        "codename": "view_dsepeobjectif",
+        "content_type_id": 75,
+        "id": 300,
+        "name": "Can view dsepe objectif"
+    },
+    {
+        "codename": "add_dsepemission",
+        "content_type_id": 76,
+        "id": 301,
+        "name": "Can add dsepe mission"
+    },
+    {
+        "codename": "change_dsepemission",
+        "content_type_id": 76,
+        "id": 302,
+        "name": "Can change dsepe mission"
+    },
+    {
+        "codename": "delete_dsepemission",
+        "content_type_id": 76,
+        "id": 303,
+        "name": "Can delete dsepe mission"
+    },
+    {
+        "codename": "view_dsepemission",
+        "content_type_id": 76,
+        "id": 304,
+        "name": "Can view dsepe mission"
+    },
+    {
+        "codename": "add_dsepecontacttel",
+        "content_type_id": 77,
+        "id": 305,
+        "name": "Can add dsepe contact tel"
+    },
+    {
+        "codename": "change_dsepecontacttel",
+        "content_type_id": 77,
+        "id": 306,
+        "name": "Can change dsepe contact tel"
+    },
+    {
+        "codename": "delete_dsepecontacttel",
+        "content_type_id": 77,
+        "id": 307,
+        "name": "Can delete dsepe contact tel"
+    },
+    {
+        "codename": "view_dsepecontacttel",
+        "content_type_id": 77,
+        "id": 308,
+        "name": "Can view dsepe contact tel"
+    },
+    {
+        "codename": "add_dsepecontacthoraire",
+        "content_type_id": 78,
+        "id": 309,
+        "name": "Can add dsepe contact horaire"
+    },
+    {
+        "codename": "change_dsepecontacthoraire",
+        "content_type_id": 78,
+        "id": 310,
+        "name": "Can change dsepe contact horaire"
+    },
+    {
+        "codename": "delete_dsepecontacthoraire",
+        "content_type_id": 78,
+        "id": 311,
+        "name": "Can delete dsepe contact horaire"
+    },
+    {
+        "codename": "view_dsepecontacthoraire",
+        "content_type_id": 78,
+        "id": 312,
+        "name": "Can view dsepe contact horaire"
+    },
+    {
+        "codename": "add_dsepecontactemail",
+        "content_type_id": 79,
+        "id": 313,
+        "name": "Can add dsepe contact email"
+    },
+    {
+        "codename": "change_dsepecontactemail",
+        "content_type_id": 79,
+        "id": 314,
+        "name": "Can change dsepe contact email"
+    },
+    {
+        "codename": "delete_dsepecontactemail",
+        "content_type_id": 79,
+        "id": 315,
+        "name": "Can delete dsepe contact email"
+    },
+    {
+        "codename": "view_dsepecontactemail",
+        "content_type_id": 79,
+        "id": 316,
+        "name": "Can view dsepe contact email"
+    },
+    {
+        "codename": "add_dsepecontactaddress",
+        "content_type_id": 80,
+        "id": 317,
+        "name": "Can add dsepe contact address"
+    },
+    {
+        "codename": "change_dsepecontactaddress",
+        "content_type_id": 80,
+        "id": 318,
+        "name": "Can change dsepe contact address"
+    },
+    {
+        "codename": "delete_dsepecontactaddress",
+        "content_type_id": 80,
+        "id": 319,
+        "name": "Can delete dsepe contact address"
+    },
+    {
+        "codename": "view_dsepecontactaddress",
+        "content_type_id": 80,
+        "id": 320,
+        "name": "Can view dsepe contact address"
+    },
+    {
+        "codename": "add_dsepecontact",
+        "content_type_id": 81,
+        "id": 321,
+        "name": "Can add dsepe contact"
+    },
+    {
+        "codename": "change_dsepecontact",
+        "content_type_id": 81,
+        "id": 322,
+        "name": "Can change dsepe contact"
+    },
+    {
+        "codename": "delete_dsepecontact",
+        "content_type_id": 81,
+        "id": 323,
+        "name": "Can delete dsepe contact"
+    },
+    {
+        "codename": "view_dsepecontact",
+        "content_type_id": 81,
+        "id": 324,
+        "name": "Can view dsepe contact"
+    },
+    {
+        "codename": "add_doem",
+        "content_type_id": 82,
+        "id": 325,
+        "name": "Can add doem"
+    },
+    {
+        "codename": "change_doem",
+        "content_type_id": 82,
+        "id": 326,
+        "name": "Can change doem"
+    },
+    {
+        "codename": "delete_doem",
+        "content_type_id": 82,
+        "id": 327,
+        "name": "Can delete doem"
+    },
+    {
+        "codename": "view_doem",
+        "content_type_id": 82,
+        "id": 328,
+        "name": "Can view doem"
+    },
+    {
+        "codename": "add_doemsousdirection",
+        "content_type_id": 83,
+        "id": 329,
+        "name": "Can add doem sous direction"
+    },
+    {
+        "codename": "change_doemsousdirection",
+        "content_type_id": 83,
+        "id": 330,
+        "name": "Can change doem sous direction"
+    },
+    {
+        "codename": "delete_doemsousdirection",
+        "content_type_id": 83,
+        "id": 331,
+        "name": "Can delete doem sous direction"
+    },
+    {
+        "codename": "view_doemsousdirection",
+        "content_type_id": 83,
+        "id": 332,
+        "name": "Can view doem sous direction"
+    },
+    {
+        "codename": "add_doemproject",
+        "content_type_id": 84,
+        "id": 333,
+        "name": "Can add doem project"
+    },
+    {
+        "codename": "change_doemproject",
+        "content_type_id": 84,
+        "id": 334,
+        "name": "Can change doem project"
+    },
+    {
+        "codename": "delete_doemproject",
+        "content_type_id": 84,
+        "id": 335,
+        "name": "Can delete doem project"
+    },
+    {
+        "codename": "view_doemproject",
+        "content_type_id": 84,
+        "id": 336,
+        "name": "Can view doem project"
+    },
+    {
+        "codename": "add_doemobjectif",
+        "content_type_id": 85,
+        "id": 337,
+        "name": "Can add doem objectif"
+    },
+    {
+        "codename": "change_doemobjectif",
+        "content_type_id": 85,
+        "id": 338,
+        "name": "Can change doem objectif"
+    },
+    {
+        "codename": "delete_doemobjectif",
+        "content_type_id": 85,
+        "id": 339,
+        "name": "Can delete doem objectif"
+    },
+    {
+        "codename": "view_doemobjectif",
+        "content_type_id": 85,
+        "id": 340,
+        "name": "Can view doem objectif"
+    },
+    {
+        "codename": "add_doemmission",
+        "content_type_id": 86,
+        "id": 341,
+        "name": "Can add doem mission"
+    },
+    {
+        "codename": "change_doemmission",
+        "content_type_id": 86,
+        "id": 342,
+        "name": "Can change doem mission"
+    },
+    {
+        "codename": "delete_doemmission",
+        "content_type_id": 86,
+        "id": 343,
+        "name": "Can delete doem mission"
+    },
+    {
+        "codename": "view_doemmission",
+        "content_type_id": 86,
+        "id": 344,
+        "name": "Can view doem mission"
+    },
+    {
+        "codename": "add_doemcontacttel",
+        "content_type_id": 87,
+        "id": 345,
+        "name": "Can add doem contact tel"
+    },
+    {
+        "codename": "change_doemcontacttel",
+        "content_type_id": 87,
+        "id": 346,
+        "name": "Can change doem contact tel"
+    },
+    {
+        "codename": "delete_doemcontacttel",
+        "content_type_id": 87,
+        "id": 347,
+        "name": "Can delete doem contact tel"
+    },
+    {
+        "codename": "view_doemcontacttel",
+        "content_type_id": 87,
+        "id": 348,
+        "name": "Can view doem contact tel"
+    },
+    {
+        "codename": "add_doemcontacthoraire",
+        "content_type_id": 88,
+        "id": 349,
+        "name": "Can add doem contact horaire"
+    },
+    {
+        "codename": "change_doemcontacthoraire",
+        "content_type_id": 88,
+        "id": 350,
+        "name": "Can change doem contact horaire"
+    },
+    {
+        "codename": "delete_doemcontacthoraire",
+        "content_type_id": 88,
+        "id": 351,
+        "name": "Can delete doem contact horaire"
+    },
+    {
+        "codename": "view_doemcontacthoraire",
+        "content_type_id": 88,
+        "id": 352,
+        "name": "Can view doem contact horaire"
+    },
+    {
+        "codename": "add_doemcontactemail",
+        "content_type_id": 89,
+        "id": 353,
+        "name": "Can add doem contact email"
+    },
+    {
+        "codename": "change_doemcontactemail",
+        "content_type_id": 89,
+        "id": 354,
+        "name": "Can change doem contact email"
+    },
+    {
+        "codename": "delete_doemcontactemail",
+        "content_type_id": 89,
+        "id": 355,
+        "name": "Can delete doem contact email"
+    },
+    {
+        "codename": "view_doemcontactemail",
+        "content_type_id": 89,
+        "id": 356,
+        "name": "Can view doem contact email"
+    },
+    {
+        "codename": "add_doemcontactaddress",
+        "content_type_id": 90,
+        "id": 357,
+        "name": "Can add doem contact address"
+    },
+    {
+        "codename": "change_doemcontactaddress",
+        "content_type_id": 90,
+        "id": 358,
+        "name": "Can change doem contact address"
+    },
+    {
+        "codename": "delete_doemcontactaddress",
+        "content_type_id": 90,
+        "id": 359,
+        "name": "Can delete doem contact address"
+    },
+    {
+        "codename": "view_doemcontactaddress",
+        "content_type_id": 90,
+        "id": 360,
+        "name": "Can view doem contact address"
+    },
+    {
+        "codename": "add_doemcontact",
+        "content_type_id": 91,
+        "id": 361,
+        "name": "Can add doem contact"
+    },
+    {
+        "codename": "change_doemcontact",
+        "content_type_id": 91,
+        "id": 362,
+        "name": "Can change doem contact"
+    },
+    {
+        "codename": "delete_doemcontact",
+        "content_type_id": 91,
+        "id": 363,
+        "name": "Can delete doem contact"
+    },
+    {
+        "codename": "view_doemcontact",
+        "content_type_id": 91,
+        "id": 364,
+        "name": "Can view doem contact"
+    },
+    {
+        "codename": "add_dgps",
+        "content_type_id": 92,
+        "id": 365,
+        "name": "Can add DGPS"
+    },
+    {
+        "codename": "change_dgps",
+        "content_type_id": 92,
+        "id": 366,
+        "name": "Can change DGPS"
+    },
+    {
+        "codename": "delete_dgps",
+        "content_type_id": 92,
+        "id": 367,
+        "name": "Can delete DGPS"
+    },
+    {
+        "codename": "view_dgps",
+        "content_type_id": 92,
+        "id": 368,
+        "name": "Can view DGPS"
+    },
+    {
+        "codename": "add_das",
+        "content_type_id": 93,
+        "id": 369,
+        "name": "Can add das"
+    },
+    {
+        "codename": "change_das",
+        "content_type_id": 93,
+        "id": 370,
+        "name": "Can change das"
+    },
+    {
+        "codename": "delete_das",
+        "content_type_id": 93,
+        "id": 371,
+        "name": "Can delete das"
+    },
+    {
+        "codename": "view_das",
+        "content_type_id": 93,
+        "id": 372,
+        "name": "Can view das"
+    },
+    {
+        "codename": "add_dassousdirection",
+        "content_type_id": 94,
+        "id": 373,
+        "name": "Can add das sous direction"
+    },
+    {
+        "codename": "change_dassousdirection",
+        "content_type_id": 94,
+        "id": 374,
+        "name": "Can change das sous direction"
+    },
+    {
+        "codename": "delete_dassousdirection",
+        "content_type_id": 94,
+        "id": 375,
+        "name": "Can delete das sous direction"
+    },
+    {
+        "codename": "view_dassousdirection",
+        "content_type_id": 94,
+        "id": 376,
+        "name": "Can view das sous direction"
+    },
+    {
+        "codename": "add_dasproject",
+        "content_type_id": 95,
+        "id": 377,
+        "name": "Can add das project"
+    },
+    {
+        "codename": "change_dasproject",
+        "content_type_id": 95,
+        "id": 378,
+        "name": "Can change das project"
+    },
+    {
+        "codename": "delete_dasproject",
+        "content_type_id": 95,
+        "id": 379,
+        "name": "Can delete das project"
+    },
+    {
+        "codename": "view_dasproject",
+        "content_type_id": 95,
+        "id": 380,
+        "name": "Can view das project"
+    },
+    {
+        "codename": "add_dasobjectif",
+        "content_type_id": 96,
+        "id": 381,
+        "name": "Can add das objectif"
+    },
+    {
+        "codename": "change_dasobjectif",
+        "content_type_id": 96,
+        "id": 382,
+        "name": "Can change das objectif"
+    },
+    {
+        "codename": "delete_dasobjectif",
+        "content_type_id": 96,
+        "id": 383,
+        "name": "Can delete das objectif"
+    },
+    {
+        "codename": "view_dasobjectif",
+        "content_type_id": 96,
+        "id": 384,
+        "name": "Can view das objectif"
+    },
+    {
+        "codename": "add_dasmission",
+        "content_type_id": 97,
+        "id": 385,
+        "name": "Can add das mission"
+    },
+    {
+        "codename": "change_dasmission",
+        "content_type_id": 97,
+        "id": 386,
+        "name": "Can change das mission"
+    },
+    {
+        "codename": "delete_dasmission",
+        "content_type_id": 97,
+        "id": 387,
+        "name": "Can delete das mission"
+    },
+    {
+        "codename": "view_dasmission",
+        "content_type_id": 97,
+        "id": 388,
+        "name": "Can view das mission"
+    },
+    {
+        "codename": "add_dascontacttel",
+        "content_type_id": 98,
+        "id": 389,
+        "name": "Can add das contact tel"
+    },
+    {
+        "codename": "change_dascontacttel",
+        "content_type_id": 98,
+        "id": 390,
+        "name": "Can change das contact tel"
+    },
+    {
+        "codename": "delete_dascontacttel",
+        "content_type_id": 98,
+        "id": 391,
+        "name": "Can delete das contact tel"
+    },
+    {
+        "codename": "view_dascontacttel",
+        "content_type_id": 98,
+        "id": 392,
+        "name": "Can view das contact tel"
+    },
+    {
+        "codename": "add_dascontacthoraire",
+        "content_type_id": 99,
+        "id": 393,
+        "name": "Can add das contact horaire"
+    },
+    {
+        "codename": "change_dascontacthoraire",
+        "content_type_id": 99,
+        "id": 394,
+        "name": "Can change das contact horaire"
+    },
+    {
+        "codename": "delete_dascontacthoraire",
+        "content_type_id": 99,
+        "id": 395,
+        "name": "Can delete das contact horaire"
+    },
+    {
+        "codename": "view_dascontacthoraire",
+        "content_type_id": 99,
+        "id": 396,
+        "name": "Can view das contact horaire"
+    },
+    {
+        "codename": "add_dascontactemail",
+        "content_type_id": 100,
+        "id": 397,
+        "name": "Can add das contact email"
+    },
+    {
+        "codename": "change_dascontactemail",
+        "content_type_id": 100,
+        "id": 398,
+        "name": "Can change das contact email"
+    },
+    {
+        "codename": "delete_dascontactemail",
+        "content_type_id": 100,
+        "id": 399,
+        "name": "Can delete das contact email"
+    },
+    {
+        "codename": "view_dascontactemail",
+        "content_type_id": 100,
+        "id": 400,
+        "name": "Can view das contact email"
+    },
+    {
+        "codename": "add_dascontactaddress",
+        "content_type_id": 101,
+        "id": 401,
+        "name": "Can add das contact address"
+    },
+    {
+        "codename": "change_dascontactaddress",
+        "content_type_id": 101,
+        "id": 402,
+        "name": "Can change das contact address"
+    },
+    {
+        "codename": "delete_dascontactaddress",
+        "content_type_id": 101,
+        "id": 403,
+        "name": "Can delete das contact address"
+    },
+    {
+        "codename": "view_dascontactaddress",
+        "content_type_id": 101,
+        "id": 404,
+        "name": "Can view das contact address"
+    },
+    {
+        "codename": "add_dascontact",
+        "content_type_id": 102,
+        "id": 405,
+        "name": "Can add das contact"
+    },
+    {
+        "codename": "change_dascontact",
+        "content_type_id": 102,
+        "id": 406,
+        "name": "Can change das contact"
+    },
+    {
+        "codename": "delete_dascontact",
+        "content_type_id": 102,
+        "id": 407,
+        "name": "Can delete das contact"
+    },
+    {
+        "codename": "view_dascontact",
+        "content_type_id": 102,
+        "id": 408,
+        "name": "Can view das contact"
+    },
+    {
+        "codename": "add_dpph",
+        "content_type_id": 103,
+        "id": 409,
+        "name": "Can add dpph"
+    },
+    {
+        "codename": "change_dpph",
+        "content_type_id": 103,
+        "id": 410,
+        "name": "Can change dpph"
+    },
+    {
+        "codename": "delete_dpph",
+        "content_type_id": 103,
+        "id": 411,
+        "name": "Can delete dpph"
+    },
+    {
+        "codename": "view_dpph",
+        "content_type_id": 103,
+        "id": 412,
+        "name": "Can view dpph"
+    },
+    {
+        "codename": "add_dpphsousdirection",
+        "content_type_id": 104,
+        "id": 413,
+        "name": "Can add dpph sous direction"
+    },
+    {
+        "codename": "change_dpphsousdirection",
+        "content_type_id": 104,
+        "id": 414,
+        "name": "Can change dpph sous direction"
+    },
+    {
+        "codename": "delete_dpphsousdirection",
+        "content_type_id": 104,
+        "id": 415,
+        "name": "Can delete dpph sous direction"
+    },
+    {
+        "codename": "view_dpphsousdirection",
+        "content_type_id": 104,
+        "id": 416,
+        "name": "Can view dpph sous direction"
+    },
+    {
+        "codename": "add_dpphproject",
+        "content_type_id": 105,
+        "id": 417,
+        "name": "Can add dpph project"
+    },
+    {
+        "codename": "change_dpphproject",
+        "content_type_id": 105,
+        "id": 418,
+        "name": "Can change dpph project"
+    },
+    {
+        "codename": "delete_dpphproject",
+        "content_type_id": 105,
+        "id": 419,
+        "name": "Can delete dpph project"
+    },
+    {
+        "codename": "view_dpphproject",
+        "content_type_id": 105,
+        "id": 420,
+        "name": "Can view dpph project"
+    },
+    {
+        "codename": "add_dpphobjectif",
+        "content_type_id": 106,
+        "id": 421,
+        "name": "Can add dpph objectif"
+    },
+    {
+        "codename": "change_dpphobjectif",
+        "content_type_id": 106,
+        "id": 422,
+        "name": "Can change dpph objectif"
+    },
+    {
+        "codename": "delete_dpphobjectif",
+        "content_type_id": 106,
+        "id": 423,
+        "name": "Can delete dpph objectif"
+    },
+    {
+        "codename": "view_dpphobjectif",
+        "content_type_id": 106,
+        "id": 424,
+        "name": "Can view dpph objectif"
+    },
+    {
+        "codename": "add_dpphmission",
+        "content_type_id": 107,
+        "id": 425,
+        "name": "Can add dpph mission"
+    },
+    {
+        "codename": "change_dpphmission",
+        "content_type_id": 107,
+        "id": 426,
+        "name": "Can change dpph mission"
+    },
+    {
+        "codename": "delete_dpphmission",
+        "content_type_id": 107,
+        "id": 427,
+        "name": "Can delete dpph mission"
+    },
+    {
+        "codename": "view_dpphmission",
+        "content_type_id": 107,
+        "id": 428,
+        "name": "Can view dpph mission"
+    },
+    {
+        "codename": "add_dpphcontacttel",
+        "content_type_id": 108,
+        "id": 429,
+        "name": "Can add dpph contact tel"
+    },
+    {
+        "codename": "change_dpphcontacttel",
+        "content_type_id": 108,
+        "id": 430,
+        "name": "Can change dpph contact tel"
+    },
+    {
+        "codename": "delete_dpphcontacttel",
+        "content_type_id": 108,
+        "id": 431,
+        "name": "Can delete dpph contact tel"
+    },
+    {
+        "codename": "view_dpphcontacttel",
+        "content_type_id": 108,
+        "id": 432,
+        "name": "Can view dpph contact tel"
+    },
+    {
+        "codename": "add_dpphcontacthoraire",
+        "content_type_id": 109,
+        "id": 433,
+        "name": "Can add dpph contact horaire"
+    },
+    {
+        "codename": "change_dpphcontacthoraire",
+        "content_type_id": 109,
+        "id": 434,
+        "name": "Can change dpph contact horaire"
+    },
+    {
+        "codename": "delete_dpphcontacthoraire",
+        "content_type_id": 109,
+        "id": 435,
+        "name": "Can delete dpph contact horaire"
+    },
+    {
+        "codename": "view_dpphcontacthoraire",
+        "content_type_id": 109,
+        "id": 436,
+        "name": "Can view dpph contact horaire"
+    },
+    {
+        "codename": "add_dpphcontactemail",
+        "content_type_id": 110,
+        "id": 437,
+        "name": "Can add dpph contact email"
+    },
+    {
+        "codename": "change_dpphcontactemail",
+        "content_type_id": 110,
+        "id": 438,
+        "name": "Can change dpph contact email"
+    },
+    {
+        "codename": "delete_dpphcontactemail",
+        "content_type_id": 110,
+        "id": 439,
+        "name": "Can delete dpph contact email"
+    },
+    {
+        "codename": "view_dpphcontactemail",
+        "content_type_id": 110,
+        "id": 440,
+        "name": "Can view dpph contact email"
+    },
+    {
+        "codename": "add_dpphcontactaddress",
+        "content_type_id": 111,
+        "id": 441,
+        "name": "Can add dpph contact address"
+    },
+    {
+        "codename": "change_dpphcontactaddress",
+        "content_type_id": 111,
+        "id": 442,
+        "name": "Can change dpph contact address"
+    },
+    {
+        "codename": "delete_dpphcontactaddress",
+        "content_type_id": 111,
+        "id": 443,
+        "name": "Can delete dpph contact address"
+    },
+    {
+        "codename": "view_dpphcontactaddress",
+        "content_type_id": 111,
+        "id": 444,
+        "name": "Can view dpph contact address"
+    },
+    {
+        "codename": "add_dpphcontact",
+        "content_type_id": 112,
+        "id": 445,
+        "name": "Can add dpph contact"
+    },
+    {
+        "codename": "change_dpphcontact",
+        "content_type_id": 112,
+        "id": 446,
+        "name": "Can change dpph contact"
+    },
+    {
+        "codename": "delete_dpphcontact",
+        "content_type_id": 112,
+        "id": 447,
+        "name": "Can delete dpph contact"
+    },
+    {
+        "codename": "view_dpphcontact",
+        "content_type_id": 112,
+        "id": 448,
+        "name": "Can view dpph contact"
+    },
+    {
+        "codename": "add_dssm",
+        "content_type_id": 113,
+        "id": 449,
+        "name": "Can add dssm"
+    },
+    {
+        "codename": "change_dssm",
+        "content_type_id": 113,
+        "id": 450,
+        "name": "Can change dssm"
+    },
+    {
+        "codename": "delete_dssm",
+        "content_type_id": 113,
+        "id": 451,
+        "name": "Can delete dssm"
+    },
+    {
+        "codename": "view_dssm",
+        "content_type_id": 113,
+        "id": 452,
+        "name": "Can view dssm"
+    },
+    {
+        "codename": "add_dssmsousdirection",
+        "content_type_id": 114,
+        "id": 453,
+        "name": "Can add dssm sous direction"
+    },
+    {
+        "codename": "change_dssmsousdirection",
+        "content_type_id": 114,
+        "id": 454,
+        "name": "Can change dssm sous direction"
+    },
+    {
+        "codename": "delete_dssmsousdirection",
+        "content_type_id": 114,
+        "id": 455,
+        "name": "Can delete dssm sous direction"
+    },
+    {
+        "codename": "view_dssmsousdirection",
+        "content_type_id": 114,
+        "id": 456,
+        "name": "Can view dssm sous direction"
+    },
+    {
+        "codename": "add_dssmproject",
+        "content_type_id": 115,
+        "id": 457,
+        "name": "Can add dssm project"
+    },
+    {
+        "codename": "change_dssmproject",
+        "content_type_id": 115,
+        "id": 458,
+        "name": "Can change dssm project"
+    },
+    {
+        "codename": "delete_dssmproject",
+        "content_type_id": 115,
+        "id": 459,
+        "name": "Can delete dssm project"
+    },
+    {
+        "codename": "view_dssmproject",
+        "content_type_id": 115,
+        "id": 460,
+        "name": "Can view dssm project"
+    },
+    {
+        "codename": "add_dssmobjectif",
+        "content_type_id": 116,
+        "id": 461,
+        "name": "Can add dssm objectif"
+    },
+    {
+        "codename": "change_dssmobjectif",
+        "content_type_id": 116,
+        "id": 462,
+        "name": "Can change dssm objectif"
+    },
+    {
+        "codename": "delete_dssmobjectif",
+        "content_type_id": 116,
+        "id": 463,
+        "name": "Can delete dssm objectif"
+    },
+    {
+        "codename": "view_dssmobjectif",
+        "content_type_id": 116,
+        "id": 464,
+        "name": "Can view dssm objectif"
+    },
+    {
+        "codename": "add_dssmmission",
+        "content_type_id": 117,
+        "id": 465,
+        "name": "Can add dssm mission"
+    },
+    {
+        "codename": "change_dssmmission",
+        "content_type_id": 117,
+        "id": 466,
+        "name": "Can change dssm mission"
+    },
+    {
+        "codename": "delete_dssmmission",
+        "content_type_id": 117,
+        "id": 467,
+        "name": "Can delete dssm mission"
+    },
+    {
+        "codename": "view_dssmmission",
+        "content_type_id": 117,
+        "id": 468,
+        "name": "Can view dssm mission"
+    },
+    {
+        "codename": "add_dssmcontacttel",
+        "content_type_id": 118,
+        "id": 469,
+        "name": "Can add dssm contact tel"
+    },
+    {
+        "codename": "change_dssmcontacttel",
+        "content_type_id": 118,
+        "id": 470,
+        "name": "Can change dssm contact tel"
+    },
+    {
+        "codename": "delete_dssmcontacttel",
+        "content_type_id": 118,
+        "id": 471,
+        "name": "Can delete dssm contact tel"
+    },
+    {
+        "codename": "view_dssmcontacttel",
+        "content_type_id": 118,
+        "id": 472,
+        "name": "Can view dssm contact tel"
+    },
+    {
+        "codename": "add_dssmcontacthoraire",
+        "content_type_id": 119,
+        "id": 473,
+        "name": "Can add dssm contact horaire"
+    },
+    {
+        "codename": "change_dssmcontacthoraire",
+        "content_type_id": 119,
+        "id": 474,
+        "name": "Can change dssm contact horaire"
+    },
+    {
+        "codename": "delete_dssmcontacthoraire",
+        "content_type_id": 119,
+        "id": 475,
+        "name": "Can delete dssm contact horaire"
+    },
+    {
+        "codename": "view_dssmcontacthoraire",
+        "content_type_id": 119,
+        "id": 476,
+        "name": "Can view dssm contact horaire"
+    },
+    {
+        "codename": "add_dssmcontactemail",
+        "content_type_id": 120,
+        "id": 477,
+        "name": "Can add dssm contact email"
+    },
+    {
+        "codename": "change_dssmcontactemail",
+        "content_type_id": 120,
+        "id": 478,
+        "name": "Can change dssm contact email"
+    },
+    {
+        "codename": "delete_dssmcontactemail",
+        "content_type_id": 120,
+        "id": 479,
+        "name": "Can delete dssm contact email"
+    },
+    {
+        "codename": "view_dssmcontactemail",
+        "content_type_id": 120,
+        "id": 480,
+        "name": "Can view dssm contact email"
+    },
+    {
+        "codename": "add_dssmcontactaddress",
+        "content_type_id": 121,
+        "id": 481,
+        "name": "Can add dssm contact address"
+    },
+    {
+        "codename": "change_dssmcontactaddress",
+        "content_type_id": 121,
+        "id": 482,
+        "name": "Can change dssm contact address"
+    },
+    {
+        "codename": "delete_dssmcontactaddress",
+        "content_type_id": 121,
+        "id": 483,
+        "name": "Can delete dssm contact address"
+    },
+    {
+        "codename": "view_dssmcontactaddress",
+        "content_type_id": 121,
+        "id": 484,
+        "name": "Can view dssm contact address"
+    },
+    {
+        "codename": "add_dssmcontact",
+        "content_type_id": 122,
+        "id": 485,
+        "name": "Can add dssm contact"
+    },
+    {
+        "codename": "change_dssmcontact",
+        "content_type_id": 122,
+        "id": 486,
+        "name": "Can change dssm contact"
+    },
+    {
+        "codename": "delete_dssmcontact",
+        "content_type_id": 122,
+        "id": 487,
+        "name": "Can delete dssm contact"
+    },
+    {
+        "codename": "view_dssmcontact",
+        "content_type_id": 122,
+        "id": 488,
+        "name": "Can view dssm contact"
+    },
+    {
+        "codename": "add_dgt",
+        "content_type_id": 123,
+        "id": 489,
+        "name": "Can add DGT"
+    },
+    {
+        "codename": "change_dgt",
+        "content_type_id": 123,
+        "id": 490,
+        "name": "Can change DGT"
+    },
+    {
+        "codename": "delete_dgt",
+        "content_type_id": 123,
+        "id": 491,
+        "name": "Can delete DGT"
+    },
+    {
+        "codename": "view_dgt",
+        "content_type_id": 123,
+        "id": 492,
+        "name": "Can view DGT"
+    },
+    {
+        "codename": "add_dit",
+        "content_type_id": 124,
+        "id": 493,
+        "name": "Can add dit"
+    },
+    {
+        "codename": "change_dit",
+        "content_type_id": 124,
+        "id": 494,
+        "name": "Can change dit"
+    },
+    {
+        "codename": "delete_dit",
+        "content_type_id": 124,
+        "id": 495,
+        "name": "Can delete dit"
+    },
+    {
+        "codename": "view_dit",
+        "content_type_id": 124,
+        "id": 496,
+        "name": "Can view dit"
+    },
+    {
+        "codename": "add_ditsousdirection",
+        "content_type_id": 125,
+        "id": 497,
+        "name": "Can add dit sous direction"
+    },
+    {
+        "codename": "change_ditsousdirection",
+        "content_type_id": 125,
+        "id": 498,
+        "name": "Can change dit sous direction"
+    },
+    {
+        "codename": "delete_ditsousdirection",
+        "content_type_id": 125,
+        "id": 499,
+        "name": "Can delete dit sous direction"
+    },
+    {
+        "codename": "view_ditsousdirection",
+        "content_type_id": 125,
+        "id": 500,
+        "name": "Can view dit sous direction"
+    },
+    {
+        "codename": "add_ditproject",
+        "content_type_id": 126,
+        "id": 501,
+        "name": "Can add dit project"
+    },
+    {
+        "codename": "change_ditproject",
+        "content_type_id": 126,
+        "id": 502,
+        "name": "Can change dit project"
+    },
+    {
+        "codename": "delete_ditproject",
+        "content_type_id": 126,
+        "id": 503,
+        "name": "Can delete dit project"
+    },
+    {
+        "codename": "view_ditproject",
+        "content_type_id": 126,
+        "id": 504,
+        "name": "Can view dit project"
+    },
+    {
+        "codename": "add_ditobjectif",
+        "content_type_id": 127,
+        "id": 505,
+        "name": "Can add dit objectif"
+    },
+    {
+        "codename": "change_ditobjectif",
+        "content_type_id": 127,
+        "id": 506,
+        "name": "Can change dit objectif"
+    },
+    {
+        "codename": "delete_ditobjectif",
+        "content_type_id": 127,
+        "id": 507,
+        "name": "Can delete dit objectif"
+    },
+    {
+        "codename": "view_ditobjectif",
+        "content_type_id": 127,
+        "id": 508,
+        "name": "Can view dit objectif"
+    },
+    {
+        "codename": "add_ditmission",
+        "content_type_id": 128,
+        "id": 509,
+        "name": "Can add dit mission"
+    },
+    {
+        "codename": "change_ditmission",
+        "content_type_id": 128,
+        "id": 510,
+        "name": "Can change dit mission"
+    },
+    {
+        "codename": "delete_ditmission",
+        "content_type_id": 128,
+        "id": 511,
+        "name": "Can delete dit mission"
+    },
+    {
+        "codename": "view_ditmission",
+        "content_type_id": 128,
+        "id": 512,
+        "name": "Can view dit mission"
+    },
+    {
+        "codename": "add_ditcontacttel",
+        "content_type_id": 129,
+        "id": 513,
+        "name": "Can add dit contact tel"
+    },
+    {
+        "codename": "change_ditcontacttel",
+        "content_type_id": 129,
+        "id": 514,
+        "name": "Can change dit contact tel"
+    },
+    {
+        "codename": "delete_ditcontacttel",
+        "content_type_id": 129,
+        "id": 515,
+        "name": "Can delete dit contact tel"
+    },
+    {
+        "codename": "view_ditcontacttel",
+        "content_type_id": 129,
+        "id": 516,
+        "name": "Can view dit contact tel"
+    },
+    {
+        "codename": "add_ditcontacthoraire",
+        "content_type_id": 130,
+        "id": 517,
+        "name": "Can add dit contact horaire"
+    },
+    {
+        "codename": "change_ditcontacthoraire",
+        "content_type_id": 130,
+        "id": 518,
+        "name": "Can change dit contact horaire"
+    },
+    {
+        "codename": "delete_ditcontacthoraire",
+        "content_type_id": 130,
+        "id": 519,
+        "name": "Can delete dit contact horaire"
+    },
+    {
+        "codename": "view_ditcontacthoraire",
+        "content_type_id": 130,
+        "id": 520,
+        "name": "Can view dit contact horaire"
+    },
+    {
+        "codename": "add_ditcontactemail",
+        "content_type_id": 131,
+        "id": 521,
+        "name": "Can add dit contact email"
+    },
+    {
+        "codename": "change_ditcontactemail",
+        "content_type_id": 131,
+        "id": 522,
+        "name": "Can change dit contact email"
+    },
+    {
+        "codename": "delete_ditcontactemail",
+        "content_type_id": 131,
+        "id": 523,
+        "name": "Can delete dit contact email"
+    },
+    {
+        "codename": "view_ditcontactemail",
+        "content_type_id": 131,
+        "id": 524,
+        "name": "Can view dit contact email"
+    },
+    {
+        "codename": "add_ditcontactaddress",
+        "content_type_id": 132,
+        "id": 525,
+        "name": "Can add dit contact address"
+    },
+    {
+        "codename": "change_ditcontactaddress",
+        "content_type_id": 132,
+        "id": 526,
+        "name": "Can change dit contact address"
+    },
+    {
+        "codename": "delete_ditcontactaddress",
+        "content_type_id": 132,
+        "id": 527,
+        "name": "Can delete dit contact address"
+    },
+    {
+        "codename": "view_ditcontactaddress",
+        "content_type_id": 132,
+        "id": 528,
+        "name": "Can view dit contact address"
+    },
+    {
+        "codename": "add_ditcontact",
+        "content_type_id": 133,
+        "id": 529,
+        "name": "Can add dit contact"
+    },
+    {
+        "codename": "change_ditcontact",
+        "content_type_id": 133,
+        "id": 530,
+        "name": "Can change dit contact"
+    },
+    {
+        "codename": "delete_ditcontact",
+        "content_type_id": 133,
+        "id": 531,
+        "name": "Can delete dit contact"
+    },
+    {
+        "codename": "view_ditcontact",
+        "content_type_id": 133,
+        "id": 532,
+        "name": "Can view dit contact"
+    },
+    {
+        "codename": "add_dlte",
+        "content_type_id": 134,
+        "id": 533,
+        "name": "Can add dlte"
+    },
+    {
+        "codename": "change_dlte",
+        "content_type_id": 134,
+        "id": 534,
+        "name": "Can change dlte"
+    },
+    {
+        "codename": "delete_dlte",
+        "content_type_id": 134,
+        "id": 535,
+        "name": "Can delete dlte"
+    },
+    {
+        "codename": "view_dlte",
+        "content_type_id": 134,
+        "id": 536,
+        "name": "Can view dlte"
+    },
+    {
+        "codename": "add_dltesousdirection",
+        "content_type_id": 135,
+        "id": 537,
+        "name": "Can add dlte sous direction"
+    },
+    {
+        "codename": "change_dltesousdirection",
+        "content_type_id": 135,
+        "id": 538,
+        "name": "Can change dlte sous direction"
+    },
+    {
+        "codename": "delete_dltesousdirection",
+        "content_type_id": 135,
+        "id": 539,
+        "name": "Can delete dlte sous direction"
+    },
+    {
+        "codename": "view_dltesousdirection",
+        "content_type_id": 135,
+        "id": 540,
+        "name": "Can view dlte sous direction"
+    },
+    {
+        "codename": "add_dlteproject",
+        "content_type_id": 136,
+        "id": 541,
+        "name": "Can add dlte project"
+    },
+    {
+        "codename": "change_dlteproject",
+        "content_type_id": 136,
+        "id": 542,
+        "name": "Can change dlte project"
+    },
+    {
+        "codename": "delete_dlteproject",
+        "content_type_id": 136,
+        "id": 543,
+        "name": "Can delete dlte project"
+    },
+    {
+        "codename": "view_dlteproject",
+        "content_type_id": 136,
+        "id": 544,
+        "name": "Can view dlte project"
+    },
+    {
+        "codename": "add_dlteobjectif",
+        "content_type_id": 137,
+        "id": 545,
+        "name": "Can add dlte objectif"
+    },
+    {
+        "codename": "change_dlteobjectif",
+        "content_type_id": 137,
+        "id": 546,
+        "name": "Can change dlte objectif"
+    },
+    {
+        "codename": "delete_dlteobjectif",
+        "content_type_id": 137,
+        "id": 547,
+        "name": "Can delete dlte objectif"
+    },
+    {
+        "codename": "view_dlteobjectif",
+        "content_type_id": 137,
+        "id": 548,
+        "name": "Can view dlte objectif"
+    },
+    {
+        "codename": "add_dltemission",
+        "content_type_id": 138,
+        "id": 549,
+        "name": "Can add dlte mission"
+    },
+    {
+        "codename": "change_dltemission",
+        "content_type_id": 138,
+        "id": 550,
+        "name": "Can change dlte mission"
+    },
+    {
+        "codename": "delete_dltemission",
+        "content_type_id": 138,
+        "id": 551,
+        "name": "Can delete dlte mission"
+    },
+    {
+        "codename": "view_dltemission",
+        "content_type_id": 138,
+        "id": 552,
+        "name": "Can view dlte mission"
+    },
+    {
+        "codename": "add_dltecontacttel",
+        "content_type_id": 139,
+        "id": 553,
+        "name": "Can add dlte contact tel"
+    },
+    {
+        "codename": "change_dltecontacttel",
+        "content_type_id": 139,
+        "id": 554,
+        "name": "Can change dlte contact tel"
+    },
+    {
+        "codename": "delete_dltecontacttel",
+        "content_type_id": 139,
+        "id": 555,
+        "name": "Can delete dlte contact tel"
+    },
+    {
+        "codename": "view_dltecontacttel",
+        "content_type_id": 139,
+        "id": 556,
+        "name": "Can view dlte contact tel"
+    },
+    {
+        "codename": "add_dltecontacthoraire",
+        "content_type_id": 140,
+        "id": 557,
+        "name": "Can add dlte contact horaire"
+    },
+    {
+        "codename": "change_dltecontacthoraire",
+        "content_type_id": 140,
+        "id": 558,
+        "name": "Can change dlte contact horaire"
+    },
+    {
+        "codename": "delete_dltecontacthoraire",
+        "content_type_id": 140,
+        "id": 559,
+        "name": "Can delete dlte contact horaire"
+    },
+    {
+        "codename": "view_dltecontacthoraire",
+        "content_type_id": 140,
+        "id": 560,
+        "name": "Can view dlte contact horaire"
+    },
+    {
+        "codename": "add_dltecontactemail",
+        "content_type_id": 141,
+        "id": 561,
+        "name": "Can add dlte contact email"
+    },
+    {
+        "codename": "change_dltecontactemail",
+        "content_type_id": 141,
+        "id": 562,
+        "name": "Can change dlte contact email"
+    },
+    {
+        "codename": "delete_dltecontactemail",
+        "content_type_id": 141,
+        "id": 563,
+        "name": "Can delete dlte contact email"
+    },
+    {
+        "codename": "view_dltecontactemail",
+        "content_type_id": 141,
+        "id": 564,
+        "name": "Can view dlte contact email"
+    },
+    {
+        "codename": "add_dltecontactaddress",
+        "content_type_id": 142,
+        "id": 565,
+        "name": "Can add dlte contact address"
+    },
+    {
+        "codename": "change_dltecontactaddress",
+        "content_type_id": 142,
+        "id": 566,
+        "name": "Can change dlte contact address"
+    },
+    {
+        "codename": "delete_dltecontactaddress",
+        "content_type_id": 142,
+        "id": 567,
+        "name": "Can delete dlte contact address"
+    },
+    {
+        "codename": "view_dltecontactaddress",
+        "content_type_id": 142,
+        "id": 568,
+        "name": "Can view dlte contact address"
+    },
+    {
+        "codename": "add_dltecontact",
+        "content_type_id": 143,
+        "id": 569,
+        "name": "Can add dlte contact"
+    },
+    {
+        "codename": "change_dltecontact",
+        "content_type_id": 143,
+        "id": 570,
+        "name": "Can change dlte contact"
+    },
+    {
+        "codename": "delete_dltecontact",
+        "content_type_id": 143,
+        "id": 571,
+        "name": "Can delete dlte contact"
+    },
+    {
+        "codename": "view_dltecontact",
+        "content_type_id": 143,
+        "id": 572,
+        "name": "Can view dlte contact"
+    },
+    {
+        "codename": "add_drt",
+        "content_type_id": 144,
+        "id": 573,
+        "name": "Can add drt"
+    },
+    {
+        "codename": "change_drt",
+        "content_type_id": 144,
+        "id": 574,
+        "name": "Can change drt"
+    },
+    {
+        "codename": "delete_drt",
+        "content_type_id": 144,
+        "id": 575,
+        "name": "Can delete drt"
+    },
+    {
+        "codename": "view_drt",
+        "content_type_id": 144,
+        "id": 576,
+        "name": "Can view drt"
+    },
+    {
+        "codename": "add_drtsousdirection",
+        "content_type_id": 145,
+        "id": 577,
+        "name": "Can add drt sous direction"
+    },
+    {
+        "codename": "change_drtsousdirection",
+        "content_type_id": 145,
+        "id": 578,
+        "name": "Can change drt sous direction"
+    },
+    {
+        "codename": "delete_drtsousdirection",
+        "content_type_id": 145,
+        "id": 579,
+        "name": "Can delete drt sous direction"
+    },
+    {
+        "codename": "view_drtsousdirection",
+        "content_type_id": 145,
+        "id": 580,
+        "name": "Can view drt sous direction"
+    },
+    {
+        "codename": "add_drtproject",
+        "content_type_id": 146,
+        "id": 581,
+        "name": "Can add drt project"
+    },
+    {
+        "codename": "change_drtproject",
+        "content_type_id": 146,
+        "id": 582,
+        "name": "Can change drt project"
+    },
+    {
+        "codename": "delete_drtproject",
+        "content_type_id": 146,
+        "id": 583,
+        "name": "Can delete drt project"
+    },
+    {
+        "codename": "view_drtproject",
+        "content_type_id": 146,
+        "id": 584,
+        "name": "Can view drt project"
+    },
+    {
+        "codename": "add_drtobjectif",
+        "content_type_id": 147,
+        "id": 585,
+        "name": "Can add drt objectif"
+    },
+    {
+        "codename": "change_drtobjectif",
+        "content_type_id": 147,
+        "id": 586,
+        "name": "Can change drt objectif"
+    },
+    {
+        "codename": "delete_drtobjectif",
+        "content_type_id": 147,
+        "id": 587,
+        "name": "Can delete drt objectif"
+    },
+    {
+        "codename": "view_drtobjectif",
+        "content_type_id": 147,
+        "id": 588,
+        "name": "Can view drt objectif"
+    },
+    {
+        "codename": "add_drtmission",
+        "content_type_id": 148,
+        "id": 589,
+        "name": "Can add drt mission"
+    },
+    {
+        "codename": "change_drtmission",
+        "content_type_id": 148,
+        "id": 590,
+        "name": "Can change drt mission"
+    },
+    {
+        "codename": "delete_drtmission",
+        "content_type_id": 148,
+        "id": 591,
+        "name": "Can delete drt mission"
+    },
+    {
+        "codename": "view_drtmission",
+        "content_type_id": 148,
+        "id": 592,
+        "name": "Can view drt mission"
+    },
+    {
+        "codename": "add_drtcontacttel",
+        "content_type_id": 149,
+        "id": 593,
+        "name": "Can add drt contact tel"
+    },
+    {
+        "codename": "change_drtcontacttel",
+        "content_type_id": 149,
+        "id": 594,
+        "name": "Can change drt contact tel"
+    },
+    {
+        "codename": "delete_drtcontacttel",
+        "content_type_id": 149,
+        "id": 595,
+        "name": "Can delete drt contact tel"
+    },
+    {
+        "codename": "view_drtcontacttel",
+        "content_type_id": 149,
+        "id": 596,
+        "name": "Can view drt contact tel"
+    },
+    {
+        "codename": "add_drtcontacthoraire",
+        "content_type_id": 150,
+        "id": 597,
+        "name": "Can add drt contact horaire"
+    },
+    {
+        "codename": "change_drtcontacthoraire",
+        "content_type_id": 150,
+        "id": 598,
+        "name": "Can change drt contact horaire"
+    },
+    {
+        "codename": "delete_drtcontacthoraire",
+        "content_type_id": 150,
+        "id": 599,
+        "name": "Can delete drt contact horaire"
+    },
+    {
+        "codename": "view_drtcontacthoraire",
+        "content_type_id": 150,
+        "id": 600,
+        "name": "Can view drt contact horaire"
+    },
+    {
+        "codename": "add_drtcontactemail",
+        "content_type_id": 151,
+        "id": 601,
+        "name": "Can add drt contact email"
+    },
+    {
+        "codename": "change_drtcontactemail",
+        "content_type_id": 151,
+        "id": 602,
+        "name": "Can change drt contact email"
+    },
+    {
+        "codename": "delete_drtcontactemail",
+        "content_type_id": 151,
+        "id": 603,
+        "name": "Can delete drt contact email"
+    },
+    {
+        "codename": "view_drtcontactemail",
+        "content_type_id": 151,
+        "id": 604,
+        "name": "Can view drt contact email"
+    },
+    {
+        "codename": "add_drtcontactaddress",
+        "content_type_id": 152,
+        "id": 605,
+        "name": "Can add drt contact address"
+    },
+    {
+        "codename": "change_drtcontactaddress",
+        "content_type_id": 152,
+        "id": 606,
+        "name": "Can change drt contact address"
+    },
+    {
+        "codename": "delete_drtcontactaddress",
+        "content_type_id": 152,
+        "id": 607,
+        "name": "Can delete drt contact address"
+    },
+    {
+        "codename": "view_drtcontactaddress",
+        "content_type_id": 152,
+        "id": 608,
+        "name": "Can view drt contact address"
+    },
+    {
+        "codename": "add_drtcontact",
+        "content_type_id": 153,
+        "id": 609,
+        "name": "Can add drt contact"
+    },
+    {
+        "codename": "change_drtcontact",
+        "content_type_id": 153,
+        "id": 610,
+        "name": "Can change drt contact"
+    },
+    {
+        "codename": "delete_drtcontact",
+        "content_type_id": 153,
+        "id": 611,
+        "name": "Can delete drt contact"
+    },
+    {
+        "codename": "view_drtcontact",
+        "content_type_id": 153,
+        "id": 612,
+        "name": "Can view drt contact"
+    },
+    {
+        "codename": "add_dsst",
+        "content_type_id": 154,
+        "id": 613,
+        "name": "Can add dsst"
+    },
+    {
+        "codename": "change_dsst",
+        "content_type_id": 154,
+        "id": 614,
+        "name": "Can change dsst"
+    },
+    {
+        "codename": "delete_dsst",
+        "content_type_id": 154,
+        "id": 615,
+        "name": "Can delete dsst"
+    },
+    {
+        "codename": "view_dsst",
+        "content_type_id": 154,
+        "id": 616,
+        "name": "Can view dsst"
+    },
+    {
+        "codename": "add_dsstsousdirection",
+        "content_type_id": 155,
+        "id": 617,
+        "name": "Can add dsst sous direction"
+    },
+    {
+        "codename": "change_dsstsousdirection",
+        "content_type_id": 155,
+        "id": 618,
+        "name": "Can change dsst sous direction"
+    },
+    {
+        "codename": "delete_dsstsousdirection",
+        "content_type_id": 155,
+        "id": 619,
+        "name": "Can delete dsst sous direction"
+    },
+    {
+        "codename": "view_dsstsousdirection",
+        "content_type_id": 155,
+        "id": 620,
+        "name": "Can view dsst sous direction"
+    },
+    {
+        "codename": "add_dsstproject",
+        "content_type_id": 156,
+        "id": 621,
+        "name": "Can add dsst project"
+    },
+    {
+        "codename": "change_dsstproject",
+        "content_type_id": 156,
+        "id": 622,
+        "name": "Can change dsst project"
+    },
+    {
+        "codename": "delete_dsstproject",
+        "content_type_id": 156,
+        "id": 623,
+        "name": "Can delete dsst project"
+    },
+    {
+        "codename": "view_dsstproject",
+        "content_type_id": 156,
+        "id": 624,
+        "name": "Can view dsst project"
+    },
+    {
+        "codename": "add_dsstobjectif",
+        "content_type_id": 157,
+        "id": 625,
+        "name": "Can add dsst objectif"
+    },
+    {
+        "codename": "change_dsstobjectif",
+        "content_type_id": 157,
+        "id": 626,
+        "name": "Can change dsst objectif"
+    },
+    {
+        "codename": "delete_dsstobjectif",
+        "content_type_id": 157,
+        "id": 627,
+        "name": "Can delete dsst objectif"
+    },
+    {
+        "codename": "view_dsstobjectif",
+        "content_type_id": 157,
+        "id": 628,
+        "name": "Can view dsst objectif"
+    },
+    {
+        "codename": "add_dsstmission",
+        "content_type_id": 158,
+        "id": 629,
+        "name": "Can add dsst mission"
+    },
+    {
+        "codename": "change_dsstmission",
+        "content_type_id": 158,
+        "id": 630,
+        "name": "Can change dsst mission"
+    },
+    {
+        "codename": "delete_dsstmission",
+        "content_type_id": 158,
+        "id": 631,
+        "name": "Can delete dsst mission"
+    },
+    {
+        "codename": "view_dsstmission",
+        "content_type_id": 158,
+        "id": 632,
+        "name": "Can view dsst mission"
+    },
+    {
+        "codename": "add_dsstcontacttel",
+        "content_type_id": 159,
+        "id": 633,
+        "name": "Can add dsst contact tel"
+    },
+    {
+        "codename": "change_dsstcontacttel",
+        "content_type_id": 159,
+        "id": 634,
+        "name": "Can change dsst contact tel"
+    },
+    {
+        "codename": "delete_dsstcontacttel",
+        "content_type_id": 159,
+        "id": 635,
+        "name": "Can delete dsst contact tel"
+    },
+    {
+        "codename": "view_dsstcontacttel",
+        "content_type_id": 159,
+        "id": 636,
+        "name": "Can view dsst contact tel"
+    },
+    {
+        "codename": "add_dsstcontacthoraire",
+        "content_type_id": 160,
+        "id": 637,
+        "name": "Can add dsst contact horaire"
+    },
+    {
+        "codename": "change_dsstcontacthoraire",
+        "content_type_id": 160,
+        "id": 638,
+        "name": "Can change dsst contact horaire"
+    },
+    {
+        "codename": "delete_dsstcontacthoraire",
+        "content_type_id": 160,
+        "id": 639,
+        "name": "Can delete dsst contact horaire"
+    },
+    {
+        "codename": "view_dsstcontacthoraire",
+        "content_type_id": 160,
+        "id": 640,
+        "name": "Can view dsst contact horaire"
+    },
+    {
+        "codename": "add_dsstcontactemail",
+        "content_type_id": 161,
+        "id": 641,
+        "name": "Can add dsst contact email"
+    },
+    {
+        "codename": "change_dsstcontactemail",
+        "content_type_id": 161,
+        "id": 642,
+        "name": "Can change dsst contact email"
+    },
+    {
+        "codename": "delete_dsstcontactemail",
+        "content_type_id": 161,
+        "id": 643,
+        "name": "Can delete dsst contact email"
+    },
+    {
+        "codename": "view_dsstcontactemail",
+        "content_type_id": 161,
+        "id": 644,
+        "name": "Can view dsst contact email"
+    },
+    {
+        "codename": "add_dsstcontactaddress",
+        "content_type_id": 162,
+        "id": 645,
+        "name": "Can add dsst contact address"
+    },
+    {
+        "codename": "change_dsstcontactaddress",
+        "content_type_id": 162,
+        "id": 646,
+        "name": "Can change dsst contact address"
+    },
+    {
+        "codename": "delete_dsstcontactaddress",
+        "content_type_id": 162,
+        "id": 647,
+        "name": "Can delete dsst contact address"
+    },
+    {
+        "codename": "view_dsstcontactaddress",
+        "content_type_id": 162,
+        "id": 648,
+        "name": "Can view dsst contact address"
+    },
+    {
+        "codename": "add_dsstcontact",
+        "content_type_id": 163,
+        "id": 649,
+        "name": "Can add dsst contact"
+    },
+    {
+        "codename": "change_dsstcontact",
+        "content_type_id": 163,
+        "id": 650,
+        "name": "Can change dsst contact"
+    },
+    {
+        "codename": "delete_dsstcontact",
+        "content_type_id": 163,
+        "id": 651,
+        "name": "Can delete dsst contact"
+    },
+    {
+        "codename": "view_dsstcontact",
+        "content_type_id": 163,
+        "id": 652,
+        "name": "Can view dsst contact"
+    },
+    {
+        "codename": "add_documentcategory",
+        "content_type_id": 164,
+        "id": 653,
+        "name": "Can add document category"
+    },
+    {
+        "codename": "change_documentcategory",
+        "content_type_id": 164,
+        "id": 654,
+        "name": "Can change document category"
+    },
+    {
+        "codename": "delete_documentcategory",
+        "content_type_id": 164,
+        "id": 655,
+        "name": "Can delete document category"
+    },
+    {
+        "codename": "view_documentcategory",
+        "content_type_id": 164,
+        "id": 656,
+        "name": "Can view document category"
+    },
+    {
+        "codename": "add_documentsouscategory",
+        "content_type_id": 165,
+        "id": 657,
+        "name": "Can add Sous-catégory"
+    },
+    {
+        "codename": "change_documentsouscategory",
+        "content_type_id": 165,
+        "id": 658,
+        "name": "Can change Sous-catégory"
+    },
+    {
+        "codename": "delete_documentsouscategory",
+        "content_type_id": 165,
+        "id": 659,
+        "name": "Can delete Sous-catégory"
+    },
+    {
+        "codename": "view_documentsouscategory",
+        "content_type_id": 165,
+        "id": 660,
+        "name": "Can view Sous-catégory"
+    },
+    {
+        "codename": "add_document",
+        "content_type_id": 166,
+        "id": 661,
+        "name": "Can add document"
+    },
+    {
+        "codename": "change_document",
+        "content_type_id": 166,
+        "id": 662,
+        "name": "Can change document"
+    },
+    {
+        "codename": "delete_document",
+        "content_type_id": 166,
+        "id": 663,
+        "name": "Can delete document"
+    },
+    {
+        "codename": "view_document",
+        "content_type_id": 166,
+        "id": 664,
+        "name": "Can view document"
+    },
+    {
+        "codename": "add_product",
+        "content_type_id": 167,
+        "id": 665,
+        "name": "Can add product"
+    },
+    {
+        "codename": "change_product",
+        "content_type_id": 167,
+        "id": 666,
+        "name": "Can change product"
+    },
+    {
+        "codename": "delete_product",
+        "content_type_id": 167,
+        "id": 667,
+        "name": "Can delete product"
+    },
+    {
+        "codename": "view_product",
+        "content_type_id": 167,
+        "id": 668,
+        "name": "Can view product"
+    },
+    {
+        "codename": "add_productcategory",
+        "content_type_id": 168,
+        "id": 669,
+        "name": "Can add category"
+    },
+    {
+        "codename": "change_productcategory",
+        "content_type_id": 168,
+        "id": 670,
+        "name": "Can change category"
+    },
+    {
+        "codename": "delete_productcategory",
+        "content_type_id": 168,
+        "id": 671,
+        "name": "Can delete category"
+    },
+    {
+        "codename": "view_productcategory",
+        "content_type_id": 168,
+        "id": 672,
+        "name": "Can view category"
+    },
+    {
+        "codename": "add_productsidebar",
+        "content_type_id": 169,
+        "id": 673,
+        "name": "Can add product sidebar"
+    },
+    {
+        "codename": "change_productsidebar",
+        "content_type_id": 169,
+        "id": 674,
+        "name": "Can change product sidebar"
+    },
+    {
+        "codename": "delete_productsidebar",
+        "content_type_id": 169,
+        "id": 675,
+        "name": "Can delete product sidebar"
+    },
+    {
+        "codename": "view_productsidebar",
+        "content_type_id": 169,
+        "id": 676,
+        "name": "Can view product sidebar"
+    },
+    {
+        "codename": "add_postproduct",
+        "content_type_id": 170,
+        "id": 677,
+        "name": "Can add Régime"
+    },
+    {
+        "codename": "change_postproduct",
+        "content_type_id": 170,
+        "id": 678,
+        "name": "Can change Régime"
+    },
+    {
+        "codename": "delete_postproduct",
+        "content_type_id": 170,
+        "id": 679,
+        "name": "Can delete Régime"
+    },
+    {
+        "codename": "view_postproduct",
+        "content_type_id": 170,
+        "id": 680,
+        "name": "Can view Régime"
+    },
+    {
+        "codename": "add_productrsti",
+        "content_type_id": 171,
+        "id": 681,
+        "name": "Can add product rsti"
+    },
+    {
+        "codename": "change_productrsti",
+        "content_type_id": 171,
+        "id": 682,
+        "name": "Can change product rsti"
+    },
+    {
+        "codename": "delete_productrsti",
+        "content_type_id": 171,
+        "id": 683,
+        "name": "Can delete product rsti"
+    },
+    {
+        "codename": "view_productrsti",
+        "content_type_id": 171,
+        "id": 684,
+        "name": "Can view product rsti"
+    },
+    {
+        "codename": "add_productcomplementaire",
+        "content_type_id": 172,
+        "id": 685,
+        "name": "Can add product complementaire"
+    },
+    {
+        "codename": "change_productcomplementaire",
+        "content_type_id": 172,
+        "id": 686,
+        "name": "Can change product complementaire"
+    },
+    {
+        "codename": "delete_productcomplementaire",
+        "content_type_id": 172,
+        "id": 687,
+        "name": "Can delete product complementaire"
+    },
+    {
+        "codename": "view_productcomplementaire",
+        "content_type_id": 172,
+        "id": 688,
+        "name": "Can view product complementaire"
+    },
+    {
+        "codename": "add_productcmu",
+        "content_type_id": 173,
+        "id": 689,
+        "name": "Can add product cmu"
+    },
+    {
+        "codename": "change_productcmu",
+        "content_type_id": 173,
+        "id": 690,
+        "name": "Can change product cmu"
+    },
+    {
+        "codename": "delete_productcmu",
+        "content_type_id": 173,
+        "id": 691,
+        "name": "Can delete product cmu"
+    },
+    {
+        "codename": "view_productcmu",
+        "content_type_id": 173,
+        "id": 692,
+        "name": "Can view product cmu"
+    },
+    {
+        "codename": "add_publicationcategory",
+        "content_type_id": 174,
+        "id": 693,
+        "name": "Can add Catégorie"
+    },
+    {
+        "codename": "change_publicationcategory",
+        "content_type_id": 174,
+        "id": 694,
+        "name": "Can change Catégorie"
+    },
+    {
+        "codename": "delete_publicationcategory",
+        "content_type_id": 174,
+        "id": 695,
+        "name": "Can delete Catégorie"
+    },
+    {
+        "codename": "view_publicationcategory",
+        "content_type_id": 174,
+        "id": 696,
+        "name": "Can view Catégorie"
+    },
+    {
+        "codename": "add_publicationsouscategory",
+        "content_type_id": 175,
+        "id": 697,
+        "name": "Can add Sous-Catégorie"
+    },
+    {
+        "codename": "change_publicationsouscategory",
+        "content_type_id": 175,
+        "id": 698,
+        "name": "Can change Sous-Catégorie"
+    },
+    {
+        "codename": "delete_publicationsouscategory",
+        "content_type_id": 175,
+        "id": 699,
+        "name": "Can delete Sous-Catégorie"
+    },
+    {
+        "codename": "view_publicationsouscategory",
+        "content_type_id": 175,
+        "id": 700,
+        "name": "Can view Sous-Catégorie"
+    },
+    {
+        "codename": "add_postcommunique",
+        "content_type_id": 176,
+        "id": 701,
+        "name": "Can add Communiqué"
+    },
+    {
+        "codename": "change_postcommunique",
+        "content_type_id": 176,
+        "id": 702,
+        "name": "Can change Communiqué"
+    },
+    {
+        "codename": "delete_postcommunique",
+        "content_type_id": 176,
+        "id": 703,
+        "name": "Can delete Communiqué"
+    },
+    {
+        "codename": "view_postcommunique",
+        "content_type_id": 176,
+        "id": 704,
+        "name": "Can view Communiqué"
+    },
+    {
+        "codename": "add_postactualite",
+        "content_type_id": 177,
+        "id": 705,
+        "name": "Can add Actualité"
+    },
+    {
+        "codename": "change_postactualite",
+        "content_type_id": 177,
+        "id": 706,
+        "name": "Can change Actualité"
+    },
+    {
+        "codename": "delete_postactualite",
+        "content_type_id": 177,
+        "id": 707,
+        "name": "Can delete Actualité"
+    },
+    {
+        "codename": "view_postactualite",
+        "content_type_id": 177,
+        "id": 708,
+        "name": "Can view Actualité"
+    },
+    {
+        "codename": "add_directioncustommodel",
+        "content_type_id": 178,
+        "id": 709,
+        "name": "Can add Une Direction Générale"
+    },
+    {
+        "codename": "change_directioncustommodel",
+        "content_type_id": 178,
+        "id": 710,
+        "name": "Can change Une Direction Générale"
+    },
+    {
+        "codename": "delete_directioncustommodel",
+        "content_type_id": 178,
+        "id": 711,
+        "name": "Can delete Une Direction Générale"
+    },
+    {
+        "codename": "view_directioncustommodel",
+        "content_type_id": 178,
+        "id": 712,
+        "name": "Can view Une Direction Générale"
+    },
+    {
+        "codename": "add_faq",
+        "content_type_id": 179,
+        "id": 713,
+        "name": "Can add faq"
+    },
+    {
+        "codename": "change_faq",
+        "content_type_id": 179,
+        "id": 714,
+        "name": "Can change faq"
+    },
+    {
+        "codename": "delete_faq",
+        "content_type_id": 179,
+        "id": 715,
+        "name": "Can delete faq"
+    },
+    {
+        "codename": "view_faq",
+        "content_type_id": 179,
+        "id": 716,
+        "name": "Can view faq"
+    },
+    {
+        "codename": "add_noscontactscustommodel",
+        "content_type_id": 180,
+        "id": 717,
+        "name": "Can add Une Direction Générale"
+    },
+    {
+        "codename": "change_noscontactscustommodel",
+        "content_type_id": 180,
+        "id": 718,
+        "name": "Can change Une Direction Générale"
+    },
+    {
+        "codename": "delete_noscontactscustommodel",
+        "content_type_id": 180,
+        "id": 719,
+        "name": "Can delete Une Direction Générale"
+    },
+    {
+        "codename": "view_noscontactscustommodel",
+        "content_type_id": 180,
+        "id": 720,
+        "name": "Can view Une Direction Générale"
+    },
+    {
+        "codename": "add_contactscabinet",
+        "content_type_id": 181,
+        "id": 721,
+        "name": "Can add  Service & Direction rattaché au CABINET"
+    },
+    {
+        "codename": "change_contactscabinet",
+        "content_type_id": 181,
+        "id": 722,
+        "name": "Can change  Service & Direction rattaché au CABINET"
+    },
+    {
+        "codename": "delete_contactscabinet",
+        "content_type_id": 181,
+        "id": 723,
+        "name": "Can delete  Service & Direction rattaché au CABINET"
+    },
+    {
+        "codename": "view_contactscabinet",
+        "content_type_id": 181,
+        "id": 724,
+        "name": "Can view  Service & Direction rattaché au CABINET"
+    },
+    {
+        "codename": "add_contactsdge",
+        "content_type_id": 182,
+        "id": 725,
+        "name": "Can add Contact de la DGE"
+    },
+    {
+        "codename": "change_contactsdge",
+        "content_type_id": 182,
+        "id": 726,
+        "name": "Can change Contact de la DGE"
+    },
+    {
+        "codename": "delete_contactsdge",
+        "content_type_id": 182,
+        "id": 727,
+        "name": "Can delete Contact de la DGE"
+    },
+    {
+        "codename": "view_contactsdge",
+        "content_type_id": 182,
+        "id": 728,
+        "name": "Can view Contact de la DGE"
+    },
+    {
+        "codename": "add_contactsdgps",
+        "content_type_id": 183,
+        "id": 729,
+        "name": "Can add Contact de la DGPS"
+    },
+    {
+        "codename": "change_contactsdgps",
+        "content_type_id": 183,
+        "id": 730,
+        "name": "Can change Contact de la DGPS"
+    },
+    {
+        "codename": "delete_contactsdgps",
+        "content_type_id": 183,
+        "id": 731,
+        "name": "Can delete Contact de la DGPS"
+    },
+    {
+        "codename": "view_contactsdgps",
+        "content_type_id": 183,
+        "id": 732,
+        "name": "Can view Contact de la DGPS"
+    },
+    {
+        "codename": "add_contactsdgt",
+        "content_type_id": 184,
+        "id": 733,
+        "name": "Can add Contact de la DGT"
+    },
+    {
+        "codename": "change_contactsdgt",
+        "content_type_id": 184,
+        "id": 734,
+        "name": "Can change Contact de la DGT"
+    },
+    {
+        "codename": "delete_contactsdgt",
+        "content_type_id": 184,
+        "id": 735,
+        "name": "Can delete Contact de la DGT"
+    },
+    {
+        "codename": "view_contactsdgt",
+        "content_type_id": 184,
+        "id": 736,
+        "name": "Can view Contact de la DGT"
+    },
+    {
+        "codename": "add_dgt_directions_contacts",
+        "content_type_id": 185,
+        "id": 737,
+        "name": "Can add dg t_directions_contacts"
+    },
+    {
+        "codename": "change_dgt_directions_contacts",
+        "content_type_id": 185,
+        "id": 738,
+        "name": "Can change dg t_directions_contacts"
+    },
+    {
+        "codename": "delete_dgt_directions_contacts",
+        "content_type_id": 185,
+        "id": 739,
+        "name": "Can delete dg t_directions_contacts"
+    },
+    {
+        "codename": "view_dgt_directions_contacts",
+        "content_type_id": 185,
+        "id": 740,
+        "name": "Can view dg t_directions_contacts"
+    },
+    {
+        "codename": "add_dgps_directions_contacts",
+        "content_type_id": 186,
+        "id": 741,
+        "name": "Can add dgp s_directions_contacts"
+    },
+    {
+        "codename": "change_dgps_directions_contacts",
+        "content_type_id": 186,
+        "id": 742,
+        "name": "Can change dgp s_directions_contacts"
+    },
+    {
+        "codename": "delete_dgps_directions_contacts",
+        "content_type_id": 186,
+        "id": 743,
+        "name": "Can delete dgp s_directions_contacts"
+    },
+    {
+        "codename": "view_dgps_directions_contacts",
+        "content_type_id": 186,
+        "id": 744,
+        "name": "Can view dgp s_directions_contacts"
+    },
+    {
+        "codename": "add_dge_directions_contacts",
+        "content_type_id": 187,
+        "id": 745,
+        "name": "Can add dg e_directions_contacts"
+    },
+    {
+        "codename": "change_dge_directions_contacts",
+        "content_type_id": 187,
+        "id": 746,
+        "name": "Can change dg e_directions_contacts"
+    },
+    {
+        "codename": "delete_dge_directions_contacts",
+        "content_type_id": 187,
+        "id": 747,
+        "name": "Can delete dg e_directions_contacts"
+    },
+    {
+        "codename": "view_dge_directions_contacts",
+        "content_type_id": 187,
+        "id": 748,
+        "name": "Can view dg e_directions_contacts"
+    },
+    {
+        "codename": "add_cabinet_directions_contacts",
+        "content_type_id": 188,
+        "id": 749,
+        "name": "Can add cabine t_directions_contacts"
+    },
+    {
+        "codename": "change_cabinet_directions_contacts",
+        "content_type_id": 188,
+        "id": 750,
+        "name": "Can change cabine t_directions_contacts"
+    },
+    {
+        "codename": "delete_cabinet_directions_contacts",
+        "content_type_id": 188,
+        "id": 751,
+        "name": "Can delete cabine t_directions_contacts"
+    },
+    {
+        "codename": "view_cabinet_directions_contacts",
+        "content_type_id": 188,
+        "id": 752,
+        "name": "Can view cabine t_directions_contacts"
+    }
+]

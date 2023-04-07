@@ -1,0 +1,334 @@
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+{% block TITLE %}Directions & Services{% endblock TITLE %}
+
+{% block PAGETITLE %}Directions & Services Rattachés{% endblock %}
+   
+{% block CONTENT %}
+    
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                   
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li>Directions & Services Rattachés</li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="share-icon"><a href="https://www.facebook.com"><span class="icon fa fa-share-alt"></span> Partager</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+    <section class="blog-grid-section">
+        <div class="auto-container">            
+            <div class="row clearfix equal-cols">               
+                <!--News Block-->
+
+                {% for direction_service in directions_services %}
+
+                
+                {% if direction_service.display_first is True %}
+                <!-- FIRST Welcome Block-->
+                    <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="icon-box">
+                                <span class="icon flaticon-teacher"></span>
+                            </div>
+                            <h3> {{ direction_service.short_form_name }}</h3>
+                            <div class="text">{{ direction_service.full_form_name }} </div>
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-teacher"></span>
+                                    </div>
+                                    <div class="text">
+                                        {% if direction_service.address %}
+                                                {{ direction_service.address|title }} <br>
+                                            {% endif %}
+                                            
+                                            {% if direction_service.bp %}
+                                                {{ direction_service.bp|title }}<br>
+                                            {% endif %}
+
+                                            {% if direction_service.tel %}
+                                                <strong>Tel:&nbsp;</strong>{{ direction_service.tel }}<br>
+                                            {% endif %}
+
+                                            {% if direction_service.phone %}
+                                                <strong>Phone:&nbsp;</strong>&nbsp;{{ direction_service.phone }}<br>
+                                            {% endif %}
+
+                                            {% if direction_service.email %}
+                                                <strong>Email:&nbsp;</strong>&nbsp;{{ direction_service.email }}<br>
+                                            {% endif %}
+                                            
+                                            {% if direction_service.fax %}
+                                                <strong>Fax:&nbsp;</strong>{{ direction_service.fax }}<br>
+                                            {% endif %}
+                                    </br></div>
+                                    {% if direction_service.website|lower %}
+                                            <a class="read-more" target="_blank" href="{{ direction_service.website }}">Lire plus</a><br>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- End FIRST Welcome Block -->
+                
+                {% else %}
+                
+                <!--Welcome Block-->
+                    <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                        <div class="icon-box">
+                                    <span class="icon flaticon-teacher"></span>
+                                </div>
+                                <h3> {{ direction_service.short_form_name }} </h3>
+                                <div class="text">{{ direction_service.full_form_name }} </div>
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="icon-box">
+                                            <span class="icon flaticon-teacher"></span>
+                                        </div>
+                                        <div class="text">
+                                            {% if direction_service.address %}
+                                                    {{ direction_service.address|title }} <br>
+                                                {% endif %}
+                                                
+                                                {% if direction_service.bp %}
+                                                    {{ direction_service.bp|title }}<br>
+                                                {% endif %}
+
+                                                {% if direction_service.tel %}
+                                                    <strong>Tel:&nbsp;</strong>{{ direction_service.tel }}<br>
+                                                {% endif %}
+
+                                                {% if direction_service.phone %}
+                                                    <strong>Phone:&nbsp;</strong>&nbsp;{{ direction_service.phone }}<br>
+                                                {% endif %}
+
+                                                {% if direction_service.email %}
+                                                    <strong>Email:&nbsp;</strong>&nbsp;{{ direction_service.email }}<br>
+                                                {% endif %}
+                                                
+                                                {% if direction_service.fax %}
+                                                    <strong>Fax:&nbsp;</strong>{{ direction_service.fax }}<br>
+                                                {% endif %}
+                                        </br></div>
+                                        {% if direction_service.website|lower %}
+                                                <a class="read-more" target="_blank" href="{{ direction_service.website }}">Lire plus</a><br>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                <!-- End Welcome Block -->
+
+                {% endif %}
+
+                {% empty %}
+                    {% include 'Layouts/_emptyDataMessage.html' %}
+                {% endfor %}
+
+                {% comment %} <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                    <div class="icon-box">
+                                <span class="icon flaticon-teacher"></span>
+                            </div>
+                            <h3>DAFM</h3>
+                            <div class="text">Direction des affaires Financières et du Materériel</div>
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-teacher"></span>
+                                    </div>
+                                    <div class="text">Avenue Lamblin, Immeuble l'Equateur 04 BP 2930 Abidjan 04.<br>Tel : 20 22 55 00, Fax: 20 22 55 09</br></div>
+                                    <a class="read-more" href="{% url 'dafm' %}">Lire plus</a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- End Welcome Block -->
+                
+                <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                    <div class="icon-box">
+                                <span class="icon flaticon-teacher"></span>
+                            </div>
+                            <h3>DPCSPS</h3>
+                            <div class="text">Dirction de la planification, de la coordination, du suivi des Projets et des Statistique</div>
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-teacher"></span>
+                                    </div>
+                                    <div class="text">Abidjan plateau, entre l'agence principale MTN et les galeries Peyrissac<br>Tel : 20 25 12 12, Fax: 20 25 11 00<br> BP V 164 Abidjan</div>
+                                    <a class="read-more" href="{% url 'dpcsps' %}">Lire plus</a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- End Welcome Block --> {% endcomment %}
+            </div>            
+        </div>
+    </section> <br> <br>
+    <!--End Blog Grid Section-->
+    
+    <!--Info Section-->
+    {% comment %} <section class="blog-grid-section">
+        <div class="auto-container">            
+            <div class="row clearfix equal-cols">               
+                <!--News Block-->
+
+                <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                                    <span class="icon flaticon-teacher"></span>
+                                </div>
+                                <h3>DAJ</h3>
+                                <div class="text">Direction des affaires Juridiques</div>
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="icon-box">
+                                            <span class="icon flaticon-teacher"></span>
+                                        </div>
+                                        <div class="text">Abidjan Plateau, face à la mosquée, 24, Avenue Générale de Gaulle,01 BP 317 Abidjan 01. <br>Tel : 20 25 20 50</div>
+                                        <a class="read-more" href="{% url 'daj' %}">Lire plus</a>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+                <!-- End Welcome Block -->
+                
+                <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                    <div class="icon-box">
+                                <span class="icon flaticon-teacher"></span>
+                            </div>
+                            <h3>DSI</h3>
+                            <div class="text">Direction des Systèmes d'Information</div>
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-teacher"></span>
+                                    </div>
+                                    <div class="text"><br>Tel : 22 41 90 91 / 22 41 91 91</div>
+                                    <a class="read-more" href="{% url 'dsi' %}">Lire plus</a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- End Welcome Block -->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                                    <span class="icon flaticon-teacher"></span>
+                                </div>
+                                <h3>DDCA</h3>
+                                <div class="text">Direction de la Documentation, de la Communication et des Archives</div>
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="icon-box">
+                                            <span class="icon flaticon-teacher"></span>
+                                        </div>
+                                        <div class="text">Abidjan Plateau, face à la mosquée, 24, Avenue Générale de Gaulle,01 BP 317 Abidjan 01. <br>Tel : 20 25 20 50</div>
+                                        <a class="read-more" href="{% url 'ddca' %}">Lire plus</a>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section> {% endcomment %}
+    <!--End Info Section-->
+     <!--Info Section-->
+    {% comment %} <section class="blog-grid-section">
+        <div class="auto-container">            
+            <div class="row clearfix equal-cols">               
+                <!--News Block-->
+
+                <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                                    <span class="icon flaticon-teacher"></span>
+                                </div>
+                                <h3>SGP</h3>
+                                <div class="text">Service de gestion du Patrimoine</div>
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="icon-box">
+                                            <span class="icon flaticon-teacher"></span>
+                                        </div>
+                                        <div class="text">Abidjan Plateau, face à la mosquée, 24, Avenue Générale de Gaulle,01 BP 317 Abidjan 01. <br>Tel : 20 25 20 50</div>
+                                        <a class="read-more" href="{% url 'sgp' %}">Lire plus</a>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+                <!-- End Welcome Block -->
+                
+                <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                    <div class="icon-box">
+                                <span class="icon flaticon-teacher"></span>
+                            </div>
+                            <h3>SMHT</h3>
+                            <div class="text">Secrétariat de la Médaille d'Honneur du Travail; </div>
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-teacher"></span>
+                                    </div>
+                                    <div class="text"><br>Tel : 22 41 90 91 / 22 41 91 91</div>
+                                    <a class="read-more" href="{% url 'smht' %}">Lire plus</a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- End Welcome Block -->
+
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <span class="icon flaticon-teacher"></span>
+                        </div>
+                        <h3>CPM</h3>
+                        <div class="text">Cellule de Passation des Marchés.</div>
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="icon-box">
+                                    <span class="icon flaticon-teacher"></span>
+                                </div>
+                                <div class="text"><br>Tel : 22 41 90 91 / 22 41 91 91</div>
+                                <a class="read-more" href="{% url 'cellulepassation' %}">Lire plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </section> {% endcomment %}
+    <!--End Info Section-->
+     <!--Info Section-->
+    
+    <!--End Info Section-->
+    {% endblock %}

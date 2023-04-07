@@ -1,0 +1,102 @@
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+{% block TITLE %}{{ dgps.short_form_name }}{% endblock %}
+
+    <!--Page Title-->
+    {% block PAGETITLE %} {{ dgps.full_form_name }} {% endblock %}
+    <!--End Page Title-->
+
+{% block CONTENT %}
+    
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{% url 'index' %}">>Accueil</a></li>
+                        <li> {{ dgps.short_form_name }} </li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="share-icon"><a href="#"><span class="icon fa fa-share-alt"></span> Partager</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+
+    <!-- /////////////////////////////////////// -->
+
+    <section class="welcome-section">
+    	<div class="auto-container">
+        	<!--Sec Title-->
+            <div class="sec-title centered">
+            	<h2>À propos de la {{ dgps.short_form_name }} </h2>
+                <div class="text"> {{ dgps.content }}  </div>
+            </div>
+            <div class="row clearfix">
+            
+                {% for direction in directions %}
+
+            	<!--News Block Two-->
+                <div class="news-block-two col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img src="{{ direction.image.url }}" alt="">
+                            <a href="../{{ direction.slug}}" class="overlay-box">
+                            	<span class="icon fa fa-link"></span>
+                            </a>
+                        </div>
+                        <div class="lower-content">
+                        	<div class="content">
+                            	<div class="icon-box"><span class="icon flaticon-startup"></span></div>
+                                <h3><a href="../{{ direction.slug}}">{{ direction.short_form_name }}</a></h3>
+                                <div class="text">{{ direction.full_form_name }}</div>
+                                <a href="../{{ direction.slug}}" class="read-more">Lire plus &nbsp;<span class="fa fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                {% empty %}
+
+                    {% include 'Layouts/_emptyDataMessage.html' %}
+                
+                {% endfor %}
+                <!--News Block Two-->
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!-- /////////////////////////////////////// -->
+    
+    <section class="services-page-section"></section>
+
+    <!--Services Section-->
+    <section class="services-page-section" style="margin-top: -25vh;">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <a href="https://www.directiongeneraleemploi.ci/" target="_blank">
+                        <button class="btn-style-four" style="margin-top:35px;">Visiter le site de la {{dgps.short_form_name}}</button>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class=""></section>
+
+    
+{% endblock %}

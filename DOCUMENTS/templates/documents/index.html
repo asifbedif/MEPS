@@ -1,0 +1,321 @@
+{% extends 'Layouts/base.html' %}
+
+{% block TITLE %}Documents{% endblock %}
+    
+    <!--Page Title-->
+    {% block PAGETITLE %}Tous les  documents du MEPS{% endblock %}
+    
+    <!--Page Info-->
+
+    {% block CONTENT %}
+
+    <!--Page Info-->
+    <section class="page-info " style="background-color:whitesmoke;" >
+            <div class="auto-container" >
+                <div class="inner-container clearfix">
+                
+                    <div class="pull-left">
+                        <ul class="bread-crumb clearfix">
+                            <li><a href="{% url 'index' %}">Accueil</a></li>
+                            <li>Exemple de Documents Publics</li>
+                        </ul>
+                    </div>
+                    <div class="pull-right">
+                        <div class="share-icon"><a href="https://www.facebook.com"><span class="icon fa fa-share-alt"></span> partager</a></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    <!--End Page Info-->
+    
+    <!--Faq Section-->
+    <section class="faq-section style-two" style="background-color:whitesmoke;" >
+    	<div class="auto-container">
+            <h2>DOCUMENTS PUBLICS</h2>
+            <ul class="accordion-box style-five " >
+
+            {% for doc_categorie in docs_categories %}
+                
+                <!--Block-->
+                <li class="accordion block"  >
+                    <div class="acc-btn">
+                        <div class="icon-outer">
+                            <span class="icon icon-plus flaticon-plus " ></span> 
+                            <span class="icon flaticon-minus flaticon-line" ></span>
+                        </div> 
+                        {{ doc_categorie.type }} 
+                    </div>
+
+                    <div class="acc-content"   style="display: none;">
+                        <div class="content"  >
+                            <div class="text">
+                                <div class="row">
+
+                                {% for doc_subcategorie in docs_subcategories %}
+
+                                    {% if  doc_subcategorie.category|lower == doc_categorie.type|lower %}
+                                    
+                                        <div class="col-md-6">                        
+                                            {% comment %} {{ doc_categorie.slug}} <==> {{ doc_subcategorie.slug }}
+                                                {% url 'single_document' CATEGORY=doc_categorie.slug SLUG=doc_subcategorie.slug %}
+                                             {% endcomment %}
+                                            <a href="{% url 'single_document' SLUG=doc_subcategorie.slug %}" class="sous-cat-item">
+                                            <a href="{% url 'single_document' SLUG=doc_subcategorie.slug %}" class="sous-cat-item">
+                                                <i class="fa fa-folder" aria-hidden="true"></i>
+                                                <span > {{ doc_subcategorie.type }} </span>
+                                            </a>
+                                        </div>
+                                    {% endif %}
+                                {% empty %}
+                                
+                                {% endfor %}
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </li>
+{% comment %}
+                <!--Block-->
+                <li class="accordion block">
+                    <div class="acc-btn active"><div class="icon-outer"><span class="icon icon-plus flaticon-plus"></span> 
+                        <span class="icon flaticon-minus flaticon-line"></span></div>Marchés Publiques</div>
+                    <div class="acc-content current">
+                        <div class="content">
+                            <div class="text">
+                                <div class="col-md-6" style="padding-bottom:25px;">
+                                    <a href="{% url 'single-document' %}" class="sous-cat-item">
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <span>Plan de passation</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 " style="padding-bottom:25px;">
+                                    <a href="{% url 'single-document' %}" class="sous-cat-item">
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <span>Marchés publiques passés</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-6" style="padding-bottom:25px;">
+                                    <a href="{% url 'single-document' %}" class="sous-cat-item">
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <span>Etat d'éxécution</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-6"style="padding-bottom:25px;">
+                                    <a href="{% url 'single-document' %}" class="sous-cat-item">
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <span>Marchés programmés</span>
+                                    </a>
+                                </div>
+                               
+                                <div class="col-md-6" >
+                                    <a href="{% url 'single-document' %}" class="sous-cat-item">
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <span>Résultats</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <br>
+
+
+                <!--Block-->
+                <li class="accordion block">
+                    <div class="acc-btn">
+                        <div class="icon-outer">
+                            <span class="icon icon-plus flaticon-plus"></span> 
+                            <span class="icon flaticon-minus flaticon-line"></span>
+                        </div>
+                        Autres Documents financiers / Comptables
+                    </div>
+                    <div class="acc-content">
+                        <div class="content">
+                            <div class="text">
+                                <div class="col-md-6" style="padding-bottom:25px;">
+                                    <a href="{% url 'single-document' %}" class="sous-cat-item">
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <span>Biens - Services - Contrats</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-6" style="padding-bottom:25px;">
+                                    <a href="{% url 'single-document' %}" class="sous-cat-item">
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <span>Bilans Financiers</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-6" >
+                                    <a href="{% url 'single-document' %}" class="sous-cat-item">
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <span>Dons et legs</span>
+                                    </a>
+                                </div>  
+                                
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <br>
+
+                
+                <!--Block-->
+                <li class="accordion block">
+                    <div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus flaticon-plus"></span> 
+                        <span class="icon flaticon-minus flaticon-line"></span>
+                    </div>Bilan Organique</div>
+                    <div class="acc-content">
+                        <div class="content">
+                            <div class="text">
+                                <div class="col-md-6" style="padding-bottom:25px;">
+                                    <a href="{% url 'single-document' %}" class="sous-cat-item">
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <span>Comptes rendus</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-6" style="padding-bottom:25px;">
+                                    <a href="{% url 'single-document' %}" class="sous-cat-item">
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <span>Rapports annuels</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-6" style="padding-bottom:25px;">
+                                    <a href="{% url 'single-document' %}" class="sous-cat-item">
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <span>Rapports d'audits</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-6" style="padding-bottom:25px;">
+                                    <a href="{% url 'single-document' %}" class="sous-cat-item">
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <span>Arretés - Décisions - Délibérations</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-6" style="padding-bottom:25px;">
+                                    <a href="{% url 'single-document' %}" class="sous-cat-item">
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <span>Rapports d' études</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-6" style="padding-bottom:25px;">
+                                    <a href="{% url 'single-document' %}" class="sous-cat-item">
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <span>Rapports statistiques</span>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <br>
+
+                
+                <!--Block-->
+                <li class="accordion block">
+                    <div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus flaticon-plus"></span> 
+                        <span class="icon flaticon-minus flaticon-line"></span></div>Prestations et Services</div>
+                    <div class="acc-content">
+                        <div class="content">
+                            <div class="text">
+                                <div class="text">
+                                    <div class="col-md-6">
+                                        <a href="{% url 'single-document' %}" class="sous-cat-item">
+                                            <i class="fa fa-folder" aria-hidden="true"></i>
+                                            <span>Formulaires et procédures </span>
+                                        </a>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <br>
+
+                
+                <!--Block-->
+                <li class="accordion block">
+                    <div class="acc-btn"><div class="icon-outer">
+                        <span class="icon icon-plus flaticon-plus"></span> 
+                        <span class="icon flaticon-minus flaticon-line"></span>
+                    </div>Planification</div>
+                    <div class="acc-content" style="padding-bottom:95px; ">
+                        <div class="content">
+                            <div class="text">
+                                <div class="col-md-6">
+                                    <a href="{% url 'single-document' %}" class="sous-cat-item">
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <span>Plan d'actions</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="{% url 'single-document' %}" class="sous-cat-item">
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <span>Matrices d' activités</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-6" >
+                                    <a href="{% url 'single-document' %}" class="sous-cat-item">
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <span>Projets - Programmes</span>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <br>
+
+                <li class="accordion block">
+                    <div class="acc-btn"><div class="icon-outer">
+                        <span class="icon icon-plus flaticon-plus"></span>
+                        <span class="icon flaticon-minus flaticon-line"></span>
+                    </div>Politiques Sociales</div>
+                    <div class="acc-content" >
+                        <div class="content">
+                            <div class="text">
+                                <div class="text">
+                                    <div class="col-md-6">
+                                        <a href="{% url 'single-document' %}" class="sous-cat-item">
+                                            <i class="fa fa-folder" aria-hidden="true"></i>
+                                            <span>Référentiels de formation</span>
+                                        </a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <br>
+
+                <li class="accordion block">
+                    <div class="acc-btn"><div class="icon-outer">
+                        <span class="icon icon-plus flaticon-plus"></span> 
+                        <span class="icon flaticon-minus flaticon-line"></span>
+                    </div>Textes Juridiques</div>
+                    <div class="acc-content">
+                        <div class="content">
+                            <div class="text">
+                                <div class="text">
+                                    <div class="col-md-6">
+                                        <a href="{% url 'single-document' %}" class="sous-cat-item">
+                                            <i class="fa fa-folder" aria-hidden="true"></i>
+                                            <span>Documents Juridiques</span>
+                                        </a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </li> 
+{% endcomment %}
+                   {% empty %}
+                    {% include 'Layouts/_emptyDataMessage.html' %}
+               {% endfor %}
+
+            </ul><br>
+            
+        </div>
+    </section>
+    <!--End Faq Section-->
+    
+{% endblock CONTENT %}

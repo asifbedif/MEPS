@@ -1,0 +1,16 @@
+<div class="sidebar-widget popular-tags">
+    
+    <div class="sidebar-title"><h2>Tags</h2></div>
+
+    {% for tag in single_post.tags.all %}
+        
+        <a href="{% url 'actualite_tags' tag.slug %}"> {{tag.name}} </a>
+        
+        {% comment %} <a href="#">Cérémonies</a>
+        <a href="#">Inaugurations</a>
+        <a href="#">Récompenses</a>
+        <a href="#">Médaille d'honneur</a> {% endcomment %}
+
+    {% endfor %}
+
+</div>

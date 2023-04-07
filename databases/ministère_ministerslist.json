@@ -1,0 +1,58 @@
+[
+    {
+        "civilite": "1",
+        "content": "Sociosqu luctus torquent quam tortor aptent suspendisse. Sociosqu nisl magnis molestie condimentum rutrum class auctor integer sem volutpat maximus. Consectetuer amet ridiculus penatibus iaculis sociosqu morbi ut leo id parturient. Magnis himenaeos si commodo in iaculis fames",
+        "end_month": "Mar",
+        "end_year": "2002",
+        "id": 1,
+        "in_function": "Ancien ministre",
+        "name": "Dosso Moussa",
+        "photo": "Ministers/2088_dosso_bblAvuZ.jpg",
+        "start_month": "Janv",
+        "start_year": "2000",
+        "status": "published",
+        "wikipedia": ""
+    },
+    {
+        "civilite": "1",
+        "content": "Sociosqu luctus torquent quam tortor aptent suspendisse. Sociosqu nisl magnis molestie condimentum rutrum class auctor integer sem volutpat maximus. Consectetuer amet ridiculus penatibus iaculis sociosqu morbi ut leo id parturient. Magnis himenaeos si commodo in iaculis fames hendrerit pede. Tempus augue nisi consectetur gravida purus proin iaculis. Velit diam cras risus euismod primis libero himenaeos molestie pellentesque. Curae maximus ac viverra nulla magna lobortis pretium ridiculus interdu",
+        "end_month": "Janv",
+        "end_year": "2002",
+        "id": 2,
+        "in_function": "Ancien ministre",
+        "name": "Abin",
+        "photo": "Ministers/photo-officiel-abina_ssPC6vx.jpg",
+        "start_month": "Janv",
+        "start_year": "2001",
+        "status": "published",
+        "wikipedia": ""
+    },
+    {
+        "civilite": "1",
+        "content": "Sociosqu luctus torquent quam tortor aptent suspendisse. Sociosqu nisl magnis molestie condimentum rutrum class auctor integer sem volutpat maximus. Consectetuer amet ridiculus penatibus iaculis sociosqu morbi ut leo id parturient. Magnis himenaeos si commodo in iaculis fames hendrerit pede. Tempus augue nisi consectetur gravida purus proin iaculis. Velit diam cras risus euismod primis libero himenaeos molestie pellentesque. Curae maximus ac viverra nulla magna lobortis pretium ridiculus interdu",
+        "end_month": "Fév",
+        "end_year": "2003",
+        "id": 3,
+        "in_function": "Ancien ministre",
+        "name": "Jean Claude",
+        "photo": "Ministers/photo-officiel-JK_Z5YgzK6.jpg",
+        "start_month": "Avr",
+        "start_year": "2002",
+        "status": "published",
+        "wikipedia": ""
+    },
+    {
+        "civilite": "1",
+        "content": "Ultricies lobortis facilisi felis condimentum aptent interdum himenaeos justo si. Fringilla conubia ligula dictumst donec tristique mus. Tempor ante libero nibh per mauris. Montes curabitur augue semper ad congue urna maximus posuere pulvinar sociosqu lectus.",
+        "end_month": "",
+        "end_year": "Aujourd'hui",
+        "id": 4,
+        "in_function": "Actuel Ministre",
+        "name": "Adama  KAMARA",
+        "photo": "Ministers/photo-officiel-A.KAMARA_me254XW.jpg",
+        "start_month": "Août",
+        "start_year": "2012",
+        "status": "published",
+        "wikipedia": ""
+    }
+]

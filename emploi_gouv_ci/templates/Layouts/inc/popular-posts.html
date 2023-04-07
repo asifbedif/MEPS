@@ -1,0 +1,51 @@
+{% load static %}
+
+<div class="row">
+    <!--Sec Title 3/4 -->
+    <div class="col-lg-12 col-md-12 sec-title clearfix">
+        <section class="news-section">
+            <div class="auto-container">
+                <div class="row row-spaced equal-cols">
+                    <div class="col-md-12">
+                        <div class="pull-left">
+                            <h2>Articles Populaires</h2>
+                        </div>
+                        <div class="pull-right">
+                            <a href="{% url 'actualites' %}" class="theme-btn btn-style-four">Voir Plus</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    
+                    {% if popular_4_posts %}
+
+                        {% for post in popular_4_posts %}
+
+                            <div class="news-block col-md-3 col-sm-6 col-xs-12" >
+                                <div class="inner-box  news-style-1">
+                                    <div class="image">
+                                        <a href="{{ post.get_absolute_url }}"><img src="{{ post.post_image.url }}" alt="" /></a>
+                                    </div>
+                                    <div class="lower-content">
+                                        <div class="post-date">{{post.post_published_on|date:"d M Y"}} à {{post.post_published_on|time:"H:i"}}</div>
+                                        <h3><a href="{{post.get_absolute_url}}">{{post.post_title|truncatewords:10 }}[..]</a></h3>
+
+                                        {% comment %} <div class="text">{{post.post_content|truncatewords:25}} [..]</div> {% endcomment %}
+                                        <a href="{{ post.get_absolute_url }}" class="theme-btn btn-style-four">Lire plus</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        {% empty %}
+                         {%  include 'Layouts/_emptyDataMessage.html' %}
+                        {% endfor %}
+                        
+                    {% endif %}
+
+                </div>
+            </div>
+        </section>
+    </div>
+   
+</div>

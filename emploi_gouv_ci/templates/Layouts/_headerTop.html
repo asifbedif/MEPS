@@ -1,0 +1,66 @@
+
+<div class="header-top">
+    <div class="auto-container">
+        <div class="row clearfix fullWidth">
+            <!--Top Left-->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="top-left col-lg-3 col-md-3 col-sm-2 col-xs-12 ">
+                        <ul class="top-links row clearfix contacts-info">
+                            <!-- <li><span class="icon theme_color flaticon-maps-and-flags"></span>Abidjan –Plateau,Tour A, cité administrative, Abidjan ,12e Etage.</li> -->
+                            <li><span class="icon theme_color flaticon-telephone"></span> <a href="tel:+22520239280">+225 27 20 23 92 80</a></li>
+                            <li><span class="icon theme_color flaticon-e-mail-envelope"></span> info@emploi.gouv.ci</li>
+                        </ul>
+                    </div>
+
+                    <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+                        
+                        {% if marquee_posts %}
+                            <div class="row clearfix flash-info">
+                                <div  id="flashInfoTitle" class="col-lg-3 col-md-3 col-sm-3 col-xs-4 ">
+                                    <span class="flash-info-title">À LA UNE</span>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-8 ">
+                                    <blink>
+                                        <marquee class="flash-info-content" behavior="scroll" scrollamount="5" duration="500" direction="LEFT" loop="infinite">
+
+                                                {% for recent_post in marquee_posts  %}
+                                                    <a href="{{recent_post.get_absolute_url}}" style="color:white;">
+                                                        <span class="flash-info-item"><u style='font-weight:900; color:yellow;'>{{recent_post.post_title}}</u>:
+                                                            <em><span class="text" >{{recent_post.post_content|truncatewords:10 }}...</span></em> 
+                                                        </span>
+
+                                                    </a> 
+                                                {% endfor %}
+
+                                            {% comment %} <a href="" style="color:white;"><span class="flash-info-item" >Trêve Sociale Consultations des syndicats de travailleurs des corps de métiers de Côte d'Ivoire ...</span></a>
+                                            <a href="#" style="color:white;"><span class="flash-info-item">30ème anniversaire de l'STC couplet des Journées Scientifique ou journée du communicateur, édition 2022..</span></a>
+                                            <a href="#" style="color:white;"><span class="flash-info-item">Passation de charges au Cabinet MEPS : Monsieur TAPÉ Aubin transfère ses compétences à madame COULIBALY Bintou ce jeudi 23 juin 2022...</span></a>
+                                            <a href="#" style="color:white;"><span class="flash-info-item">Le Ministre Adama KAMARA offre des fauteuils roulants, des cannes anglaises, des béquilles et des chèques aux associations et personnes en situation de handicap et les invite à souscrire à la Complémentaire, la CMU et le RSTI.</span></a>
+                                        {% endcomment %}
+                                        </marquee>
+                                    </blink>
+                                </div>
+                            </div>
+                        {% endif %}
+                            
+                       
+                    </div>
+                    <div class="top-right col-lg-3 col-md-3 col-sm-4 col-xs-12">
+
+                    <ul class="social-links">
+                        <li><a href='https://www.facebook.com/people/Minist%C3%A8re-de-lEmploi-et-de-la-Protection-Sociale-Officiel/100063663162120/'><span class="fa fa-facebook-f"></span></a></li>
+                        <li><a href='https://twitter.com'><span class="fa fa-twitter"></span></a></li>
+                        <!-- <li><a href=''><span class="fa fa-instagram"></span></a></li> -->
+                        <!-- <li><a href='#'><span class="fa fa-pinterest-p"></span></a></li> -->
+                        <li><a href='https://www.youtube.com'><span class="fa fa-youtube"></span></a></li>
+                    </ul>
+                  
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!--Top Right-->
+    </div>
+</div>

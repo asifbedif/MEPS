@@ -1,0 +1,16 @@
+{
+
+
+    "builds": [{
+        "src": "emploi_gouv_cii/wsgi.py",
+        "use": "@vercel/python",
+        "config": {"maxLambdaSize":"15mb", "runtime": "python3.9" }
+    }],
+    "routes":[
+        {
+            "src": "/(.*)",
+            "dest": "emploi_gouv_ci/wsgi.py"
+        }
+    ]
+
+}

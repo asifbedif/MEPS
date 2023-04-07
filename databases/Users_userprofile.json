@@ -1,0 +1,41 @@
+[
+    {
+        "biography": "",
+        "current_user_id": 1,
+        "email": "example@emploi.gouv.ci",
+        "first_name": "",
+        "id": 1,
+        "last_name": "",
+        "phone": 749077517,
+        "photo": "images/faces/team-4.jpg",
+        "role_id": null,
+        "service_id": null,
+        "status": "active"
+    },
+    {
+        "biography": "",
+        "current_user_id": 3,
+        "email": "example@emploi.gouv.ci",
+        "first_name": "",
+        "id": 3,
+        "last_name": "",
+        "phone": 0,
+        "photo": "",
+        "role_id": null,
+        "service_id": null,
+        "status": "inactive"
+    },
+    {
+        "biography": "",
+        "current_user_id": 4,
+        "email": "example@emploi.gouv.ci",
+        "first_name": "",
+        "id": 4,
+        "last_name": "",
+        "phone": 0,
+        "photo": "",
+        "role_id": null,
+        "service_id": null,
+        "status": "inactive"
+    }
+]

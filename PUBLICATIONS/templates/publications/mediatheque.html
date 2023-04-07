@@ -1,0 +1,282 @@
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+
+{% load humanize %}
+
+{% comment %} {% load threadedcomments_tags %} {% endcomment %}
+    
+
+{% block TITLE %}
+    Médiathèque
+{% endblock %}
+
+{% block PAGETITLE %}
+    Médiathèque 
+{% endblock PAGETITLE %}
+
+{% block EXTRA_SCRIPTS %}   
+
+{% endblock EXTRA_SCRIPTS %}
+
+
+{% block CONTENT %}
+    
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{% url 'index' %}">Accueil</a></li>
+                        <li><a href="{% url 'publications' %}">Publications</a></li>
+                        <li>Médiathèque</li>
+                    </ul>
+                </div>   
+                {% comment %} <div class="pull-right">
+                    <div class="share-icon"><a href="#"><span class="icon fa fa-share-alt"></span> Share</a></div>
+                </div> {% endcomment %}
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+    
+    <!--Case Section-->
+    <section class="case-section">
+    	<div class="auto-container">
+        
+        	<!--Sortable Gallery-->
+            <div class="mixitup-gallery">
+            
+                <!--Filter-->
+                <div class="filters clearfix">
+                    <ul class="filter-tabs filter-btns">
+                        <li class="filter active" data-role="button" data-filter="all">Tous les médias</li>
+                        <li class="filter" data-role="button" data-filter=".photos">Photos</li>
+                        <li class="filter" data-role="button" data-filter=".videos">Vidéos</li>
+                        {% comment %} <li class="filter" data-role="button" data-filter=".videos">videos</li>
+                        <li class="filter" data-role="button" data-filter=".photos">photos</li>
+                        <li class="filter" data-role="button" data-filter=".industries">Industries</li> {% endcomment %}
+                    </ul>
+                </div>
+                
+                <div class="filter-list row clearfix">
+
+                    <!--Case Block-->
+                    <div class="case-block mix all photos col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'Media/images/resource/case-1.jpg' %}" alt="" />
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <a href="{% static 'Media/images/resource/case-1.jpg' %}" class="search-box lightbox-image"  data-fancybox-group="case-gallery"><span class="icon fa fa-search-plus"></span></a>
+                                        <a href="{% url 'mediatheque_photos' %}" class="case-link">Voir Album</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lower-content">
+                            	<h3><a href="#">Consumer Products</a></h3>
+                                <div class="category">
+                                    <a class="case-link filter" data-role="button" data-filter=".photos">Post Categorie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Case Block-->
+                    <div class="case-block mix all videos col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'Media/images/resource/case-2.jpg' %}" alt="" />
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <a href="{% static 'Media/images/resource/case-2.jpg' %}" class="search-box lightbox-image"  data-fancybox-group="case-gallery"><span class="icon fa fa-search-plus"></span></a>
+                                        <a href="{% url 'mediatheque_photos' %}" class="case-link">Voir Album</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lower-content">
+                            	<h3><a href="#">Latest Technology</a></h3>
+                                <div class="category">
+                                    <a class="case-link filter" data-role="button" data-filter=".photos">Post Categorie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Case Block-->
+                    <div class="case-block mix all photos col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'Media/images/resource/case-3.jpg' %}" alt="" />
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <a href="{% static 'Media/images/resource/case-3.jpg' %}" class="search-box lightbox-image"  data-fancybox-group="case-gallery"><span class="icon fa fa-search-plus"></span></a>
+                                        <a href="{% url 'mediatheque_photos' %}" class="case-link">Voir Album</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lower-content">
+                            	<h3><a href="#">Business photos</a></h3>
+                                <div class="category">
+                                    <a class="case-link filter" data-role="button" data-filter=".photos">Post Categorie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Case Block-->
+                    <div class="case-block mix all photos col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'Media/images/resource/case-4.jpg' %}" alt="" />
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <a href="{% static 'Media/images/resource/case-4.jpg' %}" class="search-box lightbox-image"  data-fancybox-group="case-gallery"><span class="icon fa fa-search-plus"></span></a>
+                                        <a href="{% url 'mediatheque_photos' %}" class="case-link">Voir Album</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lower-content">
+                            	<h3><a href="#">Latest Technology</a></h3>
+                                <div class="category">
+                                    <a class="case-link filter" data-role="button" data-filter=".photos">Post Categorie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Case Block-->
+                    <div class="case-block mix all videos col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'Media/images/resource/case-5.jpg' %}" alt="" />
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <a href="{% static 'Media/images/resource/case-5.jpg' %}" class="search-box" ><span class="icon fa fa-search-plus"></span></a>
+                                        <a href="{% url 'mediatheque_videos' %}" class="case-link">Voir Album</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lower-content">
+                            	<h3><a href="#">Transporation Service</a></h3>
+                                <div class="category">
+                                    <a class="case-link filter" data-role="button" data-filter=".videos">Post Categorie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Case Block-->
+                    <div class="case-block mix all videos col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'Media/images/resource/case-6.jpg' %}" alt="" />
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <a href="{% static 'Media/images/resource/case-6.jpg' %}" class="search-box lightbox-image"  data-fancybox-group="case-gallery"><span class="icon fa fa-search-plus"></span></a>
+                                        <a href="{% url 'mediatheque_videos' %}" class="case-link">Voir Album</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lower-content">
+                            	<h3><a href="#">International Seminar</a></h3>
+                                <div class="category">
+                                    <a class="case-link filter" data-role="button" data-filter=".videos">Post Categorie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Case Block-->
+                    <div class="case-block mix all videos col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'Media/images/resource/case-7.jpg' %}" alt="" />
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <a href="{% static 'Media/images/resource/case-7.jpg' %}" class="search-box lightbox-image"  data-fancybox-group="case-gallery"><span class="icon fa fa-search-plus"></span></a>
+                                        <a href="{% url 'mediatheque_videos' %}" class="case-link">Voir Album</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lower-content">
+                            	<h3><a href="#">Healthcare Meet</a></h3>
+                                <div class="category">
+                                    <ul><li class="case-link filter" data-role="button" data-filter=".videos">Vidéos</li></ul>
+                                    <a class="case-link filter" data-role="button" data-filter=".videos">vidéos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Case Block-->
+                    <div class="case-block mix all photos col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'Media/images/resource/case-8.jpg' %}" alt="" />
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <a href="{% static 'Media/images/resource/case-8.jpg' %}" class="search-box lightbox-image"  data-fancybox-group="case-gallery"><span class="icon fa fa-search-plus"></span></a>
+                                        <a href="{% url 'mediatheque_photos' %}" class="case-link">Voir Album</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lower-content">
+                            	<h3><a href="#">Yearly Statistics</a></h3>
+                                <div class="category">
+                                    <a class="case-link filter" data-role="button" data-filter=".photos">Post Categorie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Case Block-->
+                    <div class="case-block mix all videos col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{% static 'Media/images/resource/case-9.jpg' %}" alt="" />
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <a href="{% static 'Media/images/resource/case-9.jpg' %}" class="search-box lightbox-image"  data-fancybox-group="case-gallery"><span class="icon fa fa-search-plus"></span></a>
+                                        <a href="{% url 'mediatheque_videos' %}" class="case-link">Voir Album</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lower-content">
+                            	<h3><a href="#">Retailer Trading</a></h3>
+                                <div class="category">
+                                    <a class="case-link filter" data-role="button" data-filter=".videos">Post Categorie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+            </div>
+            
+            <!--Pagination Box-->
+            <div class="pagination-box">
+                <div class="text-center">
+                    <!-- Styled Pagination -->
+                    <div class="styled-pagination">
+                        <ul class="clearfix">
+                            <li><a class="prev" href="#"><span class="fa fa-caret-left"></span></a></li>
+                            <li><a href="#" class="active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a class="next" href="#"><span class="fa fa-caret-right"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--End Pagination Box-->
+            
+        </div>
+    </section>
+    <!--End Case Section-->
+    <script src="{% static 'js/mixitup.js' %}" ></script>
+    {% endblock CONTENT %}

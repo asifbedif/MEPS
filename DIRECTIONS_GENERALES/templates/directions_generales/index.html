@@ -1,0 +1,111 @@
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+    {% block TITLE %}Direction de la Sécurité Sociale et de la Mutualité{% endblock %}   
+    
+    <!--Page Title-->
+    {% block PAGETITLE %}Directions Générales{% endblock %}
+    
+{% block CONTENT %}    
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{% url 'index' %}">Accueil</a></li>
+                        <li>Directions Générales</li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="share-icon"><a href="{% url '"><span class="icon fa fa-share-alt"></span> Partager</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+    
+    <!--Services Section-->
+    <section class="services-page-section">
+    	<div class="auto-container">
+            <div class="row clearfix">
+            
+                {% for direction in directions %}
+
+                    <!--News Block Two-->
+                    <div class="news-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="{{ direction.image.url }}  " alt="" />
+                                <h3><a href="{{ direction.slug }}" class="overlay-box">
+                                    <span class="icon fa fa-link"></span>
+                                </a>
+                            </div>
+                            <div class="lower-content">
+                                <div class="content">
+                                    <div class="icon-box"><span class="icon flaticon-startup"></span></div>
+                                    <h3><h3><a href="{{ direction.slug }} "> {{ direction.short_form_name }} </a></h3>
+                                    <div class="text"> {{ direction.full_form_name }}  </div>
+                                    <h3><a href="{{ direction.slug }} " class="read-more">Lire plus &nbsp;<span class="fa fa-angle-right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {% empty %}
+
+                    {% include 'Layouts/_emptyDataMessage.html' %}
+
+                    {% endfor %}
+                <!--News Block Two-->
+                {% comment %}
+                <div class="news-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img src="{% static 'images/CAFE-CACAO.png' %}" alt="" />
+                            <h3><a href="{% url 'DGT' %}" class="overlay-box">
+                            	<span class="icon fa fa-link"></span>
+                            </a>
+                        </div>
+                        <div class="lower-content">
+                        	<div class="content">
+                            	<div class="icon-box"><span class="icon flaticon-analytics-1"></span></div>
+                                <h3><a href="{% url 'DGT' %}">D.G.T</a></h3>
+                                <div class="text">Direction Générale du Travail</div>
+                                <a href="{% url 'DGT' %}" class="read-more">Lire plus &nbsp;<span class="fa fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--News Block Two-->
+                <div class="news-block-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img src="{% static 'images/CAFE-CACAO.png' %}" alt="" />
+                            <a href="{% url 'DGPS' %}" class="overlay-box">
+                            	<span class="icon fa fa-link"></span>
+                            </a>
+                        </div>
+                        <div class="lower-content">
+                        	<div class="content">
+                            	<div class="icon-box"><span class="icon flaticon-structure"></span></div>
+                                <h3><a href="{% url 'DGPS' %}">D.G.P.S</a></h3>
+                                <div class="text">Direction Générale de la Protection Sociale.</div>
+                                <a href="{% url 'DGPS' %}" class="read-more">Lire plus &nbsp;<span class="fa fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endcomment %}
+                
+            </div>
+        </div>
+    </section>
+    <br/><br/><br/>
+    <!--End Services Section-->
+
+{% endblock %}

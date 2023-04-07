@@ -1,0 +1,94 @@
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+{% block TITLE %}Produits{% endblock %}
+
+{% block PAGETITLE %}Toutes les activités du MEPS{% endblock PAGETITLE %}
+
+{% block CONTENT %} 
+
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{% url 'index' %}">Accueil</a></li>
+                        <li>Activités</li>
+                    </ul>
+                </div>
+                <!--<div class="pull-right">
+                    <div class="share-icon"><a href="#"><span class="icon fa fa-share-alt"></span> Partager</a></div>
+                </div> -->
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+    
+    <!--Blog Grid Section-->
+    <section class="welcome-section">
+    	<div class="auto-container">
+        	<!--Sec Title-->
+            <div class="sec-title centered">
+            	<h2>PRODUITS PHARES:</h2>
+            </div>
+            <div class="row clearfix">               
+                <!--News Block-->
+
+                {% for prod in all_products %}
+
+                <!--Welcome Block-->
+                <div class="welcome-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<div class="image">
+                            
+                            {% if prod.slide_image %}
+                                <img src="{{ prod.slide_image.url }}" alt="" />
+                            {% endif %}
+                                
+                            <div class="overlay-box">
+                                <div class="post-published-date">{{prod.published_on}}</div>
+                            	<div class="content">
+                                	<div class="content-inner">                                        
+                                        <div class="icon-box">
+                                            <span class="icon flaticon-analytics-1"></span>
+                                        </div>
+                                        <h3><a href="{{ prod.slug }}">{{prod.title}}</a></h3>
+                                        <div class="text">{{prod.category}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Lower Box-->
+                        <div class="lower-box"><br>
+                        	<div class="text">
+
+                                {{ prod.content|truncatewords:15|linebreaks }}
+                                
+                            </div>
+                            <a href="{{ prod.slide_link }}" class="theme-btn btn-style-three">Lire plus</a>
+                        </div><br>
+                    </div>
+                </div>
+                {% empty %}
+
+                {% include 'Layouts/_emptyDataMessage.html' %}
+
+                <!-- End Welcome Block -->
+                {% endfor %}
+            </div>
+                
+        <!-- Pagination Block -->
+        {% include "Layouts/pagination.html" with page=all_actualites %}
+            
+        </div>
+    </section>
+
+    <br><br><br>
+
+    <!--End Blog Grid Section-->
+
+{% endblock CONTENT %} 

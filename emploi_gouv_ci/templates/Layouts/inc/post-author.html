@@ -1,0 +1,30 @@
+{% load static %}
+
+
+{% if post_author %}
+    
+    <div class="author-box">
+        <h2>À propos de l'auteur:</h2>
+        <div class="author-comment">
+            <div class="inner-box">
+                <div class="image">
+                    
+                    {% if post_author.photo %}
+                        <img src="{{post_author.photo.url}}" alt="" />
+                    {% else %}
+                        <img src="{% static 'Media/images/resource/default_user.png' %}" alt="" />
+                    {% endif %}
+                        
+                </div>
+                <h3> Rédigé par: <span style="color:var(--primary-one);">{{post_author.user_name|default:"visiteur"}}</span></h3>
+                <em class="text"> {{post_author.biography}} </em>
+                <div class="text"> L'équipe de gestion du contenu du MEPS examine soigneoseument le travail de l'équipe éditoriale
+                    afin de s'assirer que chaque article est en conformité avec nos standards de haute qualité.
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endif %}
+    

@@ -1,0 +1,61 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEPS|{% block PAGETITLE %}{% endblock PAGETITLE %}</title>
+
+    {% include 'Layouts/_styleSheet.html' %}
+<body>
+
+    <style>
+    /* Extra extra small devices (phones, 320px and down) */
+    @media only screen and (min-width: 249.98px) and (max-width: 319.98px){
+
+        .main-header .header-top .top-right {
+            width: 34%!important;
+            top: -12vh;
+            margin-right: -10vw;
+        }
+
+        .logo-img-embleme{
+            margin-right: -5rem;
+            top: -4rem;
+        }
+        .logo-img-meps{
+            top:-6vh;
+        }
+        
+        .logo-img-meps img, 
+        .logo-img-embleme img {
+            width: 35%;
+            height: 35%;
+        }
+
+        .flash-info {
+            margin: -1.2vh 3vw;
+        }
+
+    }
+
+
+    </style>
+
+    <div class="page-wrapper">
+         
+        <!-- Preloader -->
+        <div class="preloader"></div>
+
+        {% include 'Layouts/_navbar.html' %}
+        
+        {% block CONTENT %} {% endblock %}
+
+        {% include 'Layouts/_footer0.html' %}
+    </div>
+
+</body>
+</html>

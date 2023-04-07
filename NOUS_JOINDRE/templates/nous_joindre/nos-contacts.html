@@ -1,0 +1,206 @@
+{% extends 'Layouts/base.html' %}
+
+<!-- {% load static %} -->
+
+{% block TITLE %}Contacts{% endblock %}
+
+<!--Page Title-->
+{% block PAGETITLE %}Nos Contacts{% endblock PAGETITLE %}
+
+{% block CONTENT %}
+    
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{% url 'index' %}">Accueil</a></li>
+                        <li>Nos Contacts</li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="share-icon"><a href="https://www.facebook.com"><span class="icon fa fa-share-alt"></span> Partager</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+    
+    <!--Contact Section-->
+    <section class="contact-section">
+    	<div class="auto-container">
+        
+        	<!--Contact Info Tabs-->
+            <div class="contact-info-tabs">
+                <!--Product Tabs-->
+                <div class="contact-tabs c-tabs-box">
+                    
+                    <!--Tabs Container-->
+                    <div class="tabs-content">
+                        <!--Tab / Active Tab-->
+                        <div class="tab active-tab" id="contact-tab-cabinet">
+                            <div class="text">Veuillez trouver ci-dessous les coordonnées de toutes nos directions et services ratachées.</div>
+                            <div class="row clearfix">
+                                <!--Accordian Column-->
+                                <div class="accordian-column col-md-4 col-sm-12 col-xs-12">
+                                    <div class="column-inner">
+                                        <!--Accordion Box-->
+                                        <ul class="accordion-box style-four">
+                                            
+                                            <!--Block-->
+                                            <li class="accordion block active-block">
+                                                <div class="acc-btn active">Le Cabinet </div>
+                                                <div class="acc-content current">
+                                                    <div class="content">
+                                                        <ul class="info-list">
+                                                            <li><span class="icon flaticon-placeholder-3"></span><strong>Address:</strong>  Abidjan –Plateau,Tour A, cité administrative, Abidjan ,12e Etage.</li>
+                                                            <li><span class="icon flaticon-telephone"></span><strong>Appelez-nous:</strong><br> +225 27 20 23 92 80</li>
+                                                            <li><span class="icon flaticon-e-mail-envelope"></span><strong> Nous Ecrire :</strong><br> info@emploi.gouv.ci</li>
+                                                            <li><span class="icon fa fa-clock-o"></span><strong>Horaire d'ouverture:</strong><br> Lundi - Vendredi: 07h30-16h30 </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                 
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!--Form Column-->
+                                <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                                    <!-- Contact Form -->
+                                    <div class="contact-form ">
+                                        <h2>Formulaire de renseignements</h2>
+                                        <!--Comment Form-->
+                                        <form method="post" action="sendemail.php" class="" novalidate="novalidate">
+                                            {% csrf_token %}
+                                            <div class="row clearfix">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="username" placeholder="Votre nom*" required>
+                                                </div>
+                
+                                                 <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="email" name="email" placeholder="Votre e-mail*" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="phone" placeholder="Votre numéro de téléphone" required>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                    <input type="text" name="subject" placeholder="Objet" required>
+                                                </div>
+                
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                    <textarea name="message" placeholder="Votre message..." maxlength="250"></textarea>
+                                                </div>
+                
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 form-group">
+                                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form">Envoyer</button>
+                                                </div> 
+                
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!--End Comment Form -->
+                                </div>
+                            </div>
+                            
+                        </div>
+              
+                            
+                    </div>
+
+                 </div>
+            </div>
+        </div>
+        
+        	
+    </div>
+    </section>
+    <!-- ======================================================================== -->
+
+    <section class="services-section">
+    	<div class="auto-container">
+        	<!--Sec Title-->
+        	<div class="sec-title centered">
+            	<h2>Contacts des Différentes Directions</h2>
+            </div>
+
+            {% for k,DG in data.items %}
+
+                {% if DG.contacts is not None %}
+                <br>
+                    <div class="row clearfix">
+                        <!--Title Column-->
+                        <div class="title-column col-md-3 col-sm-12 col-xs-12">
+                            <div class="inner  grey-bg">
+                                <h2 style="color: var(--primary-one);">{{ DG.contacts.short_form_name|upper }}</h2>
+                                <div class="text">
+                                    <div class="title contact-dg-title" style="text-align: left!important;"><strong>{{DG.contacts.full_form_name}}</strong></div>
+                                    <div class="content grey-bg">
+
+                                        <ul class="info-list">
+                                            <li class="contact-info-item"><span class="icon flaticon-placeholder-3"></span><strong>Address:</strong> {{  DG.contacts.address }} </li>
+                                            <li class="contact-info-item"><span class="icon flaticon-telephone"></span><strong>Appelez-nous:</strong><br> <a href="tel:{{  DG.contacts.tel }}">{{  DG.contacts.tel }}</a> </li>
+                                            <li class="contact-info-item"><span class="icon flaticon-e-mail-envelope"></span><strong> Nous Ecrire :</strong><br> <a href="mailto:{{  DG.contacts.email }} "> {{  DG.contacts.email }}  </a></li>
+                                            <li class="contact-info-item"><span class="icon fa fa-clock-o"></span><strong>Horaire d'ouverture:</strong><br> {{  DG.contacts.horaire }}  </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="../../DIRECTIONS_GENERALES/{{ DG.contacts.slug }}" class="free-consult">Lire plus &nbsp;-<span class="fa fa-angle-right"></span></a>
+                                <!-- <a href="../../DIRECTIONS_GENERALES/{{ DG.contacts.slug }}" class="free-consult">Lire plus sur {{ DG.contacts.short_form_name|upper }} &nbsp;<span class="fa fa-angle-right"></span></a> -->
+                            </div>
+                        </div>
+
+                        <!--Services Column-->
+                        <div class="services-column col-md-9 col-sm-12 col-xs-12">
+                            <div class="inner-content">
+                                <div class="clearfix">
+
+                                    {% for direction in DG.directions %}
+                                    
+                                    <!--Services Block Two-->
+                                    <div class="services-block-two col-md-6 col-sm-6 col-xs-12">
+                                        <div class="inner-box">
+                                            <div class="icon-box"></div>
+                                            <h3><a href="services-single.html">{{ direction.short_form_name|upper}} </a></h3>
+                                            <div class="title"  style="color: var(--green-main);">{{ direction.full_form_name}} </div>
+                                            <div class="text">
+                                                <ul class="info-list">
+                                                    <li class="contact-info-item"><span class="icon flaticon-placeholder-3"></span><b>Address:</b> {{  direction.address }} </li>
+                                                    <li class="contact-info-item"><span class="icon flaticon-telephone"></span><b>Appelez-nous:</b> <a href="tel:{{  direction.tel }}">{{  direction.tel }} </a></li>
+                                                    <li class="contact-info-item"><span class="icon flaticon-e-mail-envelope"></span><b> Nous Ecrire :</b> <a href="mailto:{{  direction.email }}"> {{  direction.email }} </a></li>
+                                                    <li class="contact-info-item"><span class="icon fa fa-clock-o"></span><b>Horaire d'ouverture:</b>{{  direction.horaire }}  </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    {% endfor %}
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                {% endif %}
+                <div style="background-color:#efefef; height: 1.5vh;"><br></div>
+            {% empty %}
+                {% include 'Layouts/_emptyDataMessage.html' %}
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- ======================================================================== -->
+    
+    
+    <!-- Map Section -->
+  
+	<!--End Map Section-->
+    <br><br>
+    
+   {% endblock %}

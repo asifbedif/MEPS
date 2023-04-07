@@ -1,0 +1,149 @@
+{% extends 'Backend/AdminBase.html' %}
+
+{% load static %}
+
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="{% static 'backend/vendors/iconfonts/font-awesome/css/all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'backend/vendors/css/vendor.bundle.base.css' %}">
+  <link rel="stylesheet" href="{% static 'backend/vendors/css/vendor.bundle.addons.css' %}">
+  <!-- endinject -->
+
+  <!-- plugin css for this page -->
+  {% include 'Backend/inc/plugins/editors/Text-editor-css.html' %}
+  <!-- End plugin css for this page -->
+  
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{% static 'backend/css/style.css' %}">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="{% static 'backend/images/favicon.png' %}" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="page-header">
+            <h3 class="page-title">
+                
+                {% block PAGE_TITLE %}
+                    MEPS - ADMINISTRATION
+                {% endblock PAGE_TITLE %}
+                    
+            </h3>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">{% block breadcrumb_parent %} 
+                  Meps
+                  {% endblock breadcrumb_parent %}
+                </a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  {% block breadcrumb %} 
+                  le-ministère
+                  {% endblock breadcrumb %}
+                </li>
+                </ol>
+            </nav>
+          </div>            
+        
+          {% block ADMIN_BODY %}
+
+          <div class="row">       
+            <div class="col-lg-8 grid-margin stretch-card">
+              <!--x-editable starts-->
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title text-primary">LE MINISTÈRE</h4>
+                  <p class="card-description">Modifier les paramètres de la page</p>
+                  <div class="template-demo">
+                    <form id="editable-form" class="editable-form">
+                      
+                      <div class="form-group row">
+                        <label class="col-6 col-lg-4 col-form-label">Page Title</label>
+                        <div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname">Ministère de l'Emploi et de la Protection Sociale</a>
+                        </div>
+                      </div>
+
+                      <div class="form-group row">
+                        <label class="col-6 col-lg-4 col-form-label">slug</label>
+                        <div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="username" data-type="text" data-pk="1">meps</a>
+                        </div>
+                      </div>
+
+                      <div class="form-group row">
+                        <label class="col-6 col-lg-4 col-form-label">Status</label>
+                        <div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="isPublished" class="date_on" data-type="select" data-pk="1" data-value="" data-title="Select Status"></a>
+                        </div>
+                      </div>
+
+                      <div class="form-group row">
+                        <label class="col-6 col-lg-4 col-form-label">Published On</label>
+                        <div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="published_on" class="date_on" data-type="combodate" data-value="" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">10/11/2022</a>
+                        </div>
+                      </div>
+
+                      <div class="form-group row">
+                        <label class="col-6 col-lg-4 col-form-label">Modified On</label>
+                        <div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="modified_on" class="date_on" data-type="combodate" data-value="" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">10/11/2022</a>
+                        </div>
+                      </div>
+
+                      <div class="form-group row"><label>Content</label>
+                        <div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="comments" data-type="textarea" data-pk="1" data-placeholder="Page content goes here..." data-title="Enter comments" >awesome user!</a>
+                          <div class="editable-error-block"></div>
+                        </div>
+                      </div> 
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!--x-editable ends-->
+            </div>
+
+            <div class="col-lg-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title d-flex">Feature Image
+                    {% comment %} <small class="ml-auto align-self-end">
+                      <a href="dropify.html" class="font-weight-light" target="_blank">More dropify examples</a>
+                    </small> {% endcomment %}
+                  </h4>
+                  <input type="file" class="dropify" />
+                </div>
+              </div>
+            </div>                     
+          </div>
+            {% include 'Backend/inc/plugins/editors/Text-editor.html' %}
+          
+        <!-- content-wrapper ends -->
+      
+  <!-- plugins:js -->
+  <script src="{% static 'backend/vendors/js/vendor.bundle.base.js' %} "></script>
+  <script src="{% static 'backend/vendors/js/vendor.bundle.addons.js' %} "></script>
+  <!-- endinject -->
+  <!-- inject:js -->
+  
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="{% static 'backend/js/formpickers.js' %} "></script>
+  <script src="{% static 'backend/js/form-addons.js' %} "></script>
+  <script src="{% static 'backend/js/x-editablee.js' %} "></script>
+  <script src="{% static 'backend/js/dropify.js' %} "></script>
+  <script src="{% static 'backend/js/dropzone.js' %} "></script>
+  <script src="{% static 'backend/js/jquery-file-upload.js' %} "></script>
+  <script src="{% static 'backend/js/formpickers.js' %} "></script>
+ <script src="{% static 'backend/js/form-repeater.js' %} "></script>
+
+ {% include 'Backend/inc/plugins/editors/Text-editor-js.html' %}
+
+  <!-- End custom js for this page-->
+
+  {% endblock %}

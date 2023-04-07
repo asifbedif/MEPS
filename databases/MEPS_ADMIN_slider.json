@@ -1,0 +1,26 @@
+[
+    {
+        "slideID": 1,
+        "slide_image": "images/slider/BG-image-cmu.jpg",
+        "slide_link": "couverture-maladie-universelle",
+        "slide_subtitle": "Fermentum laoreet felis tempus nibh suscipit convallis habitant et nullam",
+        "slide_title": "Couverture Maladie Universelle",
+        "visible": 1
+    },
+    {
+        "slideID": 3,
+        "slide_image": "images/slider/image-1-c_bKFGQJM.jpg",
+        "slide_link": "la-complementaire",
+        "slide_subtitle": "Amet ipsum donec tristique faucibus fringilla luctus.",
+        "slide_title": "La Complémentaire",
+        "visible": 1
+    },
+    {
+        "slideID": 4,
+        "slide_image": "images/slider/image-1-b.jpg",
+        "slide_link": "regime-sociale-des-travailleurs-independants",
+        "slide_subtitle": "Ligula dis letius fermentum diam tempor facilisis nibh quisque viverra maximus nulla.",
+        "slide_title": "Régime Sociale des Travailleurs Indépendants",
+        "visible": 1
+    }
+]

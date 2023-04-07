@@ -1,0 +1,114 @@
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+{% block TITLE %}EPN{% endblock TITLE %}
+
+{% block PAGETITLE %}Écoles Publices Nationales{% endblock %}
+
+
+{% block CONTENT %}
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url(images/background/6.jpg);">
+        <div class="auto-container">
+            <h1>Écoles Publiques Nationales</h1>
+        </div>
+    </section>
+    
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{% url 'index' %}">Accueil</a></li>
+                        <li>E.P.N</li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="share-icon"><a href="#"><span class="icon fa fa-share-alt"></span> Partager</a></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+    
+    <!--Blog Grid Section-->
+        <!--Blog Grid Section-->
+    <section class="blog-grid-section">
+        <div class="auto-container">            
+            <div class="row clearfix">               
+                <!--News Block-->
+
+                <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                                    <span class="icon flaticon-teacher"></span>
+                                </div>
+                                <h3>INSFS</h3>
+                                <div class="text">Institut National Supérieur de la Formation Sociale</div>
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="icon-box">
+                                            <span class="icon flaticon-teacher"></span>
+                                        </div>
+                                        <div class="text">Cocody, près du CHU de Cocody. 01 BP 2635 Abidjan.<br>Tel : 22 44 16 75 / 22 44 16 73</br> Site Internet: www.infs-ci.org</div>
+                                        <!-- <a class="read-more" href="le-ministere.html">Lire plus</a> -->
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+                <!-- End Welcome Block -->
+                
+                <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                    <div class="icon-box">
+                                <span class="icon flaticon-teacher"></span>
+                            </div>
+                            <h3>(AIRMS)</h3>
+                            <div class="text">Agence Ivoirienne de Régulation de la Mutualité Sociale(AIRMS)</div>
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-teacher"></span>
+                                    </div>
+                                    <div class="text">Abidjan, Cocody Faya, route de Bingerville Immeuble ARMICI 1er Etage. <br>Tel : 22 46 65 02 </br> </div>
+                                    <!-- <a class="read-more" href="le-ministere.html">Lire plus</a> -->
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- End Welcome Block -->
+                
+                <!--Welcome Block-->
+                <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                  <!--   <div class="inner-box">
+                        <div class="icon-box">
+                            <span class="icon flaticon-teacher"></span>
+                        </div>
+                        <h3>LE MINISTÈRE</h3>
+                        <div class="text">Our professionals are top experts with extensive, practical experience, we build strategies and systems.</div>
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="icon-box">
+                                    <span class="icon flaticon-teacher"></span>
+                                </div>
+                                <div class="text">Our professionals are top experts with extensive, practical experience, we build strategies and systems.</div> -->
+                                <!-- <a class="read-more" href="le-ministere.html">Lire plus</a> -->
+                           <!--  </div>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- End Welcome Block -->
+            
+            </div>
+            
+        </div>
+    </section>
+    <!--End Blog Grid Section-->
+{% endblock CONTENT %}

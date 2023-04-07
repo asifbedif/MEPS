@@ -1,0 +1,95 @@
+{% extends 'users/Account_base.html' %}
+
+{% load static %}
+
+{% block EXTRA_CSS %}
+<style>
+  .auth .brand-logo img {
+    width: 150px;
+    width: 75%!important;
+  }
+  
+  .auth .login-half-bg {
+    background: url("{% static 'Media/images/ministere/Maitre-Adama-Kamara.jpg' %}");
+    background-size: cover;
+  }
+  
+</style>
+
+{% endblock EXTRA_CSS %}
+
+{% block MESSAGES %}
+
+{% if messages  %}
+    {% for msg in messages %}
+
+      <div class='alert alert-{{ msg.tags }} alert-dismissible fade show' role='alert'>
+        <h6><strong>Message:</strong><em>{{ msg }}</em> </h6>
+        <button class='close' data-dismiss='alert' aria-label='Close'>
+          <span aria-hidden='true'>&times;</span>
+        </button>     
+      </div>
+
+    {% endfor %}
+  {% endif %}
+          
+  {% endblock MESSAGES %}
+
+{% block TITLE %} Bienvenue! {% endblock TITLE %}
+{% block SUB_TITLE %} Nous sommes ravis de vous revoir! {% endblock SUB_TITLE %}
+
+{% block FORM %}
+
+  <form class="pt-3" action="login" method="post">
+
+    {% csrf_token %}
+
+    <div class="form-group">
+      <!-- <label for="exampleInputEmail">Username</label> -->
+      <div class="input-group">
+        <div class="input-group-prepend bg-transparent">
+          <span class="input-group-text bg-transparent border-right-0">
+            <i class="fa fa-user text-primary"></i>
+          </span>
+        </div>
+        <input type="text" name='username' class="form-control form-control-lg border-left-0" id="exampleInputEmail" placeholder="Username">
+      </div>
+    </div>
+    <div class="form-group">
+      <!-- <label for="exampleInputPassword">Password</label> -->
+      <div class="input-group">
+        <div class="input-group-prepend bg-transparent">
+          <span class="input-group-text bg-transparent border-right-0">
+            <i class="fa fa-lock text-primary"></i>
+          </span>
+        </div>
+        <input type="password" name='password'  class="form-control form-control-lg border-left-0" id="exampleInputPassword" placeholder="Password">                        
+      </div>
+    </div>
+    <div class="my-2 d-flex justify-content-between align-items-center">
+      <div class="form-check">
+        <label class="form-check-label text-muted">
+          <input type="checkbox" class="form-check-input">
+          Resté connecté
+        </label>
+      </div>
+      <a href="{% url 'admin-reset-password' %}" class="auth-link text-black">Mot de passe oublié?</a>
+    </div>
+    <div class="my-3">
+      <button type='submit' name='submit' class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="{% url 'meps-admin' %}">CONNECTER</button>
+    </div>
+    <!--
+    <div class="mb-2 d-flex">
+      <button type="button" class="btn btn-facebook auth-form-btn flex-grow mr-1">
+        <i class="fab fa-facebook-f mr-2"></i>Facebook
+      </button>
+      <button type="button" class="btn btn-google auth-form-btn flex-grow ml-1">
+        <i class="fab fa-google mr-2"></i>Google
+      </button>
+    </div> -->
+    <div class="text-center mt-4 font-weight-light">
+      Je n'ai pas de compte? <a href="{% url 'admin-register' %}" class="text-primary">Créer un compte</a>
+    </div>
+  </form>
+      
+{% endblock FORM %}

@@ -1,0 +1,17 @@
+[
+    {
+        "category_name": "CMU",
+        "category_slug": "cmu",
+        "id": 1
+    },
+    {
+        "category_name": "COMPLEMENTRAIRE",
+        "category_slug": "complementraire",
+        "id": 2
+    },
+    {
+        "category_name": "RSTI",
+        "category_slug": "rsti",
+        "id": 3
+    }
+]

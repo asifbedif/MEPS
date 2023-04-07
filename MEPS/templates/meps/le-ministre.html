@@ -1,0 +1,687 @@
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+{% block TITLE %}Le Ministre {% endblock TITLE %}
+
+{% block PAGETITLE %}Le Ministre de l'Emploi et de la Protection Sociale{% endblock %}
+
+{% block EXTRA_CSS %} 
+
+    <style>
+        .sidebar-page-container {
+            padding: 0px;
+        }
+
+        .sec-title {
+            margin-top: 50px!important;
+            margin-bottom: 0px!important;
+        }
+    </style>
+
+{% endblock EXTRA_CSS %}
+
+{% block CONTENT %}
+    
+    <!--Page Info-->
+    <section class="page-info">
+        <div class="auto-container">
+        	<div class="inner-container clearfix">
+            
+                <div class="pull-left">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{% url 'index' %}">Accueil</a></li>
+                        <li>Le Ministre</li>
+                    </ul>
+                </div>
+                {% comment %} <div class="pull-right">
+                    <div class="share-icon"><a href="#"><span class="icon fa fa-share-alt"></span> Partager</a></div>
+                </div> {% endcomment %}
+                
+            </div>
+        </div>
+    </section>
+    <!--End Page Info-->
+    
+    <!-- ======================= -->
+
+
+        <div class="sidebar-page-container">
+        <div class="auto-container">
+
+            <div class="row">
+
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="sec-title pull-left">
+                        <h2>Mot du Ministre</h2>
+                    </div>
+                    <div class="content-side col-lg-12">
+                        <div class="blog-single">
+                            <div class="inner-box">                        
+                                <div class="lower-content">
+                                    <div class="text">
+                                        <p>{{ ministre.mot_du_ministre }}</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="image img-responsive">
+                        <img src="{{ ministre.photo.url }}" alt="" height="100%"/>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="sec-title pull-left">
+                        <h2>Déclaration</h2>
+                    </div>
+    
+                    <div class="content-side col-lg-12">
+                        <div class="blog-single">
+                            <div class="inner-box">                        
+                                <div class="lower-content">
+                                    <div class="text">
+                                        <p>{{ ministre.declaration }}</p>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="sec-title pull-left">
+                        <h2>Biographie</h2>
+                    </div>
+    
+                    <div class="content-side col-lg-12">
+                        <div class="blog-single">
+                            <div class="inner-box">                        
+                                <div class="lower-content">
+                                    <div class="text">
+                                        <p>{{ ministre.mot_du_ministre }}</p>
+
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="tabbable row clearfix">
+
+                <!--Sidebar-->
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <aside class="sidebar">
+                        
+                        <!--Services Category-->
+                        <div class="sidebar-widget services-category">
+                            <ul class="services-list nav md-pills pills-secondary d-flex flex-column">
+                                <li class="active"><a href="#Ministre" data-toggle="tab" role="tab"><span class="icon flaticon-startup"></span>Ministre</a></li>
+                                <li class=""><a href="#parcours"  data-toggle="tab" role="tab"><span class="icon flaticon-analytics-1"></span>Parcours professionnel</a></li>
+                                <li><a href="#Expérience"  data-toggle="tab" role="tab"><span class="icon flaticon-businessman""></span>Expérience administrative</a></li>
+                                <li><a href="#Distinctions" data-toggle="tab" role="tab"><span class="icon flaticon-honeycomb"></span>Distinctions</a></li>
+                                <li><a href="#Politique" data-toggle="tab" role="tab"><span class="icon flaticon-honeycomb"></span>Parcours Politique</a></li>
+                            </ul>
+                        </div>                     
+                    </aside>
+                </div>
+                
+                <!--Content Side / Services Single-->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="services-single">
+                        <div class="inner-box tab-content content-side">
+                            
+                            <!--Upper Box-->
+                            <div class=" tab-pane fade upper-box in active" id="Ministre"  role="tabpanel">
+                                <div class="row clearfix">
+                                    <div class="column col-lg-12">
+                                        <div class="dark-text">
+                                            Monsieur le ministre, &nbsp;&nbsp; <strong>{{ ministre.name}}</strong>
+                                        </div><br>
+                                        <div class="text">
+                                            <p> {{ ministre.biographie }} </p>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="image">
+                                            <img src="{% static 'images/resource/services-7.jpg' %}" alt="" />
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!--Upper Box-->
+
+                            <!--Upper Box-->
+                            <div class="tab-pane fade upper-box" id="parcours"  role="tabpanel">
+                                <div class="row clearfix">
+                                    <div class="column col-lg-12">
+                                        <div class="upper-text"><strong>Parcours professionnel</strong></div>
+                                        <div class="text">
+                                            <ul class="list-style-three">
+                                                {% for parcours in  parcours_professionnel %}
+
+                                                <li> {{ parcours.content }} ,</li>
+
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Upper Box-->
+
+                            {% comment %}     <!--Upper Box-->
+                                    <div class="tab-pane fade upper-box" id="parcours"  role="tabpanel">
+                                        <div class="row clearfix">
+                                            <div class="column col-lg-12">
+                                                <div class="upper-text">Parcours professionnel</div>
+                                                <div class="text">
+                                                        <ul class="list-style-three">
+                                                    <li>En juillet 1992 : stagiaire au cabinet de Julien Mondon Konan,</li>
+                                                    <li>En 1994 : crée, en collaboration avec d’autres avocats, la firme SCPA Takore-Blay-Sakho-Kamara et Associés,</li>
+                                                    <li>Conseil l’État de Côte d’Ivoire sur plusieurs grands dossiers.
+                                                    Avocat d’affaire et conseil, il a assisté l’État dans la signature de plusieurs conventions,</li>
+
+                                                </ul>
+                                                    </div>
+                                            </div>
+                                            <!-- <div class="column col-md-6 col-sm-6 col-xs-12">
+                                                <div class="image">
+                                                    <img src="{% static 'images/resource/services-7.jpg' %}" alt="" />
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <!--Upper Box-->
+                            {% endcomment %}
+
+                            <!--Upper Box-->
+                            <div class="tab-pane fade upper-box" id="Expérience"  role="tabpanel">
+                                <div class="row clearfix">
+                                    <div class="column col-lg-12">
+                                        <div class="upper-text"><strong>Expérience administrative</strong></div>
+                                        <div class="text">
+                                            <ul class="list-style-three">
+                                                {% for experience in  experience_administrative %}
+
+                                                <li> {{ experience.content }} ,</li>
+
+                                                {% endfor %}
+                                            </ul>
+                                                {% comment %} 
+                                                <p>En février 2002, Adama Kamara est appelé comme conseiller spécial chargé des questions juridiques de Seydou Diarra, Premier ministre du gouvernement de réconciliation nationale. Il restera à ce poste jusqu’en décembre 2005. Pendant cette période, il participe aux négociations politiques d’Accra 1, 2, et 3. Il est responsable de la rédaction de la matrice d’actions de mise en œuvre des accords de Linas-Marcoussis.</p>
+                                                 <p>En janvier 2017, il suspend sa présence au sein de l’Ordre des avocats de Côte d’Ivoire et devient ainsi « avocat omis », pour se consacrer à sa nouvelle mission au sein de la haute administration publique. Depuis lors, il entre au cabinet du premier ministre Amadou Gon Coulibaly, en qualité de conseiller spécial. À ce poste, Adama Kamara assume des responsabilités transversales. Il préside des comités et groupes de travail dans des secteurs aussi variés que les mines, le pétrole, l’électricité, la santé, la justice, l’économie et les finances, le budget et le portefeuille de l’État, l’industrie et le commerce, l’environnement, les Eaux et Forêts, etc.</p>
+                                                <p>Le 8 juillet 2021, Hamed Bakayoko succède à la tête du gouvernement à Amadou Gon Coulibaly, décédé quelques semaines plus tôt. Adama Kamara conserve son poste à la primature jusqu’à sa nomination au gouvernement en tant que ministre de l’Emploi et de la Protection Sociale du gouvernement du premier ministre Patrick Achi1.</p>
+                                             {% endcomment %}
+                                            </div>
+                                    </div>
+                                    <!-- <div class="column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="image">
+                                            <img src="{% static 'images/resource/services-7.jpg' %}" alt="" />
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!--Upper Box-->
+
+                            <!--Upper Box-->
+                            <div class="tab-pane fade upper-box" id="Distinctions"  role="tabpanel">
+                                <div class="row clearfix">
+                                    <div class="column col-lg-12">
+                                        <div class="upper-text"><strong>Distinctions</strong></div>
+                                        <div class="text">
+                                            <ul class="list-style-three">
+                                                {% for distinction in  distinctions %}
+
+                                                <li> {{ distinction.content }} ,</li>
+
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="image">
+                                            <img src="{% static 'images/resource/services-7.jpg' %}" alt="" />
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!--Upper Box-->
+
+                            <!--Upper Box-->
+                            <div class="tab-pane fade upper-box" id="Politique"  role="tabpanel">
+                                <div class="row clearfix">
+                                    <div class="column col-lg-12">
+                                        <div class="upper-text"><strong>Parcours politique</strong></div>
+                                        <div class="text">
+                                            <ul class="list-style-three">
+                                                {% for politique in  parcours_politique %}
+
+                                                <li> {{ politique.content }} ,</li>
+
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="image">
+                                            <img src="{% static 'images/resource/services-7.jpg' %}" alt="" />
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!--Upper Box-->
+
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="image img-responsive">
+                        <img src="{% static 'images/resource/Maitre-Adama-Kamara.jpg' %}" alt="" height="100%"/>
+                    </div>
+                </div>
+            </div>
+
+            <!--Services Block Seven-->
+        </div>
+    </div>
+
+
+    <!-- ============================ -->
+
+    <!--End About Section-->
+    
+    <!--History Section-->
+    <section class="history-section">
+    	<div class="auto-container">
+        	<!--Sec Title-->
+            <div class="sec-title centered">
+            	<h2>Actualités</h2>
+            </div>
+            <div class="four-item-carousel owl-carousel owl-theme">
+            	
+                <div class="news-block-five">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<a href="blog-single.html"><img src="{% static 'images/resource/news-1.jpg' %}" alt="" /></a>
+                            <div class="post-date">Aug 17, 2016</div>
+                        </div>
+                        <div class="lower-content">
+                        	<h3><a href="blog-single.html">Started at Newyork</a></h3>
+                            <div class="text">The Great denouncings our labour pleasurees praisings pains was born and  will give you an seds accounts</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-block-five">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<a href="blog-single.html"><img src="{% static 'images/resource/news-2.jpg' %}" alt="" /></a>
+                            <div class="post-date">Aug 21, 2016</div>
+                        </div>
+                        <div class="lower-content">
+                        	<h3><a href="blog-single.html">First & Best Project</a></h3>
+                            <div class="text">Anyone who loves off pursu or desires to obtain pains of itself because it is pains but occasionally desires.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-block-five">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<a href="blog-single.html"><img src="{% static 'images/resource/news-3.jpg' %}" alt="" /></a>
+                            <div class="post-date">Aug 27, 2016</div>
+                        </div>
+                        <div class="lower-content">
+                        	<h3><a href="blog-single.html">Join New Partner</a></h3>
+                            <div class="text">Praesentium  delen atque all corrupti quosy dolores et sed quasue molestias excepturid cupiditate non provident.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-block-five">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<a href="blog-single.html"><img src="{% static 'images/resource/news-1.jpg' %}" alt="" /></a>
+                            <div class="post-date">Aug 29, 2016</div>
+                        </div>
+                        <div class="lower-content">
+                        	<h3><a href="blog-single.html">Best Company Award</a></h3>
+                            <div class="text">Righteous indignation men uts who are so beguiled and by the charms of pleasure by desire trouble.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-block-five">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<a href="blog-single.html"><img src="{% static 'images/resource/news-2.jpg' %}" alt="" /></a>
+                            <div class="post-date">Aug 17, 2016</div>
+                        </div>
+                        <div class="lower-content">
+                        	<h3><a href="blog-single.html">Started at Newyork</a></h3>
+                            <div class="text">The Great denouncings our labour pleasurees praisings pains was born and  will give you an seds accounts</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-block-five">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<a href="blog-single.html"><img src="{% static 'images/resource/news-3.jpg' %}" alt="" /></a>
+                            <div class="post-date">Aug 21, 2016</div>
+                        </div>
+                        <div class="lower-content">
+                        	<h3><a href="blog-single.html">First & Best Project</a></h3>
+                            <div class="text">Anyone who loves off pursu or desires to obtain pains of itself because it is pains but occasionally desires.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-block-five">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<a href="blog-single.html"><img src="{% static 'images/resource/news-1.jpg' %}" alt="" /></a>
+                            <div class="post-date">Aug 27, 2016</div>
+                        </div>
+                        <div class="lower-content">
+                        	<h3><a href="blog-single.html">Join New Partner</a></h3>
+                            <div class="text">Praesentium  delen atque all corrupti quosy dolores et sed quasue molestias excepturid cupiditate non provident.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-block-five">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<a href="blog-single.html"><img src="{% static 'images/resource/news-2.jpg' %}" alt="" /></a>
+                            <div class="post-date">Aug 29, 2016</div>
+                        </div>
+                        <div class="lower-content">
+                        	<h3><a href="blog-single.html">Best Company Award</a></h3>
+                            <div class="text">Righteous indignation men uts who are so beguiled and by the charms of pleasure by desire trouble.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-block-five">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<a href="blog-single.html"><img src="{% static 'images/resource/news-3.jpg' %}" alt="" /></a>
+                            <div class="post-date">Aug 17, 2016</div>
+                        </div>
+                        <div class="lower-content">
+                        	<h3><a href="blog-single.html">Started at Newyork</a></h3>
+                            <div class="text">The Great denouncings our labour pleasurees praisings pains was born and  will give you an seds accounts</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-block-five">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<a href="blog-single.html"><img src="{% static 'images/resource/news-1.jpg' %}" alt="" /></a>
+                            <div class="post-date">Aug 21, 2016</div>
+                        </div>
+                        <div class="lower-content">
+                        	<h3><a href="blog-single.html">First & Best Project</a></h3>
+                            <div class="text">Anyone who loves off pursu or desires to obtain pains of itself because it is pains but occasionally desires.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-block-five">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<a href="blog-single.html"><img src="{% static 'images/resource/news-3.jpg' %}" alt="" /></a>
+                            <div class="post-date">Aug 27, 2016</div>
+                        </div>
+                        <div class="lower-content">
+                        	<h3><a href="blog-single.html">Join New Partner</a></h3>
+                            <div class="text">Praesentium  delen atque all corrupti quosy dolores et sed quasue molestias excepturid cupiditate non provident.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-block-five">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<a href="blog-single.html"><img src="{% static 'images/resource/news-2.jpg' %}" alt="" /></a>
+                            <div class="post-date">Aug 29, 2016</div>
+                        </div>
+                        <div class="lower-content">
+                        	<h3><a href="blog-single.html">Best Company Award</a></h3>
+                            <div class="text">Righteous indignation men uts who are so beguiled and by the charms of pleasure by desire trouble.</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End History Section-->
+    
+    <!--Request Section-->
+    <section class="request-section">
+    	<div class="auto-container">
+        	<!--Sec Title-->
+            <div class="sec-title light">
+            	<h2>Request For Call Back</h2>
+            </div>
+            <div class="row clearfix">
+            	<!--Form Column-->
+            	<div class="form-column col-md-8 col-sm-12 col-xs-12">
+                	
+                    <!--Default Form-->
+                    <div class="default-form">
+                        <div class="row clearfix">
+                        	<form method="post" action="contact.html">
+                            	<div class="col-md-6 col-sm-6 col-xs-12">
+                                	<!--Form Group-->
+                                    <div class="form-group">
+                                        <input type="text" name="name" value="" placeholder="Name *" required>
+                                    </div>
+                                    <!--Form Group-->
+                                    <div class="form-group">
+                                        <input type="email" name="email" value="" placeholder="Ph Num*" required>
+                                    </div>
+                                    <!--Form Group-->
+                                    <div class="form-group">
+                                        <select class="custom-select-box">
+                                            <option>Enquiry About</option>
+                                            <option>Enquiry One</option>
+                                            <option>Enquiry Two</option>
+                                            <option>Enquiry Three</option>
+                                            <option>Enquiry Four</option>
+                                        </select>
+                                    </div>
+                               	</div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <!--Form Group-->
+                                    <div class="form-group">
+                                        <textarea placeholder="Special Request..."></textarea>
+                                    </div>
+                                </div>
+                                <!--Form Group-->
+                                <div class="form-group col-md-12 col-s col-xs-12">
+                                    <button type="submit" class="theme-btn btn-style-one">Submit Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--Info Column-->
+            	<div class="info-column col-md-4 col-sm-12 col-xs-12">
+                	<div class="inner-column">
+                    	<h2>Contact Details</h2>
+                        <div class="text">Please find below contact details and contact us today!</div>
+                        <ul class="list-style-four">
+                        	<li><span class="icon fa fa-phone"></span>Ph Num: +321 456 78 901</li>
+                            <li><span class="icon fa fa-envelope"></span>Email: Info@supportyou.com</li>
+                            <li><span class="icon fa fa-phone"></span>Mon to Sat: 9.00am to 16.pm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Request Section-->
+    
+    <!--Press Section-->
+    <section class="press-section">
+    	<div class="auto-container">
+        	<!--Sec Title-->
+            <div class="sec-title centered">
+            	<h2>Press Releases</h2>
+            </div>
+            <div class="two-item-carousel owl-carousel owl-theme">
+            	
+                <!--Press Block-->
+            	<div class="press-block">
+                	<div class="inner-box">
+                    	<div class="row clearfix">
+                        	<div class="image-column col-md-4 col-sm-4 col-xs-12">
+                            	<div class="image">
+                                	<img src="{% static 'images/resource/press-1.jpg' %}" alt="" />
+                                </div>
+                            </div>
+                            <!--Content Column-->
+                            <div class="content-column col-md-8 col-sm-8 col-xs-12">
+                            	<div class="content-inner">
+                                	<h3><a href="services-single.html">ConsultHub for Business Growth</a></h3>
+                                    <div class="title">21st August, 2016</div>
+                                    <div class="text">Idea of denouncing pleasure and praising pain was born and will give you a complete account of the system, and expound.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Press Block-->
+            	<div class="press-block">
+                	<div class="inner-box">
+                    	<div class="row clearfix">
+                        	<div class="image-column col-md-4 col-sm-4 col-xs-12">
+                            	<div class="image">
+                                	<img src="{% static 'images/resource/press-2.jpg' %}" alt="" />
+                                </div>
+                            </div>
+                            <!--Content Column-->
+                            <div class="content-column col-md-8 col-sm-8 col-xs-12">
+                            	<div class="content-inner">
+                                	<h3><a href="services-single.html">Mobile Gaming Recuirement</a></h3>
+                                    <div class="title">21st August, 2016</div>
+                                    <div class="text">Fortune has announced the launch of a new digital recruitment programme that will use online gaming and digital analysis.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Press Block-->
+            	<div class="press-block">
+                	<div class="inner-box">
+                    	<div class="row clearfix">
+                        	<div class="image-column col-md-4 col-sm-4 col-xs-12">
+                            	<div class="image">
+                                	<img src="{% static 'images/resource/press-1.jpg' %}" alt="" />
+                                </div>
+                            </div>
+                            <!--Content Column-->
+                            <div class="content-column col-md-8 col-sm-8 col-xs-12">
+                            	<div class="content-inner">
+                                	<h3><a href="services-single.html">ConsultHub for Business Growth</a></h3>
+                                    <div class="title">21st August, 2016</div>
+                                    <div class="text">Idea of denouncing pleasure and praising pain was born and will give you a complete account of the system, and expound.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Press Block-->
+            	<div class="press-block">
+                	<div class="inner-box">
+                    	<div class="row clearfix">
+                        	<div class="image-column col-md-4 col-sm-4 col-xs-12">
+                            	<div class="image">
+                                	<img src="{% static 'images/resource/press-2.jpg' %}" alt="" />
+                                </div>
+                            </div>
+                            <!--Content Column-->
+                            <div class="content-column col-md-8 col-sm-8 col-xs-12">
+                            	<div class="content-inner">
+                                	<h3><a href="services-single.html">Mobile Gaming Recuirement</a></h3>
+                                    <div class="title">14th April, 2016</div>
+                                    <div class="text">Fortune has announced the launch of a new digital recruitment programme that will use online gaming and digital analysis.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Press Block-->
+            	<div class="press-block">
+                	<div class="inner-box">
+                    	<div class="row clearfix">
+                        	<div class="image-column col-md-4 col-sm-4 col-xs-12">
+                            	<div class="image">
+                                	<img src="{% static 'images/resource/press-1.jpg' %}" alt="" />
+                                </div>
+                            </div>
+                            <!--Content Column-->
+                            <div class="content-column col-md-8 col-sm-8 col-xs-12">
+                            	<div class="content-inner">
+                                	<h3><a href="services-single.html">ConsultHub for Business Growth</a></h3>
+                                    <div class="title">21st August, 2016</div>
+                                    <div class="text">Idea of denouncing pleasure and praising pain was born and will give you a complete account of the system, and expound.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Press Block-->
+            	<div class="press-block">
+                	<div class="inner-box">
+                    	<div class="row clearfix">
+                        	<div class="image-column col-md-4 col-sm-4 col-xs-12">
+                            	<div class="image">
+                                	<img src="{% static 'images/resource/press-2.jpg' %}" alt="" />
+                                </div>
+                            </div>
+                            <!--Content Column-->
+                            <div class="content-column col-md-8 col-sm-8 col-xs-12">
+                            	<div class="content-inner">
+                                	<h3><a href="services-single.html">Mobile Gaming Recuirement</a></h3>
+                                    <div class="title">21st August, 2016</div>
+                                    <div class="text">Fortune has announced the launch of a new digital recruitment programme that will use online gaming and digital analysis.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Press Section-->
+    
+{% endblock CONTENT %}

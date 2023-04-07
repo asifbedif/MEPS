@@ -1,0 +1,18 @@
+[
+    {
+        "author_id": 1,
+        "category_id": 4,
+        "comment_count": 0,
+        "comment_status": "opened",
+        "content": "Massa odio congue primis per justo nisi dictum donec semper auctor litora. Commodo urna fermentum gravida bibendum at tincidunt eleifend mus ad. Nibh phasellus integer vel a porta sit donec. Vulputate etiam per mus metus eu. Justo elementum vehicula eget et nunc. Mus dui integer eget odio vel sagittis cubilia eleifend. Dictumst himenaeos sollicitudin aliquet sed neque si imperdiet.\r\n\r\nEgestas nam sed consectetuer euismod fames suspendisse arcu class cras rutrum dis. Eros aptent potenti malesuada pede curabitur praesent lorem vel maximus. Sed sagittis duis rutrum enim facilisis est vitae aptent. Curabitur aenean porta molestie nibh praesent risus curae ultrices bibendum. Dui lectus lobortis interdum vehicula non hac nullam erat habitant. Felis praesent sagittis proin nascetur lacinia accumsan netus habitant.",
+        "id": 1,
+        "image": "images/2023/02/27/drt_dMRojyT.jpg",
+        "place": "Abidjan",
+        "post_created_on": "2023-02-27 15:51:38.341582",
+        "post_modified_on": "2023-02-27 15:51:38.341582",
+        "post_published_on": "2023-02-27 15:47:48",
+        "post_status": "published",
+        "slug": "a-propos-du-meps",
+        "title": "À Propos Du Meps"
+    }
+]

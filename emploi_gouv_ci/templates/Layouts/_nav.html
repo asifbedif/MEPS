@@ -1,0 +1,69 @@
+<nav class="main-menu">
+    <div class="navbar-header">
+        <!-- Toggle Button -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div class="navbar-collapse collapse">
+        <ul class="navigation clearfix">
+            <li class=""><a href="{% url 'index' %}">ACCUEIL</a></li>
+            <li class="dropdown"><a href="#">MEPS</a>
+                <ul class="dropdown-menu">
+                    <li><a href="{% url 'ministere' %} ">Le Ministère</a></li>
+                    <li><a href="{% url 'le-ministre' %} ">Le Ministre</a></li>
+                    <li class=""><a href="{% url 'le-cabinet' %} ">Le Cabinet</a> </li>
+                    <li class=""><a href="{% url 'organigramme' %} ">Organigramme</a></li>
+                    <li><a href="{% url 'directions-et-services-rattaches' %} ">Directions & Services Rattachées</a></li>
+                    <li><a href="{% url 'structures-sous-tutelles' %} ">Structures Sous Tutelles</a></li>
+                    <!-- <li><a href="{% url 'inspection-generale' %} ">Inspection Générale</a></li> -->
+                    <li><a href="{% url 'ecoles-specialisees' %} ">Écoles Spécialisées</a></li>
+                    <li><a href="{% url 'decret-d-organisation' %} ">Décret d'Organisation</a></li>
+                    <li><a href="{% url 'missions-et-objectifs' %} ">Missions & Objectifs</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#">DIRECTIONS GÉNÉRALES</a>
+                <ul class="dropdown-menu">
+                    <li class=""><a href="{% url 'DGE' %}">De l'Emploi [DGE]</a></li>
+                    <li class=""><a href="{% url 'DGT' %}">Du Travail [DGT]</a></li>
+                    <li class=""><a href="{% url 'DGPS' %}">De la Protection Sociale [DGPS]</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#">RESSOURCES HUMAINES</a>
+                <ul class="dropdown-menu">
+                    <li class=""><a href="http://sygesco.drhmeps.net/">Suivi de dossier</a></li>
+                    <li class=""><a href="http://mutation.drhmeps.net/bienvenue">Mutation</a></li>
+                    <li class=""><a href="http://identification.drhmeps.net/">Identification de Nouveaux Agents</a></li>
+                </ul>
+            </li>
+            <li class=""><a href="{% url 'products-list' %}">NOS PRODUITS</a>
+                {% comment %} <ul class="dropdown-menu">
+                    <li><a href="{% url 'cmu' %}">CMU</a></li>
+                    <li><a href="{% url 'rsti' %}">RSTI</a> </li>
+                    <li><a href="{% url 'complementaire' %}">COMPLEMENTAIRE</a></li>         
+                </ul> {% endcomment %}
+            </li>
+            <li class=""><a href="{% url 'documents' %} ">DOCUMENTS</a>               
+            </li>
+            <li class="dropdown"><a href="{% url 'publications' %} ">PUBLICATIONS</a>
+                <ul class="dropdown-menu">
+                    <li><a href="{% url 'actualites' %} ">Actualités</a></li>
+                    <li><a href="{% url 'communiques' %} ">Communiqués</a></li>
+                    <li><a href="{% url 'mediatheque' %} ">médiathèque</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown"><a href='#'>NOUS JOINDRE</a>
+                <ul class="dropdown-menu">
+                    <li><a href="{% url 'nos-contacts' %} ">Contacts</a></li>
+                    <li><a href="{% url 'faq' %} ">Faq</a></li>
+                   
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</nav>

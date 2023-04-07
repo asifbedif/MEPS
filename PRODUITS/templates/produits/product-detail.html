@@ -1,0 +1,68 @@
+{% extends 'Layouts/base.html' %}
+
+{% load static %}
+
+{% block TITLE %} {{ product.title }} {% endblock TITLE %}
+
+{% block PAGETITLE %} {{ product.title }} {% endblock %}
+
+{% block CONTENT %}
+
+<div class="sidebar-page-container">
+    <div class="auto-container">
+        <div class="row clearfix">
+            
+            <!--Content Side / Blog Single-->
+            <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                <div class="blog-single">
+                    <div class="inner-box">
+                        <div class="image">
+                                                        
+                            {% if product %}                                
+                                <img src="{{ product.image.url }}" alt="">                                
+                            {% endif %}
+
+                        </div>
+                        <!--
+                        <ul class="post-info">
+                            <li>January 19, 2017</li>
+                            <li>Posted by: Stephen Adams</li>
+                            <li>Category: Business Plan</li>
+                        </ul>
+                        -->
+                        <div class="lower-content">
+                            <h3> {{ product.title }} </h3>
+
+                            <div class="text">
+                                <p> {{ product.content }}</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Sidebar-->
+            
+<div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12">
+    <aside class="sidebar">
+        <div class="sidebar-widget sidebar-blog-category">
+            <div class="sidebar-title">
+            </div>
+            <ul class="blog-cat">
+                <li><a href="{% url 'ministere'%}">Le ministère</a></li>
+                <li><a href="{% url 'le-cabinet'%}">Le cabinet</a></li>
+                <li><a href="{% url 'directions-et-services-rattaches' %}">Liste des Directeurs et Sous-Directeurs</a></li>
+                <li><a href="{% url 'missions-et-objectifs' %}">Missions &amp; objectifs</a></li>
+                <li><a href="{% url 'organigramme'%}">Organigramme</a></li>
+                <li><a href="{% url 'faq'%}">Faq</a></li>
+                <li><a href="{% url 'nos-contacts'%}">Contact</a></li>
+            </ul>
+        </div>
+    </aside>
+</div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

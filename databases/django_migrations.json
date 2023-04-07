@@ -1,0 +1,386 @@
+[
+    {
+        "app": "DGE",
+        "applied": "2023-02-27 13:30:29.629538",
+        "id": 1,
+        "name": "0001_initial"
+    },
+    {
+        "app": "DGPS",
+        "applied": "2023-02-27 13:30:29.653940",
+        "id": 2,
+        "name": "0001_initial"
+    },
+    {
+        "app": "DGT",
+        "applied": "2023-02-27 13:30:29.678021",
+        "id": 3,
+        "name": "0001_initial"
+    },
+    {
+        "app": "contenttypes",
+        "applied": "2023-02-27 13:30:29.700972",
+        "id": 4,
+        "name": "0001_initial"
+    },
+    {
+        "app": "auth",
+        "applied": "2023-02-27 13:30:29.744791",
+        "id": 5,
+        "name": "0001_initial"
+    },
+    {
+        "app": "MEPS_ADMIN",
+        "applied": "2023-02-27 13:30:29.841744",
+        "id": 6,
+        "name": "0001_initial"
+    },
+    {
+        "app": "DIRECTIONS_GENERALES",
+        "applied": "2023-02-27 13:30:29.866755",
+        "id": 7,
+        "name": "0001_initial"
+    },
+    {
+        "app": "DOCUMENTS",
+        "applied": "2023-02-27 13:30:29.902794",
+        "id": 8,
+        "name": "0001_initial"
+    },
+    {
+        "app": "Directions_Services_Rattachés",
+        "applied": "2023-02-27 13:30:29.933395",
+        "id": 9,
+        "name": "0001_initial"
+    },
+    {
+        "app": "Décret_Organisation",
+        "applied": "2023-02-27 13:30:29.967391",
+        "id": 10,
+        "name": "0001_initial"
+    },
+    {
+        "app": "PUBLICATIONS",
+        "applied": "2023-02-27 13:30:30.035673",
+        "id": 11,
+        "name": "0001_initial"
+    },
+    {
+        "app": "MEPS",
+        "applied": "2023-02-27 13:30:30.077891",
+        "id": 12,
+        "name": "0001_initial"
+    },
+    {
+        "app": "cabinet",
+        "applied": "2023-02-27 13:30:30.173881",
+        "id": 13,
+        "name": "0001_initial"
+    },
+    {
+        "app": "Missions_Objectifs",
+        "applied": "2023-02-27 13:30:30.215510",
+        "id": 14,
+        "name": "0001_initial"
+    },
+    {
+        "app": "Missions_Objectifs",
+        "applied": "2023-02-27 13:30:30.249072",
+        "id": 15,
+        "name": "0002_missionslist"
+    },
+    {
+        "app": "NOUS_JOINDRE",
+        "applied": "2023-02-27 13:30:30.424878",
+        "id": 16,
+        "name": "0001_initial"
+    },
+    {
+        "app": "PRODUITS",
+        "applied": "2023-02-27 13:30:30.690123",
+        "id": 17,
+        "name": "0001_initial"
+    },
+    {
+        "app": "StructuresSousTutelles",
+        "applied": "2023-02-27 13:30:30.731253",
+        "id": 18,
+        "name": "0001_initial"
+    },
+    {
+        "app": "Users",
+        "applied": "2023-02-27 13:30:30.836225",
+        "id": 19,
+        "name": "0001_initial"
+    },
+    {
+        "app": "Users",
+        "applied": "2023-02-27 13:30:30.877477",
+        "id": 20,
+        "name": "0002_rename_user_userprofile_current_user"
+    },
+    {
+        "app": "admin",
+        "applied": "2023-02-27 13:30:30.934387",
+        "id": 21,
+        "name": "0001_initial"
+    },
+    {
+        "app": "admin",
+        "applied": "2023-02-27 13:30:30.989842",
+        "id": 22,
+        "name": "0002_logentry_remove_auto_add"
+    },
+    {
+        "app": "admin",
+        "applied": "2023-02-27 13:30:31.020844",
+        "id": 23,
+        "name": "0003_logentry_add_action_flag_choices"
+    },
+    {
+        "app": "contenttypes",
+        "applied": "2023-02-27 13:30:31.173206",
+        "id": 24,
+        "name": "0002_remove_content_type_name"
+    },
+    {
+        "app": "auth",
+        "applied": "2023-02-27 13:30:31.230120",
+        "id": 25,
+        "name": "0002_alter_permission_name_max_length"
+    },
+    {
+        "app": "auth",
+        "applied": "2023-02-27 13:30:31.278932",
+        "id": 26,
+        "name": "0003_alter_user_email_max_length"
+    },
+    {
+        "app": "auth",
+        "applied": "2023-02-27 13:30:31.316931",
+        "id": 27,
+        "name": "0004_alter_user_username_opts"
+    },
+    {
+        "app": "auth",
+        "applied": "2023-02-27 13:30:31.373940",
+        "id": 28,
+        "name": "0005_alter_user_last_login_null"
+    },
+    {
+        "app": "auth",
+        "applied": "2023-02-27 13:30:31.386927",
+        "id": 29,
+        "name": "0006_require_contenttypes_0002"
+    },
+    {
+        "app": "auth",
+        "applied": "2023-02-27 13:30:31.425924",
+        "id": 30,
+        "name": "0007_alter_validators_add_error_messages"
+    },
+    {
+        "app": "auth",
+        "applied": "2023-02-27 13:30:31.493838",
+        "id": 31,
+        "name": "0008_alter_user_username_max_length"
+    },
+    {
+        "app": "auth",
+        "applied": "2023-02-27 13:30:31.554842",
+        "id": 32,
+        "name": "0009_alter_user_last_name_max_length"
+    },
+    {
+        "app": "auth",
+        "applied": "2023-02-27 13:30:31.623817",
+        "id": 33,
+        "name": "0010_alter_group_name_max_length"
+    },
+    {
+        "app": "auth",
+        "applied": "2023-02-27 13:30:31.746293",
+        "id": 34,
+        "name": "0011_update_proxy_permissions"
+    },
+    {
+        "app": "auth",
+        "applied": "2023-02-27 13:30:31.811606",
+        "id": 35,
+        "name": "0012_alter_user_first_name_max_length"
+    },
+    {
+        "app": "cabinet",
+        "applied": "2023-02-27 13:30:31.858987",
+        "id": 36,
+        "name": "0002_rename_sentence_decretlist_decret_sentence"
+    },
+    {
+        "app": "cabinet",
+        "applied": "2023-02-27 13:30:31.895975",
+        "id": 37,
+        "name": "0003_rename_decret_sentence_decretlist_sentence"
+    },
+    {
+        "app": "cabinet",
+        "applied": "2023-02-27 13:30:31.983567",
+        "id": 38,
+        "name": "0004_alter_decretlist_options_alter_article_number_and_more"
+    },
+    {
+        "app": "cabinet",
+        "applied": "2023-02-27 13:37:13.353084",
+        "id": 39,
+        "name": "0005_decretcabinet_fait_a_decretcabinet_fait_le"
+    },
+    {
+        "app": "das",
+        "applied": "2023-02-27 13:37:13.484755",
+        "id": 40,
+        "name": "0001_initial"
+    },
+    {
+        "app": "dit",
+        "applied": "2023-02-27 13:37:13.728387",
+        "id": 41,
+        "name": "0001_initial"
+    },
+    {
+        "app": "dlte",
+        "applied": "2023-02-27 13:37:14.050264",
+        "id": 42,
+        "name": "0001_initial"
+    },
+    {
+        "app": "doem",
+        "applied": "2023-02-27 13:37:14.447806",
+        "id": 43,
+        "name": "0001_initial"
+    },
+    {
+        "app": "dpph",
+        "applied": "2023-02-27 13:37:15.191777",
+        "id": 44,
+        "name": "0001_initial"
+    },
+    {
+        "app": "drt",
+        "applied": "2023-02-27 13:37:15.778510",
+        "id": 45,
+        "name": "0001_initial"
+    },
+    {
+        "app": "dsepe",
+        "applied": "2023-02-27 13:37:16.479269",
+        "id": 46,
+        "name": "0001_initial"
+    },
+    {
+        "app": "dspe",
+        "applied": "2023-02-27 13:37:17.013419",
+        "id": 47,
+        "name": "0001_initial"
+    },
+    {
+        "app": "dssm",
+        "applied": "2023-02-27 13:37:18.044376",
+        "id": 48,
+        "name": "0001_initial"
+    },
+    {
+        "app": "dsst",
+        "applied": "2023-02-27 13:37:19.079580",
+        "id": 49,
+        "name": "0001_initial"
+    },
+    {
+        "app": "ministre",
+        "applied": "2023-02-27 13:37:19.210949",
+        "id": 50,
+        "name": "0001_initial"
+    },
+    {
+        "app": "ministère",
+        "applied": "2023-02-27 13:37:19.320875",
+        "id": 51,
+        "name": "0001_initial"
+    },
+    {
+        "app": "organigramme",
+        "applied": "2023-02-27 13:37:19.343945",
+        "id": 52,
+        "name": "0001_initial"
+    },
+    {
+        "app": "sessions",
+        "applied": "2023-02-27 13:37:19.379156",
+        "id": 53,
+        "name": "0001_initial"
+    },
+    {
+        "app": "ÉcolesSpécialisées",
+        "applied": "2023-02-27 13:37:19.407602",
+        "id": 54,
+        "name": "0001_initial"
+    },
+    {
+        "app": "Décret_Organisation",
+        "applied": "2023-02-27 15:42:33.679400",
+        "id": 55,
+        "name": "0002_alter_decretorganisation_slug"
+    },
+    {
+        "app": "Décret_Organisation",
+        "applied": "2023-02-27 16:18:14.242880",
+        "id": 56,
+        "name": "0003_alter_decretorganisation_slug_and_more"
+    },
+    {
+        "app": "cabinet",
+        "applied": "2023-02-27 16:18:14.402735",
+        "id": 57,
+        "name": "0006_alter_article_number_alter_articlelist_number_and_more"
+    },
+    {
+        "app": "MEPS_ADMIN",
+        "applied": "2023-02-28 15:44:36.402160",
+        "id": 58,
+        "name": "0002_alter_directiondetail_description"
+    },
+    {
+        "app": "NOUS_JOINDRE",
+        "applied": "2023-02-28 15:44:36.456379",
+        "id": 59,
+        "name": "0002_alter_contactscabinet_options"
+    },
+    {
+        "app": "MEPS_ADMIN",
+        "applied": "2023-02-28 21:17:12.452490",
+        "id": 60,
+        "name": "0003_alter_directiondetail_description"
+    },
+    {
+        "app": "PUBLICATIONS",
+        "applied": "2023-03-05 22:41:32.364554",
+        "id": 61,
+        "name": "0002_alter_postcommunique_options_and_more"
+    },
+    {
+        "app": "PUBLICATIONS",
+        "applied": "2023-03-05 23:01:46.758449",
+        "id": 62,
+        "name": "0003_postcommunique_post_slug_and_more"
+    },
+    {
+        "app": "PUBLICATIONS",
+        "applied": "2023-03-05 23:03:49.036799",
+        "id": 63,
+        "name": "0004_alter_postcommunique_post_slug"
+    },
+    {
+        "app": "PUBLICATIONS",
+        "applied": "2023-03-05 23:04:18.118876",
+        "id": 64,
+        "name": "0005_alter_postcommunique_post_slug"
+    }
+]

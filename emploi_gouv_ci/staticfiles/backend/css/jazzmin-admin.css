@@ -1,0 +1,68 @@
+#jazzy-sidebar .nav-sidebar > .nav-header {
+    background-color: #f0ecec;
+}
+
+#jazzy-sidebar ul.nav.nav-pills.nav-sidebar.flex-column.text-sm.nav-flat.nav-child-indent.nav-compact {
+    background: whitesmoke;
+}
+
+.float-right.d-none.d-sm-inline {
+    display: none!important;
+}
+
+thead {
+    background-color: #20c997;
+    /* color: #fff!important; */
+}
+
+.accent-orange a:not(.dropdown-item):not(.btn-app):not(.nav-link):not(.brand-link):not(.page-link):not(.btn) {
+    color: #fd7e14;
+}
+
+th .text, th .text a {
+    color: #FFF!important;
+}
+
+.field-is_staff > img {
+    border: 1px solid orange;
+    border-radius: 50%;
+}
+
+.alert-success {
+    background-color: #6ec4b326;
+    border: 1px dashed #6ec4b3b0;
+    color: #18bc9c;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.btn-outline-info,
+.btn-outline-success,
+.btn-outline-danger,
+.btn-outline-warning {
+    font-size: 0.85rem;
+}
+
+.services-block .inner-box .overlay-box .overlay-inner .text {
+    font-size: 14px;
+}
+
+.table-striped tbody tr {
+    background-color: #ecf0f1;
+    font-size: 12px;
+}
+
+.accent-orange .page-item .page-link {
+    color: #FFF;
+}
+
+.related-widget-wrapper select{
+    width: 15rem;
+    font-size: 0.75rem;
+}
+
+img.img-circle.brand-image.elevation-3 {
+    opacity: 1!important;
+    box-shadow: none!important;
+    border-radius: 0%!important;
+}
